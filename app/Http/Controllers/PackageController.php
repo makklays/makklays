@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Mail\Transport\MailgunTransport;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -24,6 +25,9 @@ class PackageController extends Controller
 
     public function package($id)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         // get detail of package
         $package = DB::selectOne('SELECT * FROM packages WHERE is_visible=1 AND is_delete=0 AND id=? ', [$id]);
 

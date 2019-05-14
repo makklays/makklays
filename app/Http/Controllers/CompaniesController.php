@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Mail\Transport\MailgunTransport;
 use Illuminate\Support\Facades\Mail;
@@ -14,6 +15,9 @@ class CompaniesController extends Controller
 {
     public function showCompanies(Request $request)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         // list of companies
         //$companies = DB::select('SELECT * FROM companies ');
         $companies = DB::table('companies')->paginate(10);
@@ -36,6 +40,9 @@ class CompaniesController extends Controller
 
     public function addCompany(Request $request)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         /*$this->validate($request, [
             'name' => 'required|max:255',
         ]);*/
@@ -83,6 +90,9 @@ class CompaniesController extends Controller
 
     public function delete($id)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         if (isset($id) && !empty($id)) {
 
             // get company
@@ -110,6 +120,9 @@ class CompaniesController extends Controller
 
     public function edit(Request $request, $id)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         if (!isset($id) || !empty($id)) redirect('/companies');
 
         // simple upload image
@@ -155,6 +168,9 @@ class CompaniesController extends Controller
 
     public function view(Request $request, $id)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         if (!isset($id) || !empty($id)) redirect('companies');
 
         // get company

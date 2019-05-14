@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class EmployeesController extends Controller
 {
     public function showEmployees()
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         //$employees = DB::select('SELECT * FROM employees ');
         $employees = DB::table('employees')->paginate(10);
 
@@ -31,6 +35,9 @@ class EmployeesController extends Controller
 
     public function addEmployee(Request $request)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         // list of companies
         $companies = DB::select('SELECT * FROM companies ');
 
@@ -57,6 +64,9 @@ class EmployeesController extends Controller
 
     public function edit(Request $request, $id)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         if (!isset($id) || !empty($id)) redirect('/employees');
 
         // update data of company
@@ -89,6 +99,9 @@ class EmployeesController extends Controller
 
     public function delete($id)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
         if (!isset($id) || empty($id)) {
             return redirect('employees')->with([
                 'flash_message' => 'Error! Don\'t have ID in url',
