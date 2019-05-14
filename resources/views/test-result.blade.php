@@ -29,7 +29,7 @@
         <?php endif; ?>
 
         <div style="border-top:1px solid lightgrey; width:300px; padding-top:10px; margin-top:20px;">
-            <a href="/test"><< Cancel</a>
+            <a href="/"><< Cancel</a>
         </div>
     </div>
 

@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96228c3a-83a5-4c32-a24a-4693ca115478" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PackageController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PackageController.php" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_11_152856_create_packages_table.php" afterPath="$PROJECT_DIR$/database/migrations/2019_05_11_152856_create_packages_table.php" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+      <change beforePath="$PROJECT_DIR$/public/css/tests.css" afterPath="$PROJECT_DIR$/public/css/tests.css" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test-result.blade.php" afterPath="$PROJECT_DIR$/resources/views/test-result.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test.blade.php" afterPath="$PROJECT_DIR$/resources/views/test.blade.php" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -92,13 +90,47 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="142" column="3" lean-forward="false" selection-start-line="142" selection-start-column="2" selection-end-line="142" selection-end-column="3" />
+            <state relative-caret-position="170">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <marker date="1557871723431" expanded="true" signature="3601:3786" ph="INSERT INTO tests... " />
-                <marker date="1557871723431" expanded="true" signature="4996:5035" ph="SELECT count... tests" />
-                <marker date="1557871723431" expanded="true" signature="5143:5207" ph="SELECT count... " />
+                <marker date="1557875267902" expanded="true" signature="3611:3796" ph="INSERT INTO tests... " />
+                <marker date="1557875267902" expanded="true" signature="5006:5045" ph="SELECT count... tests" />
+                <marker date="1557875267902" expanded="true" signature="5153:5217" ph="SELECT count... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test-result.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/test-result.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <marker date="1557875372731" expanded="true" signature="195:209" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/test.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <marker date="1557875533318" expanded="true" signature="195:209" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/tests.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,7 +179,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompaniesController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CompaniesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -169,16 +201,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019_05_11_152856_create_packages_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_11_152856_create_packages_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -190,13 +212,16 @@
         <option value="$PROJECT_DIR$/public/robots.txt" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_11_152856_create_packages_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PackageController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/test-result.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/test.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/tests.css" />
       </list>
     </option>
   </component>
@@ -287,6 +312,12 @@
             <path>
               <item name="gogol28" type="b2602c69:ProjectViewProjectNode" />
               <item name="gogol28" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="gogol28" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gogol28" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -343,12 +374,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557870559943</updated>
-      <workItem from="1557870562038" duration="3894000" />
+      <workItem from="1557870562038" duration="4524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3894000" />
+    <option name="totallyTimeSpent" value="4524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
@@ -386,14 +417,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../zadanie/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -502,18 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="142" column="3" lean-forward="false" selection-start-line="142" selection-start-column="2" selection-end-line="142" selection-end-column="3" />
-          <folding>
-            <marker date="1557871723431" expanded="true" signature="3601:3786" ph="INSERT INTO tests... " />
-            <marker date="1557871723431" expanded="true" signature="4996:5035" ph="SELECT count... tests" />
-            <marker date="1557871723431" expanded="true" signature="5143:5207" ph="SELECT count... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_11_152856_create_packages_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -610,6 +621,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -627,6 +654,46 @@
             <marker date="1557874928085" expanded="true" signature="6379:6413" ph="SELECT * FRO... companies" />
             <marker date="1557874928085" expanded="true" signature="6485:6544" ph="SELECT count... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1557875267902" expanded="true" signature="3611:3796" ph="INSERT INTO tests... " />
+            <marker date="1557875267902" expanded="true" signature="5006:5045" ph="SELECT count... tests" />
+            <marker date="1557875267902" expanded="true" signature="5153:5217" ph="SELECT count... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/test-result.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1557875372731" expanded="true" signature="195:209" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/test.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <marker date="1557875533318" expanded="true" signature="195:209" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/tests.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

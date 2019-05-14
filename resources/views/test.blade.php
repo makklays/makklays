@@ -33,7 +33,7 @@
                 <div style="color:#FFF; margin-left:7px;">cats</div>
             </div>
             <div class="or">
-                OR
+
             </div>
             <div class="ch-block" choo="dog" style="background-image: url(/img/dog.jpg); background-size: cover;" >
                 <div style="color:#000; margin-left:7px;">dogs</div>
