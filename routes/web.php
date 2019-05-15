@@ -94,9 +94,9 @@ Route::match(['post'], '/test-data/{choice}', function ($choice = '') {
         if ($insert) {
 
             //echo 'sent email';
-            /*
+
             $msg = 'choice: '.$choice.'<br/>ip: '.$ip.'<br/>date: '.
-                date('d.m.Y H:i').'<br/>strana: '.$strana.'<br/>city: '.$city.'<br/>'.
+                date('d.m.Y H:i').'<br/>strana: '.$strana_rus.'<br/>city: '.$city_rus.'<br/>'.
                 'lat: '.$lat.'<br/> lon: '.$lon.'<br/><br/>';
 
             $headers =  'MIME-Version: 1.0' . "\r\n";
@@ -104,7 +104,7 @@ Route::match(['post'], '/test-data/{choice}', function ($choice = '') {
             $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
             mail('phpdevops@gmail.com', 'Result of test', $msg, $headers);
-            */
+
 
             $response = ['result' => 'Ok!'];
         } else {

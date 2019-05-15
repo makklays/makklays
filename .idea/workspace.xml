@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96228c3a-83a5-4c32-a24a-4693ca115478" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/test.blade.php" afterPath="$PROJECT_DIR$/resources/views/test.blade.php" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,13 +73,23 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
-                <marker date="1557875267902" expanded="true" signature="3611:3796" ph="INSERT INTO tests... " />
-                <marker date="1557875267902" expanded="true" signature="5006:5045" ph="SELECT count... tests" />
-                <marker date="1557875267902" expanded="true" signature="5153:5217" ph="SELECT count... " />
+                <marker date="1557917024602" expanded="true" signature="3611:3796" ph="INSERT INTO tests... " />
+                <marker date="1557917024602" expanded="true" signature="4986:5025" ph="SELECT count... tests" />
+                <marker date="1557917024602" expanded="true" signature="5133:5197" ph="SELECT count... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/test.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
@@ -118,15 +130,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PackageController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PackageController.php">
+      <file leaf-file-name="EmployeesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="722">
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
-                <marker date="1557874626876" expanded="true" signature="463:520" ph="SELECT * FRO... packages" />
-                <marker date="1557874626876" expanded="true" signature="803:869" ph="SELECT * FRO... packages" />
-                <marker date="1557874626876" expanded="true" signature="1388:1454" ph="SELECT * FRO... packages" />
+                <element signature="e#40#68#0#PHP" expanded="true" />
+                <marker date="1557874845694" expanded="true" signature="695:729" ph="SELECT * FRO... companies" />
+                <marker date="1557874845694" expanded="true" signature="1206:1229" ph="SELECT * FRO... companies" />
+                <marker date="1557874845694" expanded="true" signature="1342:1425" ph="INSERT INTO employees... " />
+                <marker date="1557874845694" expanded="true" signature="2442:2541" ph="UPDATE `employees`... " />
+                <marker date="1557874845694" expanded="true" signature="3188:3211" ph="SELECT * FRO... companies" />
+                <marker date="1557874845694" expanded="true" signature="3275:3309" ph="SELECT * FRO... employees" />
+                <marker date="1557874845694" expanded="true" signature="3853:3889" ph="SELECT * FRO... employees" />
+                <marker date="1557874845694" expanded="true" signature="4139:4173" ph="DELETE FROM employees... " />
               </folding>
             </state>
           </provider>
@@ -171,12 +189,13 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/PackageController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CompaniesController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/test-result.blade.php" />
         <option value="$PROJECT_DIR$/public/css/tests.css" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
         <option value="$PROJECT_DIR$/resources/views/test.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -330,12 +349,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557870559943</updated>
       <workItem from="1557870562038" duration="5116000" />
-      <workItem from="1557913396289" duration="2422000" />
+      <workItem from="1557913396289" duration="2848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7538000" />
+    <option name="totallyTimeSpent" value="7964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
@@ -428,9 +447,9 @@
         <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <marker date="1557875267902" expanded="true" signature="3611:3796" ph="INSERT INTO tests... " />
-            <marker date="1557875267902" expanded="true" signature="5006:5045" ph="SELECT count... tests" />
-            <marker date="1557875267902" expanded="true" signature="5153:5217" ph="SELECT count... " />
+            <marker date="1557917024602" expanded="true" signature="3611:3796" ph="INSERT INTO tests... " />
+            <marker date="1557917024602" expanded="true" signature="4986:5025" ph="SELECT count... tests" />
+            <marker date="1557917024602" expanded="true" signature="5133:5197" ph="SELECT count... " />
           </folding>
         </state>
       </provider>
@@ -615,24 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1557874845694" expanded="true" signature="695:729" ph="SELECT * FRO... companies" />
-            <marker date="1557874845694" expanded="true" signature="1206:1229" ph="SELECT * FRO... companies" />
-            <marker date="1557874845694" expanded="true" signature="1342:1425" ph="INSERT INTO employees... " />
-            <marker date="1557874845694" expanded="true" signature="2442:2541" ph="UPDATE `employees`... " />
-            <marker date="1557874845694" expanded="true" signature="3188:3211" ph="SELECT * FRO... companies" />
-            <marker date="1557874845694" expanded="true" signature="3275:3309" ph="SELECT * FRO... employees" />
-            <marker date="1557874845694" expanded="true" signature="3853:3889" ph="SELECT * FRO... employees" />
-            <marker date="1557874845694" expanded="true" signature="4139:4173" ph="DELETE FROM employees... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PackageController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -702,18 +703,6 @@
         <state relative-caret-position="306">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1557875267902" expanded="true" signature="3611:3796" ph="INSERT INTO tests... " />
-            <marker date="1557875267902" expanded="true" signature="5006:5045" ph="SELECT count... tests" />
-            <marker date="1557875267902" expanded="true" signature="5153:5217" ph="SELECT count... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -828,6 +817,44 @@
             <marker date="1557916645030" expanded="true" signature="1556:1568" ph="..." />
             <marker date="1557916645030" expanded="true" signature="1821:1833" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+            <marker date="1557874845694" expanded="true" signature="695:729" ph="SELECT * FRO... companies" />
+            <marker date="1557874845694" expanded="true" signature="1206:1229" ph="SELECT * FRO... companies" />
+            <marker date="1557874845694" expanded="true" signature="1342:1425" ph="INSERT INTO employees... " />
+            <marker date="1557874845694" expanded="true" signature="2442:2541" ph="UPDATE `employees`... " />
+            <marker date="1557874845694" expanded="true" signature="3188:3211" ph="SELECT * FRO... companies" />
+            <marker date="1557874845694" expanded="true" signature="3275:3309" ph="SELECT * FRO... employees" />
+            <marker date="1557874845694" expanded="true" signature="3853:3889" ph="SELECT * FRO... employees" />
+            <marker date="1557874845694" expanded="true" signature="4139:4173" ph="DELETE FROM employees... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <marker date="1557917024602" expanded="true" signature="3611:3796" ph="INSERT INTO tests... " />
+            <marker date="1557917024602" expanded="true" signature="4986:5025" ph="SELECT count... tests" />
+            <marker date="1557917024602" expanded="true" signature="5133:5197" ph="SELECT count... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
