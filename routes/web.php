@@ -136,6 +136,18 @@ Route::get('/test-result', function () {
         'count_choices' => $count_choices,
     ]);
 });
+Route::get('/test-mail', function () {
+    $msg = 'choice: <br/>ip: <br/>date: ' .
+        date('d.m.Y H:i') . '<br/>strana: <br/>city: <br/>' .
+        'lat: <br/> lon: <br/><br/>';
+
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'From: Makklays <info@makklays.com.ua>' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+    $m = mail('phpdevops@gmail.com', 'Result of test', $msg, $headers);
+    echo $m;
+});
 
 /* packages */
 Route::get('/packages', [

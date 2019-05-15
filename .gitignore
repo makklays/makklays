@@ -3,10 +3,14 @@
 /public/storage
 /storage/*.key
 /vendor
-/.idea
+.idea/
+/.idea/*
+.idea/*
 .env
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+'.idea' 
+.idea 
