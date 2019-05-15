@@ -4,14 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Test</title>
+    <title>Makklays</title>
+    <meta name="description" content="Makklays" />
+    <meta name="keywords" content="Makklays" />
+    <meta name="author" content="Makklays" />
 
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
-    <link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" >
-
-    <link rel="stylesheet" type="text/css" media="all" href="/css/tests.css" >
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/tests.css" />
 
     <script src='/js/jquery-3.4.0.min.js'></script>
     <script src='/js/tests.js'></script>
@@ -30,13 +32,13 @@
         </div>
         <div class="flex-block">
             <div class="ch-block" choo="kot" style="background-image: url('/img/kotik.jpg'); background-size: cover;">
-                <div style="color:#FFF; margin-left:7px;">cats</div>
+                <div style="color:#FFF; margin-left:7px;">{{ __('cats') }}</div>
             </div>
             <div class="or">
 
             </div>
             <div class="ch-block" choo="dog" style="background-image: url(/img/dog.jpg); background-size: cover;" >
-                <div style="color:#000; margin-left:7px;">dogs</div>
+                <div style="color:#000; margin-left:7px;">{{ __('dogs') }}</div>
             </div>
         </div>
     </div>
