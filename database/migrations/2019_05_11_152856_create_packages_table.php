@@ -20,7 +20,7 @@ class CreatePackagesTable extends Migration
             $table->string('full_description')->nullable();
             $table->integer('days')->default(0);
             $table->float('price', 7, 2)->default(00001.00);
-            $table->string('currency', 3)->default('USR');
+            $table->string('currency', 3)->default('USD');
             // ALTER TABLE packages ADD COLUMN price FLOAT(7,2) DEFAULT 00001.00 AFTER days;
             // ALTER TABLE packages ADD COLUMN currency VARCHAR(3) DEFAULT 'USD' AFTER price;
             $table->integer('is_visible')->default(1);

@@ -34,8 +34,10 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <a class="navbar-brand" href="{{ url('/') }}" style="padding-top:0; padding-bottom:0;">
+                    <img id="logo" class="d-inline-block mr-1" alt="Logo" src="/favicon.png" style="width:39px;" />
+                    <!-- div class="d-inline-block mr-1">Makklays<span>text</span></div -->
+                    <!-- {{ config('app.name', 'Laravel') }} -->
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -86,6 +88,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/profile">Profile</a>
+                                    <a class="dropdown-item" href="{{ route('todo') }}">Todo</a>
                                     <a class="dropdown-item" href="/settings">Settings</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -104,7 +107,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="" style="padding-top:25px; padding-bottom:25px;">
             @yield('content')
         </main>
     </div>

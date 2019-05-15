@@ -94,16 +94,14 @@ Route::match(['post'], '/test-data/{choice}', function ($choice = '') {
         if ($insert) {
 
             //echo 'sent email';
-
-            $msg = 'choice: '.$choice.'<br/>ip: '.$ip.'<br/>date: '.
-                date('d.m.Y H:i').'<br/>strana: '.$strana_rus.'<br/>city: '.$city_rus.'<br/>'.
-                'lat: '.$lat.'<br/> lon: '.$lon.'<br/><br/>';
+            $msg = 'choice: '.$choice.'<br/>ip: '.$ip.'<br/>strana: '.$strana_rus.'<br/>city: '.$city_rus.'<br/>'.
+                'lat: '.$lat.'<br/> lon: '.$lon.'<br/><br/>date: ' . date('d.m.Y H:i').'<br/><br/>';
 
             $headers =  'MIME-Version: 1.0' . "\r\n";
-            $headers .= 'From: Your name <info@makklays.com.ua>' . "\r\n";
+            $headers .= 'From: makklays.com.ua <info@makklays.com.ua>' . "\r\n";
             $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-            mail('phpdevops@gmail.com', 'Result of test', $msg, $headers);
+            mail('phpdevops@gmail.com', 'Result of test on makklays.com.ua', $msg, $headers);
 
 
             $response = ['result' => 'Ok!'];
@@ -136,7 +134,7 @@ Route::get('/test-result', function () {
         'count_choices' => $count_choices,
     ]);
 });
-Route::get('/test-mail', function () {
+/*Route::get('/test-mail', function () {
     $msg = 'choice: <br/>ip: <br/>date: ' .
         date('d.m.Y H:i') . '<br/>strana: <br/>city: <br/>' .
         'lat: <br/> lon: <br/><br/>';
@@ -147,7 +145,7 @@ Route::get('/test-mail', function () {
 
     $m = mail('phpdevops@gmail.com', 'Result of test', $msg, $headers);
     echo $m;
-});
+});*/
 
 /* packages */
 Route::get('/packages', [
@@ -165,6 +163,23 @@ Route::match(['get','post'], '/package/payment_cancel', [ // post method
 Route::match(['get','post'], '/package/payment_notify', [ // post method
     'uses' => 'PackageController@payment_notify'
 ]);
+
+/* to do */
+Route::get('/todo', [
+    'as' => 'todo', 'uses' => 'TodoController@listTodo'
+]);
+Route::match(['get'], '/todo/{id}', [
+    'as' => 'todo_item', 'uses' => 'TodoController@item'
+])->where(['id' => '[0-9]+']);
+Route::match(['get','post'], '/todo/add', [
+    'as' => 'todo_add', 'uses' => 'TodoController@add'
+]);
+Route::match(['get','post'], '/todo/edit/{id}', [
+    'as' => 'todo_edit', 'uses' => 'TodoController@edit'
+])->where(['id' => '[0-9]+']);
+Route::match(['get','post'], '/todo/del/{id}', [
+    'as' => 'todo_del', 'uses' => 'TodoController@del'
+])->where(['id' => '[0-9]+']);
 
 
 /*Route::group(['as' => 'admin::'], function () {
