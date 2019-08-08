@@ -12,11 +12,40 @@
 */
 
 #use Illuminate\Support\Facades\DB;
-#use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('test'); // 'main'
 });
+
+/* mysite page */
+Route::get('mysite', ['as' => 'mysite', 'uses' => 'MysiteController@indexPage']);
+
+/* about me */
+Route::get('about', ['as' => 'about', 'uses' => 'TodoController@about']);
+
+/* cvs */
+Route::get('cvs', ['as' => 'cvs', 'uses' => 'CvsController@lista']);
+
+/* jobs - vacancies */
+Route::get('jobs', ['as' => 'jobs', 'uses' => 'JobsController@lista']);
+
+/* cvs add */
+Route::get('/cvs/add', ['as' => 'cvs_add', 'uses' => 'CvsController@add']);
+Route::post('/cvs/add', ['as' => 'cvs_add_post', 'uses' => 'CvsController@addPost'])->middleware('mobile.redirect');
+
+/* cvs favorites */
+Route::get('/cvs/favorites', ['as' => 'cvs_favorites', 'uses' => 'CvsController@favorites']);
+Route::post('/cvs/change-favorite/{vacancia_id}', [
+    'as' => 'cvs_change_favorite', 'uses' => 'CvsController@changeFavorite'
+])->where(['vacancia_id' => '[0-9]+']);
+/* cvs recommend */
+Route::get('/cvs/recommend', ['as' => 'cvs_recommend', 'uses' => 'CvsController@recommend']);
+
+
+Route::get('upl', [
+    'as' => 'upl', 'uses' => 'TodoController@UploadT'
+]);
 
 /* companies */
 Route::get('companies', [
@@ -181,6 +210,48 @@ Route::match(['get','post'], '/todo/del/{id}', [
     'as' => 'todo_del', 'uses' => 'TodoController@del'
 ])->where(['id' => '[0-9]+']);
 
+// feedback
+Route::match(['get','post'], '/feedback', ['as' => 'feedback', function(Request $request){
+
+    //
+    if ($request->isMethod('post')) {
+
+        /* $messages = [
+            'fio.required' => 'Поле имя обязательно к заполнению',
+            'email.required' => 'Поле почта обязательно к заполнению',
+            'message.required' => 'Поле message обязательно к заполнению'
+        ];
+        $validator = Validator::make($request->all(), [
+            'fio' => 'required|max:50',
+            'email' => 'required',
+            'message' => 'required'
+        ], $messages);
+        if ($validator->fails()) {
+            return redirect()->route('feedback')->withErrors($validator)->exceptInput();
+        }*/
+
+        $insert = DB::insert('INSERT INTO feedback SET fio=?, email=?, message=?, created_at=?', [
+            strip_tags(trim($request->fio)), strip_tags(trim($request->email)), strip_tags(trim($request->message)), time()
+        ]);
+
+        $msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
+            E-mail: '.strip_tags(trim($request->email)).'<br/>
+            Сообщение: '.strip_tags(trim($request->message)).'<br/><br/>
+            Дата: '.date('d.m.Y H:i:s').'<br/><br/><br/>';
+
+        $headers = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'From: Makklays <info@makklays.com.ua>' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        //mail('phpdevops@gmail.com', 'Сообщение с сайта makklays.com.ua', $msg, $headers);
+
+        return redirect('feedback')->with([
+            'flash_message' => 'Your message has been sent successfully!',
+            'flash_type' => 'success'
+        ]);
+    }
+    return view('feedback');
+}]);
 
 /*Route::group(['as' => 'admin::'], function () {
     Route::get('companies', ['as' => 'companies', function () {

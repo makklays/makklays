@@ -104,4 +104,35 @@ class TodoController extends Controller
 
         return view('todo.del');
     }
+
+    public function about()
+    {
+        //
+        return view('todo.about');
+    }
+
+    public function UploadT()
+    {
+        /*function file_get_contents_curl($url) {
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //Set curl to return the data instead of printing it to the browser.
+            curl_setopt($ch, CURLOPT_URL, $url);
+            $data = curl_exec($ch);
+            curl_close($ch);
+            return $data;
+        }*/
+        //$url = 'https://api.openprocurement.org/api/2.3/tenders';
+        //$data = file_get_contents_curl($url);
+
+        $data = file_get_contents('https://api.openprocurement.org/api/2.3/tenders');
+        $d = json_decode($data);
+
+        echo '==========';
+        echo '<pre>';
+        //print_r($data);
+        print_r($d->data);
+        echo '</pre>';
+        exit;
+    }
 }

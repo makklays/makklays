@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,11 @@
     <meta name="keywords" content="Makklays" />
     <meta name="author" content="Makklays" />
 
+    <meta property="og:title" content="Cats ??? Dogs" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ config('app.url', 'http://makklays.com.ua') }}" />
+    <meta property="og:image" content="{{ config('app.url', 'http://makklays.com.ua') }}/img/dog.jpg" />
+
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
@@ -16,6 +21,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="/css/tests.css" />
 
     <script src='/js/jquery-3.4.0.min.js'></script>
+    <script src='/js/jquery.countdown.min.js'></script>
     <script src='/js/tests.js'></script>
 </head>
 <body>
@@ -42,6 +48,22 @@
             </div>
         </div>
     </div>
+
+    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+        <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
+        Have questions? <a href="/feedback">Write</a> <br/>
+        &copy; 2019 makklays.com.ua
+    </div>
+
+    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+        To level A2 <br/>
+        <span id="clock"></span>
+    </div>
+    <script>
+        $('#clock').countdown('2019/07/20', function(event) {
+            $(this).html(event.strftime('%D days %H:%M:%S'));
+        });
+    </script>
 
 </body>
 </html>

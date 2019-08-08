@@ -15,7 +15,7 @@
                 <?php foreach($packages as $package): ?>
                     <div class="package-block">
                         <div><h1><?=$package->title?></h1></div>
-                        <div><span>Price: <?=$package->price?> <?=$package->currency?></span></div-->
+                        <div><span>Price: <?=$package->price?> <?=$package->currency?></span></div>
                         <!--div><span>days <?=$package->days?></span></div-->
                         <div><p><?=$package->short_description?></p></div>
                         <div>
