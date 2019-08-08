@@ -110,7 +110,7 @@ class CvsController extends Controller
         //
         $cities = DB::select('SELECT * FROM cities WHERE is_visible=1 ORDER BY sort ');
 
-        $favorites = DB::select('SELECT * FROM favorites f JOIN vacancies v ON (f.vac_id=v.id) WHERE f.is_delete=0 ORDER BY v.is_hot DESC, f.created_at ');
+        $favorites = DB::select('SELECT * FROM favorites f JOIN vacancies v ON (f.vac_id=v.id)  ORDER BY v.is_hot DESC, f.created_at ');
 
         $aa = 'hernya';
         return view('cvs.favorites', [
@@ -134,6 +134,8 @@ class CvsController extends Controller
 
         $select = DB::selectOne('SELECT * FROM favorites WHERE vac_id=? AND user_id=?', [$vac_id, $user_id]);
 
+        //dd($select);
+
         if (isset($select->id) && !empty($select->id)) {
             $delete = DB::delete('DELETE FROM favorites WHERE vac_id=? AND user_id=?', [$vac_id, $user_id]);
             if ($delete) {
@@ -142,7 +144,7 @@ class CvsController extends Controller
                 $res = ['is_success' => 0, 'is_del' => 1];
             }
         } else {
-            $insert = DB::insert('INSERT INTO favorites SET vac_id=?, user_id=?, created_at=?', [$vac_id, $user_id, time()]);
+            $insert = DB::insert('INSERT INTO favorites SET vac_id=?, user_id=?, created_at=?', [$vac_id, $user_id, date('Y-m-d H:I:s')]);
             if ($insert) {
                 $res = ['is_success' => 1, 'is_del' => 0];
             } else {

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateCitiesTable extends Migration
 {
@@ -18,6 +19,7 @@ class CreateCitiesTable extends Migration
             $table->string('name');
             $table->integer('region_id');
             $table->integer('is_visible')->default(1);
+            $table->integer('is_big')->default(0);
             $table->integer('sort')->default(10);
         });
 
@@ -32,7 +34,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 1,
-                'sort' => 2,
+                'sort' => 1,
             ]);
         }
 
@@ -46,13 +48,13 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 2,
-                'sort' => 3,
+                'sort' => 2,
             ]);
         }
 
         // Днепропетровская область
         $cities_dnepropetrovskaya = [
-            'Апостолово', 'Васильковка', 'Верхнеднепровск', 'Верховцево', 'Вольногорск', 'Днепр (Днепропетровск)',
+            'Апостолово', 'Васильковка', 'Верхнеднепровск', 'Верховцево', 'Вольногорск', 'Днепр',
             'Днепродзержинск', 'Желтые Воды', 'Зеленодольск (Днепропетровская область)', 'Кривой Рог',
             'Кринички', 'Магдалиновка', 'Марганец', 'Межевая', 'Никополь', 'Новомосковск (Днепропетровская область)',
             'Орджоникидзе', 'Павлоград', 'Перещепино', 'Першотравенск', 'Петриковка', 'Петропавловка', 'Подгородное',
@@ -63,7 +65,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 3,
-                'sort' => 4,
+                'sort' => 3,
             ]);
         }
 
@@ -82,7 +84,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 4,
-                'sort' => 5,
+                'sort' => 4,
             ]);
         }
 
@@ -97,7 +99,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 5,
-                'sort' => 6,
+                'sort' => 5,
             ]);
         }
 
@@ -110,7 +112,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 6,
-                'sort' => 7,
+                'sort' => 6,
             ]);
         }
 
@@ -125,7 +127,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 7,
-                'sort' => 8,
+                'sort' => 7,
             ]);
         }
 
@@ -139,7 +141,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 8,
-                'sort' => 9,
+                'sort' => 8,
             ]);
         }
 
@@ -156,7 +158,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 9,
-                'sort' => 10,
+                'sort' => 9,
             ]);
         }
 
@@ -172,7 +174,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 10,
-                'sort' => 11,
+                'sort' => 10,
             ]);
         }
 
@@ -188,7 +190,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 11,
-                'sort' => 12,
+                'sort' => 11,
             ]);
         }
 
@@ -204,7 +206,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 12,
-                'sort' => 13,
+                'sort' => 12,
             ]);
         }
 
@@ -218,7 +220,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 13,
-                'sort' => 14,
+                'sort' => 13,
             ]);
         }
 
@@ -235,7 +237,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 14,
-                'sort' => 15,
+                'sort' => 14,
             ]);
         }
 
@@ -250,7 +252,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 15,
-                'sort' => 16,
+                'sort' => 15,
             ]);
         }
 
@@ -263,7 +265,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 16,
-                'sort' => 17,
+                'sort' => 16,
             ]);
         }
 
@@ -278,7 +280,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 17,
-                'sort' => 18,
+                'sort' => 17,
             ]);
         }
 
@@ -292,7 +294,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 18,
-                'sort' => 19,
+                'sort' => 18,
             ]);
         }
 
@@ -308,7 +310,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 19,
-                'sort' => 20,
+                'sort' => 19,
             ]);
         }
 
@@ -323,7 +325,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 20,
-                'sort' => 21,
+                'sort' => 20,
             ]);
         }
 
@@ -338,7 +340,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 21,
-                'sort' => 22,
+                'sort' => 21,
             ]);
         }
 
@@ -353,7 +355,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 22,
-                'sort' => 23,
+                'sort' => 22,
             ]);
         }
 
@@ -368,7 +370,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 23,
-                'sort' => 24,
+                'sort' => 23,
             ]);
         }
 
@@ -381,7 +383,7 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 24,
-                'sort' => 25,
+                'sort' => 24,
             ]);
         }
 
@@ -398,8 +400,30 @@ class CreateCitiesTable extends Migration
             DB::table('cities')->insert([
                 'name' => $name,
                 'region_id' => 25,
-                'sort' => 1,
+                'sort' => 25,
             ]);
+        }
+
+        $cities_bigs = [
+            'Винница',
+            'Днепр',
+            'Запорожье',
+            'Черкассы',
+            'Одесса',
+            'Львов',
+            'Киев',
+            'Луцк',
+            'Житомир',
+            'Запорожье',
+            'Черкассы',
+            'Николаев'
+        ];
+        foreach ($cities_bigs as $name) {
+            DB::table('cities')
+                ->where(['name' => $name])
+                ->update([
+                    'is_big' => 1,
+                ]);
         }
     }
 

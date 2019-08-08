@@ -25,6 +25,12 @@ class JobsController extends Controller
 
         $user = Auth::user();
 
+        if ($request->isMethod('get') && !empty($request->city)) {
+            $city = DB::select('SELECT * FROM cities WHERE id=? AND is_visible=1 ORDER BY name, sort', [$request->city]);
+            $city = $city[0];
+            //dd($city);
+        }
+
         // get list of packages
         if ($request->isMethod('get') && !empty($request->kw)) {
             //$vacancies = DB::select('SELECT * FROM vacancies WHERE title LIKE ? AND is_visible=1 AND is_delete=0 ORDER BY public_date', ['%'.$request->kw.'%']);
@@ -34,6 +40,7 @@ class JobsController extends Controller
                 ->leftJoin('cities', 'vacancies.city_id', '=', 'cities.id')
                 ->where('vacancies.is_visible', '=', 1)
                 ->where('vacancies.is_delete', '=', 0)
+                ->where('vacancies.city_id', '=', $request->city)
                 ->where('vacancies.title', 'LIKE', '%' . $request->kw . '%')
                 ->orderByDesc('vacancies.is_hot')
                 ->orderBy('vacancies.public_date')
@@ -52,6 +59,7 @@ class JobsController extends Controller
                 })*/
                 ->where('vacancies.is_visible', '=', 1)
                 ->where('vacancies.is_delete', '=', 0)
+                ->where('vacancies.city_id', '=', $request->city)
                 ->where('vacancies.title', 'LIKE', '%' . $request->kw . '%')
                // ->where('favorites.user_id', '=', $user->id)
                // ->orWhere('favorites.user_id', 'IS', 'NULL')
@@ -64,6 +72,7 @@ class JobsController extends Controller
             $kw = '';
         }
 
+        //dd($vacancies);
 
         /*foreach($vacancies as $ff) {
             if (isset($ff->in_fav) && !empty($ff->in_fav)) {
@@ -85,12 +94,16 @@ class JobsController extends Controller
                 $cities = DB::select('SELECT * FROM cities WHERE is_visible=1 AND region_id=? ORDER BY sort', [$region->id]);
                 if ($cities) {
                     $regcities[$region->id] = $region;
-                    foreach ($cities as $city) {
-                        $regcities[$region->id]->cities[] = $city;
+                    foreach ($cities as $itm_city) {
+                        $regcities[$region->id]->cities[] = $itm_city;
                     }
                 }
             }
         }
+
+        //$cities = DB::select('SELECT * FROM cities WHERE is_visible=1 ORDER BY name, sort');
+        $cities = DB::select('SELECT * FROM cities WHERE is_visible=1 AND is_big=1 ORDER BY name, sort');
+        //dd($regcities);
 
         /*echo '<pre>';
         print_r($regcities);
@@ -103,6 +116,8 @@ class JobsController extends Controller
             'kw' => $kw,
             'user_id' => $user->id,
             'regcities' => $regcities,
+
+            'city' => $city,
         ]);
     }
 }

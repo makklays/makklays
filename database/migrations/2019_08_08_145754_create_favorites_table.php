@@ -14,10 +14,10 @@ class CreateFavoritesTable extends Migration
     public function up()
     {
         Schema::create('favorites', function (Blueprint $table) {
-            // $table->bigIncrements('id');  - not need
-            $table->integer('vac_id'); // vacancia_id  from vacancies
+            $table->bigIncrements('id');
+            $table->integer('vac_id');
             $table->integer('user_id');
-            $table->integer('created_at')->nullable();
+            $table->timestamps();
         });
     }
 

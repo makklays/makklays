@@ -55,6 +55,7 @@
         &copy; 2019 makklays.com.ua
     </div>
 
+    <!--
     <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
         To level A2 <br/>
         <span id="clock"></span>
@@ -64,6 +65,7 @@
             $(this).html(event.strftime('%D days %H:%M:%S'));
         });
     </script>
+    -->
 
 </body>
 </html>
