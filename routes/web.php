@@ -243,7 +243,7 @@ Route::match(['get','post'], '/feedback', ['as' => 'feedback', function(Request 
         $headers .= 'From: Makklays <info@makklays.com.ua>' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-        //mail('phpdevops@gmail.com', 'Сообщение с сайта makklays.com.ua', $msg, $headers);
+        mail('phpdevops@gmail.com', 'Сообщение с сайта makklays.com.ua', $msg, $headers);
 
         return redirect('feedback')->with([
             'flash_message' => 'Your message has been sent successfully!',
