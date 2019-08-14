@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Mail\Transport\MailgunTransport;
@@ -10,6 +11,8 @@ use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
+
+use App\Http\Requests\addCvsRequest;
 
 class CvsController extends Controller
 {
@@ -56,31 +59,39 @@ class CvsController extends Controller
         ]);
     }
 
-    public function addPost(Request $request)
+    public function addPost(addCvsRequest $request) // addCvsRequest
     {
         if ($request->isMethod('post')) {
+
+            //$validated = $request->validated();
+
+            //dd( auth()->id() );
+            //dd($request);
+
             $email = $request->email;
             $phone = $request->phone;
-            $site = $request->site;
+            $site = $request->site; // not required
             $title = $request->post;
             $typejob = $request->typejob;
             $salary = $request->salary;
             $currency = $request->currency;
             $about = $request->about;
 
-            $has_car = $request->has_car;
-            $has_a = $request->has_a;
-            $has_b = $request->has_b;
-            $has_c = $request->has_c;
-            $has_d = $request->has_d;
-            $has_e = $request->has_e;
-            $has_be = $request->has_be;
-            $has_ce = $request->has_ce;
-            $has_de = $request->has_de;
-            $has_tm = $request->has_tm;
-            $has_tb = $request->has_tb;
+            $has_car = (empty($request->has_car) ? 0 : 1);
+            //dd( $has_car );
 
-            $user_id = 1;
+            $has_a = (empty($request->has_a) ? 0 : 1);
+            $has_b = (empty($request->has_b) ? 0 : 1);
+            $has_c = (empty($request->has_c) ? 0 : 1);
+            $has_d = (empty($request->has_d) ? 0 : 1);
+            $has_e = (empty($request->has_e) ? 0 : 1);
+            $has_be = (empty($request->has_be) ? 0 : 1);
+            $has_ce = (empty($request->has_ce) ? 0 : 1);
+            $has_de = (empty($request->has_de) ? 0 : 1);
+            $has_tm = (empty($request->has_tm) ? 0 : 1);
+            $has_tb = (empty($request->has_tb) ? 0 : 1);
+
+            $user_id = auth()->id();
 
             $insert = DB::insert('INSERT INTO cvs SET user_id=?, title=?,
                 email=?, phone=?, site=?, typejob=?, salary=?, currency=?, about=?, 

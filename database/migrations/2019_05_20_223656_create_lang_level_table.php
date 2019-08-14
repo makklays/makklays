@@ -23,7 +23,7 @@ class CreateLangLevelTable extends Migration
             //$table->timestamps();
         });
 
-        $ss = [
+        /*$ss = [
             'A1 — Начальный',
             'A2 — Элементарный',
             'B1 — Средний',
@@ -37,7 +37,7 @@ class CreateLangLevelTable extends Migration
                 'title' => $value,
                 'title_en' => $value,
             ]);
-        }
+        }*/
     }
 
     /**

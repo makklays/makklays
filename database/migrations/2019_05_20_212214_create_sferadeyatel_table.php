@@ -21,7 +21,7 @@ class CreateSferadeyatelTable extends Migration
             $table->integer('sort')->default(10);
         });
 
-        $ss = [
+        /*$ss = [
             'FMCG',
             'HR',
             'IT - разработка ПО',
@@ -66,7 +66,7 @@ class CreateSferadeyatelTable extends Migration
             DB::table('sferadeyatel')->insert([
                 'title' => $value,
             ]);
-        }
+        }*/
     }
 
     /**

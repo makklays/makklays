@@ -23,41 +23,6 @@ class CreateCompaniesTable extends Migration
             $table->string('website', 255)->nullable();
             $table->timestamps();
         });
-
-        // 1
-        DB::table('companies')->insert([
-            'name' => 'Makklays Ltd.',
-            'email' => 'makklays@gmail.com',
-            'logo' => '',
-            'is_checked' => 1,
-            'website' => 'http://makklays.com.ua',
-        ]);
-
-        // 2
-        DB::table('companies')->insert([
-            'name' => 'CocaCola & Co',
-            'email' => 'cocacola@gmail.com',
-            'logo' => '',
-            'is_checked' => 1,
-            'website' => 'http://cocacola.com',
-        ]);
-
-        // 3
-        DB::table('companies')->insert([
-            'name' => 'Microsoft',
-            'email' => 'microsoft@gmail.com',
-            'logo' => '',
-            'is_checked' => 1,
-            'website' => 'https://microsoft.com',
-        ]);
-
-        // 4
-        DB::table('companies')->insert([
-            'name' => 'Рога и копыта',
-            'email' => 'roga@gmail.com',
-            'logo' => '',
-            'website' => 'http://roga.com',
-        ]);
     }
 
     /**

@@ -24,11 +24,11 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
-        DB::table('users')->insert([
+        /*DB::table('users')->insert([
             'name' => 'phpdevops@gmail.com',
             'email' => 'phpdevops@gmail.com',
             'password' => '$2y$10$5Q.JU4fRZni5.mVWgL4z4uI8fjS4Sjklbg80Iwb8NLdWCIX0kN0vq',
-        ]);
+        ]);*/
     }
 
     /**

@@ -22,7 +22,7 @@
             height: 800px;
             padding: 2rem;
             position: relative;
-            background: url(/images/office.jpg);
+            background: url(/img/site/office.jpg);
             background-origin: border-box;
             background-repeat: no-repeat;
             background-size: cover;
@@ -339,7 +339,7 @@
 
         .parallax {
             /* The image used */
-            background-image: url("/../images/keyboard.jpg");
+            background-image: url("/img/site/keyboard.jpg");
 
             /* Set a specific height */
             height: 300px;
@@ -352,7 +352,10 @@
         }
         .parallax2 {
             /* The image used */
-            background-image: url("/../images/tech-city.jpg");
+            background-image: url("/img/site/tech-city.jpg");
+
+
+
 
             /* Set a specific height */
             height: 300px;
@@ -539,7 +542,7 @@
 
             <div class="col-12 col-sm-6 col-md-5">
                 <div class="divef_left_1">
-                    <img src="/../images/kisspng.png" alt="img" title="img"  />
+                    <img src="/img/site/kisspng.png" alt="img" title="img"  />
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-7">
@@ -561,7 +564,7 @@
             </div>
             <div class="col-12 col-sm-5 col-md-5">
                 <div class="divef_right_2">
-                    <img src="/../images/shops.png" alt="img" title="img" />
+                    <img src="/img/site/shops.png" alt="img" title="img" />
                 </div>
             </div>
         </div>
@@ -570,7 +573,7 @@
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6">
                 <div class="divef_left_5">
-                    <img src="/../images/crm.png" alt="img" title="img"  />
+                    <img src="/img/site/crm.png" alt="img" title="img"  />
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-6">
@@ -599,45 +602,45 @@
         </div>
         <div class="row" >
             <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 colimg" >
-                <img src="/../images/php.png" alt="img" title="php" />
+                <img src="/img/site/php.png" alt="img" title="php" />
             </div>
             <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 colimg" >
-                <img src="/../images/mysql.png" alt="img" title="MySQL" />
+                <img src="/img/site/mysql.png" alt="img" title="MySQL" />
             </div>
             <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 colimg">
-                <img src="/../images/postgresql.png" alt="img" title="PostgreSQL" />
+                <img src="/img/site/postgresql.png" alt="img" title="PostgreSQL" />
             </div>
             <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 colimg">
-                <img src="/../images/yii2_.png" alt="img" title="Yii2" />
+                <img src="/img/site/yii2_.png" alt="img" title="Yii2" />
             </div>
             <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 colimg">
-                <img src="/../images/laravel.png" alt="img" title="Laravel" />
+                <img src="/img/site/laravel.png" alt="img" title="Laravel" />
             </div>
             <!--<div class="col-md-2">
-                <img src="/../images/pascal.png" alt="img" title="img" style="" />
+                <img src="/img/site/pascal.png" alt="img" title="img" style="" />
             </div>-->
             <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 colimg">
-                <img src="/../images/git.png" alt="img" title="Git" style="margin-top:18px;" />
+                <img src="/img/site/git.png" alt="img" title="Git" style="margin-top:18px;" />
             </div>
         </div>
         <div class="row otstup">
             <div class="col-4 col-sm-4 col-md-2 colimg">
-                <img src="/../images/jquery.png" alt="img" title="jQuery" style="margin-top:30px;" />
+                <img src="/img/site/jquery.png" alt="img" title="jQuery" style="margin-top:30px;" />
             </div>
             <div class="col-4 col-sm-4 col-md-2 colimg">
-                <img src="/../images/wordpress.png" alt="img" title="WordPress" />
+                <img src="/img/site/wordpress.png" alt="img" title="WordPress" />
             </div>
             <div class="col-4 col-sm-4 col-md-2 colimg">
-                <img src="/../images/html5.png" alt="img" title="HTML5" />
+                <img src="/img/site/html5.png" alt="img" title="HTML5" />
             </div>
             <div class="col-4 col-sm-4 col-md-2 colimg">
-                <img src="/../images/css3.png" alt="img" title="CCS3" />
+                <img src="/img/site/css3.png" alt="img" title="CCS3" />
             </div>
             <div class="col-4 col-sm-4 col-md-2 colimg">
-                <img src="/../images/zend.png" alt="img" title="Zend" style="margin-top:8px;" />
+                <img src="/img/site/zend.png" alt="img" title="Zend" style="margin-top:8px;" />
             </div>
             <div class="col-4 col-sm-4 col-md-2 cilomg">
-                <img src="/../images/microsoft__.png" alt="img" title="Microsoft" />
+                <img src="/img/site/microsoft__.png" alt="img" title="Microsoft" />
             </div>
         </div>
     </div>
@@ -647,7 +650,7 @@
                 <h2 class="h2">Гарантия</h2>
             </div>
             <div id="left-section7" class="col-12 col-sm-6 col-md-6">
-                <img src="/../images/garantiya.png" alt="img" title="Гарантия" />
+                <img src="/img/site/garantiya.png" alt="img" title="Гарантия" />
             </div>
             <div class="col-12 col-sm-6 col-md-6 right-section7">
                 <h4>Запуск итерациями</h4>
@@ -677,7 +680,7 @@
             </div>
             <div class="col-12 col-sm-6 col-md-6">
                 <div class="divef_left_4">
-                    <img src="/../images/support.png" alt="img" title="img" />
+                    <img src="/img/site/support.png" alt="img" title="img" />
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-6">
@@ -750,7 +753,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="/../images/1.jpg" alt="img" title="img" />
+                    <img src="/img/site/1.jpg" alt="img" title="img" />
                 </div>
                 <div class="col-md-6">
                     <h3>Разработка сайтов и поддержка</h3>
@@ -763,11 +766,11 @@
             Zagolovok
         </div>
         <div class="recen_l ">
-            <img src="/images/portfolio-1.jpg">
+            <img src="/img/site/portfolio-1.jpg">
             Text text text
         </div>
         <div class="recen_r ">
-            <img src="/images/portfolio-2.jpg">
+            <img src="/img/site/portfolio-2.jpg">
             Text text text text text
         </div>
     </div>
@@ -776,19 +779,19 @@
             Zagolovok
         </div>
         <div class="reve ">
-            <img src="/images/portfolio-5.jpg">
+            <img src="/img/site/portfolio-5.jpg">
             Text text text text text
         </div>
         <div class="reve ">
-            <img src="/images/portfolio-5.jpg">
+            <img src="/img/site/portfolio-5.jpg">
             Text text text text text
         </div>
         <div class="reve ">
-            <img src="/images/portfolio-5.jpg">
+            <img src="/img/site/portfolio-5.jpg">
             Text text text text text
         </div>
         <div class="reve ">
-            <img src="/images/portfolio-5.jpg">
+            <img src="/img/site/portfolio-5.jpg">
             Text text text text text
         </div>
     </div>
@@ -797,11 +800,11 @@
             Zagolovok
         </div>
         <div id="block_11" class="peren_ll ">
-            <img src="/images/portfolio-1.jpg">
+            <img src="/img/site/portfolio-1.jpg">
             Text text text
         </div>
         <div id="block_111" class="peren_rr ">
-            <img src="/images/portfolio-2.jpg">
+            <img src="/img/site/portfolio-2.jpg">
             Text text text text
         </div>
         <br/><br/><br/><br/>
