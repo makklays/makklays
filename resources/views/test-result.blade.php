@@ -17,7 +17,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" >
     <link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" >
 
 </head>
