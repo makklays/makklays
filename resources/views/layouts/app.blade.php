@@ -100,8 +100,9 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <!--a class="dropdown-item" href="/jobs">Jobs</a>
                                     <a class="dropdown-item" href="/cvs">CVs</a-->
-                                    <a class="dropdown-item" href="/profile">Profile</a>
-                                    <a class="dropdown-item" href="{{ route('todo') }}">Todo</a>
+                                    <a class="dropdown-item" href="/my-profile">My profile</a>
+                                    <a class="dropdown-item" href="{{ route('todo') }}">ToDo</a>
+                                    <a class="dropdown-item" href="/links">Link(s)</a>
                                     <a class="dropdown-item" href="/settings">Settings</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

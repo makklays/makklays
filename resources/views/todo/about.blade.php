@@ -52,7 +52,8 @@
                 </p>
                 <p class="text-justify">
                     Для просмотра подробной информации о навыках и опыте работы посетите страницу моего
-                    <a href="https://kiev.hh.ua/resume/9603aa40ff008bcb790039ed1f736563726574">резюме</a>.
+                    <a href="http://makklays.com.ua/cv_alexander_kuziv_ru.html">резюме</a>.
+                    <!--a href="https://kiev.hh.ua/resume/9603aa40ff008bcb790039ed1f736563726574">резюме</a>.-->
                 </p>
             </div>
         </div>

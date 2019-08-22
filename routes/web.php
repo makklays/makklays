@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 /* mysite page */
 Route::get('mysite', ['as' => 'mysite', 'uses' => 'MysiteController@indexPage']);
+Route::get('links', ['as' => 'links', 'uses' => 'MysiteController@links']);
 
 /* about me */
 Route::get('about', ['as' => 'about', 'uses' => 'TodoController@about']);

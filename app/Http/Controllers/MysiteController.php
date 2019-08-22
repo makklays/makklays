@@ -15,9 +15,15 @@ class MysiteController extends Controller
 {
     public function indexPage()
     {
-        // 
+        // что я делаю - страничка презентация
         return view('mysite', [
             //'packages' => $packages,
         ]);
+    }
+
+    public function links()
+    {
+        // страница с полезными линками ))
+        return view('links');
     }
 }

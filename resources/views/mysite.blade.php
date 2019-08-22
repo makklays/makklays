@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-param" content="_csrf">
-    <meta name="csrf-token" content="5JbPzTyMSrLQ4--G8K39bZRimrpA7V0ngBee3W83boie-Yb1ZO0Nx6G7v6u42LQY4zP58ne7FEPqJtmFGgMi_w==">
-    <title></title>
+
+    <title>Makklays</title>
+
+    <meta name="description" content="Makklays" />
+    <meta name="keywords" content="Makklays" />
+    <meta name="author" content="Makklays" />
+
+    <meta property="og:title" content="Makklays" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://makklays.com.ua" />
+    <meta property="og:image" content="http://makklays.com.ua/favicon.png" />
+
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" >
+
     <link href="/css/site.css" rel="stylesheet">
     <link href="/css/fonts.css" rel="stylesheet">
     <link href="/css/bootstrap4/bootstrap.css" rel="stylesheet">
-    <link href="/ckeditor/plugins/codesnippet/lib/highlight/styles/rainbow.css" rel="stylesheet">
+    <!--link href="/ckeditor/plugins/codesnippet/lib/highlight/styles/rainbow.css" rel="stylesheet"-->
     <!-- add some meta-tags -->
 </head>
 <body>
