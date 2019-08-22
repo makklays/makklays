@@ -5,7 +5,7 @@
 
     <div class="container">
         <div class="row" style="margin: 0;">
-            <h1>Report</h1>
+            <h1>Report <?=(!empty($reports) ? '('.count($reports).')' : '')?></h1>
         </div>
 
         <div class="col-md-6">
@@ -18,10 +18,10 @@
                     <th>Strana</th>
                     <th>City</th>
                     <th>Region</th>
-                    <th>Zip Code</th>
+                    <th>ZipCode</th>
                     <th>Lat</th>
                     <th>Lon</th>
-                    <th>Date</th>
+                    <th style="width:200px;">Date</th>
                 </tr>
                 </thead>
                 <tbody>

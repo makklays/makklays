@@ -41,7 +41,7 @@ class MysiteController extends Controller
 
     public function report()
     {
-        $reports = DB::select('SELECT * FROM tests ORDER BY created_at DESC');
+        $reports = DB::select('SELECT * FROM tests ORDER BY created_at ');
 
         // кто кликал на изображения - отчет
         return view('mysite.report', [
