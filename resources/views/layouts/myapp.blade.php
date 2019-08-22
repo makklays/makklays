@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"-->
 
     <!--link rel="stylesheet" type="text/css" media="all" href="https://laravel.ru/all.css" -->
     <link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" >
@@ -17,13 +17,13 @@
     <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" >
 
     <!-- datatables css -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+    <!--link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/-->
 
     <script src='/js/jquery-3.4.0.min.js'></script>
     <script src='/bootstrap-4.3.1/js/bootstrap.min.js'></script>
 
     <!-- datatables js -->
-    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+    <!--script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script-->
 
     <script type="text/javascript" src="/js/myapp.js"></script>
 

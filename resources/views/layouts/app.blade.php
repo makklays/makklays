@@ -9,6 +9,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
+
     <!-- Scripts -->
     <script src="{{ asset('js/jquery-3.4.0.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
@@ -20,7 +22,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <!--link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css"-->
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -87,8 +89,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/jobs">Jobs</a>
-                                    <a class="dropdown-item" href="/cvs">CVs</a>
+                                    <!--a class="dropdown-item" href="/jobs">Jobs</a>
+                                    <a class="dropdown-item" href="/cvs">CVs</a-->
                                     <a class="dropdown-item" href="/profile">Profile</a>
                                     <a class="dropdown-item" href="{{ route('todo') }}">Todo</a>
                                     <a class="dropdown-item" href="/settings">Settings</a>
