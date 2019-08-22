@@ -1,15 +1,24 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Makklays</title>
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
+    <meta name="description" content="Makklays" />
+    <meta name="keywords" content="Makklays" />
+    <meta name="author" content="Makklays" />
+
+    <meta property="og:title" content="Makklays" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://makklays.com.ua" />
+    <meta property="og:image" content="http://makklays.com.ua/img/dog.jpg" />
+
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" >
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" -->
 
     <!--link rel="stylesheet" type="text/css" media="all" href="https://laravel.ru/all.css" -->
     <link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" >
@@ -17,13 +26,13 @@
     <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" >
 
     <!-- datatables css -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+    <!--link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/ -->
 
     <script src='/js/jquery-3.4.0.min.js'></script>
     <script src='/bootstrap-4.3.1/js/bootstrap.min.js'></script>
 
     <!-- datatables js -->
-    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+    <!-- script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script -->
 
     <script type="text/javascript" src="/js/myapp.js"></script>
 

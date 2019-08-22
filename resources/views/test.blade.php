@@ -9,7 +9,7 @@
     <meta name="keywords" content="Makklays" />
     <meta name="author" content="Makklays" />
 
-    <meta property="og:title" content="Cats ??? Dogs" />
+    <meta property="og:title" content="Cats ??? or ??? Dogs" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ config('app.url', 'http://makklays.com.ua') }}" />
     <meta property="og:image" content="{{ config('app.url', 'http://makklays.com.ua') }}/img/dog.jpg" />
@@ -41,7 +41,7 @@
                 <div style="color:#FFF; margin-left:7px;">{{ __('cats') }}</div>
             </div>
             <div class="or">
-
+                OR
             </div>
             <div class="ch-block" choo="dog" style="background-image: url(/img/dog.jpg); background-size: cover;" >
                 <div style="color:#000; margin-left:7px;">{{ __('dogs') }}</div>
