@@ -103,6 +103,7 @@
                                     <a class="dropdown-item" href="/my-profile">My profile</a>
                                     <a class="dropdown-item" href="{{ route('todo') }}">ToDo</a>
                                     <a class="dropdown-item" href="/links">Link(s)</a>
+                                    <a class="dropdown-item" href="/report">Report</a>
                                     <a class="dropdown-item" href="/settings">Settings</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

@@ -22,6 +22,10 @@ Route::get('/', function () {
 Route::get('mysite', ['as' => 'mysite', 'uses' => 'MysiteController@indexPage']);
 Route::get('links', ['as' => 'links', 'uses' => 'MysiteController@links']);
 
+Route::get('my-profile', ['as' => 'my-profile', 'uses' => 'MysiteController@myProfile']);
+Route::get('settings', ['as' => 'settings', 'uses' => 'MysiteController@settings']);
+Route::get('report', ['as' => 'report', 'uses' => 'MysiteController@report']);
+
 /* about me */
 Route::get('about', ['as' => 'about', 'uses' => 'TodoController@about']);
 

@@ -26,4 +26,32 @@ class MysiteController extends Controller
         // страница с полезными линками ))
         return view('links');
     }
+
+    public function myProfile()
+    {
+        //
+        return view('mysite.my-profile');
+    }
+
+    public function settings()
+    {
+        //
+        return view('mysite.settings');
+    }
+
+    public function report()
+    {
+        $reports = DB::select('SELECT * FROM tests ORDER BY created_at DESC');
+
+        // кто кликал на изображения - отчет
+        return view('mysite.report', [
+            'reports' => $reports
+        ]);
+    }
+
+    public function feedbacks()
+    {
+        //
+        return view('mysite.feedbacks');
+    }
 }
