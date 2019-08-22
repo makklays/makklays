@@ -4,17 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Makklays</title>
-    <meta name="description" content="Makklays" />
+    <title>Makklays | Feedback</title>
+
+    <meta name="description" content="Makklays | Feedback" />
     <meta name="keywords" content="Makklays" />
     <meta name="author" content="Makklays" />
 
-    <!--
-    <meta property="og:title" content="Cats ??? Dogs" />
+    <meta property="og:title" content="Makklays | Feedback" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ config('app.url', 'http://makklays.com.ua') }}" />
-    <meta property="og:image" content="{{ config('app.url', 'http://makklays.com.ua') }}/img/cats.png" />
-    -->
+    <meta property="og:url" content="http://makklays.com.ua" />
+    <meta property="og:image" content="http://makklays.com.ua/favicon.png" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 

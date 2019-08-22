@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Test</title>
+    <title>Makklays</title>
+
+    <meta name="description" content="Makklays" />
+    <meta name="keywords" content="Makklays" />
+    <meta name="author" content="Makklays" />
+
+    <meta property="og:title" content="Cats ??? or ??? Dogs" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://makklays.com.ua" />
+    <meta property="og:image" content="http://makklays.com.ua/favicon.png" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -30,6 +39,10 @@
 
         <div style="border-top:1px solid lightgrey; width:300px; padding-top:10px; margin-top:20px;">
             <a href="/"><< Cancel</a>
+        </div>
+
+        <div style="text-align:center; width:300px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+            &copy; 2019 makklays.com.ua
         </div>
     </div>
 
