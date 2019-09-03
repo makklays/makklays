@@ -38,7 +38,9 @@
 
     <div style="width:300px; margin-left:auto; margin-right:auto; text-align:center;">
         <div class="text-center" style="margin:20px; ">
-            <img src="/favicon.png" style="" alt="Logo" title="" />
+            <a href="/" >
+                <img src="/favicon.png" style="" alt="Logo" title="Makklays" />
+            </a>
         </div>
 
         @include('partials.flash')
@@ -73,11 +75,14 @@
                 <div class="alert-error">Not more than 2000 characters</div>
             </div>
 
-            <input id="id-submit-feedback" type="submit" class="btn btn-secondary text-center" value="Sent" />
+            <input id="id-submit-feedback" type="submit" class="btn btn-secondary text-center btn-lg" value="Sent" />
         </form>
     </div>
 
     <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+        <a href="{{ route('test-php') }}" target="_blank">Test PHP</a> <br/>
+        <!--a href="/cv_alexander_kuziv.html" target="_blank">CV</a> <br/-->
+
         &copy; 2019 makklays.com.ua
     </div>
 

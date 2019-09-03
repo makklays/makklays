@@ -11,12 +11,28 @@
 |
 */
 
-#use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('test'); // 'main'
 });
+
+// тест на знание PHP
+Route::get('test-php', ['as' => 'test-php', 'uses' => 'TestController@intro']);
+
+Route::get('test-php/question-1', 'TestController@question1');
+Route::post('test-php/answer-1', 'TestController@answer1');
+Route::get('test-php/question-2', 'TestController@question2');
+Route::post('test-php/answer-2', 'TestController@answer2');
+Route::get('test-php/question-3', 'TestController@question3');
+Route::post('test-php/answer-3', 'TestController@answer3');
+Route::get('test-php/question-4', 'TestController@question4');
+Route::post('test-php/answer-4', 'TestController@answer4');
+
+Route::get('test-php/report', 'TestController@report');
+Route::post('test-php/report', 'TestController@sendEmail');
+
 
 /* mysite page */
 Route::get('mysite', ['as' => 'mysite', 'uses' => 'MysiteController@indexPage']);

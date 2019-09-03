@@ -49,8 +49,20 @@
         </div>
     </div>
 
-    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+    <div style="text-align:center; width:230px; margin-top:40px; margin-left:auto; margin-right:auto; ">
         <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
+
+        <div>
+            <a href="{{ route('test-php') }}" target="_blank">Test PHP</a>
+        </div>
+
+        <!--div>
+            <a href="/cv_alexander_kuziv_es.html" target="_blank">CV ES</a> |
+            <a href="/cv_alexander_kuziv.html" target="_blank">CV EN</a> |
+            <a href="/cv_alexander_kuziv_ru.html" target="_blank">CV RU</a> |
+            <a href="/cv_alexander_kuziv_ch.html" target="_blank">CV CH</a>
+        </div-->
+
         Have questions? <a href="/feedback">Write</a> <br/>
         &copy; 2019 makklays.com.ua
     </div>
