@@ -184,6 +184,10 @@ For example, when using double quotes, the result will print Hello, and single q
 
     public function report(Request $request)
     {
+        if (session()->has('the_end')) {
+            return redirect('/test-php');
+        }
+
         session()->put('the_end', 1);
 
         // с какой страницы пришли ? тест с начала
@@ -225,6 +229,16 @@ For example, when using double quotes, the result will print Hello, and single q
         }
 
         // $res = session()->all();
+
+        /*
+        $msg = 'Пройден Test PHP';
+
+        $headers = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'From: Makklays | Test PHP <info@makklays.com.ua>' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        mail('phpdevops@gmail.com', 'Results - Test PHP | Makklays.com.ua', $msg, $headers);
+        */
 
         return View('test.report', [
             'title' => $title,

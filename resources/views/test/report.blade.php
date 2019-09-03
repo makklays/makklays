@@ -78,6 +78,7 @@
                                 <?php endfor; ?>
                             <?php endif; ?>
 
+                            <!--
                             <div class="row">
                                 <div class="col-md-4 text-left"></div>
                                 <div class="col-md-4 text-left text-center">
@@ -110,6 +111,7 @@
                                 </div>
                                 <div class="col-md-4 text-left"></div>
                             </div>
+                            -->
 
                         </div>
                     </div>
