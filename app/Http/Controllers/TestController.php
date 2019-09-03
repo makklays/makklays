@@ -107,9 +107,11 @@ For example, when using double quotes, the result will print Hello, and single q
 
     public function question3(Request $request)
     {
+        echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-2';
+
         // с какой страницы пришли ? тест с начала
         if ($request->server('HTTP_REFERER') != env('APP_URL').'/test-php/question-2') {
-            return redirect('/test-php');
+            //return redirect('/test-php');
         }
 
         //$question = 'Правда ли что, функция - это некий набор переменных, которые всегда возвращают переменную с типом `string`?';
@@ -146,9 +148,11 @@ For example, when using double quotes, the result will print Hello, and single q
 
     public function question4(Request $request)
     {
+        echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-3';
+
         // с какой страницы пришли ? тест с начала
         if ($request->server('HTTP_REFERER') != env('APP_URL').'/test-php/question-3') {
-            return redirect('/test-php');
+            //return redirect('/test-php');
         }
 
         //$question = 'Правда ли что, переменные заключенные в двойные кавычки парсятся и их содержимое выводится, в то время как в одинарных кавычках просто отобразят название переменной как обычный текст.';
