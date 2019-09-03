@@ -184,11 +184,11 @@ For example, when using double quotes, the result will print Hello, and single q
 
     public function report(Request $request)
     {
-        if (session()->has('the_end')) {
+        /*if (session()->has('the_end')) {
             return redirect('/test-php');
         }
-
         session()->put('the_end', 1);
+        */
 
         // с какой страницы пришли ? тест с начала
         if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-4' &&
