@@ -317,7 +317,7 @@ For example, when using double quotes, the result will print Hello, and single q
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
         $to_email = $request->email;
-        mail('phpdevops@gmail.com', 'Results - Test PHP | Makklays.com.ua', $msg, $headers);
+        //mail('phpdevops@gmail.com', 'Results - Test PHP | Makklays.com.ua', $msg, $headers);
         //mail( $to_email, 'Results - Test PHP | Makklays.com.ua', $msg, $headers);
 
         //if (session()->has('the_end')) {
