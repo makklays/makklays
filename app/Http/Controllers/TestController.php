@@ -34,7 +34,7 @@ class TestController extends Controller
 
         // с какой страницы пришли ? тест с начала
         if ($request->server('HTTP_REFERER') != config('app.url').'/test-php') {
-            //return redirect('/test-php');
+            return redirect('/test-php');
         }
 
         //$question = 'Правда ли что, PHP - это скриптовый язык программирования для создания сайтов и веб-приложений.
@@ -74,7 +74,7 @@ class TestController extends Controller
 
         // с какой страницы пришли ? тест с начала
         if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-1') {
-            //return redirect('/test-php');
+            return redirect('/test-php');
         }
 
         //$question = 'Правда ли что, в отличии от одинарных, данные в двойных кавычках парсятся. <br/>Например, при использовании двойных кавычек результат выведет Hello, а одинарные кавычки выведут переменную как текст, а не ее значение.';
@@ -107,7 +107,7 @@ For example, when using double quotes, the result will print Hello, and single q
 
     public function question3(Request $request)
     {
-        echo $request->server('HTTP_REFERER').'=='.config('app.url').'/test-php/question-2';
+        //echo $request->server('HTTP_REFERER').'=='.config('app.url').'/test-php/question-2';
 
         // с какой страницы пришли ? тест с начала
         if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-2') {
@@ -152,7 +152,7 @@ For example, when using double quotes, the result will print Hello, and single q
 
         // с какой страницы пришли ? тест с начала
         if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-3') {
-            //return redirect('/test-php');
+            return redirect('/test-php');
         }
 
         //$question = 'Правда ли что, переменные заключенные в двойные кавычки парсятся и их содержимое выводится, в то время как в одинарных кавычках просто отобразят название переменной как обычный текст.';
@@ -319,8 +319,8 @@ For example, when using double quotes, the result will print Hello, and single q
         mail('phpdevops@gmail.com', 'Results - Test PHP | Makklays.com.ua', $msg, $headers);
         mail( $request->email, 'Results - Test PHP | Makklays.com.ua', $msg, $headers);
 
-        if (session()->get('the_end') == 1) {
-            session()->flush();
+        if (session()->has('the_end')) {
+            // session()->flush();
         }
 
         return redirect('test-php');
