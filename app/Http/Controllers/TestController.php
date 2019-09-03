@@ -107,11 +107,11 @@ For example, when using double quotes, the result will print Hello, and single q
 
     public function question3(Request $request)
     {
-        //echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-2';
+        echo $request->server('HTTP_REFERER').'=='.config('app.url').'/test-php/question-2';
 
         // с какой страницы пришли ? тест с начала
         if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-2') {
-            //return redirect('/test-php');
+            return redirect('/test-php');
         }
 
         //$question = 'Правда ли что, функция - это некий набор переменных, которые всегда возвращают переменную с типом `string`?';
