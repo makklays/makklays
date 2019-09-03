@@ -316,12 +316,13 @@ For example, when using double quotes, the result will print Hello, and single q
         $headers .= 'From: Makklays | Test PHP <info@makklays.com.ua>' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
+        $to_email = $request->email;
         mail('phpdevops@gmail.com', 'Results - Test PHP | Makklays.com.ua', $msg, $headers);
-        mail( $request->email, 'Results - Test PHP | Makklays.com.ua', $msg, $headers);
+        //mail( $to_email, 'Results - Test PHP | Makklays.com.ua', $msg, $headers);
 
-        if (session()->has('the_end')) {
+        //if (session()->has('the_end')) {
             // session()->flush();
-        }
+        //}
 
         return redirect('test-php');
                 /*->with([
