@@ -33,7 +33,7 @@ class TestController extends Controller
         // echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php';
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != env('APP_URL').'/test-php') {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php') {
             //return redirect('/test-php');
         }
 
@@ -73,7 +73,7 @@ class TestController extends Controller
         //echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-1';
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != env('APP_URL').'/test-php/question-1') {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-1') {
             //return redirect('/test-php');
         }
 
@@ -107,10 +107,10 @@ For example, when using double quotes, the result will print Hello, and single q
 
     public function question3(Request $request)
     {
-        echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-2';
+        //echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-2';
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != env('APP_URL').'/test-php/question-2') {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-2') {
             //return redirect('/test-php');
         }
 
@@ -148,10 +148,10 @@ For example, when using double quotes, the result will print Hello, and single q
 
     public function question4(Request $request)
     {
-        echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-3';
+        //echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-3';
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != env('APP_URL').'/test-php/question-3') {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-3') {
             //return redirect('/test-php');
         }
 
@@ -187,8 +187,8 @@ For example, when using double quotes, the result will print Hello, and single q
         session()->put('the_end', 1);
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != env('APP_URL').'/test-php/question-4' &&
-            $request->server('HTTP_REFERER') != env('APP_URL').'/test-php/report' || !session()->has('answer1')) {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-4' &&
+            $request->server('HTTP_REFERER') != config('app.url').'/test-php/report') {
             return redirect('/test-php');
         }
 
