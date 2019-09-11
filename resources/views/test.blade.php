@@ -55,6 +55,7 @@
         <div>
             <a href="{{ route('test-php') }}" target="_blank">{{ trans('site.test_php') }}</a>
         </div>
+        <div>{{ trans('site.in_developing') }}</div>
         <!--div>
             <a href="{{ route('mysite') }}" >{{ trans('site.order_site') }}</a>
         </div-->

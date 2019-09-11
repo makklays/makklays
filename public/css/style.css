@@ -1,4 +1,9 @@
 
+.grey {
+    font-size: 14px;
+    color: grey;
+}
+
 /**  for /login  **/
 .form-signin {
     width: 100%;
@@ -29,3 +34,4 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+

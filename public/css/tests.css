@@ -11,6 +11,11 @@ body {
     background-color: #fff;
 }
 
+.grey {
+    font-size: 14px;
+    color: grey;
+}
+
 .flex-block {
     display: flex;
     flex-direction: row;

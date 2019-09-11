@@ -4,6 +4,11 @@ body {
     /*font-family: sans-serif;*/
 }
 
+.grey {
+    font-size: 14px;
+    color: grey;
+}
+
 .btn-success {
     background-color: #267f00;
     border-color: #267f00;

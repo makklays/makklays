@@ -35,7 +35,7 @@
         </div>
 
         <div class="text-center" style="margin: 40px 0 0 0;">
-            <b>Test PHP</b>
+            <b class="grey">Test PHP</b>
 
             <div class="" style="margin: 20px 0;">
                 <h2><?=$title?></h2>

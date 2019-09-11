@@ -64,7 +64,7 @@ return [
     'your_message' => 'You message..',
     'Sent' => 'Sent',
 
-    '' => '',
+    'in_developing' => '(In developing)',
     '' => '',
     '' => '',
     '' => '',
