@@ -1,7 +1,7 @@
 # makklays.com.ua 
 
-The repositories for site makkalys.com.ua :-) <br/>
-I like going with child and programming. <br/>
+The repository for site <a href="http://makklays.com.ua" >makklays.com.ua</a> :-) <br/>
+I like going and walking with child and programming with music. <br/>
 I love live! <br/><br/>
 
 I ask it me: <br/>
