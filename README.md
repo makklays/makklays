@@ -1,6 +1,6 @@
 # makklays.com.ua 
 
-The repository for site <a href="http://makklays.com.ua" target="_black" >makklays.com.ua</a> :-) <br/>
+The repository for site <a href="http://makklays.com.ua" target="_blank" >makklays.com.ua</a> :-) <br/>
 I like going and walking with child and programming with music. <br/>
 I love live! <br/><br/>
 
