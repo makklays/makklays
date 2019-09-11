@@ -17,7 +17,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/tests.css" />
 
     <script src='/js/jquery-3.4.0.min.js'></script>
@@ -45,7 +45,6 @@
             <div style="margin: 20px 0;">
                 <?=$description?>
                 <br/><br/>
-                (in developing)
             </div>
 
             <div style="margin: 20px 0;">

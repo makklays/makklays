@@ -11,10 +11,27 @@
 |
 */
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
-Route::get('/', function () {
+Route::get('/', function (Request $request) {
+    // переключения языков: ru | en
+    $lang = Session::get('lang');
+    if (isset($request->lang) && !empty($request->lang)) {
+        Session::put('lang', $request->lang);
+
+        /*echo '<pre>';
+        print_r(Session::get('lang'), 0);
+        echo '</pre>';*/
+
+        $locale = $request->lang;
+        App::setLocale($locale);
+    } else if (isset($lang) && !empty($lang)) {
+        App::setLocale($lang);
+    }
     return view('test'); // 'main'
 });
 
@@ -35,8 +52,12 @@ Route::post('test-php/report', 'TestController@sendEmail');
 
 
 /* mysite page */
-Route::get('mysite', ['as' => 'mysite', 'uses' => 'MysiteController@indexPage']);
+Route::get('mysite', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
 Route::get('links', ['as' => 'links', 'uses' => 'MysiteController@links']);
+
+Route::get('mysite/site', ['as' => 'mysite_site', 'uses' => 'MysiteController@site']);
+Route::get('mysite/shop', ['as' => 'mysite_shop', 'uses' => 'MysiteController@shop']);
+Route::get('mysite/crm', ['as' => 'mysite_crm', 'uses' => 'MysiteController@crm']);
 
 Route::get('my-profile', ['as' => 'my-profile', 'uses' => 'MysiteController@myProfile']);
 Route::get('settings', ['as' => 'settings', 'uses' => 'MysiteController@settings']);
@@ -168,11 +189,13 @@ Route::match(['post'], '/test-data/{choice}', function ($choice = '') {
 Route::get('/test-result', function () {
 
     // count all tests
-    $select_all = DB::selectOne('SELECT count(*) as count_all FROM tests ');
-    $count_all = $select_all->count_all;
+    //$select_all = DB::selectOne('SELECT count(*) as count_all FROM tests ');
+    $select_all = '';
+    $count_all = (isset($select_all->count_all) && !empty($select_all->count_all) ? $select_all->count_all : 0);
 
     // count choice of test
-    $count_choices = DB::select('SELECT count(choice) as count, choice FROM tests GROUP BY choice ');
+    //$count_choices = DB::select('SELECT count(choice) as count, choice FROM tests GROUP BY choice ');
+    $count_choices = '';
     if (isset($count_choices) && !empty($count_choices)) {
         foreach($count_choices as &$choice){
             $choice->percent = round( ( ( $choice->count * 100 ) / $count_all ),0);
@@ -233,6 +256,11 @@ Route::match(['get','post'], '/todo/del/{id}', [
 
 // feedback
 Route::match(['get','post'], '/feedback', ['as' => 'feedback', function(Request $request){
+
+    $lang = Session::get('lang');
+    if (isset($lang) && !empty($lang)) {
+        App::setLocale($lang);
+    }
 
     //
     if ($request->isMethod('post')) {

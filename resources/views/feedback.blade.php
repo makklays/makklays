@@ -18,7 +18,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/tests.css" />
 
     <script src='/js/jquery-3.4.0.min.js'></script>
@@ -60,28 +60,36 @@
             @endif
 
             <div class="form-group">
-                <input name="fio" type="text" value="" class="form-control" placeholder="Name" />
+                <input name="fio" type="text" value="" class="form-control" placeholder="{{ trans('site.Name') }}" />
                 <div class="alert-error">Required</div>
             </div>
 
             <div class="form-group" >
-                <input name="email" type="email" value="" class="form-control" placeholder="E-mail" />
+                <input name="email" type="email" value="" class="form-control" placeholder="{{ trans('site.Email') }}" />
                 <div class="alert-error">Required</div>
             </div>
 
             <div class="form-group">
-                <textarea name="message" rows="10" class="form-control" placeholder="Your message.."></textarea>
+                <textarea name="message" rows="10" class="form-control" placeholder="{{ trans('site.your_message') }}"></textarea>
                 <div class="alert-error">Required</div>
                 <div class="alert-error">Not more than 2000 characters</div>
             </div>
 
-            <input id="id-submit-feedback" type="submit" class="btn btn-secondary text-center btn-lg" value="Sent" />
+            <input id="id-submit-feedback" type="submit" class="btn btn-secondary text-center btn-lg" value="{{ trans('site.Sent') }}" />
         </form>
     </div>
 
     <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-        <a href="{{ route('test-php') }}" target="_blank">Test PHP</a> <br/>
+        <a href="{{ route('test-php') }}" >{{ trans('site.test_php') }}</a> <br/>
+        <!--a href="{{ route('mysite') }}" >{{ trans('site.order_site') }}</a> <br/> -->
         <!--a href="/cv_alexander_kuziv.html" target="_blank">CV</a> <br/-->
+
+        <div style="margin: 20px 0 0 0;">
+            <a href="/?lang=es">ES</a> |
+            <a href="/?lang=en">EN</a> |
+            <a href="/?lang=ru">RU</a> |
+            <a href="/?lang=ch">CH</a>
+        </div>
 
         &copy; 2019 makklays.com.ua
     </div>

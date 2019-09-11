@@ -17,7 +17,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" />
+    <!--link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" /-->
     <link rel="stylesheet" type="text/css" media="all" href="/css/tests.css" />
 
     <script src='/js/jquery-3.4.0.min.js'></script>
@@ -34,17 +34,17 @@
 
     <div class="test-block">
         <div class="thead">
-            <h2 style="margin:0 0 30px 0; padding-top:20px;">???</h2>
+            <h1>???</h1>
         </div>
         <div class="flex-block">
-            <div class="ch-block" choo="kot" style="background-image: url('/img/kotik.jpg'); background-size: cover;">
-                <div style="color:#FFF; margin-left:7px;">{{ __('cats') }}</div>
+            <div class="ch-block" choo="kot" style="background-image: url('/img/cat.png'); background-size: cover;">
+                <div style="color:#FFF; margin-left:7px;">{{ trans('site.cats') }}</div>
             </div>
             <div class="or">
-                OR
+                {{ trans('site.OR') }}
             </div>
             <div class="ch-block" choo="dog" style="background-image: url(/img/dog.jpg); background-size: cover;" >
-                <div style="color:#000; margin-left:7px;">{{ __('dogs') }}</div>
+                <div style="color:#000; margin-left:7px;">{{ trans('site.dogs') }}</div>
             </div>
         </div>
     </div>
@@ -53,17 +53,27 @@
         <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
 
         <div>
-            <a href="{{ route('test-php') }}" target="_blank">Test PHP</a>
+            <a href="{{ route('test-php') }}" target="_blank">{{ trans('site.test_php') }}</a>
+        </div>
+        <!--div>
+            <a href="{{ route('mysite') }}" >{{ trans('site.order_site') }}</a>
+        </div-->
+
+        <div style="margin: 20px 0 0 0;">
+            <a href="/?lang=es">ES</a> |
+            <a href="/?lang=en">EN</a> |
+            <a href="/?lang=ru">RU</a> |
+            <a href="/?lang=ch">CH</a>
         </div>
 
-        <!--div>
+        <!-- div>
             <a href="/cv_alexander_kuziv_es.html" target="_blank">CV ES</a> |
             <a href="/cv_alexander_kuziv.html" target="_blank">CV EN</a> |
             <a href="/cv_alexander_kuziv_ru.html" target="_blank">CV RU</a> |
             <a href="/cv_alexander_kuziv_ch.html" target="_blank">CV CH</a>
         </div-->
 
-        Have questions? <a href="/feedback">Write</a> <br/>
+        {{ trans('site.have_questions') }} <a href="{{ route('feedback') }}">{{ trans('site.feedback') }}</a> <br/>
         &copy; 2019 makklays.com.ua
     </div>
 
