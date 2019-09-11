@@ -26,7 +26,7 @@
 </head>
 <body>
 
-    <div id="id-loader-test" style="position-top:0; position: absolute; z-index: 5; width:100%; height:100%; background-color: grey; /*#0c5460;*/ opacity: 0.7;">
+    <div id="id-loader-test" style="position: absolute; z-index: 5; margin:-21px auto; width:100%; height:100%; background-color: grey; /*#0c5460;*/ opacity: 0.7;">
         <div style="width:64px; padding:0px; margin-left:auto; margin-right:auto;" class="test-loader">
             <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
@@ -37,7 +37,7 @@
             <h1>???</h1>
         </div>
         <div class="flex-block">
-            <div class="ch-block" choo="kot" style="background-image: url('/img/cat.png'); background-size: cover;">
+            <div class="ch-block" choo="cat" style="background-image: url('/img/cat.png'); background-size: cover;">
                 <div style="color:#FFF; margin-left:7px;">{{ trans('site.cats') }}</div>
             </div>
             <div class="or">

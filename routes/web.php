@@ -11,6 +11,8 @@
 |
 */
 
+use App\Feedback;
+use App\Http\Requests\FeedbackRequest;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -126,6 +128,15 @@ Route::get('/test', function () {
 });
 Route::match(['post'], '/test-data/{choice}', function ($choice = '') {
 
+    $lang = Session::get('lang');
+    if (isset($lang) && !empty($lang)) {
+        App::setLocale($lang);
+    }
+
+    Session::put('choice_cat_dog', $choice);
+    //echo Session::get('choice_cat_dog');
+    //exit;
+
     // get IP
     function getRealUserIp(){
         switch(true){
@@ -172,8 +183,7 @@ Route::match(['post'], '/test-data/{choice}', function ($choice = '') {
             $headers .= 'From: makklays.com.ua <info@makklays.com.ua>' . "\r\n";
             $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-            mail('phpdevops@gmail.com', 'Result of test on makklays.com.ua', $msg, $headers);
-
+            //mail('phpdevops@gmail.com', 'Result of test on makklays.com.ua', $msg, $headers);
 
             $response = ['result' => 'Ok!'];
         } else {
@@ -188,14 +198,23 @@ Route::match(['post'], '/test-data/{choice}', function ($choice = '') {
 });
 Route::get('/test-result', function () {
 
+    // sessions
+    $lang = Session::get('lang');
+    if (isset($lang) && !empty($lang)) {
+        App::setLocale($lang);
+    }
+    $choice_cat_dog = Session::get('choice_cat_dog');
+    //echo $choice_cat_dog;
+    //exit;
+
     // count all tests
-    //$select_all = DB::selectOne('SELECT count(*) as count_all FROM tests ');
-    $select_all = '';
+    $select_all = DB::selectOne('SELECT count(*) as count_all FROM tests ');
+    //$select_all = '';
     $count_all = (isset($select_all->count_all) && !empty($select_all->count_all) ? $select_all->count_all : 0);
 
     // count choice of test
-    //$count_choices = DB::select('SELECT count(choice) as count, choice FROM tests GROUP BY choice ');
-    $count_choices = '';
+    $count_choices = DB::select('SELECT count(choice) as count, choice FROM tests GROUP BY choice ');
+    //$count_choices = '';
     if (isset($count_choices) && !empty($count_choices)) {
         foreach($count_choices as &$choice){
             $choice->percent = round( ( ( $choice->count * 100 ) / $count_all ),0);
@@ -205,6 +224,7 @@ Route::get('/test-result', function () {
     return view('test-result', [
         'count_all' => $count_all,
         'count_choices' => $count_choices,
+        'choice_cat_dog' => $choice_cat_dog,
     ]);
 });
 /*Route::get('/test-mail', function () {
@@ -255,7 +275,14 @@ Route::match(['get','post'], '/todo/del/{id}', [
 ])->where(['id' => '[0-9]+']);
 
 // feedback
-Route::match(['get','post'], '/feedback', ['as' => 'feedback', function(Request $request){
+Route::get('/feedback', ['as' => 'feedback', function(){
+    $lang = Session::get('lang');
+    if (isset($lang) && !empty($lang)) {
+        App::setLocale($lang);
+    }
+    return view('feedback');
+}]);
+Route::post('/feedback', ['as' => 'feedback_post', function(FeedbackRequest $request){
 
     $lang = Session::get('lang');
     if (isset($lang) && !empty($lang)) {
@@ -263,7 +290,7 @@ Route::match(['get','post'], '/feedback', ['as' => 'feedback', function(Request 
     }
 
     //
-    if ($request->isMethod('post')) {
+    //if ($request->isMethod('post')) {
 
         /* $messages = [
             'fio.required' => 'Поле имя обязательно к заполнению',
@@ -279,9 +306,17 @@ Route::match(['get','post'], '/feedback', ['as' => 'feedback', function(Request 
             return redirect()->route('feedback')->withErrors($validator)->exceptInput();
         }*/
 
-        $insert = DB::insert('INSERT INTO feedback SET fio=?, email=?, message=?, created_at=?', [
+        /*$insert = DB::insert('INSERT INTO feedback SET fio=?, email=?, message=?, created_at=?', [
             strip_tags(trim($request->fio)), strip_tags(trim($request->email)), strip_tags(trim($request->message)), time()
-        ]);
+        ]); */
+
+        $fedback = new Feedback();
+        //$fedback->load($request);
+        $fedback->name = $request->name;
+        $fedback->email = $request->email;
+        $fedback->message = $request->message;
+        $fedback->created_at = time();
+        $fedback->save();
 
         $msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
             E-mail: '.strip_tags(trim($request->email)).'<br/>
@@ -298,7 +333,7 @@ Route::match(['get','post'], '/feedback', ['as' => 'feedback', function(Request 
             'flash_message' => 'Your message has been sent successfully!',
             'flash_type' => 'success'
         ]);
-    }
+    //}
     return view('feedback');
 }]);
 

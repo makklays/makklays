@@ -6,7 +6,7 @@
 
     <title>Makklays | Feedback</title>
 
-    <meta name="description" content="Makklays | Feedback" />
+    <meta name="description" content="Makklays Feedback" />
     <meta name="keywords" content="Makklays" />
     <meta name="author" content="Makklays" />
 
@@ -45,10 +45,11 @@
 
         @include('partials.flash')
 
-        <form action="/feedback" method="post" >
+        <form action="{{ route('feedback_post') }}" method="post" >
 
             {{ csrf_field() }}
 
+            <!--
             @if ($errors->any())
                 <div class="alert alert-danger text-left">
                     <ul>
@@ -58,21 +59,30 @@
                     </ul>
                 </div>
             @endif
+            -->
 
             <div class="form-group">
-                <input name="fio" type="text" value="" class="form-control" placeholder="{{ trans('site.Name') }}" />
-                <div class="alert-error">Required</div>
+                <input name="fio" type="text" value="{{ old('name') }}" class="form-control" placeholder="{{ trans('site.Name') }}" />
+
+                <?php if ($errors->has('name')): ?>
+                    <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color:#88251d;"><?=$errors->first('name')?></div>
+                <?php endif; ?>
             </div>
 
             <div class="form-group" >
                 <input name="email" type="email" value="" class="form-control" placeholder="{{ trans('site.Email') }}" />
-                <div class="alert-error">Required</div>
+
+                <?php if ($errors->has('email')): ?>
+                    <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color:#88251d;"><?=$errors->first('email')?></div>
+                <?php endif; ?>
             </div>
 
             <div class="form-group">
                 <textarea name="message" rows="10" class="form-control" placeholder="{{ trans('site.your_message') }}"></textarea>
-                <div class="alert-error">Required</div>
-                <div class="alert-error">Not more than 2000 characters</div>
+
+                <?php if ($errors->has('message')): ?>
+                    <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color:#88251d;"><?=$errors->first('message')?></div>
+                <?php endif; ?>
             </div>
 
             <input id="id-submit-feedback" type="submit" class="btn btn-secondary text-center btn-lg" value="{{ trans('site.Sent') }}" />
@@ -95,6 +105,7 @@
     </div>
 
     <script>
+        /*
         $(document).ready(function() {
             $('#id-submit-feedback').on('click', function(){
 
@@ -141,7 +152,7 @@
                 if (fio && email && msg) return true;
                 else return false;
             });
-        });
+        });*/
     </script>
 
 </body>
