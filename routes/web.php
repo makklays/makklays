@@ -13,9 +13,11 @@
 
 use App\Feedback;
 use App\Http\Requests\FeedbackRequest;
+use App\Mail\FeedbackMail;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
@@ -275,13 +277,6 @@ Route::match(['get','post'], '/todo/del/{id}', [
 ])->where(['id' => '[0-9]+']);
 
 // feedback
-Route::get('/feedback', ['as' => 'feedback', function(){
-    $lang = Session::get('lang');
-    if (isset($lang) && !empty($lang)) {
-        App::setLocale($lang);
-    }
-    return view('feedback');
-}]);
 Route::post('/feedback', ['as' => 'feedback_post', function(FeedbackRequest $request){
 
     $lang = Session::get('lang');
@@ -289,51 +284,43 @@ Route::post('/feedback', ['as' => 'feedback_post', function(FeedbackRequest $req
         App::setLocale($lang);
     }
 
-    //
-    //if ($request->isMethod('post')) {
+    /*$insert = DB::insert('INSERT INTO feedback SET fio=?, email=?, message=?, created_at=?', [
+        strip_tags(trim($request->fio)), strip_tags(trim($request->email)), strip_tags(trim($request->message)), time()
+    ]); */
 
-        /* $messages = [
-            'fio.required' => 'Поле имя обязательно к заполнению',
-            'email.required' => 'Поле почта обязательно к заполнению',
-            'message.required' => 'Поле message обязательно к заполнению'
-        ];
-        $validator = Validator::make($request->all(), [
-            'fio' => 'required|max:50',
-            'email' => 'required',
-            'message' => 'required'
-        ], $messages);
-        if ($validator->fails()) {
-            return redirect()->route('feedback')->withErrors($validator)->exceptInput();
-        }*/
+    $fedback = new Feedback();
+    //$fedback->load($request);
+    $fedback->name = $request->name;
+    $fedback->email = $request->email;
+    $fedback->message = $request->message;
+    $fedback->created_at = time();
+    $fedback->save();
 
-        /*$insert = DB::insert('INSERT INTO feedback SET fio=?, email=?, message=?, created_at=?', [
-            strip_tags(trim($request->fio)), strip_tags(trim($request->email)), strip_tags(trim($request->message)), time()
-        ]); */
+    /*$msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
+        E-mail: '.strip_tags(trim($request->email)).'<br/>
+        Сообщение: '.strip_tags(trim($request->message)).'<br/><br/>
+        Дата: '.date('d.m.Y H:i:s').'<br/><br/><br/>';
 
-        $fedback = new Feedback();
-        //$fedback->load($request);
-        $fedback->name = $request->name;
-        $fedback->email = $request->email;
-        $fedback->message = $request->message;
-        $fedback->created_at = time();
-        $fedback->save();
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'From: Makklays <info@makklays.com.ua>' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    mail('phpdevops@gmail.com', 'Сообщение с сайта makklays.com.ua', $msg, $headers); */
 
-        $msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
-            E-mail: '.strip_tags(trim($request->email)).'<br/>
-            Сообщение: '.strip_tags(trim($request->message)).'<br/><br/>
-            Дата: '.date('d.m.Y H:i:s').'<br/><br/><br/>';
+    Mail::to('phpdevops@gmail.com')->send(new FeedbackMail($fedback));
 
-        $headers = 'MIME-Version: 1.0' . "\r\n";
-        $headers .= 'From: Makklays <info@makklays.com.ua>' . "\r\n";
-        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    return redirect('feedback')->with([
+        'flash_message' => 'Your message has been sent successfully!',
+        'flash_type' => 'success'
+    ]);
 
-        mail('phpdevops@gmail.com', 'Сообщение с сайта makklays.com.ua', $msg, $headers);
+    return view('feedback');
+}]);
 
-        return redirect('feedback')->with([
-            'flash_message' => 'Your message has been sent successfully!',
-            'flash_type' => 'success'
-        ]);
-    //}
+Route::get('/feedback', ['as' => 'feedback', function(){
+    $lang = Session::get('lang');
+    if (isset($lang) && !empty($lang)) {
+        App::setLocale($lang);
+    }
     return view('feedback');
 }]);
 

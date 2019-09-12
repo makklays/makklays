@@ -62,7 +62,7 @@
             -->
 
             <div class="form-group">
-                <input name="fio" type="text" value="{{ old('name') }}" class="form-control" placeholder="{{ trans('site.Name') }}" />
+                <input name="name" type="text" value="{{ old('name') }}" class="form-control" placeholder="{{ trans('site.Name') }}" />
 
                 <?php if ($errors->has('name')): ?>
                     <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color:#88251d;"><?=$errors->first('name')?></div>
@@ -70,7 +70,7 @@
             </div>
 
             <div class="form-group" >
-                <input name="email" type="email" value="" class="form-control" placeholder="{{ trans('site.Email') }}" />
+                <input name="email" type="email" value="{{ old('email') }}" class="form-control" placeholder="{{ trans('site.Email') }}" />
 
                 <?php if ($errors->has('email')): ?>
                     <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color:#88251d;"><?=$errors->first('email')?></div>
@@ -78,7 +78,7 @@
             </div>
 
             <div class="form-group">
-                <textarea name="message" rows="10" class="form-control" placeholder="{{ trans('site.your_message') }}"></textarea>
+                <textarea name="message" rows="10" class="form-control" placeholder="{{ trans('site.your_message') }}">{{ old('message') }}</textarea>
 
                 <?php if ($errors->has('message')): ?>
                     <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color:#88251d;"><?=$errors->first('message')?></div>
