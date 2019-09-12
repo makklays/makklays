@@ -306,10 +306,10 @@ Route::post('/feedback', ['as' => 'feedback_post', function(FeedbackRequest $req
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     mail('phpdevops@gmail.com', 'Сообщение с сайта makklays.com.ua', $msg, $headers); */
 
-    Mail::to('phpdevops@gmail.com')->send(new FeedbackMail($fedback));
+    //Mail::to('phpdevops@gmail.com')->send(new FeedbackMail($fedback));
 
     return redirect('feedback')->with([
-        'flash_message' => 'Your message has been sent successfully!',
+        'flash_message' => trans('site.send_success'),
         'flash_type' => 'success'
     ]);
 

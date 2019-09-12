@@ -86,6 +86,7 @@ return [
 
     'all_right_reserved' => 'All Rights Reserved.',
     'required' => 'The :attribute field is required.',
+    'send_success' => 'Your message has been sent successfully!',
     '' => '',
     '' => '',
     '' => '',

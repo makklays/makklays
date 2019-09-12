@@ -86,6 +86,7 @@ return [
 
     'all_right_reserved' => '版權所有。',
     'required' => ':attribute 字段是必需的。',
+    'send_success' => '您的郵件已成功發送！',
     '' => '',
     '' => '',
     '' => '',
