@@ -277,6 +277,8 @@ Route::match(['get','post'], '/todo/del/{id}', [
 ])->where(['id' => '[0-9]+']);
 
 // feedback
+Route::get('/feedbacks', ['as' => 'feedbacks', 'uses' => 'FeedbackController@index']);
+Route::get('/feedback/show/{id}', ['as' => 'feedback_show', 'uses' => 'FeedbackController@show'])->where(['id' => '[0-9]+']);
 Route::post('/feedback', ['as' => 'feedback_post', function(FeedbackRequest $request){
 
     $lang = Session::get('lang');
@@ -288,13 +290,13 @@ Route::post('/feedback', ['as' => 'feedback_post', function(FeedbackRequest $req
         strip_tags(trim($request->fio)), strip_tags(trim($request->email)), strip_tags(trim($request->message)), time()
     ]); */
 
-    $fedback = new Feedback();
-    //$fedback->load($request);
-    $fedback->name = $request->name;
-    $fedback->email = $request->email;
-    $fedback->message = $request->message;
-    $fedback->created_at = time();
-    $fedback->save();
+    $feedback = new Feedback();
+    //$feedback->load($request);
+    $feedback->name = $request->name;
+    $feedback->email = $request->email;
+    $feedback->message = $request->message;
+    $feedback->created_at = time();
+    $feedback->save();
 
     /*$msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
         E-mail: '.strip_tags(trim($request->email)).'<br/>

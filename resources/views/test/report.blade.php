@@ -35,13 +35,9 @@
         </div>
 
         <div class="text-center" style="margin: 40px 0 0 0;">
-            <b>Test PHP</b>
+            <b class="grey">Test PHP</b>
 
             <h1><?=$title?></h1>
-
-            <!--div>
-                <img src="/img/PHP-logo.png" style="width:200px;" title="Quiz PHP" alt="Quiz PHP" />
-            </div-->
 
             <div style="margin: 20px 0;">
                 <?=$description?>
@@ -78,41 +74,6 @@
                                 <?php endfor; ?>
                             <?php endif; ?>
 
-                            <!--
-                            <div class="row">
-                                <div class="col-md-4 text-left"></div>
-                                <div class="col-md-4 text-left text-center">
-                                    <form action="/test-php/report" method="POST" style="margin-top:40px;">
-
-                                        {{ csrf_field() }}
-
-                                        <div class="text-left" style="color: grey; font-size:12px;">
-                                            Send list of test with question and answer on your e-mail?
-                                        </div>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="inputGroupPrepend2">✉</span>
-                                            </div>
-                                            <input name="email" value="{{ old('email') }}" type="email" class="form-control" id="id-email" placeholder="E-mail" />
-
-                                            <div style="clear: both"></div>
-                                        </div>
-
-                                        @error('email')
-                                            <div class="text-left">
-                                                <div class="invalid-email" role="alert" style="color:red; font-size:12px;">{{ $message }}</div>
-                                            </div>
-                                        @enderror
-
-                                        <br/>
-
-                                        <input type="submit" class="btn btn-success" style="padding-left:30px; padding-right:30px;" value="SEND TO E-MAIL" />
-                                    </form>
-                                </div>
-                                <div class="col-md-4 text-left"></div>
-                            </div>
-                            -->
-
                         </div>
                     </div>
                 </div>
@@ -122,24 +83,10 @@
     </div>
 </div>
 
-
 <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-    <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
     Have questions? <a href="/feedback">Write</a> <br/>
     &copy; 2019 makklays.com.ua
 </div>
-
-<!--
-<div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-    To level A2 <br/>
-    <span id="clock"></span>
-</div>
-<script>
-    $('#clock').countdown('2019/07/20', function(event) {
-        $(this).html(event.strftime('%D days %H:%M:%S'));
-    });
-</script>
--->
 
 </body>
 </html>

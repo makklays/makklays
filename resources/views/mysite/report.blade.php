@@ -10,7 +10,7 @@
 
         <div class="col-md-6">
 
-            <table id="id-companies" class="table table-hover display" style="width:100%; margin:20px 0;">
+            <table id="id-companies" class="table table-bordered display" style="width:100%; margin:20px 0;">
                 <thead class="thead-light">
                 <tr>
                     <th>ID</th>

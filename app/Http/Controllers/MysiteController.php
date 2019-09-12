@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
@@ -39,8 +40,10 @@ class MysiteController extends Controller
 
     public function myProfile()
     {
-        //
-        return view('mysite.my-profile');
+        $user = User::where(['id' => auth()->id()])->first();
+        return view('mysite.my-profile', [
+            'user' => $user,
+        ]);
     }
 
     public function settings()
@@ -51,7 +54,7 @@ class MysiteController extends Controller
 
     public function report()
     {
-        $reports = DB::select('SELECT * FROM tests ORDER BY created_at ');
+        $reports = DB::select('SELECT * FROM tests ORDER BY created_at DESC');
 
         // кто кликал на изображения - отчет
         return view('mysite.report', [

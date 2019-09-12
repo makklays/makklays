@@ -80,14 +80,20 @@
                                 <a class="nav-link" href="{{ url('/packages') }}">{{ __('Packages') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/companies') }}">{{ __('Companies') }}</a>
+                                <a class="nav-link" href="{{ url('/feedbacks') }}">{{ __('Feedbacks') }}</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('/report') }}">{{ __('Report') }}</a>
+                            </li>
+                            <!--li class="nav-item">
+                                <a class="nav-link" href="{{ url('/companies') }}">{{ __('Companies') }}</a>
+                            </li-->
                             <!--li class="nav-item">
                                 <a class="nav-link" href="{{ url('/companies/add') }}">{{ __('Companies add') }}</a>
                             </li-->
-                            <li class="nav-item">
+                            <!--li class="nav-item">
                                 <a class="nav-link" href="{{ url('/employees') }}">{{ __('Employees') }}</a>
-                            </li>
+                            </li-->
                             <!--li class="nav-item">
                                 <a class="nav-link" href="{{ url('/employees/add') }}">{{ __('Employee add') }}</a>
                             </li-->
@@ -125,6 +131,10 @@
         <main class="" style="padding-top:25px; padding-bottom:25px;">
             @yield('content')
         </main>
+
+        <script type="text/javascript" src="/js/vue.js"></script>
+        <script type="text/javascript" src="/js/MyVue.js"></script>
+
     </div>
 </body>
 </html>

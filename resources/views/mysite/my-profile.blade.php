@@ -9,7 +9,9 @@
         </div>
 
         <div class="col-md-6">
-            В разработке )
+            <?=$user->name?> <br/>
+            <?=$user->email?> <br/><br/>
+            <?=date('d/m/Y H:I:s', strtotime($user->created_at))?>
         </div>
     </div>
 

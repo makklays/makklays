@@ -60,43 +60,10 @@
     </div>
 </div>
 
-<!--
-<div class="test-block">
-    <div class="thead">
-        <h2 style="margin:0 0 30px 0; padding-top:20px;">???</h2>
-    </div>
-
-    <div class="flex-block">
-        <div class="ch-block" choo="kot" style="background-image: url('/img/kotik.jpg'); background-size: cover;">
-            <div style="color:#FFF; margin-left:7px;">{{ __('cats') }}</div>
-        </div>
-        <div class="or">
-            OR
-        </div>
-        <div class="ch-block" choo="dog" style="background-image: url(/img/dog.jpg); background-size: cover;" >
-            <div style="color:#000; margin-left:7px;">{{ __('dogs') }}</div>
-        </div>
-    </div>
-</div>
--->
-
 <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-    <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
     Have questions? <a href="/feedback">Write</a> <br/>
     &copy; 2019 makklays.com.ua
 </div>
-
-<!--
-<div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-    To level A2 <br/>
-    <span id="clock"></span>
-</div>
-<script>
-    $('#clock').countdown('2019/07/20', function(event) {
-        $(this).html(event.strftime('%D days %H:%M:%S'));
-    });
-</script>
--->
 
 </body>
 </html>
