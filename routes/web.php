@@ -56,12 +56,12 @@ Route::post('test-php/report', 'TestController@sendEmail');
 
 
 /* mysite page */
-Route::get('mysite', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
+Route::get('order', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
 Route::get('links', ['as' => 'links', 'uses' => 'MysiteController@links']);
 
-Route::get('mysite/site', ['as' => 'mysite_site', 'uses' => 'MysiteController@site']);
-Route::get('mysite/shop', ['as' => 'mysite_shop', 'uses' => 'MysiteController@shop']);
-Route::get('mysite/crm', ['as' => 'mysite_crm', 'uses' => 'MysiteController@crm']);
+Route::get('order/site', ['as' => 'mysite_site', 'uses' => 'MysiteController@site']);
+Route::get('order/shop', ['as' => 'mysite_shop', 'uses' => 'MysiteController@shop']);
+Route::get('order/crm', ['as' => 'mysite_crm', 'uses' => 'MysiteController@crm']);
 
 Route::get('my-profile', ['as' => 'my-profile', 'uses' => 'MysiteController@myProfile']);
 Route::get('settings', ['as' => 'settings', 'uses' => 'MysiteController@settings']);

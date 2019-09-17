@@ -68,7 +68,7 @@
             <div class="col-12 col-sm-6 col-md-6">
                 <div class="divef_right_1">
                     <h3 class="h3">{{ trans('site.serv_prog') }}</h3>
-                    <form action="/mysite/site" >
+                    <form action="/order/site" >
                         <button class="btn btn-success btn-lg" style="margin:20px 0 0 0;" >{{ trans('site.details') }}</button>
                     </form>
                 </div>
@@ -81,7 +81,7 @@
             <div class="col-12 col-sm-7 col-md-6">
                 <div class="divef_left_2">
                     <h3 id="id-section3-h3" class="h3">{{ trans('site.serv_shop') }}</h3>
-                    <form action="/mysite/shop" >
+                    <form action="/order/shop" >
                         <button class="btn btn-success btn-lg" style="margin:20px 0 0 0;" >{{ trans('site.details') }}</button>
                     </form>
                 </div>
@@ -104,7 +104,7 @@
             <div class="col-12 col-sm-6 col-md-6">
                 <div class="divef_right_5">
                     <h3 class="h3">{{ trans('site.serv_crms') }}</h3>
-                    <form action="/mysite/crm" >
+                    <form action="/order/crm" >
                         <button class="btn btn-success btn-lg" style="margin:20px 0 0 0;" >{{ trans('site.details') }}</button>
                     </form>
                 </div>
