@@ -290,13 +290,13 @@ Route::post('/feedback', ['as' => 'feedback_post', function(FeedbackRequest $req
         strip_tags(trim($request->fio)), strip_tags(trim($request->email)), strip_tags(trim($request->message)), time()
     ]); */
 
-    $feedback = new Feedback();
+    /*$feedback = new Feedback();
     //$feedback->load($request);
     $feedback->name = $request->name;
     $feedback->email = $request->email;
     $feedback->message = $request->message;
     $feedback->created_at = time();
-    $feedback->save();
+    $feedback->save(); */
 
     /*$msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
         E-mail: '.strip_tags(trim($request->email)).'<br/>
