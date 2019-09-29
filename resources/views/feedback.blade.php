@@ -38,14 +38,14 @@
 
     <div style="width:300px; margin-left:auto; margin-right:auto; text-align:center;">
         <div class="text-center" style="margin:20px; ">
-            <a href="/" >
+            <a href="{{ route('/', app()->getLocale()) }}" >
                 <img src="/favicon.png" style="" alt="Logo" title="Makklays" />
             </a>
         </div>
 
         @include('partials.flash')
 
-        <form action="{{ route('feedback_post') }}" method="post" >
+        <form action="{{ route('feedback_post', app()->getLocale()) }}" method="post" >
 
             {{ csrf_field() }}
 
@@ -90,15 +90,15 @@
     </div>
 
     <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-        <a href="{{ route('test-php') }}" >{{ trans('site.test_php') }}</a> <br/>
-        <!--a href="{{ route('mysite') }}" >{{ trans('site.order_site') }}</a> <br/> -->
+        <a href="{{ route('test-php', app()->getLocale()) }}" >{{ trans('site.test_php') }}</a> <br/>
+        <!--a href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a> <br/> -->
         <!--a href="/cv_alexander_kuziv.html" target="_blank">CV</a> <br/-->
 
         <div style="margin: 20px 0 0 0;">
-            <a href="/?lang=es">ES</a> |
-            <a href="/?lang=en">EN</a> |
-            <a href="/?lang=ru">RU</a> |
-            <a href="/?lang=ch">CH</a>
+            <a href="{{ route('feedback', 'es') }}">ES</a> |
+            <a href="{{ route('feedback', 'en') }}">EN</a> |
+            <a href="{{ route('feedback', 'ru') }}">RU</a> |
+            <a href="{{ route('feedback', 'ch') }}">CH</a>
         </div>
 
         &copy; 2019 makklays.com.ua

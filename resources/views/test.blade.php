@@ -53,18 +53,18 @@
         <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
 
         <div>
-            <a href="{{ route('test-php') }}" target="_blank">{{ trans('site.test_php') }}</a>
+            <a href="{{ route('test-php', app()->getLocale()) }}" target="_blank">{{ trans('site.test_php') }}</a>
         </div>
         <div>{{ trans('site.in_developing') }}</div>
         <!--div>
-            <a href="{{ route('mysite') }}" >{{ trans('site.order_site') }}</a>
+            <a href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a>
         </div-->
 
         <div style="margin: 20px 0 0 0;">
-            <a href="/?lang=es">ES</a> |
-            <a href="/?lang=en">EN</a> |
-            <a href="/?lang=ru">RU</a> |
-            <a href="/?lang=ch">CH</a>
+            <a href="{{ route('/', 'es') }}">ES</a> |
+            <a href="{{ route('/', 'en') }}">EN</a> |
+            <a href="{{ route('/', 'ru') }}">RU</a> |
+            <a href="{{ route('/', 'ch') }}">CH</a>
         </div>
 
         <!-- div>
@@ -74,7 +74,7 @@
             <a href="/cv_alexander_kuziv_ch.html" target="_blank">CV CH</a>
         </div-->
 
-        {{ trans('site.have_questions') }} <a href="{{ route('feedback') }}">{{ trans('site.feedback') }}</a> <br/>
+        {{ trans('site.have_questions') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
         &copy; 2019 makklays.com.ua
     </div>
 

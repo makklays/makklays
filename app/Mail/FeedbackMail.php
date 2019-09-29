@@ -31,18 +31,19 @@ class FeedbackMail extends Mailable
      */
     public function build()
     {
-        return $this->from('info@makklays.com.ua')
+        return $this->from('mailgun@sandboxce1c29b0ff01419da0d9370c2deb2c3d.mailgun.org')
             ->to('phpdevops@gmail.com')
+            ->subject('Feedback | Makklays.com.ua')
             ->view('emails.feedback')
             ->with([
                 'name' => $this->feedback->name,
                 'email' => $this->feedback->email,
-                'message' => $this->feedback->message,
-                'pathToFile' => '/img/makklays.png',
+                'message2' => $this->feedback->message,
+                'pathToFile' => base_path() . '/public/img/makklays.png',
             ])
-            ->attach('/img/makklays.png', [
+            ->attach(base_path() . '/public/img/makklays.png', [
                 'as' => 'makklays_logo',
-                'mime' => 'application/png',
+                'mime' => 'image/png',
             ]);
     }
 }

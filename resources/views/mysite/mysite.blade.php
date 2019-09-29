@@ -28,10 +28,10 @@
 <div class="wrap">
     <div class="section1">
         <div>
-            <a href="/"><img src="/img/makklays.png" /></a>
+            <a href="{{ route('/', app()->getLocale()) }}"><img src="/img/makklays.png" /></a>
         </div>
         <h1>{{ trans('site.header_mysite') }}</h1>
-        <form action="{{ route('feedback') }}">
+        <form action="{{ route('feedback', app()->getLocale()) }}">
             <button class="btn btn-success btn-lg" >{{ trans('site.free_consultation') }}</button>
         </form>
     </div>
@@ -289,7 +289,7 @@
                         <div style="margin:0 0 10px 0;">{{ trans('site.adres') }}</div>
                         <div>E-mail: <strong>makklays@gmail.com</strong></div>
                         <div style="margin:0 0 10px 0;">Mob.: <strong>+38 098 870 5397</strong></div>
-                        <div>{{ trans('site.or') }} <a href="/feedback">{{ trans('site.pishite') }}</a> </div>
+                        <div>{{ trans('site.or') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.pishite') }}</a> </div>
                     </div>
                     <!--div>или</div>
                     <h3>Оформить заказ</h3 -->

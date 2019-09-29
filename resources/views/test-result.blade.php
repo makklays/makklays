@@ -27,7 +27,7 @@
         <div class="col-md-12 text-center">
 
             <div class="text-center" style="margin:20px; ">
-                <a href="/" >
+                <a href="{{ route('/', app()->getLocale()) }}" >
                     <img src="/favicon.png" style="" alt="Logo" title="Makklays" />
                 </a>
             </div>
@@ -94,10 +94,10 @@
             </div>
 
             <div style="margin: 40px 0 0 0;">
-                <a class="green" href="/?lang=es">ES</a> |
-                <a class="green" href="/?lang=en">EN</a> |
-                <a class="green" href="/?lang=ru">RU</a> |
-                <a class="green" href="/?lang=ch">CH</a>
+                <a class="green" href="{{ route('test_result', 'es') }}">ES</a> |
+                <a class="green" href="{{ route('test_result', 'en') }}">EN</a> |
+                <a class="green" href="{{ route('test_result', 'ru') }}">RU</a> |
+                <a class="green" href="{{ route('test_result', 'ch') }}">CH</a>
             </div>
 
             <!-- div>
@@ -107,7 +107,7 @@
                 <a href="/cv_alexander_kuziv_ch.html" target="_blank">CV CH</a>
             </div-->
 
-            {{ trans('site.have_questions') }} <a href="{{ route('feedback') }}">{{ trans('site.feedback') }}</a> <br/>
+            {{ trans('site.have_questions') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
             &copy; 2019 makklays.com.ua
 
         </div>
