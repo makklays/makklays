@@ -145,12 +145,15 @@ Route::group([
     Route::get('test', function () {
         return view('test');
     });
-    Route::match(['post'], 'test-data/{choice}', function ($choice = '') {
+    Route::match(['post'], '/test-data/{choice}', function ($lang, $choice = '') {
 
         /*$lang = Session::get('lang');
         if (isset($lang) && !empty($lang)) {
             App::setLocale($lang);
         }*/
+
+        // echo $choice;
+        // exit;
 
         Session::put('choice_cat_dog', $choice);
         //echo Session::get('choice_cat_dog');
