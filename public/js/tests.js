@@ -12,7 +12,7 @@ $(document).ready(function() {
             }
         });
 
-        alert('/' + lang + '/test-data/' + choi);
+        // alert('/' + lang + '/test-data/' + choi);
 
         // sent data to site
         $.ajax({
