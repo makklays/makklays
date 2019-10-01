@@ -4,6 +4,7 @@ $(document).ready(function() {
     // click on image
     $('.ch-block').on('click', function () {
         var choi = $(this).attr('choo');
+        var lang = $('meta[charset="utf-8"]').attr('lang');
 
         $.ajaxSetup({
             headers: {
@@ -11,10 +12,12 @@ $(document).ready(function() {
             }
         });
 
+        alert('/' + lang + '/test-data/' + choi);
+
         // sent data to site
         $.ajax({
             type: "POST",
-            url: '/test-data/' + choi,
+            url: '/' + lang + '/test-data/' + choi,
             //data: {choice: choi, param:"valu"},
             beforeSend: function () {
                 // preloader
@@ -31,7 +34,7 @@ $(document).ready(function() {
             success: function (response) {
                 // success
                 //alert(response.result);
-                location.href = '/test-result';
+                location.href = '/'+lang+'/test-result';
             },
             dataType: 'json'
         });

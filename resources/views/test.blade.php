@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" lang="{{ app()->getLocale() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Makklays</title>

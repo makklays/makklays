@@ -147,10 +147,10 @@ Route::group([
     });
     Route::match(['post'], 'test-data/{choice}', function ($choice = '') {
 
-        $lang = Session::get('lang');
+        /*$lang = Session::get('lang');
         if (isset($lang) && !empty($lang)) {
             App::setLocale($lang);
-        }
+        }*/
 
         Session::put('choice_cat_dog', $choice);
         //echo Session::get('choice_cat_dog');
@@ -199,7 +199,7 @@ Route::group([
                     'lat: '.$lat.'<br/> lon: '.$lon.'<br/><br/>date: ' . date('d.m.Y H:i').'<br/><br/>';
 
                 $headers =  'MIME-Version: 1.0' . "\r\n";
-                $headers .= 'From: makklays.com.ua <info@makklays.com.ua>' . "\r\n";
+                $headers .= 'From: makklays.com.ua <alexander@makklays.com.ua>' . "\r\n";
                 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
                 //mail('phpdevops@gmail.com', 'Result of test on makklays.com.ua', $msg, $headers);
@@ -220,10 +220,11 @@ Route::group([
     Route::get('/test-result', ['as' => 'test_result', function () {
 
         // sessions
-        $lang = Session::get('lang');
+        /*$lang = Session::get('lang');
         if (isset($lang) && !empty($lang)) {
             App::setLocale($lang);
-        }
+        }*/
+
         $choice_cat_dog = Session::get('choice_cat_dog');
         //echo $choice_cat_dog;
         //exit;
