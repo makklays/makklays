@@ -48,7 +48,7 @@
             </div>
 
             <div style="margin: 20px 0;">
-                <form action="/test-php/question-1" method="get">
+                <form action="{{ route('test_php_q1', app()->getLocale()) }}" method="get">
                     <input type="submit" class="btn btn-success btn-lg" value="START" />
                 </form>
             </div>
@@ -58,7 +58,7 @@
 </div>
 
 <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-    Have questions? <a href="/feedback">Write</a> <br/>
+    Have questions? <a href="{{ route('feedback', app()->getLocale()) }}">Write</a> <br/>
     &copy; 2019 makklays.com.ua
 </div>
 

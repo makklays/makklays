@@ -68,7 +68,8 @@
             <div class="col-12 col-sm-6 col-md-6">
                 <div class="divef_right_1">
                     <h3 class="h3">{{ trans('site.serv_prog') }}</h3>
-                    <form action="/order/site" >
+                    <!-- /order/site -->
+                    <form action="{{ route('feedback', app()->getLocale()) }}" >
                         <button class="btn btn-success btn-lg" style="margin:20px 0 0 0;" >{{ trans('site.details') }}</button>
                     </form>
                 </div>
@@ -81,7 +82,8 @@
             <div class="col-12 col-sm-7 col-md-6">
                 <div class="divef_left_2">
                     <h3 id="id-section3-h3" class="h3">{{ trans('site.serv_shop') }}</h3>
-                    <form action="/order/shop" >
+                    <!-- /order/shop -->
+                    <form action="{{ route('feedback', app()->getLocale()) }}" >
                         <button class="btn btn-success btn-lg" style="margin:20px 0 0 0;" >{{ trans('site.details') }}</button>
                     </form>
                 </div>
@@ -104,7 +106,8 @@
             <div class="col-12 col-sm-6 col-md-6">
                 <div class="divef_right_5">
                     <h3 class="h3">{{ trans('site.serv_crms') }}</h3>
-                    <form action="/order/crm" >
+                    <!-- /order/crm -->
+                    <form action="{{ route('feedback', app()->getLocale()) }}" >
                         <button class="btn btn-success btn-lg" style="margin:20px 0 0 0;" >{{ trans('site.details') }}</button>
                     </form>
                 </div>
@@ -287,7 +290,7 @@
                     <h3>{{ trans('site.contacts') }}:</h3>
                     <div class="text-left" style="margin:0 0 30px 120px;">
                         <div style="margin:0 0 10px 0;">{{ trans('site.adres') }}</div>
-                        <div>E-mail: <strong>makklays@gmail.com</strong></div>
+                        <div>E-mail: <strong>alexander@makklays.com.ua</strong></div>
                         <div style="margin:0 0 10px 0;">Mob.: <strong>+38 098 870 5397</strong></div>
                         <div>{{ trans('site.or') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.pishite') }}</a> </div>
                     </div>

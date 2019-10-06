@@ -50,7 +50,7 @@
             </div>
 
             <div style="margin: 20px 0;">
-                <form action="/test-php/answer-4" method="post">
+                <form action="{{ route('test_php_a4', app()->getLocale()) }}" method="post">
                     {{ csrf_field() }}
                     <input type="submit" name="yes" class="btn btn-success btn-lg" value="YES" style="margin: 0 40px 0 0 ;" />
                     <input type="submit" name="no" class="btn btn-success btn-lg" value="NO" />
@@ -61,7 +61,7 @@
 </div>
 
 <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-    Have questions? <a href="/feedback">Write</a> <br/>
+    Have questions? <a href="{{ route('feedback', app()->getLocale()) }}">Write</a> <br/>
     &copy; 2019 makklays.com.ua
 </div>
 

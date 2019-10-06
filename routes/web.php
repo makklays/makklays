@@ -59,17 +59,17 @@ Route::group([
     // тест на знание PHP
     Route::get('test-php', ['as' => 'test-php', 'uses' => 'TestController@intro']);
 
-    Route::get('test-php/question-1', 'TestController@question1');
-    Route::post('test-php/answer-1', 'TestController@answer1');
-    Route::get('test-php/question-2', 'TestController@question2');
-    Route::post('test-php/answer-2', 'TestController@answer2');
-    Route::get('test-php/question-3', 'TestController@question3');
-    Route::post('test-php/answer-3', 'TestController@answer3');
-    Route::get('test-php/question-4', 'TestController@question4');
-    Route::post('test-php/answer-4', 'TestController@answer4');
+    Route::get('test-php/question-1', ['as' => 'test_php_q1', 'uses' => 'TestController@question1']);
+    Route::post('test-php/answer-1',  ['as' => 'test_php_a1', 'uses' => 'TestController@answer1']);
+    Route::get('test-php/question-2', ['as' => 'test_php_q2', 'uses' => 'TestController@question2']);
+    Route::post('test-php/answer-2',  ['as' => 'test_php_a2', 'uses' => 'TestController@answer2']);
+    Route::get('test-php/question-3', ['as' => 'test_php_q3', 'uses' => 'TestController@question3']);
+    Route::post('test-php/answer-3',  ['as' => 'test_php_a3', 'uses' => 'TestController@answer3']);
+    Route::get('test-php/question-4', ['as' => 'test_php_q4', 'uses' => 'TestController@question4']);
+    Route::post('test-php/answer-4',  ['as' => 'test_php_a4', 'uses' => 'TestController@answer4']);
 
-    Route::get('test-php/report', 'TestController@report');
-    Route::post('test-php/report', 'TestController@sendEmail');
+    Route::get('test-php/report',  ['as' => 'test_php_report_get', 'uses' => 'TestController@report']);
+    Route::post('test-php/report', ['as' => 'test_php_report_post', 'uses' => 'TestController@sendEmail']);
 
 
     /* mysite page */

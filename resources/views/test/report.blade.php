@@ -84,7 +84,7 @@
 </div>
 
 <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-    Have questions? <a href="/feedback">Write</a> <br/>
+    Have questions? <a href="{{ route('feedback', app()->getLocale()) }}">Write</a> <br/>
     &copy; 2019 makklays.com.ua
 </div>
 

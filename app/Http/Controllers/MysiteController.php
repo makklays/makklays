@@ -18,10 +18,10 @@ class MysiteController extends Controller
 {
     public function index()
     {
-        $lang = Session::get('lang');
+        /*$lang = Session::get('lang');
         if (isset($lang) && !empty($lang)) {
             App::setLocale($lang);
-        }
+        }*/
         /*echo '<pre>';
         print_r(Session::get('lang'), 0);
         echo '</pre>';*/

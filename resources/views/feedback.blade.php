@@ -91,7 +91,7 @@
 
     <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
         <a href="{{ route('test-php', app()->getLocale()) }}" >{{ trans('site.test_php') }}</a> <br/>
-        <!--a href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a> <br/> -->
+
         <!--a href="/cv_alexander_kuziv.html" target="_blank">CV</a> <br/-->
 
         <div style="margin: 20px 0 0 0;">

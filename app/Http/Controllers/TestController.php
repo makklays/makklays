@@ -30,11 +30,14 @@ class TestController extends Controller
 
     public function question1(Request $request)
     {
-        // echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php';
+        /*dd($request->locale);
+        echo $request->server('HTTP_REFERER').'=='.config('app.url').'/'.$request->get('locale').'/test-php';
+        exit;*/
+        $lang = $request->locale;
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php') {
-            return redirect('/test-php');
+        if ($request->server('HTTP_REFERER') != config('app.url').'/'.$lang.'/test-php') {
+            return redirect('/'.$lang.'/test-php');
         }
 
         //$question = 'Правда ли что, PHP - это скриптовый язык программирования для создания сайтов и веб-приложений.
@@ -65,7 +68,7 @@ class TestController extends Controller
         session()->put('answer1', $answer);
         session()->put('right1', 1);
 
-        return redirect('/test-php/question-2');
+        return redirect($request->locale . '/test-php/question-2');
     }
 
     public function question2(Request $request)
@@ -73,8 +76,8 @@ class TestController extends Controller
         //echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-1';
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-1') {
-            return redirect('/test-php');
+        if ($request->server('HTTP_REFERER') != config('app.url').'/'.$request->locale.'/test-php/question-1') {
+            return redirect('/' . $request->locale . '/test-php');
         }
 
         //$question = 'Правда ли что, в отличии от одинарных, данные в двойных кавычках парсятся. <br/>Например, при использовании двойных кавычек результат выведет Hello, а одинарные кавычки выведут переменную как текст, а не ее значение.';
@@ -102,7 +105,7 @@ For example, when using double quotes, the result will print Hello, and single q
         session()->put('answer2', $answer);
         session()->put('right2', 1);
 
-        return redirect('/test-php/question-3');
+        return redirect('/' . $request->locale . '/test-php/question-3');
     }
 
     public function question3(Request $request)
@@ -110,8 +113,8 @@ For example, when using double quotes, the result will print Hello, and single q
         //echo $request->server('HTTP_REFERER').'=='.config('app.url').'/test-php/question-2';
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-2') {
-            return redirect('/test-php');
+        if ($request->server('HTTP_REFERER') != config('app.url').'/'.$request->locale.'/test-php/question-2') {
+            return redirect('/' . $request->locale . '/test-php');
         }
 
         //$question = 'Правда ли что, функция - это некий набор переменных, которые всегда возвращают переменную с типом `string`?';
@@ -143,7 +146,7 @@ For example, when using double quotes, the result will print Hello, and single q
         session()->put('answer3', $answer);
         session()->put('right3', 0);
 
-        return redirect('/test-php/question-4');
+        return redirect('/' . $request->locale . '/test-php/question-4');
     }
 
     public function question4(Request $request)
@@ -151,8 +154,8 @@ For example, when using double quotes, the result will print Hello, and single q
         //echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-3';
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-3') {
-            return redirect('/test-php');
+        if ($request->server('HTTP_REFERER') != config('app.url').'/'.$request->locale.'/test-php/question-3') {
+            return redirect('/'.$request->locale.'/test-php');
         }
 
         //$question = 'Правда ли что, переменные заключенные в двойные кавычки парсятся и их содержимое выводится, в то время как в одинарных кавычках просто отобразят название переменной как обычный текст.';
@@ -179,7 +182,7 @@ For example, when using double quotes, the result will print Hello, and single q
         session()->put('answer4', $answer);
         session()->put('right4', 1);
 
-        return redirect('/test-php/report');
+        return redirect('/'.$request->locale.'/test-php/report');
     }
 
     public function report(Request $request)
@@ -191,9 +194,9 @@ For example, when using double quotes, the result will print Hello, and single q
         */
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/test-php/question-4' &&
-            $request->server('HTTP_REFERER') != config('app.url').'/test-php/report') {
-            return redirect('/test-php');
+        if ($request->server('HTTP_REFERER') != config('app.url').'/'.$request->locale.'/test-php/question-4' &&
+            $request->server('HTTP_REFERER') != config('app.url').'/'.$request->locale.'/test-php/report') {
+            return redirect('/'.$request->locale.'/test-php');
         }
 
         $answers = session()->all();
