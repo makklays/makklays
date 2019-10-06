@@ -29,7 +29,7 @@
 <div class="row" style="margin-left: 0; margin-right:0;">
     <div class="col-md-12">
         <div class="text-center" style="margin:20px; ">
-            <a href="/" >
+            <a href="{{ route('/', app()->getLocale()) }}" >
                 <img src="/favicon.png" style="" alt="Logo" title="Makklays" />
             </a>
         </div>
@@ -58,7 +58,7 @@
 </div>
 
 <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-    Have questions? <a href="{{ route('feedback', app()->getLocale()) }}">Write</a> <br/>
+    {{ trans('site.have_questions') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
     &copy; 2019 makklays.com.ua
 </div>
 
