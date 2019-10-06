@@ -77,25 +77,25 @@
                         @else
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/packages') }}">{{ __('Packages') }}</a>
+                                <a class="nav-link" href="{{ route('packages', app()->getLocale()) }}">{{ __('Packages') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/feedbacks') }}">{{ __('Feedbacks') }}</a>
+                                <a class="nav-link" href="{{ route('feedbacks', app()->getLocale()) }}">{{ __('Feedbacks') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/report') }}">{{ __('Report') }}</a>
+                                <a class="nav-link" href="{{ route('report', app()->getLocale()) }}">{{ __('Report') }}</a>
                             </li>
                             <!--li class="nav-item">
-                                <a class="nav-link" href="{{ url('/companies') }}">{{ __('Companies') }}</a>
+                                <a class="nav-link" href="{{ route('companies', app()->getLocale()) }}">{{ __('Companies') }}</a>
                             </li-->
                             <!--li class="nav-item">
-                                <a class="nav-link" href="{{ url('/companies/add') }}">{{ __('Companies add') }}</a>
+                                <a class="nav-link" href="{{ route('company_add', app()->getLocale()) }}">{{ __('Companies add') }}</a>
                             </li-->
                             <!--li class="nav-item">
-                                <a class="nav-link" href="{{ url('/employees') }}">{{ __('Employees') }}</a>
+                                <a class="nav-link" href="{{ route('employees', app()->getLocale()) }}">{{ __('Employees') }}</a>
                             </li-->
                             <!--li class="nav-item">
-                                <a class="nav-link" href="{{ url('/employees/add') }}">{{ __('Employee add') }}</a>
+                                <a class="nav-link" href="{{ route('employee_add', app()->getLocale()) }}">{{ __('Employee add') }}</a>
                             </li-->
 
                             <li class="nav-item dropdown">
@@ -106,11 +106,11 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <!--a class="dropdown-item" href="/jobs">Jobs</a>
                                     <a class="dropdown-item" href="/cvs">CVs</a-->
-                                    <a class="dropdown-item" href="/my-profile">My profile</a>
-                                    <a class="dropdown-item" href="{{ route('todo') }}">ToDo</a>
-                                    <a class="dropdown-item" href="/links">Link(s)</a>
-                                    <a class="dropdown-item" href="/report">Report</a>
-                                    <a class="dropdown-item" href="/settings">Settings</a>
+                                    <a class="dropdown-item" href="{{ route('my-profile', app()->getLocale()) }}">My profile</a>
+                                    <a class="dropdown-item" href="{{ route('todo', app()->getLocale()) }}">ToDo</a>
+                                    <a class="dropdown-item" href="{{ route('links', app()->getLocale()) }}">Link(s)</a>
+                                    <a class="dropdown-item" href="{{ route('report', app()->getLocale()) }}">Report</a>
+                                    <a class="dropdown-item" href="{{ route('settings', app()->getLocale()) }}">Settings</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -31,7 +31,7 @@ class FeedbackController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($lang, $id)
     {
         $user_id = auth()->id();
         if (!isset($user_id) || empty($user_id)) {

@@ -23,7 +23,7 @@ class PackageController extends Controller
         ]);
     }
 
-    public function package($id)
+    public function package($lang, $id)
     {
         // Only loggined
         if (!Auth::check()) return redirect('/');

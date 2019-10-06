@@ -55,6 +55,7 @@ Route::group([
         return view('test'); // 'main'
     }]);
 
+    Route::get('home', 'HomeController@index')->name('home');
 
     // тест на знание PHP
     Route::get('test-php', ['as' => 'test-php', 'uses' => 'TestController@intro']);
@@ -408,6 +409,8 @@ Route::group([
 
         exit;
     }]);
+
+
 });
 
 /*Route::group(['as' => 'admin::'], function () {
@@ -418,4 +421,4 @@ Route::group([
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
