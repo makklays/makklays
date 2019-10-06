@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Traits\MyTraits;
 
 class HomeController extends Controller
 {
+    use MyTraits;
+
     /**
      * Create a new controller instance.
      *
@@ -23,6 +26,8 @@ class HomeController extends Controller
      */
     public function index()
     {
+        // echo $this->hello(); // example uses trait
+
         return view('home');
     }
 }
