@@ -24,8 +24,8 @@
                 <tr>
                     <td class="text-center"><?=$item->id?></td>
                     <td style="width:300px;"><a href="{{ route('feedback_show', [app()->getLocale(), $item->id]) }}"><?=$item->name?></a></td>
-                    <td><?=(!empty($item->email) ? '<a href="mailto:'.$item->email.'">'.$item->email.'</a>' : '-')?></td>
-                    <td><?=date('d/m/Y H:i:s', $item->created_at)?></td>
+                    <td> <?=(!empty($item->email) ? '<a href="mailto:'.$item->email.'">'.$item->email.'</a>' : '-')?> </td>
+                    <td> <?=date('d/m/Y H:i:s', $item->created_at)?> </td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
