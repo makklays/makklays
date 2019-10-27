@@ -346,7 +346,7 @@ Route::group([
 
         Mail::to('phpdevops@gmail.com')->send(new FeedbackMail($feedback));
 
-        return redirect('feedback')->with([
+        return redirect(app()->getLocale() . '/feedback')->with([
             'flash_message' => trans('site.send_success'),
             'flash_type' => 'success'
         ]);
