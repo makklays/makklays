@@ -44,4 +44,9 @@ class FeedbackController extends Controller
             'item' => $feedback,
         ]);
     }
+
+    public function wait()
+    {
+        return view('feedback.wait');
+    }
 }

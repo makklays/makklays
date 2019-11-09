@@ -55,6 +55,9 @@
         <div>
             <a href="{{ route('test-php', app()->getLocale()) }}" target="_blank">{{ trans('site.test_php') }}</a>
         </div>
+        <div>
+            <a href="{{ route('wait', app()->getLocale()) }}" target="_blank">{{ trans('wait.i_wait_you') }}</a>
+        </div>
         <div>{{ trans('site.in_developing') }}</div>
         <!--div>
             <a href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a>
