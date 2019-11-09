@@ -10,10 +10,10 @@
     <meta name="keywords" content="Makklays" />
     <meta name="author" content="Makklays" />
 
-    <meta property="og:title" content="Makklays" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://makklays.com.ua" />
-    <meta property="og:image" content="http://makklays.com.ua/favicon.png" />
+    <meta property="og:title" content="<?=(isset($og['title']) && !empty($og['title']) ? $og['title'] : 'Makklays')?>" />
+    <meta property="og:type" content="<?=(isset($og['type']) && !empty($og['type']) ? $og['type'] : 'article')?>" />
+    <meta property="og:url" content="<?=(isset($og['url']) && !empty($og['url']) ? $og['url'] : 'http://makklays.com.ua/en')?>" />
+    <meta property="og:image" content="<?=(isset($og['image']) && !empty($og['image']) ? $og['image'] : 'http://makklays.com.ua/favicon.png')?>" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
