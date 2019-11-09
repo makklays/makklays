@@ -10,7 +10,8 @@
         <div style="margin-bottom:40px; text-align:center; width:300px; border: 1px solid #e7e7e7; font-size:26px; padding:10px;">
             {{ trans('wait.text_wait') }} <br/><br/>
             {{ trans('wait.i_wait_you') }} <br/>
-            <!--&#9742;--> &#9749; <span style="color:red;">&#10084;</span>
+            <!--&#9742;--> &#9749; <span style="color:red;">&#10084;</span> <br/><br/>
+            {{ trans('wait.smile') }}
         </div>
     </div>
 
@@ -18,8 +19,6 @@
         .font-count {
             font-size: 40px;
             color: #46bf00;
-            /*text-shadow: #44b600 2px 2px ;*/
-            font-family: Orbitron;
         }
     </style>
 
