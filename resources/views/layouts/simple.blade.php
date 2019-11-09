@@ -45,7 +45,7 @@
 <div class="wrap">
     <div style="text-align:center; margin-left:auto; margin-right:auto;">
         <div class="text-center" style="margin:20px; ">
-            <a href="http://gogol28/ru">
+            <a href="http://makklays.com.ua">
                 <img src="/favicon.png" style="" alt="Logo" title="Makklays">
             </a>
         </div>
