@@ -23,7 +23,7 @@
     </style>
 
     <script>
-        $('#wait').countdown('2019/11/16 10:00:00', function(event) {
+        $('#wait').countdown('2019/11/16 14:00:00', function(event) {
             $(this).html(event.strftime(''
                 + '<span class="font-count">%D</span> <br/> {{ trans('wait.days') }} <br/>'
                 + '<span class="font-count">%H : %M : %S</span>'
