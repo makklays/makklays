@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8" lang="{{ app()->getLocale() }}">
@@ -55,13 +55,13 @@
         <div>
             <a href="{{ route('test-php', app()->getLocale()) }}" target="_blank">{{ trans('site.test_php') }}</a>
         </div>
+        <!--div>{{ trans('site.in_developing') }}</div-->
         <div>
+            <a href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a>
+        </div>
+	<div>
             <a href="{{ route('wait', app()->getLocale()) }}" target="_blank">{{ trans('wait.i_wait_you') }}</a>
         </div>
-        <div>{{ trans('site.in_developing') }}</div>
-        <!--div>
-            <a href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a>
-        </div-->
 
         <div style="margin: 20px 0 0 0;">
             <a href="{{ route('/', 'es') }}">ES</a> |
