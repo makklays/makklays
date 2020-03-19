@@ -6,4 +6,8 @@ return [
     'i_wait_you' => 'Te espero.',
     'days' => 'días',
     'smile' => 'Sonrie',
+
+    'wait_for_a_date' => 'Esperando una cita',
+    'days_from_date' => 'días desde la cita.',
+    'text_wait2' => 'Estaré con flores y sonreiré)) charlaremos y caminaremos durante mucho tiempo en el parque)',
 ];
