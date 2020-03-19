@@ -1,17 +1,17 @@
 /*!
- * The Final Countdown for jQuery v2.2.0 (http://hilios.github.io/jQuery.countdown/)
+ * The Final Countdays for jQuery v2.2.0 (http://hilios.github.io/jQuery.countdays/)
  * Copyright (c) 2016 Edson Hilios
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
  * the Software without restriction, including without limitation the rights to
  * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
  * the Software, and to permit persons to whom the Software is furnished to do so,
  * subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
  * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
@@ -117,7 +117,7 @@
             return singular;
         }
     }
-    var Countdown = function(el, finalDate, options) {
+    var Countdays = function(el, finalDate, options) {
         this.el = el;
         this.$el = $(el);
         this.interval = null;
@@ -125,12 +125,12 @@
         this.options = $.extend({}, defaultOptions);
         this.instanceNumber = instances.length;
         instances.push(this);
-        this.$el.data("countdown-instance", this.instanceNumber);
+        this.$el.data("countdays-instance", this.instanceNumber);
         if (options) {
             if (typeof options === "function") {
-                this.$el.on("update.countdown", options);
-                this.$el.on("stoped.countdown", options);
-                this.$el.on("finish.countdown", options);
+                this.$el.on("update.countdays", options);
+                this.$el.on("stoped.countdays", options);
+                this.$el.on("finish.countdays", options);
             } else {
                 this.options = $.extend({}, defaultOptions, options);
             }
@@ -140,7 +140,7 @@
             this.start();
         }
     };
-    $.extend(Countdown.prototype, {
+    $.extend(Countdays.prototype, {
         start: function() {
             if (this.interval !== null) {
                 clearInterval(this.interval);
@@ -172,7 +172,7 @@
         remove: function() {
             this.stop.call(this);
             instances[this.instanceNumber] = null;
-            delete this.$el.data().countdownInstance;
+            delete this.$el.data().countdaysInstance;
         },
         setFinalDate: function(value) {
             this.finalDate = parseDateString(value);
@@ -183,7 +183,7 @@
                 return;
             }
             var hasEventsAttached = $._data(this.el, "events") !== undefined, now = new Date(), newTotalSecsLeft;
-            newTotalSecsLeft = this.finalDate.getTime() - now.getTime();
+            newTotalSecsLeft = now.getTime() - this.finalDate.getTime();
             newTotalSecsLeft = Math.ceil(newTotalSecsLeft / 1e3);
             newTotalSecsLeft = !this.options.elapse && newTotalSecsLeft < 0 ? 0 : Math.abs(newTotalSecsLeft);
             if (this.totalSecsLeft === newTotalSecsLeft || !hasEventsAttached) {
@@ -216,7 +216,7 @@
             }
         },
         dispatchEvent: function(eventName) {
-            var event = $.Event(eventName + ".countdown");
+            var event = $.Event(eventName + ".countdays");
             event.finalDate = this.finalDate;
             event.elapsed = this.elapsed;
             event.offset = $.extend({}, this.offset);
@@ -224,22 +224,22 @@
             this.$el.trigger(event);
         }
     });
-    $.fn.countdown = function() {
+    $.fn.countdays = function() {
         var argumentsArray = Array.prototype.slice.call(arguments, 0);
         return this.each(function() {
-            var instanceNumber = $(this).data("countdown-instance");
+            var instanceNumber = $(this).data("countdays-instance");
             if (instanceNumber !== undefined) {
                 var instance = instances[instanceNumber], method = argumentsArray[0];
-                if (Countdown.prototype.hasOwnProperty(method)) {
+                if (Countdays.prototype.hasOwnProperty(method)) {
                     instance[method].apply(instance, argumentsArray.slice(1));
                 } else if (String(method).match(/^[$A-Z_][0-9A-Z_$]*$/i) === null) {
                     instance.setFinalDate.call(instance, method);
                     instance.start();
                 } else {
-                    $.error("Method %s does not exist on jQuery.countdown".replace(/\%s/gi, method));
+                    $.error("Method %s does not exist on jQuery.countdays".replace(/\%s/gi, method));
                 }
             } else {
-                new Countdown(this, argumentsArray[0], argumentsArray[1]);
+                new Countdays(this, argumentsArray[0], argumentsArray[1]);
             }
         });
     };

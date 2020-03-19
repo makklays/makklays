@@ -35,6 +35,7 @@
     <!-- base js -->
     <script src='/js/jquery-3.4.0.min.js'></script>
     <script src='/js/jquery.countdown.js'></script>
+    <script src='/js/jquery.count-days.js'></script>
     <script src='/bootstrap-4.3.1/js/bootstrap.min.js'></script>
 
     <!-- my js -->
@@ -55,17 +56,17 @@
         @yield('content')
 
     </div>
-    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+    <div style="text-align:center; width:200px; margin-top:0px; margin-left:auto; margin-right:auto; ">
 
         <!--a href="{{ route('test-php', app()->getLocale()) }}" >{{ trans('site.test_php') }}</a> <br/-->
         <!--a href="/cv_alexander_kuziv.html" target="_blank">CV</a> <br/-->
 
-        <div style="margin: 20px 0 0 0;">
+        <!--div style="margin: 20px 0 0 0;">
             <a href="{{ route('wait', 'es') }}">ES</a> |
             <a href="{{ route('wait', 'en') }}">EN</a> |
             <a href="{{ route('wait', 'ru') }}">RU</a> |
             <a href="{{ route('wait', 'ch') }}">CH</a>
-        </div>
+        </div-->
 
         &copy; 2019 makklays.com.ua
     </div>

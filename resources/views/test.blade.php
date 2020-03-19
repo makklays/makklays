@@ -59,8 +59,11 @@
         <div>
             <a href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a>
         </div>
-	<div>
+	    <div>
             <a href="{{ route('wait', app()->getLocale()) }}" target="_blank">{{ trans('wait.i_wait_you') }}</a>
+        </div>
+        <div>
+            <a href="{{ route('wait2', app()->getLocale()) }}" target="_blank">{{ trans('wait.wait_for_a_date') }}</a>
         </div>
 
         <div style="margin: 20px 0 0 0;">

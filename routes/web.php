@@ -58,6 +58,7 @@ Route::group([
     Route::get('home', 'HomeController@index')->name('home');
 
     Route::get('wait', 'FeedbackController@wait')->name('wait');
+    Route::get('wait2', 'FeedbackController@wait2')->name('wait2');
 
     // тест на знание PHP
     Route::get('test-php', ['as' => 'test-php', 'uses' => 'TestController@intro']);
