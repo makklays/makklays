@@ -89,19 +89,24 @@
         </form>
     </div>
 
-    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-        <a href="{{ route('test-php', app()->getLocale()) }}" >{{ trans('site.test_php') }}</a> <br/>
+    <div style="text-align:center; width:222px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+        <div>
+            <a style="font-size:20px;" href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a>
+        </div>
+        <div>
+            <a href="{{ route('test-php', app()->getLocale()) }}" target="_blank">{{ trans('site.test_php') }}</a>
+        </div>
 
         <!--a href="/cv_alexander_kuziv.html" target="_blank">CV</a> <br/-->
 
-        <div style="margin: 20px 0 0 0;">
+        <div style="margin: 20px 0 10px 0;">
             <a href="{{ route('feedback', 'es') }}">ES</a> |
             <a href="{{ route('feedback', 'en') }}">EN</a> |
             <a href="{{ route('feedback', 'ru') }}">RU</a> |
             <a href="{{ route('feedback', 'ch') }}">CH</a>
         </div>
 
-        &copy; 2019 makklays.com.ua
+        &copy; makklays.com.ua, 2019-<?=date('Y')?>
     </div>
 
     <script>

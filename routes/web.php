@@ -62,6 +62,7 @@ Route::group([
 
     // тест на знание PHP
     Route::get('test-php', ['as' => 'test-php', 'uses' => 'TestController@intro']);
+    Route::post('test-php-start', ['as' => 'test-php-start', 'uses' => 'TestController@start']);
 
     Route::get('test-php/question-1', ['as' => 'test_php_q1', 'uses' => 'TestController@question1']);
     Route::post('test-php/answer-1',  ['as' => 'test_php_a1', 'uses' => 'TestController@answer1']);

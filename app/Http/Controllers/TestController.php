@@ -19,34 +19,61 @@ class TestController extends Controller
         //$title = 'Tест на знание PHP ;-)';
         //$description = 'Небольшой тест на знание языка программирования PHP с ответами на ДА или НЕТ.';
 
-        $title = 'Test PHP';
-        $description = 'A small test of knowledge of the PHP programming language with answers to YES or NO.';
+        //$title = 'Test PHP';
+        //$description = 'A small test of knowledge of the PHP programming language with answers to YES or NO.';
+
+        //$title = trans('test_php.title_test_php');
+        //$description = trans('test_php.description_test_php');
+        //$title_button = trans('test_php.title_button');
 
         return View('test.intro', [
-            'title' => $title,
-            'description' => $description,
+            //'title' => $title,
+            //'description' => $description,
+            //'title_button' => $title_button,
         ]);
+    }
+
+    public function start(Request $request)
+    {
+        $lang = app()->getLocale();
+        // с какой страницы пришли ? тест с начала
+        if ($request->server('HTTP_REFERER') != config('app.url').'/'.$lang.'/test-php') {
+            return redirect('/'.$lang.'/test-php');
+        }
+
+        // начал проходить тестирование - время
+        session()->put('start_time', date('d.m.Y H:i'));
+
+        return redirect(app()->getLocale() . '/test-php/question-1');
     }
 
     public function question1(Request $request)
     {
-        //dd($request->segment(1));
-        //app()->setLocale($request->segment(1));
-        //echo $request->server('HTTP_REFERER').'=='.config('app.url').'/'.app()->getLocale().'/test-php';
-        //exit;
         $lang = app()->getLocale();
 
+        //dd($request->server());
+        //dd($request->segment(1));
+        //app()->setLocale($request->segment(1));
+        //exit;
+
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/'.$lang.'/test-php') {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/'.$lang.'/test-php'
+            && $request->server('HTTP_REFERER') != config('app.url').'/es/test-php/question-1'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ru/test-php/question-1'
+            && $request->server('HTTP_REFERER') != config('app.url').'/en/test-php/question-1'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ch/test-php/question-1' ) {
             return redirect('/'.$lang.'/test-php');
         }
 
         //$question = 'Правда ли что, PHP - это скриптовый язык программирования для создания сайтов и веб-приложений.
         //PHP унаследовал синтаксис языков программирования C, Perl, Java?';
 
-        $title = 'Question 1';
-        $question = 'Is it true that PHP is a scripting programming language for creating sites and web applications. <br/>
-         PHP inherited the syntax of the programming languages C, Perl, Java?';
+        //$title = 'Question 1';
+        //$question = 'Is it true that PHP is a scripting programming language for creating sites and web applications. <br/>
+        // PHP inherited the syntax of the programming languages C, Perl, Java?';
+
+        $title = trans('test_php.title_q1');
+        $question = trans('test_php.text_q1');
 
         session()->put('question1', $question);
 
@@ -59,7 +86,6 @@ class TestController extends Controller
     public function answer1(Request $request)
     {
         // dd($request->all());
-
         if (isset($request->yes) && !empty($request->yes)) {
             $answer = 1;
         } else {
@@ -74,18 +100,23 @@ class TestController extends Controller
 
     public function question2(Request $request)
     {
-        //echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-1';
-
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/'.app()->getLocale().'/test-php/question-1') {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/'.app()->getLocale().'/test-php/question-1'
+            && $request->server('HTTP_REFERER') != config('app.url').'/es/test-php/question-2'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ru/test-php/question-2'
+            && $request->server('HTTP_REFERER') != config('app.url').'/en/test-php/question-2'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ch/test-php/question-2' ) {
             return redirect('/' . app()->getLocale() . '/test-php');
         }
 
         //$question = 'Правда ли что, в отличии от одинарных, данные в двойных кавычках парсятся. <br/>Например, при использовании двойных кавычек результат выведет Hello, а одинарные кавычки выведут переменную как текст, а не ее значение.';
 
-        $title = 'Question 2';
-        $question = 'Is it true that, unlike single quotes, the data in double quotes is parsed. <br/>
-For example, when using double quotes, the result will print Hello, and single quotes will print the variable as text, not its value?';
+        //$title = 'Question 2';
+        //$question = 'Is it true that, unlike single quotes, the data in double quotes is parsed. <br/>
+//For example, when using double quotes, the result will print Hello, and single quotes will print the variable as text, not its value?';
+
+        $title = trans('test_php.title_q2');
+        $question = trans('test_php.text_q2');
 
         session()->put('question2', $question);
 
@@ -114,14 +145,21 @@ For example, when using double quotes, the result will print Hello, and single q
         //echo $request->server('HTTP_REFERER').'=='.config('app.url').'/test-php/question-2';
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/' . app()->getLocale() . '/test-php/question-2') {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/' . app()->getLocale() . '/test-php/question-2'
+            && $request->server('HTTP_REFERER') != config('app.url').'/es/test-php/question-3'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ru/test-php/question-3'
+            && $request->server('HTTP_REFERER') != config('app.url').'/en/test-php/question-3'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ch/test-php/question-3') {
             return redirect('/' . app()->getLocale() . '/test-php');
         }
 
         //$question = 'Правда ли что, функция - это некий набор переменных, которые всегда возвращают переменную с типом `string`?';
 
-        $title = 'Question 3';
-        $question = 'Is it true that a function is a certain set of variables that always return a variable of type `string`?';
+        //$title = 'Question 3';
+        //$question = 'Is it true that a function is a certain set of variables that always return a variable of type `string`?';
+
+        $title = trans('test_php.title_q3');
+        $question = trans('test_php.text_q3');
 
         session()->put('question3', $question);
 
@@ -155,14 +193,21 @@ For example, when using double quotes, the result will print Hello, and single q
         //echo $request->server('HTTP_REFERER').'=='.env('APP_URL').'/test-php/question-3';
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/' . app()->getLocale() . '/test-php/question-3') {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/' . app()->getLocale() . '/test-php/question-3'
+            && $request->server('HTTP_REFERER') != config('app.url').'/es/test-php/question-4'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ru/test-php/question-4'
+            && $request->server('HTTP_REFERER') != config('app.url').'/en/test-php/question-4'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ch/test-php/question-4') {
             return redirect('/'. app()->getLocale() . '/test-php');
         }
 
         //$question = 'Правда ли что, переменные заключенные в двойные кавычки парсятся и их содержимое выводится, в то время как в одинарных кавычках просто отобразят название переменной как обычный текст.';
 
-        $title = 'Question 4';
-        $question = 'Is it true that, variables enclosed in double quotation marks are parsed and their contents are displayed, <br/> while in single quotation marks they simply display the variable name as plain text?';
+        //$title = 'Question 4';
+        //$question = 'Is it true that, variables enclosed in double quotation marks are parsed and their contents are displayed, <br/> while in single quotation marks they simply display the variable name as plain text?';
+
+        $title = trans('test_php.title_q4');
+        $question = trans('test_php.text_q4');
 
         session()->put('question4', $question);
 
@@ -179,9 +224,16 @@ For example, when using double quotes, the result will print Hello, and single q
         } else {
             $answer = 0;
         }
-
         session()->put('answer4', $answer);
         session()->put('right4', 1);
+
+        $start_time = session()->get('start_time');
+        // завершил проходить тестирование - время
+        $end_time = date('d.m.Y H:i');
+        session()->put('end_time', $end_time);
+        // проходил тестировние в минутах
+        $duration_mins = (strtotime($start_time) - strtotime($end_time)) / 3600;
+        session()->put('end_time', $duration_mins);
 
         return redirect('/' . app()->getLocale() . '/test-php/report');
     }
@@ -195,8 +247,12 @@ For example, when using double quotes, the result will print Hello, and single q
         */
 
         // с какой страницы пришли ? тест с начала
-        if ($request->server('HTTP_REFERER') != config('app.url').'/'.app()->getLocale().'/test-php/question-4' &&
-            $request->server('HTTP_REFERER') != config('app.url').'/'.app()->getLocale().'/test-php/report') {
+        if ($request->server('HTTP_REFERER') != config('app.url').'/'.app()->getLocale().'/test-php/question-4'
+            && $request->server('HTTP_REFERER') != config('app.url').'/'.app()->getLocale().'/test-php/report'
+            && $request->server('HTTP_REFERER') != config('app.url').'/es/test-php/report'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ru/test-php/report'
+            && $request->server('HTTP_REFERER') != config('app.url').'/en/test-php/report'
+            && $request->server('HTTP_REFERER') != config('app.url').'/ch/test-php/report') {
             return redirect('/'.app()->getLocale().'/test-php');
         }
 
@@ -221,15 +277,26 @@ For example, when using double quotes, the result will print Hello, and single q
 
         // надпись приветствие
         if (80 <= $percent_right && $percent_right <= 100) {
-            $title = 'Congratulate!';
-            $description = 'You have perfect result. <br/> You gave '.$percent_right.'% right answer ('.$count_right.'/'.$count_question.') from '.$count_question.' questions.';
+            $title = trans('test_php.result_80_100');
+            $description = trans('test_php.description_80_100', [
+                'per_right' => $percent_right,
+                'count_right' => $count_right,
+                'count_q' => $count_question
+            ]);
         } else if (60 <= $percent_right && $percent_right < 80) {
-            $title = 'Good result';
-            $description = 'Congratulate! You have good result. <br/> You gave '.$percent_right.'% right answer ('.$count_right.'/'.$count_question.') from '.$count_question.' questions.';
+            $title = trans('test_php.result_60_80');
+            $description = trans('test_php.description_80_100', [
+                'per_right' => $percent_right,
+                'count_right' => $count_right,
+                'count_q' => $count_question
+            ]);
         } else {
-            $title = 'Result';
-            $description = 'We recommend that you visit the site <a href="http://php.net" target="_blank">php.net</a>' . '<br/>';
-            $description .= 'You gave '.$percent_right.'% right answer ('.$count_right.'/'.$count_question.') from '.$count_question.' questions.';
+            $title = trans('test_php.result_0_60');
+            $description = trans('test_php.description_0_60', [
+                'per_right' => $percent_right,
+                'count_right' => $count_right,
+                'count_q' => $count_question
+            ]);
         }
 
         // $res = session()->all();

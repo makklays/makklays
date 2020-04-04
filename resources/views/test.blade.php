@@ -53,20 +53,20 @@
         <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
 
         <div>
+            <a style="font-size:20px;" href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a>
+        </div>
+        <div style="padding-bottom: 20px;">
             <a href="{{ route('test-php', app()->getLocale()) }}" target="_blank">{{ trans('site.test_php') }}</a>
         </div>
         <!--div>{{ trans('site.in_developing') }}</div-->
         <div>
-            <a href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a>
-        </div>
-	    <div>
             <a href="{{ route('wait', app()->getLocale()) }}" target="_blank">{{ trans('wait.i_wait_you') }}</a>
         </div>
         <div>
             <a href="{{ route('wait2', app()->getLocale()) }}" target="_blank">{{ trans('wait.wait_for_a_date') }}</a>
         </div>
 
-        <div style="margin: 20px 0 0 0;">
+        <div style="margin: 30px 0 10px 0;">
             <a href="{{ route('/', 'es') }}">ES</a> |
             <a href="{{ route('/', 'en') }}">EN</a> |
             <a href="{{ route('/', 'ru') }}">RU</a> |
@@ -81,7 +81,7 @@
         </div-->
 
         {{ trans('site.have_questions') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
-        &copy; 2019 makklays.com.ua
+        &copy; makklays.com.ua, 2019-<?=date('Y')?>
     </div>
 
     <!--
