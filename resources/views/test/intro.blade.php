@@ -36,20 +36,21 @@
 
         <div class="text-center" style="margin: 40px 0 0 0;">
 
-            <h2><?=$title?></h2>
+            <h2>{{ trans('test_php.title_test_php') }}</h2>
 
             <div style="margin: 20px 0;">
                 <img src="/img/PHP-logo.png" style="width:300px;" title="Quiz PHP" alt="Quiz PHP" />
             </div>
 
             <div style="margin: 20px 0;">
-                <?=$description?>
+                {{ trans('test_php.description_test_php') }}
                 <br/><br/>
             </div>
 
             <div style="margin: 20px 0;">
-                <form action="{{ route('test_php_q1', app()->getLocale()) }}" method="get">
-                    <input type="submit" class="btn btn-success btn-lg" value="START" />
+                <form action="{{ route('test-php-start', app()->getLocale()) }}" method="post">
+                    {{ csrf_field() }}
+                    <input type="submit" class="btn btn-success btn-lg" value="{{ trans('test_php.start') }}" />
                 </form>
             </div>
 
@@ -57,9 +58,16 @@
     </div>
 </div>
 
-<div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+<div style="text-align:center; width:222px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+    <div style="margin: 40px 0 10px 0;">
+        <a class="green" href="{{ route('test-php', 'es') }}">ES</a> |
+        <a class="green" href="{{ route('test-php', 'en') }}">EN</a> |
+        <a class="green" href="{{ route('test-php', 'ru') }}">RU</a> |
+        <a class="green" href="{{ route('test-php', 'ch') }}">CH</a>
+    </div>
+
     {{ trans('site.have_questions') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
-    &copy; 2019 makklays.com.ua
+    &copy; makklays.com.ua, 2019-<?=date('Y')?>
 </div>
 
 </body>

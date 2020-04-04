@@ -56,7 +56,7 @@
         @yield('content')
 
     </div>
-    <div style="text-align:center; width:200px; margin-top:0px; margin-left:auto; margin-right:auto; ">
+    <div style="text-align:center; width:222px; margin-top:0px; margin-left:auto; margin-right:auto; ">
 
         <!--a href="{{ route('test-php', app()->getLocale()) }}" >{{ trans('site.test_php') }}</a> <br/-->
         <!--a href="/cv_alexander_kuziv.html" target="_blank">CV</a> <br/-->
@@ -68,7 +68,7 @@
             <a href="{{ route('wait', 'ch') }}">CH</a>
         </div-->
 
-        &copy; 2019 makklays.com.ua
+        &copy; makklays.com.ua, 2019-<?=date('Y')?>
     </div>
 </div>
 </body>

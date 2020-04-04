@@ -93,7 +93,7 @@
                 <div class="text-justify">{{ trans('site.fact_text3') }}</div>
             </div>
 
-            <div style="margin: 40px 0 0 0;">
+            <div style="margin: 40px 0 10px 0;">
                 <a class="green" href="{{ route('test_result', 'es') }}">ES</a> |
                 <a class="green" href="{{ route('test_result', 'en') }}">EN</a> |
                 <a class="green" href="{{ route('test_result', 'ru') }}">RU</a> |
@@ -108,7 +108,7 @@
             </div-->
 
             {{ trans('site.have_questions') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
-            &copy; 2019 makklays.com.ua
+            &copy; makklays.com.ua, 2019-<?=date('Y')?>
 
         </div>
     </div>

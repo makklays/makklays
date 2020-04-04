@@ -56,7 +56,7 @@
             <a href="/forgot">Forgot password?</a>
         </p-->
 
-        <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
+        <p class="mt-5 mb-3 text-muted">&copy; makklays.com.ua, 2019-<?=date('Y')?></p>
     </form>
 
 </div>
