@@ -23,7 +23,7 @@
 
     <script src='/js/jquery-3.4.0.min.js'></script>
     <script src='/bootstrap-4.3.1/js/bootstrap.min.js'></script>
-    <script src='/js/tests.js'></script>
+
 </head>
 <body>
 
