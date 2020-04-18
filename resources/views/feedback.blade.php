@@ -19,11 +19,10 @@
 
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/tests.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
 
     <script src='/js/jquery-3.4.0.min.js'></script>
-    <script src='/bootstrap-4.3.1/js/bootstrap.min.js'></script>
-
+    <script src='/css/bootstrap4/js/bootstrap.min.js'></script>
 </head>
 <body>
 
