@@ -32,7 +32,7 @@ class FeedbackMail extends Mailable
     public function build()
     {
         return $this->from('mailgun@sandboxce1c29b0ff01419da0d9370c2deb2c3d.mailgun.org')
-            ->to('phpdevops@gmail.com')
+            ->to('alexander@makklays.com.ua')
             ->subject('Feedback | Makklays.com.ua')
             ->view('emails.feedback')
             ->with([
