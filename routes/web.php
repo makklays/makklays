@@ -338,7 +338,7 @@ Route::group([
 
         //dd($feedback);
 
-        $msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
+        /*$msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
             E-mail: '.strip_tags(trim($request->email)).'<br/>
             Сообщение: '.strip_tags(trim($request->message)).'<br/><br/>
             Дата: '.date('d.m.Y H:i:s').'<br/><br/><br/>';
@@ -346,9 +346,9 @@ Route::group([
         $headers = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'From: Makklays <info@makklays.com.ua>' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        mail('alexander@makklays.com.ua', 'Сообщение с сайта makklays.com.ua', $msg, $headers);
+        mail('alexander@makklays.com.ua', 'Сообщение с сайта makklays.com.ua', $msg, $headers);*/
 
-        Mail::to('alexander@makklays.com.ua')->send(new FeedbackMail($feedback));
+        //Mail::to('alexander@makklays.com.ua')->send(new FeedbackMail($feedback));
 
         return redirect(app()->getLocale() . '/feedback')->with([
             'flash_message' => trans('site.send_success'),
