@@ -348,7 +348,7 @@ Route::group([
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
         mail('phpdevops@gmail.com', 'Сообщение с сайта makklays.com.ua', $msg, $headers); */
 
-        Mail::to('alexander@makklays.com.ua')->send(new FeedbackMail($feedback));
+        Mail::to('info@makklays.com.ua')->send(new FeedbackMail($feedback));
 
         return redirect(app()->getLocale() . '/feedback')->with([
             'flash_message' => trans('site.send_success'),
