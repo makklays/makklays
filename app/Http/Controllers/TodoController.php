@@ -105,7 +105,7 @@ class TodoController extends Controller
         return view('todo.del');
     }
 
-    public function about()
+    public function about2()
     {
         //
         return view('todo.about');

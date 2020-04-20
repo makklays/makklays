@@ -290,8 +290,11 @@
                     <h3>{{ trans('site.contacts') }}:</h3>
                     <div class="text-left" style="margin:0 0 30px 120px;">
                         <div style="margin:0 0 10px 0;">{{ trans('site.adres') }}</div>
+
+                        <div>Skype: makklays </div>
                         <div>E-mail: <strong>alexander@makklays.com.ua</strong></div>
                         <div style="margin:0 0 10px 0;">Mob.: <strong>+38 098 870 5397</strong></div>
+
                         <div>{{ trans('site.or') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.pishite') }}</a> </div>
                     </div>
                     <!--div>или</div>
@@ -422,7 +425,7 @@
             <img src="/img/makklays.png" alt="&copy; Makklays" title="Makklays" />
             </a>
         </div>
-        <div>&copy; Makklays.com 2007 - 2019</div>
+        <div>&copy; makklays.com.ua 2007 - 2019</div>
         <div>All Rights Reserved.</div>
     </div>
 </div>
