@@ -48,7 +48,6 @@ class MysiteController extends Controller
 
     public function settings()
     {
-        //
         return view('mysite.settings');
     }
 
@@ -64,28 +63,56 @@ class MysiteController extends Controller
 
     public function feedbacks()
     {
-        //
         return view('mysite.feedbacks');
     }
 
     // детальнее - заказ сайта
     public function site()
     {
-        // add price.xls for download
         return view('mysite.site');
     }
 
     // детальнее - заказ shop
     public function shop()
     {
-        // add price.xls for download
         return view('mysite.shop');
     }
 
     // детальнее - заказ crm
     public function crm()
     {
-        // add price.xls for download
         return view('mysite.crm');
+    }
+
+    // Страница - О нас
+    public function about()
+    {
+        return view('mysite.about');
+    }
+
+    // Страница - Как мы работаем?
+    public function howmake()
+    {
+        return view('mysite.howmake');
+    }
+
+    // Страница - Контакты
+    public function contacts()
+    {
+        return view('mysite.contacts');
+    }
+
+    // Страница - Оставить заявку
+    public function request()
+    {
+        return view('mysite.request');
+    }
+
+    // Страница - Скачать бриф
+    public function brief()
+    {
+        //return view('mysite.request');
+        echo 'Download brief.doc';
+        exit;
     }
 }

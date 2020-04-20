@@ -49,13 +49,21 @@
         </div>
     </div>
 
-    <div style="text-align:center; width:230px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+    <div style="text-align:center; width:630px; margin-top:40px; margin-left:auto; margin-right:auto; ">
         <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
 
         <div>
-            <a style="font-size:20px;" href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.order_site') }}</a>
+            <a style="font-size:20px;" href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.mysite_order') }}</a>
         </div>
-        <div style="padding-bottom: 20px;">
+
+        <a href="{{ route('mysite_about', app()->getLocale()) }}">{{ trans('site.mysite_about') }}</a> |
+        <a href="{{ route('mysite_howmake', app()->getLocale()) }}">{{ trans('site.mysite_howmake') }}</a> |
+        <!--a href="{{ route('mysite_request', app()->getLocale()) }}">{{ trans('site.mysite_request') }}</a> | -->
+        <a href="{{ route('mysite_contacts', app()->getLocale()) }}">{{ trans('site.mysite_contacts') }}</a>
+
+        <div style="padding-bottom: 20px;"></div>
+
+        <div>
             <a href="{{ route('test-php', app()->getLocale()) }}" target="_blank">{{ trans('site.test_php') }}</a>
         </div>
         <!--div>{{ trans('site.in_developing') }}</div-->

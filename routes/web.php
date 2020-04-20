@@ -78,6 +78,12 @@ Route::group([
 
 
     /* mysite page */
+    Route::get('about', ['as' => 'mysite_about', 'uses' => 'MysiteController@about']);
+    Route::get('howmake', ['as' => 'mysite_howmake', 'uses' => 'MysiteController@howmake']);
+    Route::get('request', ['as' => 'mysite_request', 'uses' => 'MysiteController@request']);
+    Route::get('contacts', ['as' => 'mysite_contacts', 'uses' => 'MysiteController@contacts']);
+    Route::get('brief', ['as' => 'mysite_brief', 'uses' => 'MysiteController@brief']);
+
     Route::get('order', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
     Route::get('links', ['as' => 'links', 'uses' => 'MysiteController@links']);
 
@@ -90,7 +96,7 @@ Route::group([
     Route::get('report', ['as' => 'report', 'uses' => 'MysiteController@report']);
 
     /* about me */
-    Route::get('about', ['as' => 'about', 'uses' => 'TodoController@about']);
+    Route::get('about2', ['as' => 'about', 'uses' => 'TodoController@about2']); // биография
 
     /* cvs */
     Route::get('cvs', ['as' => 'cvs', 'uses' => 'CvsController@lista']);
