@@ -108,6 +108,134 @@ div.test-block {
     }
 }*/
 
+/* 1. Смартфоны (Портрет и ландшафтный) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .rezina-width {
+        width: 330px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .rezina-border {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+/* 2. Смартфоны (ландшафтный) */
+@media only screen and (min-width : 321px) {
+    .rezina-width {
+        width: 310px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .rezina-border {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+/* 3. Смартфоны (portrait) */
+@media only screen and (max-width : 320px) {
+    .rezina-width {
+        width: 250px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .rezina-border {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+/* 4. iPads (Портрет и Ландшафтный) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .rezina-width {
+        width: 748px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .rezina-border {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+/* 5. iPads (Ландшафтный)| */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .rezina-width {
+        width: 748px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .rezina-border {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+/* 6. iPads (Портрет) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .rezina-width {
+        width: 748px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .rezina-border {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+/* 7. Настольные компьютеры и ноутбуки */
+@media only screen and (min-width : 1224px) {
+    .rezina-width {
+        width: 1214px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .rezina-border {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+/* 8. Большие экраны */
+@media only screen and (min-width : 1824px) {
+    .rezina-width {
+        width: 1814px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    .rezina-border {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+/* 9. iPhone 4 */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+    .rezina-width {
+        width: 100px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .rezina-border {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
 /* Mobile devices */
 @media screen and (max-width: 768px) { /* 320px */
     .flex-block {
