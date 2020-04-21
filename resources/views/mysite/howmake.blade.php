@@ -3,20 +3,22 @@
 
 @section('content')
 
-    <div style="text-align:center; margin-left:auto; margin-right:auto; " class="rezina-width">
+    <div style="margin-left:auto; margin-right:auto; " class="rezina-width text-center">
         <div style="margin-bottom:40px;"><b class="grey">{{ trans('site.mysite_howmake') }}</b></div>
 
         <div style="margin-bottom:40px;"><span id="wait"></span></div>
 
-        <div style="" class="rezina-width rezina-border">
+        <div class="rezina-width rezina-border">
             <div class="text-center">
-                <h2>{{ trans('site.mysite_howmake') }}</h2>
+                <h2>{{ trans('site.mysite_howmake') }}</h2> <br/>
+                <img src="/img/site/crm2.png" alt="." title="" class="rezina-img" />
+                <br/><br/>
             </div>
 
             <br/>
             {{ trans('site.howmake1') }} <br/><br/>
 
-            {{ trans('site.howmake2') }} <br/><br/>
+            <b>{{ trans('site.howmake2') }}</b> <br/><br/>
             - {{ trans('site.howmake3') }} <br/>
             - {{ trans('site.howmake4') }} <br/>
             - {{ trans('site.howmake5') }} <br/>
@@ -29,7 +31,7 @@
             {{ trans('site.howmake11') }} <br/>
             {{ trans('site.howmake12') }} <br/><br/>
 
-            {{ trans('site.howmake13') }} <br/>
+            <b>{{ trans('site.howmake13') }}</b> <br/>
             - {{ trans('site.howmake14') }} <br/>
             - {{ trans('site.howmake15') }} <br/>
             - {{ trans('site.howmake16') }} <br/><br/>
@@ -45,30 +47,32 @@
                 <h2>{{ trans('site.our_advantages') }}</h2>
             </div>
             <br/>
-            - {{ trans('site.adv1') }} <br/>
+            - <b>{{ trans('site.adv1') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv1_det') }} </span><br/><br/>
-            - {{ trans('site.adv2') }} <br/>
+            - <b>{{ trans('site.adv2') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv2_det') }} </span><br/><br/>
-            - {{ trans('site.adv3') }} <br/>
+            - <b>{{ trans('site.adv3') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv3_det') }} </span><br/><br/>
-            - {{ trans('site.adv4') }} <br/>
+            - <b>{{ trans('site.adv4') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv4_det') }} </span><br/><br/>
-            - {{ trans('site.adv5') }} <br/>
+            - <b>{{ trans('site.adv5') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv5_det') }} </span><br/><br/>
-            - {{ trans('site.adv6') }} <br/>
+            - <b>{{ trans('site.adv6') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv6_det') }} </span><br/>
             <br/><br/>
 
             <div class="text-center">
                 <h2>{{ trans('site.garantiya') }}!</h2>
+                <img src="/img/site/garantiya.png" alt="." title="{{ trans('site.garantiya') }}!" class="rezina-img" />
             </div>
+
             <br/>
-            - {{ trans('site.zapusk') }} <br/>
-            {{ trans('site.zapusk_det') }} <br/><br/>
-            - {{ trans('site.podelu') }} <br/>
-            {{ trans('site.podelu_det') }} <br/><br/>
-            - {{ trans('site.garant') }} <br/>
-            {{ trans('site.garant_det') }} <br/><br/><br/>
+            - <b>{{ trans('site.zapusk') }}</b> <br/>
+                {{ trans('site.zapusk_det') }} <br/><br/>
+            - <b>{{ trans('site.podelu') }}</b> <br/>
+                {{ trans('site.podelu_det') }} <br/><br/>
+            - <b>{{ trans('site.garant') }}</b> <br/>
+                {{ trans('site.garant_det') }} <br/><br/><br/>
 
             <div class="form-group text-center">
                 <form action="{{ route('feedback', app()->getLocale()) }}" method="get">
