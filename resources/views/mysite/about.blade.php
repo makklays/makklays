@@ -3,12 +3,12 @@
 
 @section('content')
 
-    <div style="text-align:center; margin-left:auto; margin-right:auto; width:700px;">
+    <div style="text-align:center; margin-left:auto; margin-right:auto; " class="rezina-width">
         <div style="margin-bottom:40px;"><b class="grey">{{ trans('site.mysite_about') }}</b></div>
 
         <div style="margin-bottom:40px;"><span id="wait"></span></div>
 
-        <div style="margin-bottom:40px; text-align:left; width:700px; border: 1px solid #e7e7e7; font-size:18px; padding:10px;">
+        <div style="" class="rezina-width rezina-border">
             <div class="text-center">
                 <h2>{{ trans('site.mysite_about') }}</h2>
             </div>
