@@ -108,6 +108,15 @@ div.test-block {
     }
 }*/
 
+.rezina-border {
+    border: 1px solid #e7e7e7;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.rezina-img {
+    width: 200px;
+}
+
 /* 1. Смартфоны (Портрет и ландшафтный) */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .rezina-width {
@@ -119,6 +128,9 @@ div.test-block {
         border: 1px solid #e7e7e7;
         padding: 10px;
         margin-bottom: 40px;
+    }
+    .rezina-img {
+        width: 280px;
     }
 }
 
@@ -134,6 +146,9 @@ div.test-block {
         padding: 10px;
         margin-bottom: 40px;
     }
+    .rezina-img {
+        width: 200px;
+    }
 }
 
 /* 3. Смартфоны (portrait) */
@@ -147,6 +162,9 @@ div.test-block {
         border: 1px solid #e7e7e7;
         padding: 10px;
         margin-bottom: 40px;
+    }
+    .rezina-img {
+        width: 200px;
     }
 }
 
@@ -162,6 +180,9 @@ div.test-block {
         padding: 10px;
         margin-bottom: 40px;
     }
+    .rezina-img {
+        width: 300px;
+    }
 }
 
 /* 5. iPads (Ландшафтный)| */
@@ -175,6 +196,9 @@ div.test-block {
         border: 1px solid #e7e7e7;
         padding: 10px;
         margin-bottom: 40px;
+    }
+    .rezina-img {
+        width: 300px;
     }
 }
 
@@ -190,6 +214,9 @@ div.test-block {
         padding: 10px;
         margin-bottom: 40px;
     }
+    .rezina-img {
+        width: 300px;
+    }
 }
 
 /* 7. Настольные компьютеры и ноутбуки */
@@ -204,6 +231,9 @@ div.test-block {
         padding: 10px;
         margin-bottom: 40px;
     }
+    .rezina-img {
+        width: 300px;
+    }
 }
 
 /* 8. Большие экраны */
@@ -217,6 +247,9 @@ div.test-block {
         border: 1px solid #e7e7e7;
         padding: 10px;
         margin-bottom: 40px;
+    }
+    .rezina-img {
+        width: 300px;
     }
 }
 

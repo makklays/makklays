@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div style="text-align:center; margin-left:auto; margin-right:auto;" class="rezina-width">
+    <div style="margin-left:auto; margin-right:auto;" class="rezina-width text-center">
         <div style="margin-bottom:40px;"><b class="grey">{{ trans('site.mysite_contacts') }}</b></div>
 
         <div style="margin-bottom:40px;"><span id="wait"></span></div>
@@ -16,7 +16,9 @@
 
         <div style="" class="rezina-width rezina-border">
             <div class="text-center">
-                <h2>{{ trans('site.mysite_contacts') }}</h2>
+                <h2>{{ trans('site.mysite_contacts') }}</h2> <br/>
+                <img src="/img/site/support2.png" alt="." title="" class="rezina-img" />
+                <br/><br/>
             </div>
 
             <br/>
