@@ -18,7 +18,7 @@
 
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
 
     <script src='/js/jquery-3.4.0.min.js'></script>
     <script src='/js/jquery.countdown.min.js'></script>

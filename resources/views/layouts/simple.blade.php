@@ -27,7 +27,7 @@
     <!--link rel="stylesheet" type="text/css" media="all" href="https://laravel.ru/all.css" -->
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" media="all" href="/css/all.css" >
-    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
 
     <!-- my css -->
     <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" >
