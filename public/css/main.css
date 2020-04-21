@@ -221,7 +221,7 @@ div.test-block {
 }
 
 /* 9. iPhone 4 */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+/*@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
     .rezina-width {
         width: 100px;
         font-size: 14px;
@@ -232,7 +232,7 @@ div.test-block {
         padding: 10px;
         margin-bottom: 40px;
     }
-}
+}*/
 
 
 
