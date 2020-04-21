@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    <div style="text-align:center; width:630px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+    <div style="text-align:center; margin-top:40px; margin-left:auto; margin-right:auto; ">
         <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
 
         <div>

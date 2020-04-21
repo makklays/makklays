@@ -3,12 +3,12 @@
 
 @section('content')
 
-    <div style="text-align:center; margin-left:auto; margin-right:auto; width:700px;">
+    <div style="text-align:center; margin-left:auto; margin-right:auto; ">
         <div style="margin-bottom:40px;"><b class="grey">{{ trans('site.mysite_howmake') }}</b></div>
 
         <div style="margin-bottom:40px;"><span id="wait"></span></div>
 
-        <div style="margin-bottom:40px; text-align:left; width:700px; border: 1px solid #e7e7e7; font-size:18px; padding:10px;">
+        <div style="margin-bottom:40px; text-align:left; border: 1px solid #e7e7e7; font-size:18px; padding:10px;">
             <div class="text-center">
                 <h2>{{ trans('site.mysite_howmake') }}</h2>
             </div>
