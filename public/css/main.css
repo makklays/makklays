@@ -222,7 +222,7 @@ div.test-block {
 /* 7. Настольные компьютеры и ноутбуки */
 @media only screen and (min-width : 1224px) {
     .rezina-width {
-        width: 1214px;
+        width: 800px; /*1214px;*/
         font-size: 16px;
         text-align: justify;
     }
@@ -239,7 +239,7 @@ div.test-block {
 /* 8. Большие экраны */
 @media only screen and (min-width : 1824px) {
     .rezina-width {
-        width: 1814px;
+        width: 800px; /*1814px;*/
         font-size: 18px;
         text-align: justify;
     }

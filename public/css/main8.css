@@ -1,0 +1,29 @@
+
+.btn-success {
+    background-color: #267f00;
+    border-color: #267f00;
+}
+.btn-success:hover {
+    background-color: #46bf00;
+    border-color: #267f00;
+}
+
+.a-green, .a-green:visited, .a-green:link {
+    color: #267f00;
+}
+.a-green, .a-green:hover {
+    color: #46bf00;
+    /*text-decoration-style: dashed;*/
+}
+
+/*.display-3 {
+    background-color: ;
+}*/
+
+.jumbotron {
+    background-image: url(/img/developer-team-m.jpg);
+    /*background-color: #c7b39b;*/
+    background-size: cover;
+    width: 100%;
+}
+
