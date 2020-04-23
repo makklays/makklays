@@ -83,6 +83,10 @@ Route::group([
     Route::get('request', ['as' => 'mysite_request', 'uses' => 'MysiteController@request']);
     Route::get('contacts', ['as' => 'mysite_contacts', 'uses' => 'MysiteController@contacts']);
     Route::get('brief', ['as' => 'mysite_brief', 'uses' => 'MysiteController@brief']);
+    Route::get('online-brief', ['as' => 'mysite_online_brief', 'uses' => 'MysiteController@onlineBrief']);
+    Route::get('design', ['as' => 'mysite_design', function(){
+        return view('mysite.design');
+    }]);
 
     Route::get('order', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
     Route::get('links', ['as' => 'links', 'uses' => 'MysiteController@links']);

@@ -64,9 +64,22 @@
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
-            <div class="col-md-12">
-                <h2>makklays команда</h2>
-                <p>ведётся поиск)</p>
+            <!--div class="col-md-12">
+                <h2>Кто мы?</h2> <br/>
+            </div-->
+            <div class="col-md-7">
+                <h2>Кто мы?</h2> <br/>
+                <p>
+                    Makklays - команда, которая профессионально занимается компьютерным программированием сайтов с 2007 года. <br/>
+                    Успешно разработали и запрограммировали много корпоративных сайтов, интернет-магазинов для среднего бизнеса, и сложных порталов для банков. <br/><br/>
+                    Разработка сайта не является конечной целью. Это лишь инструмент, который должен помогать развитию бизнеса заказчика. <br/>
+                    Каждый наш специалист имеет более 10 лет опыта в своей сфере. <br/>
+                    Мы любим жить и любим жизнь. <br/><br/>
+                    Makklays любит новые знания, большие, и нестандартные, и тем интеренсые для нас проекты.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="/img/team.png" class="img-fluid" alt="." title="команда разработки сайтов makklays" />
             </div>
         </div>
 
@@ -74,28 +87,75 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h2>makklays разработка</h2>
-                <p>ведётся поиск)</p>
+                <h2>Что мы делаем?</h2> <br/>
+            </div>
+        </div>
+
+        <div class="card-deck mb-3">
+            <div class="col-md-4 text-center card mb-4 shadow-sm">
+                <div>
+                    <img src="/img/icon-lpage.png" alt="." title="" style="width:100px; height:100px;" />
+                </div>
+                <h5><a href="">Лендинг пейдж</a></h5>
+            </div>
+            <div class="col-md-4 text-center card mb-4 shadow-sm">
+                <div>
+                    <img src="/img/icon-lpage.png" alt="." title="" style="width:100px; height:100px;" />
+                </div>
+                <h5><a href="">Корпоративный сайт</a></h5>
+            </div>
+            <div class="col-md-4 text-center card mb-4 shadow-sm">
+                <div>
+                    <img src="/img/icon-lpage.png" alt="." title="" style="width:100px; height:100px;" />
+                </div>
+                <h5>Веб сервис и API для моб.</h5>
+            </div>
+        </div>
+        <div class="card-deck mb-3">
+            <div class="col-md-4 text-center card mb-4 shadow-sm">
+                <div>
+                    <img src="/img/icon-lpage.png" alt="." title="" style="width:100px; height:100px;" />
+                </div>
+                <h5>Веб-портал</h5>
+            </div>
+            <div class="col-md-4 text-center card mb-4 shadow-sm">
+                <div>
+                    <img src="/img/icon-lpage.png" alt="." title="" style="width:100px; height:100px;" />
+                </div>
+                <h5>Сайт-система</h5>
+            </div>
+            <div class="col-md-4 text-center card mb-4 shadow-sm">
+                <div>
+                    <img src="/img/icon-lpage.png" alt="." title="" style="width:100px; height:100px;" />
+                </div>
+                <h5>Интернет-магазин</h5>
             </div>
         </div>
 
         <hr/>
 
         <div class="row">
-            <div class="col-md-4">
-                <h2>A что такое сайт? Какие бывают?</h2>
-                <p>Сайт – это ресурс, состоящий из веб-страниц (документов), объединенных общей темой и взаимосвязанных между собой с помощью ссылок. Сайт регистрируется на одно физическое, либо юридическое лицо и обязательно привязывается к домену.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Читать &raquo;</a></p>
+            <div class="col-md-5">
+                <img src="/img/making.png" class="img-fluid" alt="." title="команда разработки сайтов makklays" />
             </div>
-            <div class="col-md-4">
-                <h2>Программисты - строили дома :)</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">Читать &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Как выбрать разработчика?</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Читать &raquo;</a></p>
+            <div class="col-md-7">
+                <h2>Как мы работаем?</h2> <br/>
+                <p class="text-justify">
+                    Используем передовые технологии. Facebook, Amazon - все эти платформы написаны на языке программирования
+                    PHP с самыми прочными стандартами безопастности и стабильностью кода. <br/>
+                    Мы выбрали этот язык и его фреймворки Yii2, Laravel, когда они ещё не ворвались в ТОП самых используемых на планете.<br/>
+                    Это позволяет нам разрабатывать в Makklays уникальное предложение для Вас и быть гибким в реализации Ваших необычных пожеланий.
+                </p>
+                <p>
+                    <strong>Разработка состоит из нескольких этапов:</strong><br/>
+                    - постановка задачи; <br/>
+                    - подготовка технического задания и заключение договора с клиентом; <br/>
+                    - разработка макета, согласование с заказчиком; <br/>
+                    - верстка шаблона, установка системы управления сайтом, настройка хостинга, демо сайта; <br/>
+                    - разработка необходимого функционала, тестирование; <br/>
+                    - наполнение контентом; <br/>
+                    - закрытие заказа после принятия клиентом;
+                </p>
             </div>
         </div>
 
@@ -103,8 +163,7 @@
 
         <div class="card-deck mb-3 text-center">
             <div class="col-md-12 text-left">
-                <h2>makklays цены</h2>
-                <br/>
+                <h2>Наши цены</h2> <br/>
             </div>
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
@@ -153,23 +212,28 @@
             </div>
         </div>
 
-        <!--div class="row">
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <hr/>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Статьи</h2> <br/>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <h4>A что такое сайт? Какие бывают?</h4>
+                <p>Сайт – это ресурс, состоящий из веб-страниц (документов), объединенных общей темой и взаимосвязанных между собой с помощью ссылок. Сайт регистрируется на одно физическое, либо юридическое лицо и обязательно привязывается к домену.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Читать &raquo;</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
+                <h4>Программисты - строили дома :)</h4>
+                <p>1.03. Ура! Нам предложили крупный контракт на постройку 12-этажного жилого дома. У всех бурный энтузиазм. Выпили на радостях 2 ящика пива. <br/>2.03. Заказчику не нравится выражение "как только, так сразу". Требует назвать конкретные сроки.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Читать &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h4>Как выбрать разработчика?</h4>
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <p><a class="btn btn-secondary" href="#" role="button">Читать &raquo;</a></p>
             </div>
-        </div-->
+        </div>
 
         <hr>
 
@@ -183,9 +247,10 @@
     <div class="row">
         <div class="col-md-4">
             <h4>Команда</h4>
-            <div><a href="" class="a-green">О нас</a></div>
-            <div><a href="" class="a-green">Как мы работаем?</a></div>
-            <div><a href="" class="a-green">Контакты</a></div>
+            <div><a href="{{ route('mysite_about', app()->getLocale()) }}" class="a-green">О нас</a></div>
+            <div><a href="{{ route('mysite_howmake', app()->getLocale()) }}" class="a-green">Как мы работаем?</a></div>
+            <div><a href="{{ route('mysite_howmake', app()->getLocale()) }}" class="a-green">Что мы делаем?</a></div>
+            <div><a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="a-green">Контакты</a></div>
         </div>
         <div class="col-md-4">
             <h4>Разработка</h4>
@@ -198,9 +263,9 @@
         </div>
         <div class="col-md-4">
             <h4>Полезно</h4>
-            <div><a href="" class="a-green">Скачать бриф на разработку</a></div>
-            <div><a href="" class="a-green">Заполнить бриф онлайн</a></div>
-            <div><a href="" class="a-green">Заказать консультацию</a></div>
+            <div><a href="{{ route('mysite_brief', app()->getLocale()) }}" class="a-green">Скачать бриф на разработку</a></div>
+            <div><a href="{{ route('mysite_brief', app()->getLocale()) }}" class="a-green">Заполнить бриф онлайн</a></div>
+            <div><a href="{{ route('feedback', app()->getLocale()) }}" class="a-green">Заказать консультацию</a></div>
         </div>
         <div class="col-md-4"></div>
     </div>
