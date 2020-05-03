@@ -53,12 +53,6 @@
         <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
 
         <!--
-        <div>
-            <a style="font-size:20px;" href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.mysite_order') }}</a>
-        </div>
-        -->
-
-        <!--
         <a href="{{ route('mysite_about', app()->getLocale()) }}">{{ trans('site.mysite_about') }}</a> |
         <a href="{{ route('mysite_howmake', app()->getLocale()) }}">{{ trans('site.mysite_howmake') }}</a> |
         <a href="{{ route('mysite_contacts', app()->getLocale()) }}">{{ trans('site.mysite_contacts') }}</a>

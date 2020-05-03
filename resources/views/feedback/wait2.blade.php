@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+    <div style="text-align:center; width:322px; margin-top:40px; margin-left:auto; margin-right:auto; ">
         <div style="margin: 20px 0 10px 0;">
             <a href="{{ route('wait2', 'es') }}">ES</a> |
             <a href="{{ route('wait2', 'en') }}">EN</a> |

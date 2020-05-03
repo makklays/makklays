@@ -16,7 +16,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon_t.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
 
@@ -30,7 +30,7 @@
     <div class="col-md-12">
         <div class="text-center" style="margin:20px; ">
             <a href="{{ route('/', app()->getLocale()) }}" >
-                <img src="/favicon.png" style="" alt="Logo" title="Makklays" />
+                <img src="/favicon_t.png" style="" alt="Logo" title="Makklays" />
             </a>
         </div>
 
@@ -72,6 +72,10 @@
                                     </div>
 
                                 <?php endfor; ?>
+
+                                <?php if(isset($answers['duration_time']) && !empty($answers['duration_time'])): ?>
+                                    <div style="color:grey; margin-top: 10px;">{{ trans('test_php.Duration_time') }}: <?= $answers['duration_time']?> {{ trans('test_php.minutes') }}</div>
+                                <?php endif; ?>
                             <?php endif; ?>
 
                             <!--div style="margin: 20px 0;">
@@ -87,7 +91,7 @@
     </div>
 </div>
 
-<div style="text-align:center; width:222px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+<div style="text-align:center; width:322px; margin-top:40px; margin-left:auto; margin-right:auto; ">
     <div style="margin: 40px 0 10px 0;">
         <a class="green" href="{{ route('test_php_report_get', 'es') }}">ES</a> |
         <a class="green" href="{{ route('test_php_report_get', 'en') }}">EN</a> |
@@ -95,8 +99,8 @@
         <a class="green" href="{{ route('test_php_report_get', 'ch') }}">CH</a>
     </div>
 
-    {{ trans('site.have_questions') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
-    &copy; makklays.com.ua, 2019-<?=date('Y')?>
+    {{ trans('site.have_questions') }} <a href="{{ route('mysite_contacts', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
+    &copy; makklays.com.ua 2019-<?=date('Y')?>
 </div>
 
 </body>
