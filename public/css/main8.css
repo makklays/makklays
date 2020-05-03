@@ -114,6 +114,13 @@ a::-moz-selection, li::-moz-selection, div::-moz-selection, b::-moz-selection, i
     transition: box-shadow 0.3s ease-out;
 }
 
+/* зеленый checkbox */
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #46bf00;
+    background-color: #46bf00;
+}
+
 /*.bg-green {
     background-color: #46bf00;
 }*/
