@@ -125,7 +125,7 @@
 
 <b>Какие элементы фирменного стиля существуют и могут быть использованы при разработке дизайна:</b> <br/>
 <?php if(isset($brief->style) && !empty($brief->style)): ?>
-    <?php foreach($brief->style as $k => $v): ?>
+    <?php foreach($brief->style as $v): ?>
         -<?=$v?>  <br/>
     <?php endforeach; ?>
 <?php else: ?>
@@ -134,24 +134,10 @@
 <br/>
 
 <b>Настроение и асоциации, которые должен вызвать дизайн сайта:</b> <br/>
-<?php if(isset($brief->design) && !empty($brief->design)): ?>
-    <?php foreach($brief->design as $k => $v): ?>
-        -<?=$v?>  <br/>
-    <?php endforeach; ?>
-<?php else: ?>
-    нет информации <br/>
-<?php endif; ?>
-<br/>
+{{ $brief->design }}  <br/><br/>
 
 <b>Наличие фотографий и картинок для разработки дизайна:</b> <br/>
-<?php if(isset($brief->fotos) && !empty($brief->fotos)): ?>
-    <?php foreach($brief->fotos as $k => $v): ?>
-        -<?=$v?> <br/>
-    <?php endforeach; ?>
-<?php else: ?>
-    нет информации <br/>
-<?php endif; ?>
-<br/>
+{{ $brief->fotos }}
 
 <b>Основные требования и пожелания по дизайну сайта:</b> <br/>
 {{ $brief->design_other }}  <br/><br/>
@@ -161,7 +147,7 @@
 
 <b>Контент для сайта: тексты, переводы, фотографии:</b> <br/>
 <?php if(isset($brief->zacontent) && !empty($brief->zacontent)): ?>
-    <?php foreach($brief->zacontent as $k => $v): ?>
+    <?php foreach($brief->zacontent as $v): ?>
         -<?=$v?> <br/>
     <?php endforeach; ?>
 <?php else: ?>
@@ -171,7 +157,7 @@
 
 <b>Дополнительные услуги и сервисы:</b> <br/>
 <?php if(isset($brief->dop) && !empty($brief->dop)): ?>
-    <?php foreach($brief->dop as $k => $v): ?>
+    <?php foreach($brief->dop as $v): ?>
         -<?=$v?> <br/>
     <?php endforeach; ?>
 <?php else: ?>
