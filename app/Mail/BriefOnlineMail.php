@@ -31,23 +31,26 @@ class BriefOnlineMail extends Mailable
      */
     public function build()
     {
+        $arr = [
+            'brief' => $this->brief,
+            'pathToFile' => base_path() . '/public/img/makklays_.png',
+        ];
+        // добавляем файл - загруженный клиентом
+        if(isset($this->brief->tzfile_name) && !empty($this->brief->tzfile_name)) {
+            $arr['pathToBrief'] = base_path() . '/public/uploads/briefs/' . $this->brief->tzfile_name;
+        }
+
         return $this->from('info@makklays.com.ua')
             //->from('mailgun@sandboxce1c29b0ff01419da0d9370c2deb2c3d.mailgun.org')
             ->to('office@makklays.com.ua')
             ->subject('Brief Online | Makklays.com.ua')
             ->view('emails.brief_online')
-            ->with([
-                'brief' => $this->brief,
-                //'email' => $this->brief->email,
-                //'message2' => $this->brief->message,
-                'pathToFile' => base_path() . '/public/img/makklays_.png',
-                'pathToBrief' => base_path() . '/public/uploads/briefs/' . $this->brief->tzfile_name,
-            ])
+            ->with($arr);
             /*->attach(base_path() . '/public/img/makklays_.png', [
                 'as' => 'makklays_logo',
                 'mime' => 'image/png',
             ])*/
-            ->attachData($this->brief->tzfile, $this->brief->tzfile_name);
+            //->attachData($this->brief->tzfile, $this->brief->tzfile_name);
             // Attach a file from a raw $data string...
             //->attachData($this->brief->tzfile, $name, array $options = []);
     }

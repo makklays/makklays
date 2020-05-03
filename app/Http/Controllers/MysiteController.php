@@ -741,11 +741,12 @@ class MysiteController extends Controller
         if (isset($file) && !empty($file)) {
             $brief->tzfile = $file;
 
-            $brief->tzfile_name = $file->getClientOriginalName() . '.' . $file->getClientOriginalExtension();
+            $brief->tzfile_name = date('d_m_Y__H_m_s') . '.' . $file->getClientOriginalExtension();
             $brief->tzfile_size = $file->getSize();
 
             $destinationPath = 'uploads/briefs';
-            $file->move($destinationPath, $file->getClientOriginalName());
+            $file->move($destinationPath, $brief->tzfile_name);
+
         } else {
             $brief->tzfile = '';
             $brief->tzfile_name = '';

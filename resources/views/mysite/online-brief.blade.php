@@ -15,7 +15,7 @@
         <div class="col-md-12">
             <h2 class="text-center text-design2">{{ trans('site.Base_info') }}</h2> <br/>
 
-            <form action="{{ route('mysite_online_brief_post', app()->getLocale()) }}" method="post">
+            <form action="{{ route('mysite_online_brief_post', app()->getLocale()) }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
 
                 <div class="row">
@@ -42,11 +42,11 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="id_phone">{{ trans('site.Phone') }} *</label>
+                            <label for="id_phone">{{ trans('site.Phone') }} <sup style="color:red;">*</sup></label>
                             <input name="phone" type="text" id="id_phone" value="{{ old('phone') }}" class="form-control" placeholder="{{ trans('site.Phone_pl') }}*" />
 
                             <?php if ($errors->has('phone')): ?>
-                            <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color:#88251d;"><?=$errors->first('phone')?></div>
+                            <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color: red;"><?=$errors->first('phone')?></div>
                             <?php endif; ?>
                         </div>
                     </div>
