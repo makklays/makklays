@@ -88,10 +88,10 @@
 <?php endif; ?>
 
 <b>Языковые версии сайта:</b> <br/>
-{{ $brief->language }}
+{{ $brief->language }} <br/><br/>
 
 <b>Система управления сайтом:</b> <br/>
-{{ $brief->manage_site }}
+{{ $brief->manage_site }} <br/><br/>
 
 <b>Нужна ли мобильная версия сайта или адаптивный дизайн:</b> <br/>
 {{ $brief->language }}  <br/><br/>
@@ -106,7 +106,7 @@
 {{ $brief->manage_site }}  <br/><br/>
 
 <b>Навигация по сайту:</b> <br/>
-{{ $brief->adaptive }}
+{{ $brief->adaptive }} <br/><br/>
 
 <b>Информационные блоки:</b> <br/>
 {{ $brief->blocks }}  <br/><br/>
