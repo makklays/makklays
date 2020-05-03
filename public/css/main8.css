@@ -97,6 +97,22 @@ a::-moz-selection, li::-moz-selection, div::-moz-selection, b::-moz-selection, i
     color: #FFF;
 }
 
+/* menu - линия сверху */
+.navbar {
+    padding: 0 1rem;
+}
+.nav-link {
+    display: block;
+    padding: 12px 1rem;
+}
+.navbar-light .navbar-nav .active > .nav-link {
+    /*color: #46bf00;*/
+    text-decoration: underline;
+}
+.dev-navbar a.nav-link.dev-navbar-link:hover {
+    box-shadow: 0px 2px 0px #46bf00 inset;
+    transition: box-shadow 0.3s ease-out;
+}
 
 /*.bg-green {
     background-color: #46bf00;

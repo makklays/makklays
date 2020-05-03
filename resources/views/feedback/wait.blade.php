@@ -11,11 +11,11 @@
             {{ trans('wait.text_wait') }} <br/><br/>
             {{ trans('wait.i_wait_you') }} <br/>
             <!--&#9742;--> &#9749; <span style="color:red;">&#10084;</span> <br/><br/>
-            {{ trans('wait.smile') }}
+            {{ trans('wait.smile') }})
         </div>
     </div>
 
-    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
+    <div style="text-align:center; width:322px; margin-top:40px; margin-left:auto; margin-right:auto; ">
         <div style="margin: 20px 0 10px 0;">
             <a href="{{ route('wait', 'es') }}">ES</a> |
             <a href="{{ route('wait', 'en') }}">EN</a> |

@@ -203,19 +203,19 @@
                             {{ trans('site.Type_site_desc') }}
                         </p>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_type1" name="sitetype" class="custom-control-input">
+                            <input type="radio" id="id_type1" value="{{ trans('site.type_site1') }}" name="sitetype" class="custom-control-input">
                             <label class="custom-control-label" for="id_type1">{{ trans('site.type_site1') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_type2" name="sitetype" class="custom-control-input">
+                            <input type="radio" id="id_type2" value="{{ trans('site.type_site2') }}" name="sitetype" class="custom-control-input">
                             <label class="custom-control-label" for="id_type2">{{ trans('site.type_site2') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_type3" name="sitetype" class="custom-control-input">
+                            <input type="radio" id="id_type3" value="{{ trans('site.type_site3') }}" name="sitetype" class="custom-control-input">
                             <label class="custom-control-label" for="id_type3">{{ trans('site.type_site3') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_type4" name="sitetype" class="custom-control-input">
+                            <input type="radio" id="id_type4" value="{{ trans('site.type_site4') }}" name="sitetype" class="custom-control-input">
                             <label class="custom-control-label" for="id_type4">{{ trans('site.type_site4') }}</label>
                         </div>
                         <br/><br/>
@@ -387,15 +387,15 @@
                             {{ trans('site.brief_137') }}
                         </p>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_cms1" name="manage_site" class="custom-control-input">
+                            <input type="radio" id="id_cms1" value="{{ trans('site.brief_138') }}" name="manage_site" class="custom-control-input">
                             <label class="custom-control-label" for="id_cms1">{{ trans('site.brief_138') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_cms2" name="manage_site" class="custom-control-input">
+                            <input type="radio" id="id_cms2" value="{{ trans('site.brief_139') }}" name="manage_site" class="custom-control-input">
                             <label class="custom-control-label" for="id_cms2">{{ trans('site.brief_139') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_cms3" name="manage_site" class="custom-control-input">
+                            <input type="radio" id="id_cms3" value="{{ trans('site.brief_140') }}" name="manage_site" class="custom-control-input">
                             <label class="custom-control-label" for="id_cms3">{{ trans('site.brief_140') }}</label>
                         </div>
                         <br/><br/>
@@ -406,15 +406,15 @@
                             <h4>{{ trans('site.brief_141') }}</h4>
                         </p>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_adaptive1" name="adaptive" class="custom-control-input">
+                            <input type="radio" id="id_adaptive1" value="{{ trans('site.brief_142') }}" name="adaptive" class="custom-control-input">
                             <label class="custom-control-label" for="id_adaptive1">{{ trans('site.brief_142') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_adaptive2" name="adaptive" class="custom-control-input">
+                            <input type="radio" id="id_adaptive2" value="{{ trans('site.brief_143') }}" name="adaptive" class="custom-control-input">
                             <label class="custom-control-label" for="id_adaptive2">{{ trans('site.brief_143') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_adaptive3" name="adaptive" class="custom-control-input">
+                            <input type="radio" id="id_adaptive3" value="{{ trans('site.brief_144') }}" name="adaptive" class="custom-control-input">
                             <label class="custom-control-label" for="id_adaptive3">{{ trans('site.brief_144') }}</label>
                         </div>
                         <br/><br/>
@@ -540,27 +540,27 @@
                             <h4>{{ trans('site.brief_167') }}</h4> <br/>
                         </p>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_design1" name="design" class="custom-control-input">
+                            <input type="radio" id="id_design1" value="{{ trans('site.brief_168') }}" name="design" class="custom-control-input">
                             <label class="custom-control-label" for="id_design1">{{ trans('site.brief_168') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_design2" name="design" class="custom-control-input">
+                            <input type="radio" id="id_design2" value="{{ trans('site.brief_169') }}" name="design" class="custom-control-input">
                             <label class="custom-control-label" for="id_design2">{{ trans('site.brief_169') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_design3" name="design" class="custom-control-input">
+                            <input type="radio" id="id_design3" value="{{ trans('site.brief_170') }}" name="design" class="custom-control-input">
                             <label class="custom-control-label" for="id_design3">{{ trans('site.brief_170') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_design4" name="design" class="custom-control-input">
+                            <input type="radio" id="id_design4" value="{{ trans('site.brief_171') }}" name="design" class="custom-control-input">
                             <label class="custom-control-label" for="id_design4">{{ trans('site.brief_171') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_design5" name="design" class="custom-control-input">
+                            <input type="radio" id="id_design5" value="{{ trans('site.brief_172') }}" name="design" class="custom-control-input">
                             <label class="custom-control-label" for="id_design5">{{ trans('site.brief_172') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_design6" name="design" class="custom-control-input">
+                            <input type="radio" id="id_design6" value="{{ trans('site.brief_173') }}" name="design" class="custom-control-input">
                             <label class="custom-control-label" for="id_design6">{{ trans('site.brief_173') }}</label>
                         </div>
                         <br/><br/>
@@ -571,15 +571,15 @@
                             <h4>{{ trans('site.brief_174') }}</h4> <br/>
                         </p>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_foto1" name="fotos" class="custom-control-input">
+                            <input type="radio" id="id_foto1" value="{{ trans('site.brief_175') }}" name="fotos" class="custom-control-input">
                             <label class="custom-control-label" for="id_foto1">{{ trans('site.brief_175') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_foto2" name="fotos" class="custom-control-input">
+                            <input type="radio" id="id_foto2" value="{{ trans('site.brief_176') }}" name="fotos" class="custom-control-input">
                             <label class="custom-control-label" for="id_foto2">{{ trans('site.brief_176') }}</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="id_foto3" name="fotos" class="custom-control-input">
+                            <input type="radio" id="id_foto3" value="{{ trans('site.brief_177') }}" name="fotos" class="custom-control-input">
                             <label class="custom-control-label" for="id_foto3">{{ trans('site.brief_177') }}</label>
                         </div>
                         <br/><br/>

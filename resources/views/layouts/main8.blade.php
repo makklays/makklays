@@ -50,7 +50,7 @@
 <body>
 <main role="main">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white hexlet-navbar border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white dev-navbar border-bottom">
         <!--a aria-hidden="true" class="navbar-brand mr-4" href="/" -->
         <a class="navbar-brand" href="{{ route('/', app()->getLocale()) }}">
             <img src="/favicon_t.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -61,23 +61,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link  " href="{{ route('mysite_about', app()->getLocale()) }}">
+                <li class="nav-item {{ \Route::current()->getName() == 'mysite_about' ? 'active' : '' }}">
+                    <a class="nav-link dev-navbar-link" href="{{ route('mysite_about', app()->getLocale()) }}">
                         {{ trans('site.mysite_about') }}
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="{{ route('mysite_howmake', app()->getLocale()) }}">
+                <li class="nav-item {{ \Route::current()->getName() == 'mysite_howmake' ? 'active' : '' }}">
+                    <a class="nav-link dev-navbar-link" href="{{ route('mysite_howmake', app()->getLocale()) }}">
                         {{ trans('site.mysite_howmake') }}
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link  " href="{{ route('mysite_whatmake', app()->getLocale()) }}">
+                <li class="nav-item {{ \Route::current()->getName() == 'mysite_whatmake' ? 'active' : '' }}">
+                    <a class="nav-link dev-navbar-link" href="{{ route('mysite_whatmake', app()->getLocale()) }}">
                         {{ trans('site.mysite_whatmake') }}
                     </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item {{ in_array(\Route::current()->getName(), ['mysite_lpage', 'mysite_corporate', 'mysite_webservice', 'mysite_webportal', 'mysite_sitesytem', 'mysite_store']) ? 'active' : '' }} dropdown">
+                    <a class="nav-link dev-navbar-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         {{ trans('site.Development') }}
                     </a>
                     <div class="dropdown-menu">
@@ -90,8 +90,8 @@
                         <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_sitesystem') }}</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="{{ route('mysite_contacts', app()->getLocale()) }}">
+                <li class="nav-item {{ \Route::current()->getName() == 'mysite_contacts' ? 'active' : '' }}">
+                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_contacts', app()->getLocale()) }}">
                         {{ trans('site.contacts') }}
                     </a>
                 </li>

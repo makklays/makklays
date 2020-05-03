@@ -232,20 +232,16 @@ class TestController extends Controller
         $end_time = date('d.m.Y H:i');
         session()->put('end_time', $end_time);
         // проходил тестировние в минутах
-        $duration_mins = (strtotime($start_time) - strtotime($end_time)) / 3600;
-        session()->put('end_time', $duration_mins);
+        $duration_mins =  ( strtotime($start_time) - strtotime($end_time) );
+        session()->put('duration_time', date('m', $duration_mins) );
+
+        //dd(session()->all());
 
         return redirect('/' . app()->getLocale() . '/test-php/report');
     }
 
     public function report(Request $request)
     {
-        /*if (session()->has('the_end')) {
-            return redirect('/test-php');
-        }
-        session()->put('the_end', 1);
-        */
-
         // с какой страницы пришли ? тест с начала
         if ($request->server('HTTP_REFERER') != config('app.url').'/'.app()->getLocale().'/test-php/question-4'
             && $request->server('HTTP_REFERER') != config('app.url').'/'.app()->getLocale().'/test-php/report'
@@ -300,6 +296,8 @@ class TestController extends Controller
         }
 
         // $res = session()->all();
+
+        //dd($answers);
 
         /*
         $msg = 'Пройден Test PHP';
