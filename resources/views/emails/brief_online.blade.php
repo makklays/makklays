@@ -53,7 +53,7 @@
         -<?=$v?>  <br/>
     <?php endforeach; ?>
 <?php else: ?>
-    нет <br/>
+    нет информации <br/>
 <?php endif; ?>
 <br/>
 
@@ -66,7 +66,7 @@
         -<?=$v?>  <br/>
     <?php endforeach; ?>
 <?php else: ?>
-    нет <br/>
+    нет информации <br/>
 <?php endif; ?>
 <br/>
 
@@ -76,7 +76,7 @@
         -<?=$v?>  <br/>
     <?php endforeach; ?>
 <?php else: ?>
-    нет <br/>
+    нет информации <br/>
 <?php endif; ?>
 <br/>
 
@@ -86,7 +86,7 @@
         -<?=$v?>  <br/>
     <?php endforeach; ?>
 <?php else: ?>
-    нет <br/>
+    нет информации <br/>
 <?php endif; ?>
 <br/>
 
@@ -129,7 +129,7 @@
         -<?=$v?>  <br/>
     <?php endforeach; ?>
 <?php else: ?>
-    нет <br/>
+    нет информации <br/>
 <?php endif; ?>
 <br/>
 
@@ -139,7 +139,7 @@
         -<?=$v?>  <br/>
     <?php endforeach; ?>
 <?php else: ?>
-    нет <br/>
+    нет информации <br/>
 <?php endif; ?>
 <br/>
 
@@ -149,7 +149,7 @@
         -<?=$v?> <br/>
     <?php endforeach; ?>
 <?php else: ?>
-    нет <br/>
+    нет информации <br/>
 <?php endif; ?>
 <br/>
 
@@ -165,7 +165,7 @@
         -<?=$v?> <br/>
     <?php endforeach; ?>
 <?php else: ?>
-    нет <br/>
+    нет информации <br/>
 <?php endif; ?>
 <br/>
 
@@ -175,7 +175,7 @@
         -<?=$v?> <br/>
     <?php endforeach; ?>
 <?php else: ?>
-    нет <br/>
+    нет информации <br/>
 <?php endif; ?>
 <br/>
 
@@ -183,7 +183,7 @@
 <?php if(isset($brief->tzfile_name) && !empty($brief->tzfile_name)): ?>
     <a href="{{ $pathToBrief }}">{{ $brief->tzfile_name }}</a>
 <?php else: ?>
-    нет
+    нет информации
 <?php endif; ?>
 <br/><br/>
 
