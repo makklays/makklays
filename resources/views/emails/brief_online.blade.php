@@ -6,7 +6,6 @@
 </a>
 <br/>
 <br/>
-<br/>
 
 <h1>Бриф на разработку сайта</h1>
 
@@ -48,12 +47,8 @@
 
 <h2>Цели и функции сайта</h2>
 
-<pre>
-<?=print_r($brief)?>
-</pre>
-
 <b>Цели сайта:</b> <br/>
-<?php if(isset($brief->goal) && empty($brief->goal)): ?>
+<?php if(isset($brief->goal) && !empty($brief->goal)): ?>
     <?php foreach($brief->goal as $v): ?>
         <?=$v?>  <br/><br/>
     <?php endforeach; ?>
@@ -65,7 +60,7 @@
 {{ $brief->sitetype }}  <br/><br/>
 
 <b>Сервисы для связи с посетителями сайта:</b> <br/>
-<?php if(isset($brief->connect) && empty($brief->connect)): ?>
+<?php if(isset($brief->connect) && !empty($brief->connect)): ?>
     <?php foreach($brief->connect as $v): ?>
         <?=$v?>  <br/><br/>
     <?php endforeach; ?>
@@ -74,7 +69,7 @@
 <?php endif; ?>
 
 <b>Сервисы по продаже через интернет:</b> <br/>
-<?php if(isset($brief->pdodaga) && empty($brief->pdodaga)): ?>
+<?php if(isset($brief->pdodaga) && !empty($brief->pdodaga)): ?>
     <?php foreach($brief->pdodaga as $v): ?>
         <?=$v?>  <br/><br/>
     <?php endforeach; ?>
@@ -83,7 +78,7 @@
 <?php endif; ?>
 
 <b>Интеграция со сторонними сервисами и программами:</b> <br/>
-<?php if(isset($brief->itegr) && empty($brief->itegr)): ?>
+<?php if(isset($brief->itegr) && !empty($brief->itegr)): ?>
     <?php foreach($brief->itegr as $v): ?>
         <?=$v?>  <br/><br/>
     <?php endforeach; ?>
@@ -125,7 +120,7 @@
 {{ $brief->design_nolike }}  <br/><br/>
 
 <b>Какие элементы фирменного стиля существуют и могут быть использованы при разработке дизайна:</b> <br/>
-<?php if(isset($brief->style) && empty($brief->style)): ?>
+<?php if(isset($brief->style) && !empty($brief->style)): ?>
     <?php foreach($brief->style as $k => $v): ?>
         <?=$v?>  <br/><br/>
     <?php endforeach; ?>
@@ -134,7 +129,7 @@
 <?php endif; ?>
 
 <b>Настроение и асоциации, которые должен вызвать дизайн сайта:</b> <br/>
-<?php if(isset($brief->design) && empty($brief->design)): ?>
+<?php if(isset($brief->design) && !empty($brief->design)): ?>
     <?php foreach($brief->design as $k => $v): ?>
         <?=$v?>  <br/><br/>
     <?php endforeach; ?>
@@ -143,7 +138,7 @@
 <?php endif; ?>
 
 <b>Наличие фотографий и картинок для разработки дизайна:</b> <br/>
-<?php if(isset($brief->fotos) && empty($brief->fotos)): ?>
+<?php if(isset($brief->fotos) && !empty($brief->fotos)): ?>
     <?php foreach($brief->fotos as $k => $v): ?>
         <?=$v?> <br/><br/>
     <?php endforeach; ?>
@@ -158,7 +153,7 @@
 <h2>Контент и дополнительные услуги</h2>
 
 <b>Контент для сайта: тексты, переводы, фотографии:</b> <br/>
-<?php if(isset($brief->zacontent) && empty($brief->zacontent)): ?>
+<?php if(isset($brief->zacontent) && !empty($brief->zacontent)): ?>
     <?php foreach($brief->zacontent as $k => $v): ?>
         <?=$v?> <br/><br/>
     <?php endforeach; ?>
@@ -167,7 +162,7 @@
 <?php endif; ?>
 
 <b>Дополнительные услуги и сервисы:</b> <br/>
-<?php if(isset($brief->dop) && empty($brief->dop)): ?>
+<?php if(isset($brief->dop) && !empty($brief->dop)): ?>
     <?php foreach($brief->dop as $k => $v): ?>
         <?=$v?> <br/><br/>
     <?php endforeach; ?>
