@@ -733,7 +733,12 @@ class MysiteController extends Controller
 
             $destinationPath = 'uploads/briefs';
             $file->move($destinationPath, $file->getClientOriginalName());
+        } else {
+            $brief->tzfile = '';
+            $brief->tzfile_name = '';
+            $brief->tzfile_size = 0;
         }
+
         //Display File Name
         /*echo 'File Name: '.$file->getClientOriginalName();
         echo '<br>';
