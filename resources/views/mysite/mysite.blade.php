@@ -28,7 +28,7 @@
 <div class="wrap">
     <div class="section1">
         <div>
-            <a href="{{ route('/', app()->getLocale()) }}"><img src="/img/makklays.png" /></a>
+            <a href="{{ route('/', app()->getLocale()) }}"><img src="/img/makklays_.png" /></a>
         </div>
         <h1>{{ trans('site.header_mysite') }}</h1>
         <form action="{{ route('feedback', app()->getLocale()) }}">
@@ -292,7 +292,7 @@
                         <div style="margin:0 0 10px 0;">{{ trans('site.adres') }}</div>
 
                         <div>Skype: makklays </div>
-                        <div>E-mail: <strong>alexander@makklays.com.ua</strong></div>
+                        <div>E-mail: <strong>office@makklays.com.ua</strong></div>
                         <div style="margin:0 0 10px 0;">Mob.: <strong>+38 098 870 5397</strong></div>
 
                         <div>{{ trans('site.or') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.pishite') }}</a> </div>
@@ -422,10 +422,10 @@
     <div class="col-md-12">
         <div>
             <a href="/">
-            <img src="/img/makklays.png" alt="&copy; Makklays" title="Makklays" />
+            <img src="/img/makklays_.png" alt="&copy; Makklays" title="Makklays" />
             </a>
         </div>
-        <div>&copy; makklays.com.ua 2007 - 2019</div>
+        <div>&copy; makklays.com.ua 2019 - <?=date('Y')?></div>
         <div>All Rights Reserved.</div>
     </div>
 </div>

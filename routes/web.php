@@ -51,7 +51,7 @@ Route::group([
     'middleware' => 'setlocale'
 ], function () {
 
-    Route::get('', ['as' => '/', function () {
+    Route::get('main', ['as' => 'main', function () {
         return view('test'); // 'main'
     }]);
 
@@ -59,6 +59,20 @@ Route::group([
 
     Route::get('wait', 'FeedbackController@wait')->name('wait');
     Route::get('wait2', 'FeedbackController@wait2')->name('wait2');
+    /*Route::get('api/user/12', function(){
+        $arr = [
+            'id' => 12,
+            'name' => 'Alex Manson',
+            "age" => 25,
+            "bio" => "Programmador de Madrid, 12 años de experiencia",
+            "ciudad" => "Madrid",
+            "comiendo" => "manzanas, naranjas y queso",
+            "pais" => "España"
+        ];
+        echo json_encode($arr);
+        exit;
+        return view('mysite.design');
+    });*/
 
     // тест на знание PHP
     Route::get('test-php', ['as' => 'test-php', 'uses' => 'TestController@intro']);
@@ -76,17 +90,30 @@ Route::group([
     Route::get('test-php/report',  ['as' => 'test_php_report_get', 'uses' => 'TestController@report']);
     Route::post('test-php/report', ['as' => 'test_php_report_post', 'uses' => 'TestController@sendEmail']);
 
-
     /* mysite page */
-    Route::get('about', ['as' => 'mysite_about', 'uses' => 'MysiteController@about']);
-    Route::get('howmake', ['as' => 'mysite_howmake', 'uses' => 'MysiteController@howmake']);
+    Route::get('', ['as' => '/', 'uses' => 'MysiteController@main']);
+    Route::get('about-us', ['as' => 'mysite_about', 'uses' => 'MysiteController@about']);
+    Route::get('we-making', ['as' => 'mysite_howmake', 'uses' => 'MysiteController@howmake']);
+    Route::get('development-site-shop', ['as' => 'mysite_whatmake', 'uses' => 'MysiteController@whatmake']);
     Route::get('request', ['as' => 'mysite_request', 'uses' => 'MysiteController@request']);
     Route::get('contacts', ['as' => 'mysite_contacts', 'uses' => 'MysiteController@contacts']);
     Route::get('brief', ['as' => 'mysite_brief', 'uses' => 'MysiteController@brief']);
     Route::get('online-brief', ['as' => 'mysite_online_brief', 'uses' => 'MysiteController@onlineBrief']);
+    Route::post('online-brief', ['as' => 'mysite_online_brief_post', 'uses' => 'MysiteController@onlineBriefPost']);
     Route::get('design', ['as' => 'mysite_design', function(){
         return view('mysite.design');
     }]);
+    Route::get('landing-page', ['as' => 'mysite_lpage', 'uses' => 'MysiteController@lpage']);
+    Route::get('corporate-site', ['as' => 'mysite_corporate', 'uses' => 'MysiteController@corporate']);
+    Route::get('api-service', ['as' => 'mysite_webservice', 'uses' => 'MysiteController@webservice']);
+    Route::get('web-portal', ['as' => 'mysite_webportal', 'uses' => 'MysiteController@webportal']);
+    Route::get('site-system', ['as' => 'mysite_sitesytem', 'uses' => 'MysiteController@sitesytem']);
+    Route::get('online-store', ['as' => 'mysite_store', 'uses' => 'MysiteController@store']);
+
+    Route::post('order-development-post', ['as' => 'order_development_post', 'uses' => 'MysiteController@orderDevelopmentPost']);
+
+    Route::get('seo-words', ['as' => 'seo_words', 'uses' => 'MysiteController@countSeoWords']);
+    Route::post('seo-words', ['as' => 'seo_words_post', 'uses' => 'MysiteController@countSeoWordsPost']);
 
     Route::get('order', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
     Route::get('links', ['as' => 'links', 'uses' => 'MysiteController@links']);
@@ -217,7 +244,7 @@ Route::group([
                     'lat: '.$lat.'<br/> lon: '.$lon.'<br/><br/>date: ' . date('d.m.Y H:i').'<br/><br/>';
 
                 $headers =  'MIME-Version: 1.0' . "\r\n";
-                $headers .= 'From: makklays.com.ua <alexander@makklays.com.ua>' . "\r\n";
+                $headers .= 'From: makklays.com.ua <office@makklays.com.ua>' . "\r\n";
                 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
                 //mail('phpdevops@gmail.com', 'Result of test on makklays.com.ua', $msg, $headers);
@@ -356,18 +383,15 @@ Route::group([
         $headers = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'From: Makklays <info@makklays.com.ua>' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        mail('alexander@makklays.com.ua', 'Сообщение с сайта makklays.com.ua', $msg, $headers);*/
+        mail('office@makklays.com.ua', 'Сообщение с сайта makklays.com.ua', $msg, $headers);*/
 
-        Mail::to('alexander@makklays.com.ua')->send(new FeedbackMail($feedback));
+        Mail::to('office@makklays.com.ua')->send(new FeedbackMail($feedback));
 
         return redirect(app()->getLocale() . '/feedback')->with([
             'flash_message' => trans('site.send_success'),
             'flash_type' => 'success'
         ]);
     }]);
-
-
-
 });
 
 
@@ -423,8 +447,6 @@ Route::group([
 
         exit;
     }]);
-
-
 });
 
 /*Route::group(['as' => 'admin::'], function () {
