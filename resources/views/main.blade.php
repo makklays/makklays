@@ -96,7 +96,7 @@
     @if (Route::has('login'))
         <div class="top-right links">
             @auth
-                <a href="{{ url('/home') }}">Home</a>
+                <a href="{{ url('/ru/home') }}">Home</a>
             @else
                 <a href="{{ route('login') }}">Login</a>
 
@@ -118,7 +118,7 @@
             <!--a href="{{ url('/companies') }}">Companies</a>
             <a href="{{ url('/employees') }}">Employees</a -->
             @auth
-                <a href="{{ url('/home') }}">Home</a>
+                <a href="{{ url('/ru/home') }}">Home</a>
             @else
                 <a href="{{ url('/login') }}">Login</a>
             @endauth
