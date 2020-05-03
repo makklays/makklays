@@ -72,7 +72,6 @@
             </div>
         </div>
 
-    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center text-design2">{{ trans('site.mysite_howmake') }}</h1> <br/>
@@ -109,7 +108,7 @@
         </div>
         <br/><br/ -->
 
-        <div class="card-deck mb-3 text-center">
+        <div class="row">
             <div class="col-md-12 text-left">
                 <h1 class="text-center text-design2">{{ trans('site.Our_price') }}</h1> <br/>
             </div>
@@ -127,8 +126,10 @@
                 <p class="text-justify">
                     {{ trans('site.make_dorogo') }} <a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="a-green">{{ trans('site.go_link') }}</a>.
                 </p> <br/><br/>
-
             </div>
+        </div>
+
+        <div class="card-deck mb-3 text-center">
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal">{{ trans('site.m_corporate') }}</h4>
