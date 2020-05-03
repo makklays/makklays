@@ -43,10 +43,10 @@ class BriefOnlineMail extends Mailable
                 'pathToFile' => base_path() . '/public/img/makklays_.png',
                 'pathToBrief' => base_path() . '/public/uploads/briefs/' . $this->brief->tzfile_name,
             ])
-            ->attach(base_path() . '/public/img/makklays_.png', [
+            /*->attach(base_path() . '/public/img/makklays_.png', [
                 'as' => 'makklays_logo',
                 'mime' => 'image/png',
-            ])
+            ])*/
             ->attachData($this->brief->tzfile, $this->brief->tzfile_name);
             // Attach a file from a raw $data string...
             //->attachData($this->brief->tzfile, $name, array $options = []);
