@@ -725,14 +725,15 @@ class MysiteController extends Controller
 
         // Дополнительные файлы
         $file = $request->file('tzfile'); // file
-        $brief->tzfile = $file;
+        if (isset($file) && !empty($file)) {
+            $brief->tzfile = $file;
 
-        $brief->tzfile_name = $file->getClientOriginalName() . '.' . $file->getClientOriginalExtension();
-        $brief->tzfile_size = $file->getSize();
+            $brief->tzfile_name = $file->getClientOriginalName() . '.' . $file->getClientOriginalExtension();
+            $brief->tzfile_size = $file->getSize();
 
-        $destinationPath = 'uploads/briefs';
-        $file->move($destinationPath, $file->getClientOriginalName());
-
+            $destinationPath = 'uploads/briefs';
+            $file->move($destinationPath, $file->getClientOriginalName());
+        }
         //Display File Name
         /*echo 'File Name: '.$file->getClientOriginalName();
         echo '<br>';
