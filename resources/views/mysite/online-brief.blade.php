@@ -497,39 +497,39 @@
                             <h4>{{ trans('site.brief_157') }}</h4>
                         </p>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="style[1]" @if(old('style[1]')) checked @endif class="custom-control-input" id="id_style1">
-                            <label class="custom-control-label" for="id_style1">{{ trans('site.brief_158') }}</label> <?=old('style[1]')?> - {{ old('style[1]') }}
+                            <input type="checkbox" name="style[]" value="1" @if(is_array(old('style')) && in_array(1, old('style'))) checked @endif class="custom-control-input" id="id_style1">
+                            <label class="custom-control-label" for="id_style1">{{ trans('site.brief_158') }}</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="style[2]"  class="custom-control-input" id="id_style2">
+                            <input type="checkbox" name="style[]" value="2" @if(is_array(old('style')) && in_array(2, old('style'))) checked @endif class="custom-control-input" id="id_style2">
                             <label class="custom-control-label" for="id_style2">{{ trans('site.brief_159') }}</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="style[3]"  class="custom-control-input" id="id_style3">
+                            <input type="checkbox" name="style[]" value="3" @if(is_array(old('style')) && in_array(3, old('style'))) checked @endif class="custom-control-input" id="id_style3">
                             <label class="custom-control-label" for="id_style3">{{ trans('site.brief_160') }}</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="style[4]"  class="custom-control-input" id="id_style4">
+                            <input type="checkbox" name="style[]" value="4" @if(is_array(old('style')) && in_array(4, old('style'))) checked @endif class="custom-control-input" id="id_style4">
                             <label class="custom-control-label" for="id_style4">{{ trans('site.brief_161') }}</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="style[5]"  class="custom-control-input" id="id_style5">
+                            <input type="checkbox" name="style[]" value="5" @if(is_array(old('style')) && in_array(5, old('style'))) checked @endif class="custom-control-input" id="id_style5">
                             <label class="custom-control-label" for="id_style5">{{ trans('site.brief_162') }}</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="style[6]"  class="custom-control-input" id="id_style6">
+                            <input type="checkbox" name="style[]" value="6" @if(is_array(old('style')) && in_array(6, old('style'))) checked @endif class="custom-control-input" id="id_style6">
                             <label class="custom-control-label" for="id_style6">{{ trans('site.brief_163') }}</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="style[7]"  class="custom-control-input" id="id_style7">
+                            <input type="checkbox" name="style[]" value="7" @if(is_array(old('style')) && in_array(7, old('style'))) checked @endif class="custom-control-input" id="id_style7">
                             <label class="custom-control-label" for="id_style7">{{ trans('site.brief_164') }}</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="style[8]"  class="custom-control-input" id="id_style8">
+                            <input type="checkbox" name="style[]" value="8" @if(is_array(old('style')) && in_array(8, old('style'))) checked @endif class="custom-control-input" id="id_style8">
                             <label class="custom-control-label" for="id_style8">{{ trans('site.brief_165') }}</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="style[9]"  class="custom-control-input" id="id_style9">
+                            <input type="checkbox" name="style[]" value="9" @if(is_array(old('style')) && in_array(9, old('style'))) checked @endif class="custom-control-input" id="id_style9">
                             <label class="custom-control-label" for="id_style9">{{ trans('site.brief_166') }}</label>
                         </div>
                         <br/><br/>
