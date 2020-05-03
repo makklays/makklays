@@ -574,6 +574,18 @@ class MysiteController extends Controller
 
     public function onlineBriefPost(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'phone' => 'required|max:25',
+        ]);
+
+        if ($validator->fails()) {
+            //Obtenemos los mensajes de error de la validation
+            $messages = $validator->messages();
+            return redirect(app()->getLocale() . '/online-brief')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
         //dd($request->all());
         $brief = new \stdClass(); // без объекта Brief и таблицы в бд
 
