@@ -685,6 +685,7 @@ class MysiteController extends Controller
         $brief->blocks = $request->blocks;
         $brief->design_like = $request->design_like;
         $brief->design_nolike = $request->design_nolike;
+
         // Какие элементы фирменного стиля существуют и могут быть использованы при разработке дизайна
         if (isset($request->style) && !empty($request->style)) {
             $arr = [
@@ -699,7 +700,7 @@ class MysiteController extends Controller
                 9 => 'Другое',
             ];
             foreach($request->style as $k => $v) {
-                $brief->style[$k] = $arr[$k]; // array
+                $brief->style[$v] = $arr[$v]; // array
             }
         }
 
