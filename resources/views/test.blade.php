@@ -37,7 +37,7 @@
             <h1>???</h1>
         </div>
         <div class="flex-block">
-            <div class="ch-block" choo="cat" style="background-image: url('/img/cat.png'); background-size: cover;">
+            <div class="ch-block" choo="cat" style="background-image: url('/img/cats.png'); background-size: cover;">
                 <div style="color:#FFF; margin-left:7px;">{{ trans('site.cats') }}</div>
             </div>
             <div class="or">
