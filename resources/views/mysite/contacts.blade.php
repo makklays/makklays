@@ -1,51 +1,60 @@
 
-@extends('layouts.simple')
+@extends('layouts.main8')
 
 @section('content')
 
-    <div style="margin-left:auto; margin-right:auto;" class="rezina-width text-center">
-        <div style="margin-bottom:40px;"><b class="grey">{{ trans('site.mysite_contacts') }}</b></div>
+    <!--br/>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('/', app()->getLocale()) }}" class="a-green">{{ trans('site.home') }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ trans('site.mysite_contacts') }}</li>
+        </ol>
+    </nav-->
 
-        <div style="margin-bottom:40px;"><span id="wait"></span></div>
+    <div class="row">
+        <div class="col-md-12">
+            <br/><h1 class="text-center text-design2">{{ trans('site.mysite_contacts') }}</h1> <br/>
+        </div>
+        <div class="col-md-6">
+            <img src="/img/contacts_.jpg" alt="." title="" class="img-fluid kromka" />
+        </div>
+        <div class="col-md-6">
 
-        <!--div style="margin-bottom:40px; text-align:center; width:700px; font-size:18px; padding:10px;">
-            <a href="{{ route('mysite_about', app()->getLocale()) }}">О нас</a> |
-            <a href="{{ route('mysite_howmake', app()->getLocale()) }}">Как мы работаем?</a> |
-            <a href="{{ route('mysite_contacts', app()->getLocale()) }}">Контакты</a>
-        </div-->
-
-        <div style="" class="rezina-width rezina-border">
-            <div class="text-center">
-                <h2>{{ trans('site.mysite_contacts') }}</h2> <br/>
-                <img src="/img/site/support2.png" alt="." title="" class="rezina-img" />
-                <br/><br/>
-            </div>
-
-            <br/>
             {{ trans('site.contacts1') }} <br/><br/>
 
-            {{ trans('site.contacts2') }} <br/><br/>
-            {{ trans('site.contacts_mob') }}: +38 (098) 870 5397 <br/>
-            {{ trans('site.contacts_skype') }}: makklays <br/>
-            {{ trans('site.contacts_email') }}: alexander@makklays.com.ua <br/><br/>
+            <address>
+                <strong>{{ trans('site.Address') }}</strong><br/>
+                {{ trans('site.contacts2') }} <br/>
+            </address>
+            <address>
+                <strong>{{ trans('site.mysite_contacts') }}</strong><br/>
+                <abbr title="{{ trans('site.contacts_skype') }}">{{ trans('site.contacts_skype') }}:</abbr> makklays <br/>
+                <abbr title="{{ trans('site.contacts_mob') }}">{{ trans('site.contacts_mob') }}:</abbr> +38 (098) 870 5397 <br/>
+                <a href="mailto:office@makklays.com.ua" class="a-green">office@makklays.com.ua</a> <br/>
+            </address>
+            <address>
+                <strong>{{ trans('site.Times_working') }}</strong> <br/>
+                <span>{{ trans('site.mon_fri') }}</span> <br/>
+                <span>{{ trans('site.sur_sun') }}</span>
+            </address>
 
-            <div class="form-group text-center">
-                <a href="{{ route('mysite_brief', app()->getLocale()) }}" target="_blank">{{ trans('site.mysite_brief') }}</a> <br/><br/>
-
-                <form action="{{ route('feedback', app()->getLocale()) }}" method="get">
-                    <input type="submit" class="btn btn-success text-center btn-lg" value="{{ trans('site.сheckout') }}" />
-                </form>
-            </div>
-            <br/>
+            <br/><br/>
         </div>
-    </div>
 
-    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-        <div style="margin: 20px 0 10px 0;">
-            <a href="{{ route('mysite_contacts', 'es') }}">ES</a> |
-            <a href="{{ route('mysite_contacts', 'en') }}">EN</a> |
-            <a href="{{ route('mysite_contacts', 'ru') }}">RU</a> |
-            <a href="{{ route('mysite_contacts', 'ch') }}">CH</a>
+        <div class="col-md-12" style="margin:30px 0 30px 0;">
+            <div class="form-group text-center">
+                <a href="{{ route('mysite_brief', app()->getLocale()) }}" target="_blank" class="a-green link-big2">
+                    {{ trans('site.mysite_brief') }}
+                </a> <br/><br/>
+
+                <a href="{{ route('mysite_online_brief', app()->getLocale()) }}" class="a-green link-big2">
+                    {{ trans('site.m_brief_online') }}
+                </a> <br/><br/>
+
+                <button type="button" id="id_order_development" class="btn btn-success" data-toggle="modal">
+                    {{ trans('site.order_development') }}
+                </button>
+            </div>
         </div>
     </div>
 

@@ -1,27 +1,40 @@
 
-@extends('layouts.simple')
+@extends('layouts.main8')
 
 @section('content')
 
-    <div style="margin-left:auto; margin-right:auto; " class="rezina-width text-center">
-        <div style="margin-bottom:40px;"><b class="grey">{{ trans('site.mysite_about') }}</b></div>
+    <!--br/>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('/', app()->getLocale()) }}" class="a-green">{{ trans('site.home') }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ trans('site.mysite_about') }}</li>
+        </ol>
+    </nav-->
 
-        <div style="margin-bottom:40px;"><span id="wait"></span></div>
+    <div class="row">
+        <div class="col-md-12">
+            <br/><h1 class="text-center text-design2">{{ trans('site.mysite_about') }}</h1> <br/>
+        </div>
+        <div class="col-md-7">
+            <p class="text-justify">
+                {{ trans('site.about_text1') }} <br/>
+                {{ trans('site.about_text2') }} <br/><br/>
+                {{ trans('site.about_text3') }} <br/><br/>
+                {{ trans('site.about_text4') }} <br/><br/>
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img src="/img/planshet2.png" alt="." title="About makklays" class="img-fluid kromka" />
+        </div>
 
-        <div style="" class="rezina-width rezina-border">
-            <div class="text-center">
-                <h2>{{ trans('site.mysite_about') }}</h2> <br/>
-                <img src="/img/site/crm2.png" alt="." title="" class="rezina-img" />
-                <br/><br/>
-            </div>
+        <!--div class="col-md-12">
+            <br/><hr/><br/>
+        </div-->
 
-            <br/>
-            {{ trans('site.about_text1') }} <br/>
-            {{ trans('site.about_text2') }} <br/>
-            {{ trans('site.about_text3') }} <br/>
-            {{ trans('site.about_text4') }} <br/>
-            <br/><br/>
-
+        <div class="col-md-5">
+            <img src="/img/team.png" alt="." title="" class="img-fluid kromka" />
+        </div>
+        <div class="col-md-7">
             {{ trans('site.about_text5') }} <br/><br/>
             1. <b>{{ trans('site.about_text6') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.about_text7') }}</span><br/><br/>
@@ -33,7 +46,15 @@
             <span style="font-size:14px;">{{ trans('site.about_text13') }}</span><br/><br/>
             5. <b>{{ trans('site.about_text14') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.about_text15') }}</span><br/><br/>
+        </div>
 
+        <!--div class="col-md-12">
+            <hr/>
+        </div-->
+
+        <div class="col-md-12">
+            <br/><br/>
+            <!--
             {{ trans('site.about_text16') }} <br/>
             - {{ trans('site.about_text17') }} <br/>
             - {{ trans('site.about_text18') }} <br/>
@@ -42,24 +63,14 @@
             - {{ trans('site.about_text21') }} <br/>
             - {{ trans('site.about_text22') }} <br/>
             - {{ trans('site.about_text23') }} <br/>
-            - {{ trans('site.about_text24') }} <br/><br/>
-            <br/>
-
+            - {{ trans('site.about_text24') }} <br/><br/><br/>
+            -->
             <div class="form-group text-center">
-                <form action="{{ route('feedback', app()->getLocale()) }}" method="get">
-                    <input type="submit" class="btn btn-success text-center btn-lg" value="{{ trans('site.сheckout') }}" />
-                </form>
+                <button type="button" id="id_order_development" class="btn btn-success" data-toggle="modal">
+                    {{ trans('site.order_development') }}
+                </button>
             </div>
             <br/>
-        </div>
-    </div>
-
-    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-        <div style="margin: 20px 0 10px 0;">
-            <a href="{{ route('mysite_about', 'es') }}">ES</a> |
-            <a href="{{ route('mysite_about', 'en') }}">EN</a> |
-            <a href="{{ route('mysite_about', 'ru') }}">RU</a> |
-            <a href="{{ route('mysite_about', 'ch') }}">CH</a>
         </div>
     </div>
 

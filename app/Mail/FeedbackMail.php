@@ -33,16 +33,16 @@ class FeedbackMail extends Mailable
     {
         return $this->from('info@makklays.com.ua')
             //->from('mailgun@sandboxce1c29b0ff01419da0d9370c2deb2c3d.mailgun.org')
-            ->to('alexander@makklays.com.ua')
+            ->to('office@makklays.com.ua')
             ->subject('Feedback | Makklays.com.ua')
             ->view('emails.feedback')
             ->with([
                 'name' => $this->feedback->name,
                 'email' => $this->feedback->email,
                 'message2' => $this->feedback->message,
-                'pathToFile' => base_path() . '/public/img/makklays.png',
+                'pathToFile' => base_path() . '/public/img/makklays_.png',
             ])
-            ->attach(base_path() . '/public/img/makklays.png', [
+            ->attach(base_path() . '/public/img/makklays_.png', [
                 'as' => 'makklays_logo',
                 'mime' => 'image/png',
             ]);
