@@ -125,7 +125,7 @@
                     <h4 class="text-center">{{ trans('site.Make_dorogo') }}</h4>
                 </p>
                 <p class="text-justify">
-                    {{ trans('site.make_dorogo') }} <a href="/ru/price" class="a-green">{{ trans('site.go_link') }}</a>.
+                    {{ trans('site.make_dorogo') }} <a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="a-green">{{ trans('site.go_link') }}</a>.
                 </p> <br/><br/>
 
             </div>
@@ -146,7 +146,7 @@
                         <li>- {{ trans('site.m_corporate8') }}</li>
                         <li>- {{ trans('site.m_corporate9') }}</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</button>
+                    <a type="button" href="{{ route('mysite_contacts', app()->getLocale()) }}" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</a>
                 </div>
             </div>
             <div class="card mb-4 shadow-sm">
@@ -169,7 +169,7 @@
                         <li>- {{ trans('site.m_store11') }}</li>
                         <li>- {{ trans('site.m_store12') }}</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</button>
+                    <a type="button" href="{{ route('mysite_contacts', app()->getLocale()) }}" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</a>
                 </div>
             </div>
             <div class="card mb-4 shadow-sm">
@@ -194,7 +194,7 @@
                         <li>- {{ trans('site.m_sitesystem13') }}</li>
                         <li>- {{ trans('site.m_sitesystem14') }}</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</button>
+                    <a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</a>
                 </div>
             </div>
         </div>

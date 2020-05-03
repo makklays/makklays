@@ -108,7 +108,7 @@ Route::group([
     Route::get('api-service', ['as' => 'mysite_webservice', 'uses' => 'MysiteController@webservice']);
     Route::get('web-portal', ['as' => 'mysite_webportal', 'uses' => 'MysiteController@webportal']);
     Route::get('site-system', ['as' => 'mysite_sitesytem', 'uses' => 'MysiteController@sitesytem']);
-    Route::get('online-store', ['as' => 'mysite_store', 'uses' => 'MysiteController@store']);
+    Route::get('online-shop', ['as' => 'mysite_store', 'uses' => 'MysiteController@store']);
 
     Route::post('order-development-post', ['as' => 'order_development_post', 'uses' => 'MysiteController@orderDevelopmentPost']);
 
