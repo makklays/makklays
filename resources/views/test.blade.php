@@ -16,7 +16,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon_t.png" type="image/x-icon" />
     <!--link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" /-->
     <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
 
@@ -52,15 +52,17 @@
     <div style="text-align:center; margin-top:40px; margin-left:auto; margin-right:auto; ">
         <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
 
+        <!--
         <div>
             <a style="font-size:20px;" href="{{ route('mysite', app()->getLocale()) }}" >{{ trans('site.mysite_order') }}</a>
         </div>
+        -->
 
+        <!--
         <a href="{{ route('mysite_about', app()->getLocale()) }}">{{ trans('site.mysite_about') }}</a> |
         <a href="{{ route('mysite_howmake', app()->getLocale()) }}">{{ trans('site.mysite_howmake') }}</a> |
-        <!--a href="{{ route('mysite_request', app()->getLocale()) }}">{{ trans('site.mysite_request') }}</a> | -->
         <a href="{{ route('mysite_contacts', app()->getLocale()) }}">{{ trans('site.mysite_contacts') }}</a>
-
+        -->
         <div style="padding-bottom: 20px;"></div>
 
         <div>
@@ -88,8 +90,8 @@
             <a href="/cv_alexander_kuziv_ch.html" target="_blank">CV CH</a>
         </div-->
 
-        {{ trans('site.have_questions') }} <a href="{{ route('feedback', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
-        &copy; makklays.com.ua, 2019-<?=date('Y')?>
+        {{ trans('site.have_questions') }} <a href="{{ route('mysite_contacts', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
+        &copy; makklays.com.ua 2007-<?=date('Y')?>
     </div>
 
     <!--
