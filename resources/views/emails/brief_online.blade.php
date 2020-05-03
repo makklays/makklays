@@ -93,7 +93,7 @@
 {{ $brief->manage_site }} <br/><br/>
 
 <b>Нужна ли мобильная версия сайта или адаптивный дизайн:</b> <br/>
-{{ $brief->language }}  <br/><br/>
+{{ $brief->adaptive }}  <br/><br/>
 
 <b>Другие цели, сервисы, функции и СМS:</b> <br/>
 {{ $brief->other_goal }}  <br/><br/>
@@ -102,10 +102,10 @@
 <h2>Структура сайта</h2>
 
 <b>Разделы сайта:</b> <br/>
-{{ $brief->manage_site }}  <br/><br/>
+{{ $brief->razdels }}  <br/><br/>
 
 <b>Навигация по сайту:</b> <br/>
-{{ $brief->adaptive }} <br/><br/>
+{{ $brief->navigation }} <br/><br/>
 
 <b>Информационные блоки:</b> <br/>
 {{ $brief->blocks }}  <br/><br/>
