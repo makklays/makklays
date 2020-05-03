@@ -168,6 +168,7 @@
 <b>Дополнительные файлы:</b> <br/>
 <?php if(isset($brief->tzfile_name) && !empty($brief->tzfile_name)): ?>
     <a href="{{ $pathToBrief }}">{{ $brief->tzfile_name }}</a>
+    {{ $message->embed($pathToBrief) }}
 <?php else: ?>
     нет информации
 <?php endif; ?>
