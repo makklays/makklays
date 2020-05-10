@@ -669,7 +669,7 @@ class MysiteController extends Controller
         $call->save();
 
         // отправляем на email - заказ разработки
-        //Mail::to('office@makklays.com.ua')->send(new CallMail($call));
+        Mail::to('office@makklays.com.ua')->send(new CallMail($call));
 
         return response()->json(['success' => 'success']);
     }
@@ -909,7 +909,7 @@ class MysiteController extends Controller
             ]);
 
         // отправляем на email - заполненный бриф - заказ разработки
-        //Mail::to('office@makklays.com.ua')->send(new BriefOnlineMail($brief)); // сделать
+        Mail::to('office@makklays.com.ua')->send(new BriefOnlineMail($brief)); // сделать
 
         return redirect(route('mysite_online_brief', app()->getLocale()))->with([
             'flash_message' => trans('site.send_success'),
