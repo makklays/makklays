@@ -12,10 +12,10 @@
 
     <meta property="og:title" content="{{ $seo->title }}" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://makklays.com.ua" />
-    <meta property="og:image" content="http://makklays.com.ua/img/makklays.png" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="<?=config('app.url')?>/img/development.jpeg" />
 
-    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" >
 
     <!-- Включить GA -->
     <!-- запуститься в интернете -->
@@ -29,19 +29,19 @@
         gtag('config', 'UA-164972795-1');
     </script-->
 
-    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css?<?=time()?>" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/main8.css?<?=time()?>" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/bootstrap4/css/bootstrap.min.css?'.time()) }}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/main8.css?'.time()) }}" />
 
-    <script src='/js/jquery-3.4.0.min.js'></script>
-    <script src='/css/bootstrap4/js/bootstrap.min.js'></script>
-    <script type="text/javascript" src="/js/myapp.js"></script>
+    <script src='<?=config('app.url')?>/js/jquery-3.4.0.min.js'></script>
+    <script src='<?=config('app.url')?>/css/bootstrap4/js/bootstrap.min.js'></script>
+    <script type="text/javascript" src="<?=config('app.url')?>/js/myapp.js"></script>
 </head>
 <body>
 <main role="main">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white dev-navbar border-bottom">
         <a class="navbar-brand" href="{{ route('/', app()->getLocale()) }}">
-            <img src="/makklays.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="<?=config('app.url')?>/makklays.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Makklays
         </a>
         <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
@@ -127,10 +127,10 @@
                 <div><a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="a-green">{{ trans('site.contacts') }}</a></div>
                 <div style="padding:20px 0 0 0;">
                     <h4>{{ trans('site.Lang') }}</h4>
-                    <a href="{{ route('mysite_about', 'es') }}"><img src="/img/flags/Spain-flag-48.png" style="width:28px;" alt="ES" title="ES" /></a> &nbsp;
-                    <a href="{{ route('mysite_about', 'en') }}"><img src="/img/flags/United-kingdom-flag-48.png" style="width:28px;" alt="EN" title="EN" /></a> &nbsp;
-                    <a href="{{ route('mysite_about', 'ru') }}"><img src="/img/flags/Russia-flag-48.png" style="width:28px;" alt="RU" title="RU" /></a> &nbsp;
-                    <a href="{{ route('mysite_about', 'ch') }}"><img src="/img/flags/China-flag-48.png" style="width:28px;" alt="CH" title="CH" /></a>
+                    <a href="{{ route('mysite_about', 'es') }}"><img src="<?=config('app.url')?>/img/flags/Spain-flag-48.png" style="width:28px;" alt="ES" title="ES" /></a> &nbsp;
+                    <a href="{{ route('mysite_about', 'en') }}"><img src="<?=config('app.url')?>/img/flags/United-kingdom-flag-48.png" style="width:28px;" alt="EN" title="EN" /></a> &nbsp;
+                    <a href="{{ route('mysite_about', 'ru') }}"><img src="<?=config('app.url')?>/img/flags/Russia-flag-48.png" style="width:28px;" alt="RU" title="RU" /></a> &nbsp;
+                    <a href="{{ route('mysite_about', 'ch') }}"><img src="<?=config('app.url')?>/img/flags/China-flag-48.png" style="width:28px;" alt="CH" title="CH" /></a>
                 </div>
                 <br/>
             </div>
@@ -206,7 +206,7 @@
                 </form>
                 <form name="frmResult" id="id_frmResult" style="display:none;">
                     <div class="form-group text-center">
-                        <img src="/img/call_success.png" alt="Wait call" title="Wait call" class="img-call rounded-circle kromka" />
+                        <img src="<?=config('app.url')?>/img/call_success.png" alt="Wait call" title="Wait call" class="img-call rounded-circle kromka" />
                         <br/>
                         <span class="text-center">{{ trans('site.Order_successful') }}</span>
                     </div>

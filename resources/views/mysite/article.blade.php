@@ -17,15 +17,15 @@
         <div class="col-md-12 text-center">
             <br/>
             <?php if (isset($article->photo) && !empty($article->photo)): ?>
-                <img src="/articles/imgs/<?=$article->photo?>" alt="." title="<?=$article->title?>" class="img-fluid kromka" />
+                <img src="<?=config('app.url')?>/articles/imgs/<?=$article->photo?>" alt="Makklays - {{ trans('site.Articles') }} image" title="<?=$article->title?>" class="img-fluid kromka" />
             <?php else: ?>
-                <img src="/img/empty_img2.png" alt="." title="<?=$article->title?>" class="img-fluid kromka" />
+                <img src="<?=config('app.url')?>/img/empty_img2.png" alt="Makklays - {{ trans('site.Articles') }} image" title="<?=$article->title?>" class="img-fluid kromka" />
             <?php endif; ?>
             <br/><br/>
         </div>
 
         <div class="col-md-12 text-center" style="font-size:14px;">
-            <span class=""><img src="/img/eye.jpg" alt="eye" style="width:18px;" /> {{ $article->views }} </span>
+            <span class=""><img src="<?=config('app.url')?>/img/eye.jpg" alt="eye" title="Makklays - {{ trans('site.views') }} image" style="width:18px;" /> {{ $article->views }} </span>
         </div>
 
         <div class="col-md-12">

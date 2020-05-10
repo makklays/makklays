@@ -18,7 +18,7 @@
             </div>
 
             <!--div class="col-md-3">
-                <img src="/img/makklays.png" alt="." title="" class="img-fluid kromka" /> <br/><br/>
+                <img src="<?=config('app.url')?>/img/makklays.png" alt="." title="" class="img-fluid kromka" /> <br/><br/>
             </div-->
 
             <!--div class="rounded my-2 py-3 py-md-4 px-3 pr-xl-4 shadow-sm x-shadow-fade-in position-relative overflow-hidden">
@@ -52,7 +52,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
                 <a href="{{ route('mysite_lpage', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/lpage.png" alt="Makklays - {{ trans('site.m_lpage') }} image1" title="{{ trans('site.m_lpage') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/lpage.png" alt="Makklays - {{ trans('site.m_lpage') }} image1" title="{{ trans('site.m_lpage') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_lpage') }}</h2>
                 </a>
@@ -61,7 +61,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
                 <a href="{{ route('mysite_corporate', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/notebook.png" alt="Makklays - {{ trans('site.m_corporate') }} image2" title="{{ trans('site.m_corporate') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/notebook.png" alt="Makklays - {{ trans('site.m_corporate') }} image2" title="{{ trans('site.m_corporate') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_corporate') }}</h2>
                 </a>
@@ -70,7 +70,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
                 <a href="{{ route('mysite_webservice', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/mob_api.png" alt="Makklays - {{ trans('site.m_webapi') }} image3" title="{{ trans('site.m_webapi') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/mob_api.png" alt="Makklays - {{ trans('site.m_webapi') }} image3" title="{{ trans('site.m_webapi') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_webapi') }}</h2>
                 </a>
@@ -80,7 +80,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in" >
                 <a href="{{ route('mysite_webportal', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/web_portal.png" alt="Makklays - {{ trans('site.m_webportal') }} image4" title="{{ trans('site.m_webportal') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/web_portal.png" alt="Makklays - {{ trans('site.m_webportal') }} image4" title="{{ trans('site.m_webportal') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_webportal') }}</h2>
                 </a>
@@ -89,7 +89,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm" >
                 <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/sitesystem.png" alt="Makklays - {{ trans('site.m_sitesystem') }} image5" title="{{ trans('site.m_sitesystem') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/sitesystem.png" alt="Makklays - {{ trans('site.m_sitesystem') }} image5" title="{{ trans('site.m_sitesystem') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_sitesystem') }}</h2>
                 </a>
@@ -98,7 +98,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in" >
                 <a href="{{ route('mysite_store', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/store.png" alt="Makklays - {{ trans('site.m_store') }} image6" title="{{ trans('site.m_store') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/store.png" alt="Makklays - {{ trans('site.m_store') }} image6" title="{{ trans('site.m_store') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_store') }}</h2>
                 </a>
@@ -119,25 +119,25 @@
                         <div class="row slide justify-content-center">
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Composer" src="/img/composer.png">
+                                    <img height="65" alt="Composer" src="<?=config('app.url')?>/img/composer.png">
                                     <p class="text-muted mt-3">Composer</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="PHP" src="/img/php.png">
+                                    <img height="65" alt="PHP" src="<?=config('app.url')?>/img/php.png">
                                     <p class="text-muted mt-3">PHP</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="MySQL" src="/img/mysql.png">
+                                    <img height="65" alt="MySQL" src="<?=config('app.url')?>/img/mysql.png">
                                     <p class="text-muted mt-3">MySQL</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="PostgreSQL" src="/img/postgre_sql.png">
+                                    <img height="65" alt="PostgreSQL" src="<?=config('app.url')?>/img/postgre_sql.png">
                                     <p class="text-muted mt-3">PostgreSQL</p>
                                 </div>
                             </div>
@@ -147,25 +147,25 @@
                         <div class="row slide justify-content-center">
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="HTML5" src="/img/site/html5.png">
+                                    <img height="65" alt="HTML5" src="<?=config('app.url')?>/img/site/html5.png">
                                     <p class="text-muted mt-3">HTML5</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="CSS3" src="/img/site/css3.png">
+                                    <img height="65" alt="CSS3" src="<?=config('app.url')?>/img/site/css3.png">
                                     <p class="text-muted mt-3">CSS3</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="jQuery" src="/img/jquery.png">
+                                    <img height="65" alt="jQuery" src="<?=config('app.url')?>/img/jquery.png">
                                     <p class="text-muted mt-3">jQuery</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Vue.js" src="/img/vue_js.png">
+                                    <img height="65" alt="Vue.js" src="<?=config('app.url')?>/img/vue_js.png">
                                     <p class="text-muted mt-3">Vue.js</p>
                                 </div>
                             </div>
@@ -175,25 +175,25 @@
                         <div class="row slide justify-content-center">
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Slim" src="/img/slim.png">
+                                    <img height="65" alt="Slim" src="<?=config('app.url')?>/img/slim.png">
                                     <p class="text-muted mt-3">Slim</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Laravel" src="/img/laravel_.png">
+                                    <img height="65" alt="Laravel" src="<?=config('app.url')?>/img/laravel_.png">
                                     <p class="text-muted mt-3">Laravel</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Yii2" src="/img/site/Yii2.png">
+                                    <img height="65" alt="Yii2" src="<?=config('app.url')?>/img/site/Yii2.png">
                                     <p class="text-muted mt-3">Yii2</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Lumen" src="/img/lumen.png">
+                                    <img height="65" alt="Lumen" src="<?=config('app.url')?>/img/lumen.png">
                                     <p class="text-muted mt-3">Lumen</p>
                                 </div>
                             </div>
@@ -203,19 +203,19 @@
                         <div class="row slide justify-content-center">
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Jira" src="/img/jira.png">
+                                    <img height="65" alt="Jira" src="<?=config('app.url')?>/img/jira.png">
                                     <p class="text-muted mt-3">Jira</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Github" src="/img/github.png">
+                                    <img height="65" alt="Github" src="<?=config('app.url')?>/img/github.png">
                                     <p class="text-muted mt-3">GitHub</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Git" src="/img/git.png">
+                                    <img height="65" alt="Git" src="<?=config('app.url')?>/img/git.png">
                                     <p class="text-muted mt-3">Git</p>
                                 </div>
                             </div>
@@ -226,25 +226,25 @@
                         <div class="row slide justify-content-center">
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Linux" src="/img/linux.png">
+                                    <img height="65" alt="Linux" src="<?=config('app.url')?>/img/linux.png">
                                     <p class="text-muted mt-3">Linux</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Ubuntu" src="/img/site/ubuntu.png">
+                                    <img height="65" alt="Ubuntu" src="<?=config('app.url')?>/img/site/ubuntu.png">
                                     <p class="text-muted mt-3">Ubuntu</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Microsoft" src="/img/microsoft.png">
+                                    <img height="65" alt="Microsoft" src="<?=config('app.url')?>/img/microsoft.png">
                                     <p class="text-muted mt-3">Microsoft</p>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Bash" src="/img/bash.png">
+                                    <img height="65" alt="Bash" src="<?=config('app.url')?>/img/bash.png">
                                     <p class="text-muted mt-3">Bash</p>
                                 </div>
                             </div>
@@ -307,7 +307,7 @@
                     <div class="row slide justify-content-center">
                         <div class="col-12 col-md-10 col-lg-2 d-flex align-items-center d-lg-block mb-5">
                             <div class="mb-lg-4">
-                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя Кирилл Закимов" src="/img/foto3.jpg">
+                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя" src="<?=config('app.url')?>/img/foto3.jpg">
                             </div>
                             <div class="ml-4 ml-lg-0">
                                 <div class="h3 font-weight-bold">Kirill Zakimov</div>
@@ -323,7 +323,7 @@
                     <div class="row slide justify-content-center">
                         <div class="col-12 col-md-10 col-lg-2 d-flex align-items-center d-lg-block mb-5">
                             <div class="mb-lg-4">
-                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя Valeriy Zadavysvichka" src="/img/foto.jpg">
+                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя" src="<?=config('app.url')?>/img/foto.jpg">
                             </div>
                             <div class="ml-4 ml-lg-0">
                                 <div class="h3 font-weight-bold">Valeriy Zadavysvichka</div>
@@ -339,7 +339,7 @@
                     <div class="row slide justify-content-center">
                         <div class="col-12 col-md-10 col-lg-2 d-flex align-items-center d-lg-block mb-5">
                             <div class="mb-lg-4">
-                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя Katy Antonenko" src="/img/foto2.jpg">
+                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя" src="<?=config('app.url')?>/img/foto2.jpg">
                             </div>
                             <div class="ml-4 ml-lg-0">
                                 <div class="h3 font-weight-bold">Katy Antonenko</div>

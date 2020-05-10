@@ -12,11 +12,11 @@
             </p>
         </div>
         <div class="col-md-5">
-            <img src="/img/api.jpg" alt="Makklays - Web service - image1" title="Web service" class="img-fluid" />
+            <img src="<?=config('app.url')?>/img/api.jpg" alt="Makklays - Web service - image1" title="Web service" class="img-fluid" />
         </div>
 
         <div class="col-md-5">
-            <img src="/img/api2.png" alt="Makklays - Web service - image2" title="Web service" class="img-fluid" />
+            <img src="<?=config('app.url')?>/img/api2.png" alt="Makklays - Web service - image2" title="Web service" class="img-fluid" />
         </div>
         <div class="col-md-7">
             <p class="text-justify">
@@ -29,7 +29,7 @@
             </p>
         </div>
         <div class="col-md-5">
-            <img src="/img/api3.png" alt="Makklays - Web service - image3" title="Web service" class="img-fluid" />
+            <img src="<?=config('app.url')?>/img/api3.png" alt="Makklays - Web service - image3" title="Web service" class="img-fluid" />
         </div>
 
         <div class="col-md-12">

@@ -10,9 +10,9 @@
             <div class="col-md-4">
                 <p class="text-justify">
                     <?php if (isset($item->photo) && !empty($item->photo)): ?>
-                        <img src="/articles/imgs/<?=$item->photo?>" alt="." title="<?=$item->title?>" class="img-fluid kromka" />
+                        <img src="<?=config('app.url')?>/articles/imgs/<?=$item->photo?>" alt="Makklays - {{ trans('site.Articles') }} image" title="<?=$item->title?>" class="img-fluid kromka" />
                     <?php else: ?>
-                        <img src="/img/empty_img2.png" alt="." title="<?=$item->title?>" class="img-fluid kromka" />
+                        <img src="<?=config('app.url')?>/img/empty_img2.png" alt="Makklays - {{ trans('site.Articles') }} image" title="<?=$item->title?>" class="img-fluid kromka" />
                     <?php endif; ?>
                 </p>
                 <h4 class=""><?=$item->title?></h4>

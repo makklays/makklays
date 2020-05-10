@@ -8,7 +8,7 @@
         </div>
 
         <div class="col-md-5">
-            <img src="/img/333.jpg" alt="." title="" class="img-fluid kromka" /> <br/><br/>
+            <img src="<?=config('app.url')?>/img/333.jpg" alt="Makklays - {{ trans('site.mysite_howmake') }} image1" title="{{ trans('site.mysite_howmake') }}" class="img-fluid kromka" /> <br/><br/>
         </div>
         <div class="col-md-7 text-justify">
             <h4>{{ trans('site.howmake2') }}</h4> <br/>
@@ -104,7 +104,7 @@
             <br/><br/>
         </div>
         <div class="col-md-5 text-justify">
-            <img src="/img/advantages.jpg" alt="." title="{{ trans('site.circle_project') }}" class="img-fluid kromka" />
+            <img src="<?=config('app.url')?>/img/advantages.jpg" alt="Makklays - {{ trans('site.mysite_howmake') }} image2" title="{{ trans('site.circle_project') }}" class="img-fluid kromka" />
         </div>
 
         <div class="col-md-12 text-justify">
@@ -112,7 +112,7 @@
         </div>
 
         <div class="col-md-5 text-justify">
-            <img src="/img/100-percent.jpg" alt="." title="{{ trans('site.garantiya') }}!" class="img-fluid kromka" />
+            <img src="<?=config('app.url')?>/img/100-percent.jpg" alt="Makklays - {{ trans('site.mysite_howmake') }} image3" title="{{ trans('site.garantiya') }}!" class="img-fluid kromka" />
         </div>
         <div class="col-md-7 text-justify">
             - <b>{{ trans('site.zapusk') }}</b> <br/>

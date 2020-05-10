@@ -12,7 +12,7 @@
             </p>
         </div>
         <div class="col-md-5">
-            <img src="/img/webportal.png" class="img-fluid" alt="Makklays - Web-portal image1" title="Web-portal" />
+            <img src="<?=config('app.url')?>/img/webportal.png" class="img-fluid" alt="Makklays - Web-portal image1" title="Web-portal" />
         </div>
 
         <div class="col-md-12">
@@ -46,7 +46,7 @@
             <h2 class="text-center text-design2">{{ trans('site.portal9') }}</h2>
         </div>
         <div class="col-md-5">
-            <img src="/img/webportal4.jpg" class="img-fluid" alt="Makklays - Web-portal image2" title="Web-portal" />
+            <img src="<?=config('app.url')?>/img/webportal4.jpg" class="img-fluid" alt="Makklays - Web-portal image2" title="Web-portal" />
         </div>
         <div class="col-md-7">
             <p class="text-justify">

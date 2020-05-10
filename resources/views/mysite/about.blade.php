@@ -15,7 +15,7 @@
             </p>
         </div>
         <div class="col-md-5">
-            <img src="/img/planshet2.png" alt="." title="About makklays" class="img-fluid kromka" />
+            <img src="<?=config('app.url')?>/img/planshet2.png" alt="." title="About makklays" class="img-fluid kromka" />
         </div>
 
         <div class="col-md-12">
@@ -25,7 +25,7 @@
         </div>
 
         <div class="col-md-5">
-            <img src="/img/team.png" alt="." title="" class="img-fluid kromka" />
+            <img src="<?=config('app.url')?>/img/team.png" alt="." title="" class="img-fluid kromka" />
         </div>
         <div class="col-md-7">
             {{ trans('site.about_text5') }} <br/><br/>
