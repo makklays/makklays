@@ -9,16 +9,16 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <meta name="description" content="Makklays" />
-    <meta name="keywords" content="Makklays" />
+    <meta name="description" content="Makklays - adminka" />
+    <meta name="keywords" content="Makklays - adminka" />
     <meta name="author" content="Makklays" />
 
-    <meta property="og:title" content="Makklays" />
+    <meta property="og:title" content="Makklays - adminka" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://makklays.com.ua" />
-    <meta property="og:image" content="http://makklays.com.ua/img/dog.jpg" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="<?=config('app.url')?>/img/development.jpeg" />
 
-    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" >
 
     <!-- Scripts -->
     <script src="{{ asset('js/jquery-3.4.0.min.js') }}" type="text/javascript"></script>

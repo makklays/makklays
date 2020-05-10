@@ -12,7 +12,7 @@
             </p>
         </div>
         <div class="col-md-5">
-            <img src="/img/lpage2.jpg" alt="Makklays - Landing page - image1" title="Landing page" class="img-fluid" />
+            <img src="<?=config('app.url')?>/img/lpage2.jpg" alt="Makklays - Landing page - image1" title="Landing page" class="img-fluid" />
         </div>
 
         <div class="col-md-12">
@@ -33,7 +33,7 @@
             <h2 class="text-center text-design2">{{ trans('site.lpage11') }}</h2> <br/>
         </div>
         <div class="col-md-5">
-            <img src="/img/lpage3.png" alt="Makklays - Landing page - image2" title="Landing page" class="img-fluid" />
+            <img src="<?=config('app.url')?>/img/lpage3.png" alt="Makklays - Landing page - image2" title="Landing page" class="img-fluid" />
         </div>
         <div class="col-md-7">
             <p class="text-justify">

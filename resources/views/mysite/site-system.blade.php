@@ -13,7 +13,7 @@
             </p>
         </div>
         <div class="col-md-5">
-            <img src="/img/system.jpg" class="img-fluid" alt="Web-portal" title="Web-portal" />
+            <img src="<?=config('app.url')?>/img/system.jpg" class="img-fluid" alt="Makklays - Site-System image1" title="Site-System" />
         </div>
 
         <div class="col-md-12">

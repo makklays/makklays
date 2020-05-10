@@ -12,7 +12,7 @@
             </p>
         </div>
         <div class="col-md-5">
-            <img src="/img/internet_shop.jpg" alt="Makklays - Internet store - image1" title="Internet Shop" class="img-fluid" />
+            <img src="<?=config('app.url')?>/img/internet_shop.jpg" alt="Makklays - Online store - e-commerce website - image1" title="Online store - e-commerce website" class="img-fluid" />
         </div>
         <div class="col-md-12">
             <p class="text-justify">

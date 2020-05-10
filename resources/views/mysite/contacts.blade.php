@@ -7,7 +7,7 @@
             <br/><h1 class="text-center text-design2">{{ trans('site.mysite_contacts') }}</h1> <br/>
         </div>
         <div class="col-md-6">
-            <img src="/img/contacts_.jpg" alt="." title="" class="img-fluid kromka" />
+            <img src="<?=config('app.url')?>/img/contacts_.jpg" alt="Makklays - {{ trans('site.mysite_contacts') }} image" title="{{ trans('site.mysite_contacts') }}" class="img-fluid kromka" />
         </div>
         <div class="col-md-6">
 

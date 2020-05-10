@@ -19,10 +19,6 @@
 
     <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" >
 
-    <!-- Fonts -->
-    <!--link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"-->
-    <!--link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"-->
-
     <!-- base css -->
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" media="all" href="/css/all.css" >

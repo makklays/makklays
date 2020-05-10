@@ -13,7 +13,7 @@
             </p>
         </div>
         <div class="col-md-5">
-            <img src="/img/corp.jpg" alt="Makklays - Corporate site image1" title="Corporate site" class="img-fluid" />
+            <img src="<?=config('app.url')?>/img/corp.jpg" alt="Makklays - Corporate site image1" title="Corporate site" class="img-fluid" />
         </div>
         <div class="col-md-12">
             <p class="text-justify">
@@ -55,7 +55,7 @@
             <h2 class="text-center text-design2"><?=trans('site.corp12')?></h2> <br/>
         </div>
         <div class="col-md-5">
-            <img src="/img/corp2.jpg" alt="Makklays - Corporate site image2" title="Corporate site" class="img-fluid" />
+            <img src="<?=config('app.url')?>/img/corp2.jpg" alt="Makklays - Corporate site image2" title="Corporate site" class="img-fluid" />
         </div>
         <div class="col-md-7">
             <p class="text-justify">

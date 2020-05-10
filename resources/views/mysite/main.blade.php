@@ -12,7 +12,7 @@
                 </p>
             </div>
             <div class="col-md-5">
-                <img src="/img/team2.png" class="img-fluid kromka" alt="." title="команда разработки сайтов makklays" />
+                <img src="<?=config('app.url')?>/img/team2.png" class="img-fluid kromka" alt="." title="команда разработки сайтов makklays" />
             </div>
         </div>
 
@@ -32,7 +32,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
                 <a href="{{ route('mysite_lpage', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/lpage.png" alt="Makklays - {{ trans('site.m_lpage') }} image1" title="{{ trans('site.m_lpage') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/lpage.png" alt="Makklays - {{ trans('site.m_lpage') }} image1" title="{{ trans('site.m_lpage') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_lpage') }}</h2>
                 </a>
@@ -41,7 +41,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
                 <a href="{{ route('mysite_corporate', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/notebook.png" alt="Makklays - {{ trans('site.m_corporate') }} image2" title="{{ trans('site.m_corporate') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/notebook.png" alt="Makklays - {{ trans('site.m_corporate') }} image2" title="{{ trans('site.m_corporate') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_corporate') }}</h2>
                 </a>
@@ -50,7 +50,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
                 <a href="{{ route('mysite_webservice', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/mob_api.png" alt="Makklays - {{ trans('site.m_webapi') }} image3" title="{{ trans('site.m_webapi') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/mob_api.png" alt="Makklays - {{ trans('site.m_webapi') }} image3" title="{{ trans('site.m_webapi') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_webapi') }}</h2>
                 </a>
@@ -60,7 +60,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in" >
                 <a href="{{ route('mysite_webportal', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/web_portal.png" alt="Makklays - {{ trans('site.m_webportal') }} image4" title="{{ trans('site.m_webportal') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/web_portal.png" alt="Makklays - {{ trans('site.m_webportal') }} image4" title="{{ trans('site.m_webportal') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_webportal') }}</h2>
                 </a>
@@ -69,7 +69,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm" >
                 <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/sitesystem.png" alt="Makklays - {{ trans('site.m_sitesystem') }} image5" title="{{ trans('site.m_sitesystem') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/sitesystem.png" alt="Makklays - {{ trans('site.m_sitesystem') }} image5" title="{{ trans('site.m_sitesystem') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_sitesystem') }}</h2>
                 </a>
@@ -78,7 +78,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in" >
                 <a href="{{ route('mysite_store', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="/img/icons/store.png" alt="Makklays - {{ trans('site.m_store') }} image6" title="{{ trans('site.m_store') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/store.png" alt="Makklays - {{ trans('site.m_store') }} image6" title="{{ trans('site.m_store') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_store') }}</h2>
                 </a>
@@ -90,7 +90,7 @@
                 <h1 class="text-center text-design2">{{ trans('site.mysite_howmake') }}</h1> <br/>
             </div>
             <div class="col-md-5">
-                <img src="/img/planshet2.png" class="img-fluid kromka" alt="." title="команда разработки сайтов makklays" />
+                <img src="<?=config('app.url')?>/img/planshet2.png" class="img-fluid kromka" alt="." title="команда разработки сайтов makklays" />
                 <br/><br/>
             </div>
             <div class="col-md-7">
@@ -221,7 +221,7 @@
                 <span class="x-link-without-decoration carousel-item" href="/blog/posts/moy-put-i-rol-hexlet-v-moyom-razvitii"><div class="row slide justify-content-center">
                         <div class="col-12 col-md-10 col-lg-2 d-flex align-items-center d-lg-block mb-5">
                             <div class="mb-lg-4">
-                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя Кирилл Закимов" src="/img/foto3.jpg">
+                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя" src="<?=config('app.url')?>/img/foto3.jpg">
                             </div>
                             <div class="ml-4 ml-lg-0">
                                 <div class="h3 font-weight-bold">Kirill Zakimov</div>
@@ -236,7 +236,7 @@
                 <span class="x-link-without-decoration carousel-item " href="/blog/posts/kak-ya-stal-programmistom-v-33-goda"><div class="row slide justify-content-center">
                         <div class="col-12 col-md-10 col-lg-2 d-flex align-items-center d-lg-block mb-5">
                             <div class="mb-lg-4">
-                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя Valeriy Zadavysvichka" src="/img/foto.jpg">
+                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя" src="<?=config('app.url')?>/img/foto.jpg">
                             </div>
                             <div class="ml-4 ml-lg-0">
                                 <div class="h3 font-weight-bold">Valeriy Zadavysvichka</div>
@@ -251,7 +251,7 @@
                 <span class="x-link-without-decoration carousel-item active" href="/blog/posts/feycot-success-story"><div class="row slide justify-content-center">
                         <div class="col-12 col-md-10 col-lg-2 d-flex align-items-center d-lg-block mb-5">
                             <div class="mb-lg-4">
-                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя Katy Antonenko" src="/img/foto2.jpg">
+                                <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя" src="<?=config('app.url')?>/img/foto2.jpg">
                             </div>
                             <div class="ml-4 ml-lg-0">
                                 <div class="h3 font-weight-bold">Katy Antonenko</div>
@@ -284,9 +284,9 @@
                     <div class="col-md-4">
                         <p class="text-justify">
                             <?php if (isset($item->photo) && !empty($item->photo)): ?>
-                                <img src="/articles/imgs/<?=$item->photo?>" alt="." title="<?=$item->title?>" class="img-fluid kromka" />
+                                <img src="<?=config('app.url')?>/articles/imgs/<?=$item->photo?>" alt="." title="<?=$item->title?>" class="img-fluid kromka" />
                             <?php else: ?>
-                                <img src="/img/empty_img2.png" alt="." title="<?=$item->title?>" class="img-fluid kromka" />
+                                <img src="<?=config('app.url')?>/img/empty_img2.png" alt="." title="<?=$item->title?>" class="img-fluid kromka" />
                             <?php endif; ?>
                         </p>
                         <h4><?=$item->title?></h4>
