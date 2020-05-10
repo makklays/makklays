@@ -33,7 +33,7 @@ class BriefOnlineMail extends Mailable
     {
         $arr = [
             'brief' => $this->brief,
-            'pathToFile' => base_path() . '/public/img/makklays_.png',
+            'pathToFile' => base_path() . '/public/img/makklays.png',
         ];
         // добавляем файл - загруженный клиентом
         if(isset($this->brief->tzfile_name) && !empty($this->brief->tzfile_name)) {
