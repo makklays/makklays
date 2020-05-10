@@ -8,20 +8,27 @@
 <br/>
 <br/>
 
-<b>Ф.И.О.:</b> <br/>
-{{ $fio }}  <br/><br/>
+<?php if(isset($fio) && !empty($fio)): ?>
+    <b>Ф.И.О.:</b> <br/>
+    {{ $fio }}  <br/><br/>
+<?php endif; ?>
 
-<b>Phone:</b> <br/>
+<b>Телефон:</b> <br/>
 {{ $phone }}  <br/><br/>
 
+<?php if (isset($lang) && !empty($lang)): ?>
+    <b>Язык:</b> <br/>
+    {{ $lang }}  <br/><br/>
+<?php endif; ?>
+
 <?php if (isset($messenger) && !empty($messenger)): ?>
-    <b>Messenger:</b>    <br/>
-    {{ $messenger }} <br/> <br/>
+    <b>Messenger:</b> <br/>
+    {{ $messenger }} <br/><br/>
 <?php endif; ?>
 
 <?php if (isset($want_development) && !empty($want_development)): ?>
-    <b>Want development:</b>    <br/>
-    {{ $want_development }} <br/> <br/>
+    <b>Хочет разработку:</b> <br/>
+    {{ $want_development }} <br/><br/>
 <?php endif; ?>
 
 Дата: {{ date('d.m.Y H:i:s', time()) }}  <br/><br/><br/>
