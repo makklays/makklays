@@ -41,7 +41,7 @@ class CallMail extends Mailable
                 'phone' => $this->call->phone,
                 'messenger' => $this->call->messenger,
                 'want_development' => $this->call->want_development,
-                'pathToFile' => base_path() . '/public/img/makklays.png',
+                'pathToFile' => base_path() . '/public/makklays.png',
             ]);
             /*->attach(base_path() . '/public/img/makklays_.png', [
                 'as' => 'makklays_logo',
