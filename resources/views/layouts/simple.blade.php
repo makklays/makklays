@@ -13,18 +13,17 @@
     <meta property="og:title" content="<?=(isset($og['title']) && !empty($og['title']) ? $og['title'] : 'Makklays')?>" />
     <meta property="og:type" content="<?=(isset($og['type']) && !empty($og['type']) ? $og['type'] : 'article')?>" />
     <meta property="og:url" content="<?=(isset($og['url']) && !empty($og['url']) ? $og['url'] : 'http://makklays.com.ua/en')?>" />
-    <meta property="og:image" content="<?=(isset($og['image']) && !empty($og['image']) ? $og['image'] : 'http://makklays.com.ua/favicon_t.png')?>" />
+    <meta property="og:image" content="<?=(isset($og['image']) && !empty($og['image']) ? $og['image'] : 'http://makklays.com.ua/makklays.png')?>" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="shortcut icon" href="/favicon_t.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" >
 
     <!-- Fonts -->
     <!--link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"-->
     <!--link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"-->
 
     <!-- base css -->
-    <!--link rel="stylesheet" type="text/css" media="all" href="https://laravel.ru/all.css" -->
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" media="all" href="/css/all.css" >
     <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
@@ -47,7 +46,7 @@
     <div style="text-align:center; margin-left:auto; margin-right:auto;">
         <div class="text-center" style="margin:20px; ">
             <a href="{{ route('/', app()->getLocale()) }}">
-                <img src="/favicon_t.png" style="" alt="Logo" title="Makklays">
+                <img src="/makklays.png" style="" alt="Logo" title="Makklays">
             </a>
         </div>
     </div>

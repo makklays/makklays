@@ -16,7 +16,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="shortcut icon" href="/favicon_t.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" />
     <!--link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" /-->
     <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
 

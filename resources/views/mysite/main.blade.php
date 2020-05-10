@@ -1,12 +1,8 @@
-
 @extends('layouts.main8')
 
 @section('content')
 
         <div class="row">
-            <!--div class="col-md-12">
-                <br/><h1 class="text-center text-design2">{{ trans('site.mysite_about') }}</h1> <br/>
-            </div-->
             <div class="col-md-7">
                 <p class="text-justify">
                     {{ trans('site.about_1') }} <br/><br/>
@@ -31,44 +27,61 @@
                 <br/><br/>
             </div>
         </div>
+
         <div class="card-deck mb-3">
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
-                <div>
-                    <img src="/img/icons/lpage.png" alt="." title="" style="width:100px; height:100px; margin:0 0 30px 0;" />
-                </div>
-                <h5><a href="{{ route('mysite_lpage', app()->getLocale()) }}" class="a-green">{{ trans('site.m_lpage') }}</a></h5>
+                <a href="{{ route('mysite_lpage', app()->getLocale()) }}" class="text-corporate">
+                    <div>
+                        <img src="/img/icons/lpage.png" alt="Makklays - {{ trans('site.m_lpage') }} image1" title="{{ trans('site.m_lpage') }}" class="img-development" />
+                    </div>
+                    <h2 class="site-sitio">{{ trans('site.m_lpage') }}</h2>
+                </a>
             </div>
+
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
-                <div>
-                    <img src="/img/icons/notebook.png" alt="." title="" style="width:100px; height:100px; margin:0 0 30px 0;" />
-                </div>
-                <h5><a href="{{ route('mysite_corporate', app()->getLocale()) }}" class="a-green">{{ trans('site.m_corporate') }}</a></h5>
+                <a href="{{ route('mysite_corporate', app()->getLocale()) }}" class="text-corporate">
+                    <div>
+                        <img src="/img/icons/notebook.png" alt="Makklays - {{ trans('site.m_corporate') }} image2" title="{{ trans('site.m_corporate') }}" class="img-development" />
+                    </div>
+                    <h2 class="site-sitio">{{ trans('site.m_corporate') }}</h2>
+                </a>
             </div>
+
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
-                <div>
-                    <img src="/img/icons/mob_api.png" alt="." title="" style="width:100px; height:100px; margin:0 0 30px 0;" />
-                </div>
-                <h5><a href="{{ route('mysite_webservice', app()->getLocale()) }}" class="a-green">{{ trans('site.m_webapi') }}</a></h5>
+                <a href="{{ route('mysite_webservice', app()->getLocale()) }}" class="text-corporate">
+                    <div>
+                        <img src="/img/icons/mob_api.png" alt="Makklays - {{ trans('site.m_webapi') }} image3" title="{{ trans('site.m_webapi') }}" class="img-development" />
+                    </div>
+                    <h2 class="site-sitio">{{ trans('site.m_webapi') }}</h2>
+                </a>
             </div>
         </div>
         <div class="card-deck mb-3">
-            <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
-                <div>
-                    <img src="/img/icons/web_portal.png" alt="." title="" style="width:100px; height:100px; margin:0 0 30px 0;" />
-                </div>
-                <h5><a href="{{ route('mysite_webportal', app()->getLocale()) }}" class="a-green">{{ trans('site.m_webportal') }}</a></h5>
+            <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in" >
+                <a href="{{ route('mysite_webportal', app()->getLocale()) }}" class="text-corporate">
+                    <div>
+                        <img src="/img/icons/web_portal.png" alt="Makklays - {{ trans('site.m_webportal') }} image4" title="{{ trans('site.m_webportal') }}" class="img-development" />
+                    </div>
+                    <h2 class="site-sitio">{{ trans('site.m_webportal') }}</h2>
+                </a>
             </div>
-            <div class="col-md-4 text-center card mb-4 shadow-sm">
-                <div>
-                    <img src="/img/icons/sitesystem.png" alt="." title="" style="width:100px; height:100px; margin:0 0 30px 0;" />
-                </div>
-                <h5><a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="a-green">{{ trans('site.m_sitesystem') }}</a></h5>
+
+            <div class="col-md-4 text-center card mb-4 shadow-sm" >
+                <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="text-corporate">
+                    <div>
+                        <img src="/img/icons/sitesystem.png" alt="Makklays - {{ trans('site.m_sitesystem') }} image5" title="{{ trans('site.m_sitesystem') }}" class="img-development" />
+                    </div>
+                    <h2 class="site-sitio">{{ trans('site.m_sitesystem') }}</h2>
+                </a>
             </div>
-            <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
-                <div>
-                    <img src="/img/icons/store.png" alt="." title="" style="width:100px; height:100px; margin:0 0 30px 0;" />
-                </div>
-                <h5><a href="{{ route('mysite_store', app()->getLocale()) }}" class="a-green">{{ trans('site.m_store') }}</a></h5>
+
+            <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in" >
+                <a href="{{ route('mysite_store', app()->getLocale()) }}" class="text-corporate">
+                    <div>
+                        <img src="/img/icons/store.png" alt="Makklays - {{ trans('site.m_store') }} image6" title="{{ trans('site.m_store') }}" class="img-development" />
+                    </div>
+                    <h2 class="site-sitio">{{ trans('site.m_store') }}</h2>
+                </a>
             </div>
         </div>
 
@@ -99,14 +112,6 @@
                 </p>
             </div>
         </div>
-
-        <!--div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center text-design2">{{ trans('site.technologies') }}</h2>
-                <p class="text-center">{{ trans('site.use_technologies') }}</p>
-            </div>
-        </div>
-        <br/><br/ -->
 
         <div class="row">
             <div class="col-md-12 text-left">
@@ -200,8 +205,6 @@
             </div>
         </div>
 
-        <!--br/><hr/><br/-->
-
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center text-design2">{{ trans('site.feedbacks') }}</h1>
@@ -221,7 +224,7 @@
                                 <img class="img-fluid rounded-circle kromka" width="105" height="105" alt="Аватар пользователя Кирилл Закимов" src="/img/foto3.jpg">
                             </div>
                             <div class="ml-4 ml-lg-0">
-                                <div class="h3 font-weight-bold">Кирилл Закимов</div>
+                                <div class="h3 font-weight-bold">Kirill Zakimov</div>
                                 <div class="h5 mb-0 font-italic">{{ trans('site.review1_city') }}</div>
                             </div>
                         </div>
@@ -272,27 +275,27 @@
         </div>
 
         <!-- Статьи -->
-        <!--br/><hr/><br/>
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center text-design2">Статьи</h2> <br/>
+        <?php if (isset($articles) && !empty($articles)):?>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center text-design2">{{ trans('site.Articles') }}</h1> <br/>
+                </div>
+                <?php foreach($articles as $item): ?>
+                    <div class="col-md-4">
+                        <p class="text-justify">
+                            <?php if (isset($item->photo) && !empty($item->photo)): ?>
+                                <img src="/articles/imgs/<?=$item->photo?>" alt="." title="<?=$item->title?>" class="img-fluid kromka" />
+                            <?php else: ?>
+                                <img src="/img/empty_img2.png" alt="." title="<?=$item->title?>" class="img-fluid kromka" />
+                            <?php endif; ?>
+                        </p>
+                        <h4><?=$item->title?></h4>
+                        <p class="text-justify"><?=$item->short_text?></p>
+                        <p><a class="btn btn-secondary" href="{{ route('mysite_article', [app()->getLocale(), $item->slag]) }}" role="button"><?=trans('site.Read')?> &raquo;</a></p>
+                    </div>
+                <?php endforeach; ?>
             </div>
-            <div class="col-md-4">
-                <h4>A что такое сайт? Какие бывают?</h4>
-                <p class="text-justify">Сайт – это ресурс, состоящий из веб-страниц (документов), объединенных общей темой и взаимосвязанных между собой с помощью ссылок. Сайт регистрируется на одно физическое, либо юридическое лицо и обязательно привязывается к домену.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Читать &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h4>Программисты - строили дома :)</h4>
-                <p class="text-justify">1.03. Ура! Нам предложили крупный контракт на постройку 12-этажного жилого дома. У всех бурный энтузиазм. Выпили на радостях 2 ящика пива. <br/>2.03. Заказчику не нравится выражение "как только, так сразу". Требует назвать конкретные сроки.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Читать &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h4>Как выбрать разработчика?</h4>
-                <p class="text-justify">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Читать &raquo;</a></p>
-            </div>
-        </div>
-        <br/><br/ -->
+            <br/><br/>
+        <?php endif; ?>
 
 @endsection

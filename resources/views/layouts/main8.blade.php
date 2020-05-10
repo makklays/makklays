@@ -13,9 +13,12 @@
     <meta property="og:title" content="{{ $seo->title }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://makklays.com.ua" />
-    <meta property="og:image" content="http://makklays.com.ua/img/favicon_t.png" />
+    <meta property="og:image" content="http://makklays.com.ua/img/makklays.png" />
 
-    <link rel="shortcut icon" href="/favicon_t.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" >
+
+    <!-- Включить GA -->
+    <!-- запуститься в интернете -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-164972795-1"></script>
@@ -26,34 +29,19 @@
         gtag('config', 'UA-164972795-1');
     </script-->
 
-    <!-- Fonts -->
-    <!--link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"-->
-
-    <!--link rel="stylesheet" type="text/css" media="all" href="https://laravel.ru/all.css" -->
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css?<?=time()?>" />
-    <!--link rel="stylesheet" type="text/css" media="all" href="/css/all.css?<?=time()?>" /-->
-    <!--link rel="stylesheet" type="text/css" media="all" href="/css/style.css?<?=time()?>" /-->
     <link rel="stylesheet" type="text/css" media="all" href="/css/main8.css?<?=time()?>" />
-
-    <!-- datatables css -->
-    <!--link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/-->
 
     <script src='/js/jquery-3.4.0.min.js'></script>
     <script src='/css/bootstrap4/js/bootstrap.min.js'></script>
-
-    <!-- datatables js -->
-    <!--script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script-->
-
     <script type="text/javascript" src="/js/myapp.js"></script>
-
 </head>
 <body>
 <main role="main">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white dev-navbar border-bottom">
-        <!--a aria-hidden="true" class="navbar-brand mr-4" href="/" -->
         <a class="navbar-brand" href="{{ route('/', app()->getLocale()) }}">
-            <img src="/favicon_t.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="/makklays.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Makklays
         </a>
         <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
@@ -62,22 +50,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item {{ \Route::current()->getName() == 'mysite_about' ? 'active' : '' }}">
-                    <a class="nav-link dev-navbar-link" href="{{ route('mysite_about', app()->getLocale()) }}">
+                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_about', app()->getLocale()) }}">
                         {{ trans('site.mysite_about') }}
                     </a>
                 </li>
                 <li class="nav-item {{ \Route::current()->getName() == 'mysite_howmake' ? 'active' : '' }}">
-                    <a class="nav-link dev-navbar-link" href="{{ route('mysite_howmake', app()->getLocale()) }}">
+                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_howmake', app()->getLocale()) }}">
                         {{ trans('site.mysite_howmake') }}
                     </a>
                 </li>
                 <li class="nav-item {{ \Route::current()->getName() == 'mysite_whatmake' ? 'active' : '' }}">
-                    <a class="nav-link dev-navbar-link" href="{{ route('mysite_whatmake', app()->getLocale()) }}">
+                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_whatmake', app()->getLocale()) }}">
                         {{ trans('site.mysite_whatmake') }}
                     </a>
                 </li>
                 <li class="nav-item {{ in_array(\Route::current()->getName(), ['mysite_lpage', 'mysite_corporate', 'mysite_webservice', 'mysite_webportal', 'mysite_sitesytem', 'mysite_store']) ? 'active' : '' }} dropdown">
-                    <a class="nav-link dev-navbar-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dev-navbar-link px-3 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         {{ trans('site.Development') }}
                     </a>
                     <div class="dropdown-menu">
@@ -90,6 +78,11 @@
                         <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_sitesystem') }}</a>
                     </div>
                 </li>
+                <li class="nav-item {{ \Route::current()->getName() == 'mysite_articles' ? 'active' : '' }}">
+                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_articles', app()->getLocale()) }}">
+                        {{ trans('site.Articles') }}
+                    </a>
+                </li>
                 <li class="nav-item {{ \Route::current()->getName() == 'mysite_contacts' ? 'active' : '' }}">
                     <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_contacts', app()->getLocale()) }}">
                         {{ trans('site.contacts') }}
@@ -100,15 +93,8 @@
                 <li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="https://ru.hexlet.io/session/new"><div class="my-2">Вход</div></a></li>
                 <li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="/u/new"><div class="my-2">Регистрация</div></a></li>
             </ul-->
-            <!--form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-success my-2 my-sm-0" type="submit">{{ trans('site.order_development') }}</button>
-            </form-->
         </div>
     </nav>
-
-    <!--
-    https://ru.hexlet.io/professions/php?utm_source=google&utm_medium=cpc&utm_campaign=gdn.javascript&utm_content=431515233723&ref=277848&gclid=EAIaIQobChMIlrXN3bSD6QIVFYaaCh3JAAZtEAEYASAAEgJuRvD_BwE
-    -->
 
     <div class="jumbotron jumbotron-fluid img-container">
         <div class="container">
@@ -137,6 +123,7 @@
                 <div><a href="{{ route('mysite_about', app()->getLocale()) }}" class="a-green">{{ trans('site.mysite_about') }}</a></div>
                 <div><a href="{{ route('mysite_howmake', app()->getLocale()) }}" class="a-green">{{ trans('site.mysite_howmake') }}</a></div>
                 <div><a href="{{ route('mysite_whatmake', app()->getLocale()) }}" class="a-green">{{ trans('site.mysite_whatmake') }}</a></div>
+                <div><a href="{{ route('mysite_articles', app()->getLocale()) }}" class="a-green">{{ trans('site.Articles') }}</a></div>
                 <div><a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="a-green">{{ trans('site.contacts') }}</a></div>
                 <div style="padding:20px 0 0 0;">
                     <h4>{{ trans('site.Lang') }}</h4>
@@ -161,7 +148,6 @@
                 <h4>{{ trans('site.Care') }}</h4>
                 <div><a href="{{ route('mysite_brief', app()->getLocale()) }}" class="a-green">{{ trans('site.m_download_brief_develop') }}</a></div>
                 <div><a href="{{ route('mysite_online_brief', app()->getLocale()) }}" class="a-green">{{ trans('site.m_brief_online') }}</a></div>
-                <!--div><a href="{{ route('mysite_request', app()->getLocale()) }}" class="a-green">{{ trans('site.order_consultation') }}</a></div-->
                 <br/>
                 <div><a href="{{ route('test-php', app()->getLocale()) }}" class="a-green">{{ trans('site.test_php') }}</a></div>
                 <div><a href="{{ route('wait', app()->getLocale()) }}" class="a-green">{{ trans('wait.i_wait_you') }}</a></div>
@@ -189,17 +175,17 @@
             </div>
 
             <div class="modal-body">
-                <form name="frmSentOrder" style="display:block;" id="id_frmSentOrder" action="{{ route('order_development_post', app()->getLocale()) }}" method="post">
+                <form name="frmSentOrder" style="display:block;" id="id_frmSentOrder" action="{{ route('call_development_post', app()->getLocale()) }}" method="post">
                     {{ csrf_field() }}
-                    <div class="form-group">
+                    <!--div class="form-group">
                         <input type="text" name="fio" class="form-control" placeholder="{{ trans('site.Name') }}">
-                    </div>
+                    </div-->
                     <div class="form-group">
                         <input type="text" name="phone" class="form-control" id="id_frmSentOrder_phone" placeholder="{{ trans('site.contact_number') }}">
                     </div>
                     <div class="form-group">
                         <select name="want_development" class="form-control" id="id_want_development">
-                            <option>-- {{ trans('site.interesting_development') }} --</option>
+                            <option value="">-- {{ trans('site.interesting_development') }} --</option>
                             <option value="landing">{{ trans('site.m_lpage') }}</option>
                             <option value="internet-shop">{{ trans('site.m_store') }}</option>
                             <option value="corporate-site">{{ trans('site.m_corporate') }}</option>
@@ -207,6 +193,12 @@
                             <option value="webportal">{{ trans('site.m_webportal') }}</option>
                             <option value="site-system">{{ trans('site.m_sitesystem') }}</option>
                         </select>
+                    </div>
+                    <div class="form-group custom-control custom-checkbox">
+                        <input type="checkbox" name="soglasen" checked="checked" class="custom-control-input" id="id_soglasen" />
+                        <label class="custom-control-label" for="id_soglasen">{{ trans('site.modal_rules') }}
+                            <a href="{{ route('privacy-policy', app()->getLocale()) }}" class="a-green">{{ trans('site.brief_link') }}</a>.
+                        </label>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-success">{{ trans('site.Sent') }}</button>
@@ -241,6 +233,11 @@
         $('#myInput').modal('hide');
     });
 
+    // при клике на checkbox
+    $('#id_soglasen').on('click', function(){
+        $('#id_err_soglasen').remove();
+    });
+
     // указываем фокус
     $('#id_frmSentOrder_phone').on('focus', function(){
         $(this).css('border-color', '#ced4da');
@@ -253,7 +250,7 @@
         event.preventDefault();
         var form = $(this);
         $.ajax({
-            url: 'order-development-post',
+            url: 'call-development-post',
             dataType:'json',
             data: form.serialize(),
             type: "POST",
@@ -261,11 +258,19 @@
                 if(response.success) {
                     form.css('display', 'none');
                     $('#id_frmResult').css('display','block');
+                } else if(response.error) {
+                    location.href = '/' + response.lang + '/black-list';
                 } else if(response.errors) {
                     $.each(response.errors, function( index, value ) {
-                        $("input[name='"+index+"']").next().remove();
-                        $("input[name='"+index+"']").css('border-color', 'red');
-                        $("input[name='"+index+"']").parent().append('<div style="color:red; font-size:12px;">'+value[0]+'</div>');
+                        if (index == 'phone') {
+                            $("input[name='" + index + "']").next().remove();
+                            $("input[name='" + index + "']").css('border-color', 'red');
+                            $("input[name='" + index + "']").parent().append('<div style="color:red; font-size:12px;">' + value[0] + '</div>');
+                        }
+                        if (index == 'soglasen') {
+                            $('#id_err_soglasen').remove();
+                            $("input[name='" + index + "']").parent().append('<div id="id_err_soglasen" style="color:red; font-size:12px;">' + value[0] + '</div>');
+                        }
                     });
                 }
             },

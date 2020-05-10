@@ -154,6 +154,8 @@ PHP programming with the most robust security standards and code stability.',
     'about_text3' => 'Each specialist has over 10 years of experience in their field.',
     'about_text4' => 'Makklays loves new knowledge and large custom projects.',
 
+    'about_text4.1' => 'Our site development is unique in that we do not use free boxed solutions that are cut in functionality, design and often do not give the desired result. Our development is flexible for you, starting with your wishes for functionality, content, design and ending with the site being successfully posted on the Internet, on time, and also has your desired design, functionality and practicality. Our site is easy to use, it is understandable, has nothing superfluous, easy to manage, practical.',
+
     'about_text5' => 'Professional development is a team of specialists from various fields:',
     'about_text6' => 'Designer',
     'about_text7' => 'Will satisfy your graphic wishes in colors.',
@@ -182,6 +184,7 @@ PHP programming with the most robust security standards and code stability.',
     'm_webportal' => 'Web portal',
     'm_sitesystem' => 'Website system',
     'm_webapi' => 'Web service and API for mob. app.',
+    'webapi' => 'Web service and API for mobile application',
 
     'Team' => 'Team',
     'Development' => 'Development',
@@ -481,14 +484,515 @@ PHP programming with the most robust security standards and code stability.',
     'Title' => 'Title',
     'Is_visible' => 'Is visible',
     'Choose_lang' => 'Choose language',
+    'Photo' => 'Photo',
+    'Read' => 'More',
+    'Profile' => 'Profile',
+    'Documents' => 'Documents',
+    'Reports' => 'Reports',
+    'Logout' => 'Logout',
+    'ToDo' => 'To Do',
+    'Save' => 'Save',
+    'Tipical_dogovor' => 'Standard contract for website development',
+    'Report' => 'Report',
+    'Orders' => 'Orders',
+    'Fio' => 'Name',
+    'Messenger' => 'Messenger',
+    'want_development' => 'Want development',
+    'IP_address' => 'IP Address',
+    'Calls' => 'Calls',
+    'Statistics' => 'Statistics',
+    'Soobsheniya' => 'Messages',
+    'Packages' => 'Packages',
+    'Soobshenie' => 'Message',
+    'Cat_or_Dog' => 'Cat or Dog',
+
+    'Add_order' => 'Add order',
+    'Description' => 'Description',
+    'Choose' => 'Choose',
+    'Price' => 'Price',
+    'Status' => 'Status',
+    'From_date' => 'Date of the beginning',
+    'To_date' => 'Date of expiration',
+    'Add_file' => 'Add file',
+
+    'Password' => 'Password',
+    'Login' => 'Login',
+    'RememberMe' => 'Remember Me',
+    'ForgotYourPassword?' => 'Forgot your password?',
+    'Not_orders' => 'No orders',
+    'Slag' => 'Slag',
     '' => '',
     '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
+    'modal_rules' => 'I agree with',
+    'work_and_felic' => 'About work and happiness',
+    'happy_citata' => 'Happiness is when you go to work with joy in the morning and return home with joy in the evening.',
+
+    'system_site' => 'Site system',
+    'system_site1' => 'A site system is a logically complex site for managing the processes of an enterprise and helping work for employees of an enterprise. Also called an information system or a corporate portal with the addition of several logical sections for managing the processes of an enterprise in its industry and sphere. This is a process monitoring system. The site system is used to provide and organize the joint process of adding, editing and managing the logical parts of the organization.',
+    'system_site2' => 'The main functions of the site system',
+    'system_site3' => 'The main functions of the site system: <br/><br/>
+- providing tools for adding content, organizing collaboration on content; <br/>
+- content management: storage, version control, adherence to access mode, document flow control; <br/>
+- process management: sending email, sending documents; <br/>
+- display of the current statuses of the organization and selected nodes; <br/>
+- publishing content; <br/>
+- presentation of information in a form convenient for navigation, search. <br/><br/>
+The control system can contain a wide variety of data: documents, films, photos, phone numbers, scientific data and so on. Such a system is often used to store, manage, review and publish documentation. Version control is one of the important features when content is changed by a group of people. <br/><br/>
+In general, content management systems are divided into corporate content management systems (Eng. Enterprise Content Management System) - to work with content within any organization and a web content management system (Eng. Web Content Management System) to support the operation of the website. <br/><br/>
+In other words, a site system can have both internal and external components. The internal part of the site system is available to employees within the enterprise, and the external one is available to all users of the site. <br/><br/>
+Some 3 years ago, the main problem for implementing site systems in most enterprises was the high cost of boxed solutions with reduced functionality and the need to deploy them based on our own infrastructure. With the advent of cloud-based (SaaS) solutions, such a problem, even for a small company, has ceased to be relevant. <br/><br/>
+The use of such technological solutions in the work is beneficial for both small and large businesses. And if you are interested in what benefits this can provide to the business owner, read on. <br/><br/>
+The platform provides a wide range of tools for organizing the effective work of almost any business: <br/><br/>
+- adding projects, setting and tracking tasks on them; <br/>
+- management of sales, commercial offers and other operations; <br/>
+- sales funnel and lead processing; <br/>
+- a disk for storing documentation and files; <br/>
+- separation of access rights and roles; <br/>
+- integration with the site and online store; <br/>
+- live chat between company employees; <br/>
+- contacts, records, reports and more. <br/><br/>
+And the most interesting - the practical limitation is only in the available disk space, the number of company employees that can be connected is not limited.',
+    'system_site4' => 'Why us?',
+    'system_site5' => 'Our strengths can be called the complexity of developing a unique site system with non-standard functions, because such resources are usually required by companies with relevant requests (for example, working in corporations, banks, holdings). Website development is not a development from scratch, as it already includes and uses standard website components, such as: <br/><br/>
+- entrance to the site (registration, authorization); <br/>
+- user\'s personal account; <br/>
+- the administrative part of the site (user management), etc. <br/><br/>
+This standard set of components is complemented by the logical parts of a particular enterprise, reflecting the individual characteristics of the client. Our experts can easily select and program them into a convenient user interface, and more simply, intuitively connected to the pages of the site. Our experience is based on the best examples and practices of other similar sites. We use the latest technology to develop it. <br/><br/>
+At the same time, the disadvantage of free systems is the lack of the ability to modify them for business purposes. <br/><br/>
+An organization can afford a website system designed for its business goals, and our programmers are able to implement all the wishes and wishes of the customer. <br/><br/>
+When choosing a site system, you should pay attention to such details as: <br/><br/>
+- safety; <br/>
+- the ability to refine the elements; <br/>
+- a set of features and capabilities; <br/>
+- the convenience of working with headings, meta tags and other details important for promotion; <br/>
+- the ability to create your own names for pages and semantic URLs; <br/>
+- speed of work; <br/>
+- the presence of Russian-language localization; <br/>
+- lack of third-party elements (for example, advertising banners not provided by you); <br/>
+- the ability to handle errors; <br/>
+- lack of duplication of pages; <br/>
+- site map support; <br/>
+- the convenience of adding and deleting pages, etc. <br/><br/>
+Do not forget about performance as well: it is obvious that a complex and cumbersome paid solution will be superior in case of high traffic, compared to free, which can not withstand heavy loads and simply can not cope.',
+    'system_site6' => 'Findings',
+    'system_site7' => 'Ready-made free sites with installation out of the box have a number of minuses, and the main one - they are not edited. In them it is not possible to insert or supplement with something that the customer wants, unlike the site system designed specifically for the client’s business. Selecting a system for yourself is based on your own preferences: someone may be comfortable with one, someone will love working with another. Much depends on what better meets the needs of the company and is more suitable for a specific business task of the enterprise, the ability of the site system to reflect your business processes, as well as being convenient and customizable for you.',
+
+    'lpage1' => 'Landing page - what is it?',
+    'lpage2' => '- this is a landing page for collecting contacts of interested visitors or
+                sales of goods. Sometimes, landing is a temporary solution before launching a full-fledged corporate website.
+                As a rule, this is a one-page site on which information on the provided
+                service or product, which improves the effectiveness of advertising. <br/> <br/>
+
+                Visitors get to the landing pages of the site through contextual, banner, targeted advertising and
+                email newsletter. The main task of landing sites is the conversion of visitors into a lead or a buyer, the motivation of a visitor
+                to commit the target action. Such an action may be: purchase, subscription to newsletter, registration on the site,
+                downloading the information provided, sending the visitor’s contacts. <br/> <br/>
+
+                Unlike the site, the landing page doesn’t include links where the user can leave the page, since there is no personal account.
+                All links lead either to landing elements - informational parts, or to the contact form. <br/> <br/>
+
+                The purpose of the landing is to focus the user on one offer (a specific service or product). Because the whole
+                Landing information aims to sell this product or service. It uses one key call to action.
+                So to speak, one direction vector for the visitor. <br/> <br/>',
+    'lpage3' => 'Why do you need a landing page?',
+    'lpage4' => 'Landing pages are in demand in the process of promoting a product or launching a new product on the market, largely due to the fact that they can increase your conversion rate in the most affordable and profitable way for you. And all because landing pages (landing pages) are designed to optimize conversion:',
+    'lpage5' => 'Landings have phrase / ad match',
+    'lpage6' => '- this is when the title of your ad matches
+                landing page title (competent seo optimization). This fact is an obvious confirmation for visitors that they
+                hit the right page that interests them. <br/> <br/>
+
+                For example, the phrase “marketings tool” repeats the landing page title and
+                as if enhances its effect. Thus, the visitor knows for sure that he got to the site on which he was going.
+                The phrase match between the headings of the ad and the landing page avoids the confusion that inevitably arises,
+                if a person, requesting something specific and specific, goes to the main page of the site, where he again
+                you have to look for the desired section. Do not mislead visitors - use a uniform wording.',
+    'lpage7' => 'Attention ratio 1:1.',
+    'lpage8' => 'This coefficient means that the number of clickable elements on the page is equal to the number of goals
+                pages, that is, the landing page has no random visitors. An ideal landing should pursue the achievement of only one specific goal.
+                And any element that is not related to the target action is recognized as distracting and scattering the attention of the visitor. <br/> <br/>
+
+                This condition is necessary for effective landing and coverage on the Internet. Do not allow visitors to leave the landing without committing
+                target action. In order to prevent this from happening and to minimize the possibility of implementing such a scenario, you need to remove everything from the landing page
+                extraneous clickable elements. <br/> <br/>
+
+                It’s good practice when the landing page has only one goal and contains a clickable element corresponding to it - the “Order Product” button.',
+    'lpage9' => 'Ease of conducting a split test or A/B tests.',
+    'lpage10' => 'The goal of A / B tests is to find the best landing option that generates
+                maximum number of leads. <br/> <br/>
+
+                Comparing with each other different options of one landing, you can determine what your target audience is
+                reacts best, try out some new tactics and tools, and repeat this process exactly as much,
+                how much it takes to find the most effective option - such a combination of elements that give
+                maximum number of conversions from a landing page. <br/> <br/>
+
+                It is also important to note that it’s much easier to conduct a split testing of a landing than the main page of a corporate website or online store, and all because
+                that you are dealing with only one goal aimed at one action of the visitor, and not with several.',
+    'lpage11' => 'What are the components of an effective landing?',
+    'lpage12' => '1. Main heading <br/>
+                 2. Secondary heading (subheading) <br/>
+                 3. USP (Unique Selling Proposal) <br/>
+                 4. Confidence indicators <br/>
+                 5. The main call to action button <br/>
+                 6. Secondary call to action <br/>
+                 7. Lack of navigation menu <br/>
+                 8. Images, video <br/>
+                 9. Capture shape, lead shape <br/>',
+    'lpage13' => 'Social media advertising and landing page promotion',
+    'lpage14' => 'Modern users use social networks no less than search engines. Many people do not imagine their
+                everyday life without Twitter, Facebook, Vkontakte, Instagram, Google and many other sites. Does it all
+                Social networks are very promising sources of targeted traffic for a landing page. How to get it?
+                Advertising service is the main business of social networks. And the ad here is very precisely directed to
+                different layers of the target audience. Users fill out profiles, like and repost themselves,
+                as well as subscribe to different communities on a social network. And the algorithms of social networks and their large computing power,
+                analyze all this data in order to calculate and understand the interests of different users (users) and their tastes.',
+    'lpage15' => 'Findings',
+    'lpage16' => 'Despite the fact that landing is just one landing page with information. She is very informative.
+                It became clear to us what kind of business landings are suitable for. Also, you need to remember
+                that there are tasks and goals that cannot be realized with even the highest quality landing page. In most
+                In all cases, all traffic to the landing page (landing page) is attracted by paid, and quite expensive ways.
+                Therefore, it is very important to seriously approach the stage of development and optimization of the landing page.
+                It is worth adding that with a large number of goods and a desire to cover each on the Internet, there may be little landing.
+                Then manufacturers prefer' ,
+    'lpage17' => 'online store' ,
+    'lpage18' => 'or online catalog.
+                 In practice, we see that numerous template solutions do not give the desired result.
+                 Landing really works, but requires a professional approach.
+                 The use of template solutions has led many businessmen to become disillusioned with the landing page concept.
+                 Major Asian and European brands are actively promoting their products with the help of a landing page.' ,
+
+    'shop1' => 'Online store',
+    'shop2' => '(English online shop or e-shop) - a site that sells goods through the Internet.
+                Allows users online, in their browser or through a mobile application, to create an order for
+                purchase, choose a method of payment and delivery of the order, pay for the order. In this case, the sale of goods is carried out
+                remotely and it imposes restrictions on the goods sold. So, in some countries there is
+                a ban on the online sale of alcohol, weapons, jewelry and other goods (for example, in
+                Ukraine prohibited the remote sale of alcohol, jewelry and other goods, free sale
+                which is prohibited or restricted).',
+    'shop3' => 'Online shopping, which allows companies to buy from other companies, is called business-to-business (B2B) online shopping.
+                A typical online store allows the customer to view the range of products and services of the company,
+                view photos, read product or service descriptions, view product images, and
+                also information on product specifications and prices. Also, the online store has the ability to purchase and pay via the Internet. <br/> <br/>
+                Online stores typically allow customers to use the “search” features to find specific models,
+                brands or items.',
+    'shop4' => 'Who needs online shopping?',
+    'shop5' => 'Online Store - not',
+    'shop6' => 'Corporate website',
+    'shop7' => ', which can be recommended to almost all companies.
+                An online store is primarily useful to owners of standardized goods and services.
+                For example, selling cell phones and auto parts from virtual shelves is much easier than, say,
+                clothes or shoes that you want to try on. The second group of potential owners of online stores
+                - companies engaged in traditional retail business. In this case, online business is closely interlinked.
+                with ordinary sales and acts as an addition to the main one - retail. Such a scheme,
+                perhaps the most successful. After all, the activity of online stores is regulated by almost the same legislative
+                base, as well as the work of ordinary (off-line) outlets. And the experience of real work with customers is significant
+                degrees can be extended to a future online store. <br/> <br/>
+                In other words, the potential owners of online stores are those companies that are theoretically capable
+                sell their products in catalogs, i.e. with the organization of delivery.',
+    'shop8' => 'How much does it cost to develop an online store?',
+    'shop9' => 'The cost of creating an online store usually starts from 1000 euros. We have this figure a little more.
+                For this amount you can get a designed entry-level site
+                and a catalog of goods with the ability to place orders. After the buyer has registered and issued
+                order, the store manager receives a letter from the site from him with an application. Manager contacts potential
+                the buyer agrees on the type of delivery and sends the goods.
+                
+                In other words, the essence of the buying process in such a store is sending an application for goods by e-mail,
+                and the store itself is an interactive price list. The main advantage of the "online store" is the convenience of placing an application for the user.
+                The disadvantage is the need to resort to the services of specialists to support the online store (for example, for
+                assortment updates). The cost of this service is at least $ 50 per month. The price can increase significantly,
+                if the store requires constant attention. The standard delivery of the online store from our company has functionality,
+                due to which the need to resort to the help of specialists completely disappears, i.e. you
+                You can save on store support and update the content of the store yourself without special skills
+                and knowledge of programming languages. <br/> <br/>
+                
+                The sequence of actions or logic can be modified and configured for each online store separately.
+                Our development of online stores is much more flexible than the development of a "boxed solution", which does not have the ability to modify to meet the needs of doing business and its features.
+                Also, our online stores are easily modifiable for any needs and your wishes.
+                We are able to develop an online store so that it most harmoniously repeats the business processes of your company.
+                <br/> <br/>
+
+                A larger online store, the so-called “managed store with a database”, should be equipped with more
+                developed tools. After completing the application, the manager not only receives confirmation by e-mail.
+                mail, but also controls the stages of order processing, information about which automatically falls into the database.
+                According to the database, he can distribute the picking of orders, control offers for goods
+                positions and take elementary management actions. The cost of developing such a store is usually
+                start at 1700 euros, and when ordering a similar store in our studio you get the same much
+                cheaper thanks to the company’s developed mechanism for updating the contents of the store, which can be managed by
+                even a novice. <br/> <br/>
+                
+                Savings from in-house support will help the owner to get a “Premium Online Store”.
+                To update it, it is often not at all necessary to involve specialists (except in emergency cases) - with this
+                any sensible employee of the company will cope with the problem. For example, to update the catalog of goods required
+                just fill out the admin form. The data you entered is automatically published on the site.
+                Premium Online Store also provides store operators with powerful monitoring tools
+                over the formation of applications and other features. Starting price for the development of such an online store with
+                administrator and user interfaces to the database and other "features" in our company
+                starts from 700 euros, and in most other development companies the cost of such a product starts
+                from 2000-2500 euros. <br/> <br/>
+
+                In all cases, prices are for entry-level solutions, i.e. for online stores with a minimum
+                essential features required by most novice retailers. If the company is oriented
+                for serious Internet commerce and plans to implement in the store ample opportunities for payment and
+                process automation, the cost of developing and maintaining such a solution can be tens of thousands
+                dollars. It is worth noting that such solutions are not often used. <br/> <br/>
+
+                When ordering the development of an online store in other companies, it is necessary to take into account the cost of accommodation (hosting)
+                future site. In our company we take over the placement of your online store, as well as the purchase of its name (site name) - this is a gift from us. <br/> <br/>
+                Creating an online store is a necessary step for those who are going to seriously engage in sales.',
+    'shop10' => 'Online Store - real Store Assistant',
+    'shop11' => 'It is a well-known fact that traditional retail trade remains one of the most attractive types of business.
+                Therefore, it cannot fully switch to on-line mode. However ignore the internet as a tool
+                work with busy buyers, saving their time, is impossible. That is why you can recommend
+                The online store is not as a "substitute", but as an assistant to a real retail outlet, i.e. as
+                online "showcase" with the possibility of ordering. <br/><br/>
+
+                Initial investments in an online store (about $800–2100) will help to “experience” this method.
+                Doing business and evaluate potential profits. In order not to risk in vain, at the first stage you can knowingly
+                limit the circle of potential buyers to residents of your city or district, offer only courier delivery with
+                payment on the spot, i.e. Use the most minimal and reliable ways to work with customers. If it works out, then
+                the second stage - the integration of a wider range of means of payment, the development of automated funds
+                order management, improving your online store to the level of the most successful representatives
+                this business. In any case, opening your own online store is a new level of service,
+                which not only helps to increase sales, increase profits, but also creates a more attractive image of the company in the eyes
+                traditional “off-line” buyers.',
+    'shop12' => 'Findings',
+    'shop13' => 'Online stores are small, with standard functionality for informing about the purchase, as well as
+                very large, with wide capabilities in the administrative panel, connecting to the work of the online store
+                several departments of the company (logistics, warehouse, procurement), the possibility of buying and paying via the Internet
+                several payment methods. To have or not have delivery, tracking the movement of goods from the purchase on the site to delivery
+                the buyer’s hands. And also a lot of other functionality that has one or another type of business and its processes.
+                The price of developing an online store also depends on the functionality.
+                A more detailed price for the development of an online store can be told by our phone managers or if you fill out',
+    'shop14' => 'development brief',
+    'shop15' => 'on our website, after which our managers will contact you to conduct an application for development.',
+
+    'corp1' => '<b>Corporate site</b> is a full-fledged representation of the company on the Internet and an effective tool
+                to attract and retain new customers. On it, the user can get acquainted with the company from anywhere in the world. <br/> <br/>
+                In addition to detailed information about the company and its services, a corporate website may contain the following elements: <br/> <br/>
+                - news <br/>
+                - mailing list <br/>
+                - feedback form <br/>
+                - catalog of goods and services <br/>
+                - order form via the website <br/>
+                - <a href=":url_shop" class="a-green"> online store </a> with payment for goods through payment systems <br/>
+                - correspondence <br/>
+                - other modules that take into account the specifics of a particular company.',
+    'corp2' => 'A corporate website is a high-quality and complete presentation of a company on the Internet. Its main goal is to attract new customers or partners (or to strengthen existing partnerships), to develop the business by disclosing the advantages of the company, a detailed description of its activities, services or products. The purpose of creating a corporate website depends directly on the desires or needs of the company itself. In particular, it may be the capture of a new niche or entry into the international market. <br/> <br/>
+The main value and distinction of a corporate site is that it can perform a number of other tasks that are no less important for the company. In particular, with the help of certain functions, maintain round-the-clock relationships with customers or partners, be a file storage and a tool for conducting the work process by company employees, their internal communication. In addition, a corporate website can sell and advertise the activities of the company, becoming a fairly effective advertising platform. <br/> <br/>
+Thus, a corporate website solves the following tasks: <br/> <br/>
+- round-the-clock provision of detailed information about the company and its services <br/>
+- timely informing visitors about news and special promotions of the company <br/>
+- expanding customer base <br/>
+- user support <br/>
+- Interactive communication with clients and visitors (surveys, questions and answers) <br/>
+- the possibility of round-the-clock ordering of goods and services through the site <br/>
+- promotion of the company name and much more. <br/> <br/>
+The design of the corporate website is carried out taking into account the corporate identity of the company.',
+    'corp3' => 'The main objectives of the corporate site',
+    'corp4' => 'The objectives of a corporate website directly depend on the type of business and the goals of the company. We can cite the main tasks. <br/> <br/>
+                - <b> Formation and image enhancement of the company </b> <br/>
+                - <b> Expanding customer and partner base </b> <br/>
+                - <b> Providing complete information about the company or corporation to the target audience </b> <br/>
+                    Sections of a business site can be in any quantity. The main thing is that the site provides the maximum possible
+                    company information. This may include: <br/>
+                    - Information about the company itself: its history, achievements, work results; <br/>
+                    - Information about the management and employees of the company; <br/>
+                    - Information on goods or services sold by the company with their very detailed description; <br/>
+                    - All kinds of information for partners; <br/>
+                    - Blog and more. <br/>
+                    From an informative point of view, a corporate site can contain absolutely any content on the site, which
+                    may be interesting to the target audience. <br/> <br/>
+                - <b> Formation and image enhancement of the company </b> <br/>
+                - <b> The ability to sell goods and services over the Internet </b> <br/>
+                - <b> Attracting new employees to the company </b>',
+    'corp5' => 'Types of corporate sites',
+    'corp6' => 'Corporate website business card',
+    'corp7' => 'Such a site is chosen by young companies whose business is equated with the site. It presents a brief
+                 Information about the company and its services.',
+    'corp8' => 'Corporate Directory Site',
+    'corp9' => 'Provides several tasks at once. Information about the company on the Internet and a detailed presentation
+                 goods or products in the form of a structured catalog. Perhaps the purchase of goods.',
+    'corp10' => 'Corporate info portal',
+    'corp11' => 'Made to carry information for groups of people on the subject. There may be educational training, informational
+                 course or news site.',
+    'corp12' => 'What do modern organization sites need?',
+    'corp13' => '- Website structure <br/> <br/>
+                 - Website design company <br/> <br/>
+                 - The functional site of the company <br/> <br/>
+                 - Required amount of information <br/> <br/>
+                 - Adaptation to mobile devices <br/> <br/>
+                 - High speed loading site <br/> <br/>
+                 - Reliable hosting <br/> <br/>
+                 - Multilingualism',
+    'corp14' => 'Findings',
+    'corp15' => 'Before deciding to order the development of a corporate website, think carefully - is it really
+                 you are ready for it. The company’s site is not the story when he created the site, launched and forgot about it.
+                 Firstly, the services of creating a website for a business are quite expensive, you should not forget about this.
+                 Secondly, such a resource constantly requires updates, support and timely completion in force majeure
+                 situations. And this is also time and money. And, sometimes, considerable, when it comes to the services of professionals.',
+    'corp16' => 'But if you have already weighed the pros and cons and are ready to become the owner of the site for business, then rest assured
+                 that, provided that it meets all technical and user requirements, your project will pay for itself,
+                 solving his tasks and positioning your company in the best light.',
+
+    'portal1' => 'Web portal',
+    'portal2' => '<b>Web portal</b> or <b>Internet portal</b> - a site on a computer network that provides the user with various interactive Internet services that work within this site. A web portal can consist of several sites. <br/> <br/>
+Portals also function as access points to information on the Internet or sites that help users find the information they need. Such portals present information from various sources in a uniform manner. Sometimes they are called navigation sites. <br/> <br/>
+As a rule, portals perform search functions and also provide access to various Internet services, such as e-mail, news feed, etc. <br/> <br/>
+The concept of web portals is to provide the maximum number of Internet services in one place to attract the largest number of users.',
+    'portal3' => 'Web portals come in two classes',
+    'portal4' => '1. <b>Horizontal portal</b> (universal, general purpose, general portal) - a portal covering many topics, representing a set of services (serving, if possible, all topics) and focused on the widest possible audience - on its maximum coverage interests. The most famous horizontal portals: Yahoo! (English) Mail.ru (Russian); Yandex, Ukr.net (Russian-speaking and Ukrainian-speaking). <br/> <br/>
+Such portals, as a rule, combine a variety of functions, offer diverse content and various services (news, financial, entertainment, gaming, etc.). <br/> <br/>
+2. <b>Vertical portal</b> (niche, vertical portal, niche portal) - a portal of a narrow thematic focus, providing various services for network users by certain interests and focused on the full coverage of a certain topic or field of activity. <br/> <br/>
+If the subject of the vertical portal is quite interesting, an Internet community (community) can form around it - a more or less permanent group of people who systematically communicate with each other (for example, in a chat of such a portal). <br/> <br/>
+Additional groups: corporate, government, personal, thematic and academic portals.',
+    'portal5' => 'Corporate Portals',
+    'portal6' => 'Created for employees, partners and customers of the same organization. Intended for: <br/> <br/>
+- personified access of external and internal users to corporate data, including unstructured and heterogeneous, and applications; <br/>
+- integration of various corporate services, combining isolated business models; <br/>
+- providing round-the-clock remote access to company resources for all users. <br/>
+A typical corporate portal consists of 3 functional layers: <br/> <br/>
+- basic infrastructure. She is responsible for services such as security system, transaction management, portal. Technically, it contains a database server, applications, a web server; <br/>
+- application integration. The layer is responsible for the interaction of the resource with all applications of the company, ERP, CRM systems, DBMS, etc .; <br/>
+- interface. Includes CSM for managing content, services for exchanging information with projects of business partners, tools for working with wireless and mobile devices, portlets (non-visual and visual components). <br/> <br/>
+Search engine optimization for corporate portals is optional.',
+    'portal7' => 'Enterprise Portal Architecture',
+    'portal8' => 'A typical resource consists of three functional layers: <br/> <br/>
+1. Basic infrastructure. Provides security system, portal, transaction management. The core infrastructure includes a Web server, database and application servers. <br/>
+2. Application integration. Responsible for the portal’s interaction with various company systems, DBMS, CRM, ERP, etc. <br/>
+3. The interface. The layer includes CSM for managing information content, as well as tools for working with wireless and mobile devices, data exchange services with business partner projects, portlets (software modules).',
+    'portal9' => 'Web Portal Features',
+    'portal10' => '- Direct access to all posted information. <br/>
+- Unified access to all applications. <br/>
+- Availability of data search tools. <br/>
+- Extensibility, application integration. <br/>
+- The publication of documents, support for document management. <br/>
+- Availability of catalogs of documentation. <br/>
+- Support for user group work. <br/>
+- Management of user groups. <br/>
+- Personalization of access.',
+    'portal11' => 'The following features are also characteristic of next-generation corporate web portals: <br/> <br/>
+- Flexible and powerful application development tools. <br/>
+- A reliable environment for their implementation. <br/>
+- Compliance with the requirements for enterprise information systems. <br/>
+- Support for wireless and mobile access. <br/>
+- Ability to integrate with partner information systems and other applications.',
+    'portal12' => 'Findings',
+    'portal13' => '<b>Web portal</b> is a site that provides users with various interactive services that operate on a single resource. Information on their pages is published in a uniform way, regardless of the sources. Such sites offer not only a search function, but also services such as email, forum, voting, etc.',
+
+    'wepapi1' => '<b>Web Service</b> is a service that is a mechanism for exchanging data, provides raw information, and is difficult for most users.
+                The web service is used by sites and applications. These applications analyze data before returning
+                their end user. <br/> <br/>
+
+                Let\'s look at examples. To get weather forecast data, the ABC mobile application needs to take information from a specific resource,
+                it can be a web service that provides weather data for different areas of the country. <br/> <br/>
+
+                Identically, in order to receive data about promotions, the ABC mobile application must also contact the web service
+                providing this data. The data will be processed before being displayed in the mobile application.
+                Web Service often provides raw data that is difficult to understand for most ordinary
+                users because they are returned in XML or JSON format.',
+    'wepapi2' => 'A RESTful Web Service is a Web Service that is written based on the REST (REpresentational State Transfer) structure. REST is already widely used and replaces Web Service based on SOAP and WSDL. RESTful Web Service is lightweigh and is easy to expand and maintain.
+The first concepts about REST were introduced in 2000 in the doctoral dissertation of Roy Thomas Fielding (HTTP co-founder). In the dissertation, he introduces in detail the restrictions and rules, as well as the methods of execution in the system for obtaining the REST system.',
+    'webapi3' => 'REST defines the rules of architecture for the design of your Web services, focuses on systematic
+                resources, including what data format is transmitted over HTTP, is written in different languages.
+                Due to the large number of users of web services, REST has become very popular. And over the past few years, has become very popular as
+                service is much simpler and easier to use. In fact, REST almost replaced SOAP
+                and WSDL all for the same reasons that it is much simpler and easier to use. <br/> <br/>
+
+                REST is a set of rules for creating a Web Service application that follows 4 basic design rules: <br/>
+                - Use explicit HTTP methods <br/>
+                - Has no condition <br/>
+                - Displays folder structure as URls <br/>
+                - Transmission of JavaScript Object Notation (JSON), XML, or both. <br/> <br/>
+
+                REST sets a rule requiring prommasters to determine their purpose through the HTTP method. Usually these goals include
+                Retrieving data, adding data, updating data, or deleting data. Therefore when you want
+                To complete one of the tasks above, use the following rules: <br/> <br/>
+
+                - To add data to the server, you need to use the <b>POST</b> method. <br/>
+                - To retrieve data, use <b>GET</b>. <br/>
+                - To change the state of the data or update it, use <b>PUT</b>. <br/>
+                - To cancel or delete data, use <b>DELETE</b>.',
+    'webapi4' => 'Note that the rules above are optional, in fact you can only use the GET method to get the data,
+                Insert, change or delete data on the server. But REST provides the rules above that describe their name
+                and explain the action. <br/> <br/>
+
+                Sometimes the client can determine the types of returned data that it wants (JSON or XML), these
+                definitions are called MINE views that are attached to the request HEADER. <br/> <br/>
+
+                The following are common types of MINE used with REST service. <br/>
+                MIME-Type Content-Type: <br/>
+                - <b>JSON</b> application / json <br/>
+                - <b>XML</b> application / xml <br/>
+                - <b>XHTML</b> application / xhtml + xml <br/> <br/>
+
+                For example, a client sends a request for weather information for his mobile application
+                and requires that the data be returned to him in JSON format.',
+    'wepapi5' => 'Findings',
+    'wepapi6' => 'Thanks to the API and http (s), as well as the JSON data exchange format, we can organize data output for
+                 mobile applications developed on Android or another program capable of receiving and processing
+                 data in the form of JSON. This is a very convenient data transfer format.
+                 Today, all applications developed for mobile phones do this.',
+
+    'policy2' => '“Administration of the Makklays website (hereinafter referred to as the“ Site Administration ”) - authorized employees to manage the site, acting on behalf of Makklays, who organize and (or) process personal data, as well as determine the purposes of processing personal data, the composition of personal data to be processed, actions (operations) performed with personal data. <br/>
+“Personal data” - any information relating directly or indirectly to a specific or determinable natural person (subject of personal data). <br/>
+“Processing personal data” - any action (operation) or a set of actions (operations) performed using automation tools or without using such tools with personal data, including collection, recording, systematization, accumulation, storage, clarification (updating, changing), extraction, use, transfer (distribution, provision, access), depersonalization, blocking, deletion, destruction of personal data. <br/>
+“Confidentiality of personal data” - a requirement for the Operator or other person who has gained access to personal data to comply with the requirement not to allow their dissemination without the consent of the subject of personal data or the presence of another legal basis. <br/>
+“Site User (hereinafter referred to as the“ User) ”is a person who has access to the Site via the Internet and uses the Agency’s Site. <br/>
+“Cookies” - a small piece of data sent by the web server and stored on the user\'s computer, which the web client or web browser sends to the web server each time in an HTTP request when trying to open the page of the corresponding site. <br/>
+"IP address" - a unique network address of a node in a computer network built over IP.',
+    'policy3' => 'General Provisions',
+    'policy4' => 'Using the agency’s website by the User means acceptance of this Privacy Policy and the conditions for processing the User’s personal data. <br/>
+In case of disagreement with the terms of the Privacy Policy, the User must stop using the site. <br/>
+This Privacy Policy applies only to the Makklays website. The administration of the site Makklays does not control and is not responsible for third-party sites to which the User can click on the links available on the site. <br/>
+The site administration does not verify the accuracy of personal data provided by the user of the site.',
+    'policy5' => 'Subject of privacy policy',
+    'policy6' => 'This Privacy Policy establishes the obligations of the Makklays Site Administration to not disclose and ensure the regime for protecting the confidentiality of personal data, which the User provides at the request of the Site Administration when using feedback forms, subscribing to news or ordering services. <br/>
+Personal data permitted for processing under this Privacy Policy is provided by the User by filling out forms on the pages of the Makklays Website. <br/>
+The Makklays website collects the following information about the user: <br/>
+a) last name, first name, patronymic of the User; <br/>
+b) the contact telephone number of the User; <br/>
+c) email address (e-mail); <br/>
+The Site may also automatically or with the participation of the user receive additional personal information, including, but not limited to, the IP address, browser version, referrer page address and other technical information that cannot be used to identify the user without additional activities <br />
+Any other personal information not specified above is subject to reliable storage and non-distribution, with the exception of cases provided for in this Privacy Policy.',
+    'policy7' => 'Personal Information Collection Goals',
+    'policy8' => 'Makklays website administration may use the User’s personal data in order to: <br/>
+Establishment of feedback with the User, including the sending of notifications, requests regarding the use of the Agency\'s website, the provision of services, processing of requests and applications from the User. <br/>
+Confirmations of the accuracy and completeness of personal data provided by the User. <br/>
+Providing the User with effective customer and technical support in case of problems associated with the use of the Agency’s Website. <br/>
+Providing the User with his consent, product updates, special offers, pricing information, newsletters and other information on behalf of Makklays or on behalf of agency partners. <br/>
+Implementation of promotional activities with the consent of the User. <br/>
+Providing the User with access to the sites or services of Makklays partners in order to obtain products, updates and services.',
+    'policy9' => 'Methods and terms for processing information',
+    'policy10' => 'The processing of the User’s personal data is carried out without any time limit, by any legal means, including in personal data information systems using automation tools or without using such tools. <br/>
+The User’s personal data may be transferred to authorized bodies of state power of Ukraine only on the grounds and in the manner established by the legislation of Ukraine. <br/>
+In case of loss or disclosure of personal data, the Site Administration informs the User about the loss or disclosure of personal data. <br/>
+The site administration takes the necessary organizational and technical measures to protect the User’s personal information from unauthorized or accidental access, destruction, alteration, blocking, copying, distribution, as well as from other illegal actions of third parties. <br/>
+The site administration together with the User takes all necessary measures to prevent losses or other negative consequences caused by the loss or disclosure of the User’s personal data.',
+    'policy11' => 'Obligations of the parties',
+    'policy12' => 'The user is obliged to provide reliable information about personal data when filling out forms for collecting personal data on the Makklays Website. <br/>
+The site administration is obliged: <br/>
+a) Use the information received solely for the purposes specified in this Privacy Policy. <br/>
+b) Ensure that confidential information is kept confidential, not disclosed without the prior written permission of the User, and also not to sell, exchange, publish, or disclose in any other possible way the transmitted personal data of the User, except as otherwise provided in this Privacy Policy. <br/>
+c) Take precautions to protect the confidentiality of the User’s personal data in accordance with the procedure usually used to protect this kind of information in existing business transactions. <br/>
+d) To delete personal data related to the relevant User from the moment of contacting or requesting the User or his legal representative or authorized body for the protection of the rights of personal data subjects.',
+    'policy13' => 'Responsibility of the Parties',
+    'policy14' => 'The site administration, which has not fulfilled its obligations, is liable for losses incurred by the User in connection with the unlawful use of personal data, in accordance with the legislation of Ukraine, with the exception of cases provided for by this Privacy Policy. <br/>
+In case of loss or disclosure of Confidential Information, the Site Administration is not responsible if this confidential information: <br/>
+a) Has become public domain before its loss or disclosure. <br/>
+b) Was received from a third party until it was received by the Site Administration. <br/>
+c) Has been disclosed with the consent of the User.',
+    'policy15' => 'Additional terms',
+    'policy16' => 'The site administration has the right to make changes to this Privacy Policy without the consent of the User. <br/>
+The new Privacy Policy comes into force from the moment it is posted on the Makklays Website, unless otherwise provided by the new version of the Privacy Policy. <br/>
+The current Privacy Policy is available on the page at',
+
+    'blacklist_secr' => 'Your actions seemed suspicious to us, because we added you to the black list.',
+    'statistics_descr' => 'Website traffic statistics Home page',
+    'calls_descr' => 'Website visitors who ordered a call for development',
+    'orders_descr' => 'List of development orders',
+    'report_cat_dog_descr' => 'Response statistics for the "Cat or Dog" poll',
+    'List_articles_descr' => 'List of articles on the site, indicating the language',
+    'List_documents_descr' => 'List of documents required for development',
+    'blacklist_descrs' => 'List of suspicious site visitors that have been added to the blacklist',
     '' => '',
     '' => '',
     '' => '',

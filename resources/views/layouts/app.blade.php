@@ -18,7 +18,7 @@
     <meta property="og:url" content="http://makklays.com.ua" />
     <meta property="og:image" content="http://makklays.com.ua/img/dog.jpg" />
 
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" >
 
     <!-- Scripts -->
     <script src="{{ asset('js/jquery-3.4.0.min.js') }}" type="text/javascript"></script>
@@ -30,12 +30,14 @@
     <!--script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script-->
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <!--link rel="dns-prefetch" href="//fonts.gstatic.com"-->
     <!--link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css"-->
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/package.css') }}" rel="stylesheet">
+    <!--link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/package.css') }}" rel="stylesheet"-->
+    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css?<?=time()?>" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/admin-main8.css?<?=time()?>" />
 
     <!-- datatables css -->
     <!--link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/ -->
@@ -45,8 +47,9 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}" style="padding-top:0; padding-bottom:0;">
-                    <img id="logo" class="d-inline-block mr-1" alt="Logo" src="/favicon.png" style="width:39px;" />
+                <a class="navbar-brand" href="{{ url( app()->getLocale() . '/home') }}" style="padding-top:0; padding-bottom:0;">
+                    <img id="logo" class="d-inline-block mr-1" alt="Logo" src="/makklays.png" style="width:39px;" />
+                    Makklays
                     <!-- div class="d-inline-block mr-1">Makklays<span>text</span></div -->
                     <!-- {{ config('app.name', 'Laravel') }} -->
                 </a>
@@ -65,37 +68,40 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login', app()->getLocale() ) }}">{{ trans('site.Login') }}</a>
                             </li>
                             <!-- without registration
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register', app()->getLocale()) }}">{{ trans('site.Register') }}</a>
                                 </li>
                             @endif
                             -->
                         @else
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('packages', app()->getLocale()) }}">{{ __('Packages') }}</a>
+                                <a class="nav-link" href="{{ route('packages', app()->getLocale()) }}">{{ trans('site.Packages') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('feedbacks', app()->getLocale()) }}">{{ __('Feedbacks') }}</a>
+                                <a class="nav-link" href="{{ route('adm-call', app()->getLocale()) }}">{{ trans('site.Calls') }}</a>
                             </li>
+                            <!--li class="nav-item">
+                                <a class="nav-link" href="{{ route('feedbacks', app()->getLocale()) }}">{{ trans('site.Soobsheniya') }}</a>
+                            </li-->
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('report', app()->getLocale()) }}">{{ __('Report') }}</a>
+                                <a class="nav-link" href="{{ route('statistics', app()->getLocale()) }}">{{ trans('site.Statistics') }}</a>
                             </li>
                             <!--li class="nav-item">
-                                <a class="nav-link" href="{{ route('companies', app()->getLocale()) }}">{{ __('Companies') }}</a>
+                                <a class="nav-link" href="{{ route('companies', app()->getLocale()) }}">{{ trans('site.Companies') }}</a>
                             </li-->
                             <!--li class="nav-item">
-                                <a class="nav-link" href="{{ route('company_add', app()->getLocale()) }}">{{ __('Companies add') }}</a>
+                                <a class="nav-link" href="{{ route('company_add', app()->getLocale()) }}">{{ trans('site.Companies add') }}</a>
                             </li-->
                             <!--li class="nav-item">
-                                <a class="nav-link" href="{{ route('employees', app()->getLocale()) }}">{{ __('Employees') }}</a>
+                                <a class="nav-link" href="{{ route('employees', app()->getLocale()) }}">{{ trans('site.Employees') }}</a>
                             </li-->
                             <!--li class="nav-item">
-                                <a class="nav-link" href="{{ route('employee_add', app()->getLocale()) }}">{{ __('Employee add') }}</a>
+                                <a class="nav-link" href="{{ route('employee_add', app()->getLocale()) }}">{{ trans('site.Employee add') }}</a>
                             </li-->
 
                             <li class="nav-item dropdown">
@@ -106,18 +112,24 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <!--a class="dropdown-item" href="/jobs">Jobs</a>
                                     <a class="dropdown-item" href="/cvs">CVs</a-->
-                                    <a class="dropdown-item" href="{{ route('my-profile', app()->getLocale()) }}">My profile</a>
-                                    <a class="dropdown-item" href="{{ route('todo', app()->getLocale()) }}">ToDo</a>
-                                    <a class="dropdown-item" href="{{ route('links', app()->getLocale()) }}">Link(s)</a>
-                                    <a class="dropdown-item" href="{{ route('report', app()->getLocale()) }}">Report</a>
-                                    <a class="dropdown-item" href="{{ route('settings', app()->getLocale()) }}">Settings</a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item" href="{{ route('adm-call', app()->getLocale()) }}">{{ trans('site.Calls') }}</a>
+                                    <a class="dropdown-item" href="{{ route('adm-orders', app()->getLocale()) }}">{{ trans('site.Orders') }}</a>
+                                    <!--<a class="dropdown-item" href="{{ route('todo', app()->getLocale()) }}">{{ trans('site.ToDo') }}</a>-->
+                                    <a class="dropdown-item" href="{{ route('report', app()->getLocale()) }}">{{ trans('site.Reports') }}</a>
+                                    <a class="dropdown-item" href="{{ route('documents', app()->getLocale()) }}">{{ trans('site.Documents') }}</a>
+                                    <a class="dropdown-item" href="{{ route('adm-blacklist', app()->getLocale()) }}">Blacklist</a>
+                                    <a class="dropdown-item" href="{{ route('adm-articles', app()->getLocale()) }}">{{ trans('site.Articles') }}</a>
+                                    <a class="dropdown-item" href="{{ route('report-cat-dog', app()->getLocale()) }}">{{ trans('site.Cat_or_Dog') }}</a>
+                                    <!--a class="dropdown-item" href="{{ route('settings', app()->getLocale()) }}">Settings</a-->
+                                    <a class="dropdown-item" href="{{ route('profile', app()->getLocale()) }}">{{ trans('site.Profile') }}</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="{{ route('logout', app()->getLocale()) }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ trans('site.Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="{{ route('logout', app()->getLocale() ) }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
                                 </div>

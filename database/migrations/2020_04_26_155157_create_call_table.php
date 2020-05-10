@@ -20,6 +20,7 @@ class CreateCallTable extends Migration
             $table->string('messenger', '255')->nullable();
             $table->string('want_development', '255')->nullable();
             $table->string('ip_address', '255')->nullable();
+            $table->string('lang', '5')->nullable();
             $table->integer('created_at')->default(time());
             //$table->timestamps();
         });

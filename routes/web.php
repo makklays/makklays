@@ -100,6 +100,7 @@ Route::group([
     Route::get('brief', ['as' => 'mysite_brief', 'uses' => 'MysiteController@brief']);
     Route::get('online-brief', ['as' => 'mysite_online_brief', 'uses' => 'MysiteController@onlineBrief']);
     Route::post('online-brief', ['as' => 'mysite_online_brief_post', 'uses' => 'MysiteController@onlineBriefPost']);
+
     Route::get('design', ['as' => 'mysite_design', function(){
         return view('mysite.design');
     }]);
@@ -109,22 +110,39 @@ Route::group([
     Route::get('web-portal', ['as' => 'mysite_webportal', 'uses' => 'MysiteController@webportal']);
     Route::get('site-system', ['as' => 'mysite_sitesytem', 'uses' => 'MysiteController@sitesytem']);
     Route::get('online-shop', ['as' => 'mysite_store', 'uses' => 'MysiteController@store']);
+    Route::get('privacy-policy', ['as' => 'privacy-policy', 'uses' => 'MysiteController@privacy_policy']);
 
-    Route::post('order-development-post', ['as' => 'order_development_post', 'uses' => 'MysiteController@orderDevelopmentPost']);
+    Route::get('black-list', ['as' => 'mysite_blacklist', 'uses' => 'MysiteController@blacklist']);
+
+    Route::post('call-development-post', ['as' => 'call_development_post', 'uses' => 'MysiteController@callDevelopmentPost']);
 
     Route::get('seo-words', ['as' => 'seo_words', 'uses' => 'MysiteController@countSeoWords']);
     Route::post('seo-words', ['as' => 'seo_words_post', 'uses' => 'MysiteController@countSeoWordsPost']);
 
     Route::get('order', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
-    Route::get('links', ['as' => 'links', 'uses' => 'MysiteController@links']);
+    Route::get('documents', ['as' => 'documents', 'uses' => 'MysiteController@documents']);
 
-    Route::get('order/site', ['as' => 'mysite_site', 'uses' => 'MysiteController@site']);
-    Route::get('order/shop', ['as' => 'mysite_shop', 'uses' => 'MysiteController@shop']);
-    Route::get('order/crm', ['as' => 'mysite_crm', 'uses' => 'MysiteController@crm']);
+    // site
+    Route::get('develop-articles', ['as' => 'mysite_articles', 'uses' => 'MysiteController@listArticles']);
+    Route::get('develop-article/{slag}', ['as' => 'mysite_article', 'uses' => 'MysiteController@showArticle']);
 
-    Route::get('my-profile', ['as' => 'my-profile', 'uses' => 'MysiteController@myProfile']);
+    // adminka
+    Route::get('adm-articles', ['as' => 'adm-articles', 'uses' => 'ArticlesController@list']);
+    Route::match(['get', 'post'],'adm-article-add', ['as' => 'adm-article-add', 'uses' => 'ArticlesController@add']);
+    Route::match(['get', 'post'],'adm-article-edit/{article_id}', ['as' => 'adm-article-edit', 'uses' => 'ArticlesController@edit'])->where(['article_id' => '[0-9]+']);
+    Route::match(['get', 'post'],'adm-article-delete/{article_id}', ['as' => 'adm-article-delete', 'uses' => 'ArticlesController@delete'])->where(['article_id' => '[0-9]+']);
+    Route::get('adm-orders', ['as' => 'adm-orders', 'uses' => 'OrdersController@index']);
+    Route::match(['get', 'post'],'adm-order-add', ['as' => 'adm-order-add', 'uses' => 'OrdersController@add']);
+
+    Route::get('adm-call', ['as' => 'adm-call', 'uses' => 'CallController@index']);
+    Route::get('adm-blacklist', ['as' => 'adm-blacklist', 'uses' => 'CallController@blacklist']);
+
+    Route::get('profile', ['as' => 'profile', 'uses' => 'MysiteController@myProfile']);
+    Route::post('profile-post', ['as' => 'profile-post', 'uses' => 'MysiteController@myProfilePost']);
     Route::get('settings', ['as' => 'settings', 'uses' => 'MysiteController@settings']);
+    Route::get('statistics', ['as' => 'statistics', 'uses' => 'MysiteController@statistics']);
     Route::get('report', ['as' => 'report', 'uses' => 'MysiteController@report']);
+    Route::get('report-cat-dog', ['as' => 'report-cat-dog', 'uses' => 'MysiteController@reportCatDog']);
 
     /* about me */
     Route::get('about2', ['as' => 'about', 'uses' => 'TodoController@about2']); // биография
@@ -447,6 +465,8 @@ Route::group([
 
         exit;
     }]);
+
+    Auth::routes();
 });
 
 /*Route::group(['as' => 'admin::'], function () {
@@ -455,6 +475,6 @@ Route::group([
     }]);
 });*/
 
-Auth::routes();
+
 
 

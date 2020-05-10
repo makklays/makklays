@@ -5,5 +5,8 @@ return [
         'phone' => [
             'required' => 'Debe especificar \'Número de teléfono\'',
         ],
+        'soglasen' => [
+            'required' => '¡Asegúrate de completar!',
+        ],
     ],
 ];

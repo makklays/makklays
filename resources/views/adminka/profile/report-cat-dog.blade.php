@@ -5,22 +5,23 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>{{ trans('site.Report') }} <?=(!empty($reports) ? '('.count($reports).')' : '')?></h2>
+                <h2>{{ trans('site.Cat_or_Dog') }} <?=(!empty($reports) ? '('.count($reports).')' : '')?></h2>
+                <span>{{ trans('site.report_cat_dog_descr') }}</span>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <table id="id-companies" class="table table-bordered display" style="width:100%; margin:20px 0;">
                     <thead class="thead-light">
                     <tr>
                         <th>ID</th>
-                        <th>Choice</th>
+                        <th>{{ trans('site.Choice') }}</th>
                         <th>Strana</th>
                         <th>City</th>
                         <th>Region</th>
                         <th>ZipCode</th>
                         <th>Lat</th>
                         <th>Lon</th>
-                        <th style="width:200px;">Date</th>
+                        <th>{{ trans('site.Date') }}</th>
                     </tr>
                     </thead>
                     <tbody>

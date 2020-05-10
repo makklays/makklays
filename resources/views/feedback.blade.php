@@ -17,7 +17,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="shortcut icon" href="/favicon_t.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
 
@@ -38,7 +38,7 @@
     <div style="width:300px; margin-left:auto; margin-right:auto; text-align:center;">
         <div class="text-center" style="margin:20px; ">
             <a href="{{ route('/', app()->getLocale()) }}" >
-                <img src="/favicon_t.png" style="" alt="Logo" title="Makklays" />
+                <img src="/makklays.png" style="" alt="Logo" title="Makklays" />
             </a>
         </div>
 

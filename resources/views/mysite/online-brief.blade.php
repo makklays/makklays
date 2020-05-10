@@ -1,4 +1,3 @@
-
 @extends('layouts.main8')
 
 @section('content')
@@ -43,7 +42,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="id_phone">{{ trans('site.Phone') }} <sup style="color:red;">*</sup></label>
-                            <input name="phone" type="text" id="id_phone" value="{{ old('phone') }}" class="form-control" placeholder="{{ trans('site.Phone_pl') }}*" />
+                            <input name="phone" type="text" id="id_phone" value="{{ old('phone') }}" class="form-control <?=($errors->has('phone') ? "red-border" : '')?>" placeholder="{{ trans('site.Phone_pl') }}*" />
 
                             <?php if ($errors->has('phone')): ?>
                             <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color: red;"><?=$errors->first('phone')?></div>
@@ -72,17 +71,6 @@
                             <?php endif; ?>
                         </div>
                     </div>
-
-                    <!--div class="col-md-6">
-                        <div class="form-group" >
-                            <label for="id_site">Сайт вашей компании, если есть</label>
-                            <input name="site" type="text" id="id_site" value="{{ old('site') }}" class="form-control" placeholder="" />
-
-                            <?php if ($errors->has('site')): ?>
-                            <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color:#88251d;"><?=$errors->first('site')?></div>
-                            <?php endif; ?>
-                        </div>
-                    </div-->
 
                     <div class="col-md-6">
                         <div class="form-group">
@@ -123,16 +111,6 @@
                             <?php endif; ?>
                         </div>
                     </div>
-
-                    <!--div class="col-md-6">
-                        <div class="form-group">
-                            <label for="id_site">Сроки разработки</label>
-                            <textarea name="sroki" rows="4" class="form-control" placeholder="Укажите желаемые сроки разработки, если сроки жестко ограничены - можно указать причину ограничения">{{ old('sroki') }}</textarea>
-                            <?php if ($errors->has('sroki')): ?>
-                            <div class="text-left invalid-price_min" role="alert" style="font-size:12px; color:#88251d;"><?=$errors->first('sroki')?></div>
-                            <?php endif; ?>
-                        </div>
-                    </div-->
 
                     <div class="col-md-6">
                         <div class="form-group" >
@@ -664,9 +642,13 @@
                             <h4>{{ trans('site.brief_193') }}</h4> <br/>
                             {{ trans('site.brief_194') }}
                         </p>
-                        <div class="form-group">
-                            <label for="id_file">{{ trans('site.brief_195') }}</label>
-                            <input type="file" name="tzfile" class="form-control-file" id="id_file" />
+                        <div class="input-group row">
+                            <div class="col-md-12 text-left">
+                                <div class="custom-file">
+                                    <input type="file" name="tzfile" class="col-md-4 col-form-label" id="id-file" >
+                                    <label class="custom-file-label" for="id-file">{{ trans('site.Add_photo') }}</label>
+                                </div>
+                            </div>
                         </div>
                         <br/><br/><br/>
                     </div>
@@ -677,14 +659,9 @@
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" checked class="custom-control-input" id="id_soglasen">
                             <label class="custom-control-label" for="id_soglasen">{{ trans('site.brief_rules') }}
-                                <a href="" class="a-green">{{ trans('site.brief_link') }}</a>.</label>
+                                <a href="{{ route('privacy-policy', app()->getLocale()) }}" class="a-green">{{ trans('site.brief_link') }}</a>.</label>
                             <br/><br/>
                         </div>
-                        <!--p class="text-center">
-                            <br/>
-                            Нажимая кнопку "Отправить бриф", я даю согласие на обработку персональных данных в
-                            соответствии с <a href="" class="a-green">политикой конфиденциальности</a>
-                        </p-->
                         <input type="submit" class="btn btn-success text-center btn-lg" value="{{ trans('site.send_brief') }}" /> <br/>
                         <p class="text-center">
                             <br/>
