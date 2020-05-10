@@ -13,9 +13,9 @@
     <meta property="og:title" content="Makklays - Error 404" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://makklays.com.ua" />
-    <meta property="og:image" content="http://makklays.com.ua/img/favicon_t.png" />
+    <meta property="og:image" content="http://makklays.com.ua/img/makklays.png" />
 
-    <link rel="shortcut icon" href="/favicon_t.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" >
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-164972795-1"></script>
@@ -43,7 +43,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white hexlet-navbar border-bottom">
         <a class="navbar-brand" href="{{ route('/', app()->getLocale()) }}">
-            <img src="/favicon_t.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="/makklays.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Makklays
         </a>
         <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">

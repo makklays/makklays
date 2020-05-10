@@ -13,6 +13,6 @@ class Call extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'fio', 'phone', 'want_development', 'messenger', 'created_at',
+        'fio', 'phone', 'want_development', 'messenger', 'lang', 'created_at',
     ];
 }

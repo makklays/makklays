@@ -132,6 +132,9 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'soglasen' => [
+            'required' => 'Required',
+        ],
     ],
 
     /*

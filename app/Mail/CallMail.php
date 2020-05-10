@@ -37,6 +37,7 @@ class CallMail extends Mailable
             ->view('emails.call')
             ->with([
                 'fio' => $this->call->fio,
+                'lang' => $this->call->lang,
                 'phone' => $this->call->phone,
                 'messenger' => $this->call->messenger,
                 'want_development' => $this->call->want_development,

@@ -1,15 +1,6 @@
-
 @extends('layouts.main8')
 
 @section('content')
-
-    <!--br/>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ route('/', app()->getLocale()) }}" class="a-green">{{ trans('site.home') }}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ trans('site.mysite_howmake') }}</li>
-        </ol>
-    </nav-->
 
     <div class="row">
         <div class="col-md-12">
@@ -41,9 +32,6 @@
             - {{ trans('site.howmake15') }} <br/>
             - {{ trans('site.howmake16') }} <br/><br/>
         </div>
-        <!--div class="col-md-5">
-            <img src="/img/making.png" alt="." title="" class="img-fluid" />
-        </div-->
 
         <div class="col-md-12 text-center">
             <button type="button" id="id_order_development" class="btn btn-success btn-lg" data-toggle="modal">
@@ -60,9 +48,12 @@
                 <div class="col-6 col-sm-6 col-md-6"></div>
                 <div class="col-12 col-sm-6 col-md-6">
                     <div style="margin:40px 20px 40px 0; padding:20px 0 20px 0;  border-radius:0px; background-color: #FFFFFF;">
-                        <h4 class="text-center">{{ trans('site.keywords') }}</h4>
+                        <h4 class="text-center">{{ trans('site.work_and_felic') }} <span style="color:red;">❤</span></h4> <br/>
                         <div class="text-justify" style="margin:0 40px 0 40px;">
-                            <div class="keyword">Apache</div> <div class="keyword">API</div>
+                            <blockquote>
+                                <p>«{{ trans('site.happy_citata') }}»</p>
+                            </blockquote>
+                            <!--div class="keyword">Apache</div> <div class="keyword">API</div>
                             <div class="keyword">Bootstrap</div> <span class="keyword">CSS3</span>
                             <span class="keyword">ElasticSearch</span> <span class="keyword">GitHub</span>
                             <span class="keyword">HTML5</span> <span class="keyword">Javascript</span>
@@ -82,16 +73,8 @@
                             <span class="keyword">Ubuntu</span> <span class="keyword">C#</span>
                             <span class="keyword">GoogleMap API</span> <span class="keyword">Entity Framework 6</span>
                             <span class="keyword">LINQ</span> <span class="keyword">UWP</span>
-                            <span class="keyword">Vue.js</span> <div style="clear:both;"></div>
+                            <span class="keyword">Vue.js</span> <div style="clear:both;"></div-->
                         </div>
-                        <!--
-                        <div class="text-left" style="margin:0 40px 0 40px;">
-                            <div class="text-justify">
-                                Да, сделать можно всё, что Вы хотите. Называйте сроки и суммы, я их скорректирую. <br/><br/>
-                                Имею больше 12 лет опыта разработки на PHP и смежных технологиях для ВЕБа. <br/>
-                                За этот период были запрограммированы и разработамы десятки сайтов. <br/>
-                            </div>
-                        </div-->
                     </div>
                 </div>
             </div>
