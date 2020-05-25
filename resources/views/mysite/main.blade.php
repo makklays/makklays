@@ -5,10 +5,10 @@
         <div class="row">
             <div class="col-md-7">
                 <p class="text-justify">
-                    {{ trans('site.about_1') }} <br/><br/>
-                    {{ trans('site.about_1_1') }} <br/><br/>
-                    {{ trans('site.about_2') }} <br/><br/>
-                    {{ trans('site.about_3') }}
+                    <?=trans('site.about_1')?> <br/><br/>
+                    <?=trans('site.about_1_1')?> <br/><br/>
+                    <?=trans('site.about_2')?>
+                    <?=trans('site.about_3')?>
                 </p>
             </div>
             <div class="col-md-5">

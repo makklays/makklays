@@ -149,11 +149,12 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
     'howmake15' => 'Consulta por Skype;',
     'howmake16' => 'Consulta escrita (formato: pregunta / respuesta);',
 
-    'about_text1' => 'Makklays es un equipo que se dedica profesionalmente a la programación informática de sitios desde 2007.',
-    'about_text2' => 'El desarrollo del sitio web no es el objetivo final. Esta es solo una herramienta que debería ayudar a resolver el problema del cliente.',
-    'about_text3' => 'Cada especialista tiene más de 10 años de experiencia en su campo.',
-    'about_text4' => 'Makklays ama los nuevos conocimientos y los grandes proyectos personalizados.',
+    'about_text1' => '<b> Makklays </b> es un equipo de personas que se han dedicado profesionalmente a la programación de computadoras y al desarrollo de sitios web desde 2007. Con base en nuestra experiencia y conocimiento, podemos garantizar la calidad del trabajo y a tiempo.',
+    'about_text1.1' => 'Desarrolló y programó con éxito más de un sitio web corporativo, una tienda en línea para empresas medianas y un portal web sofisticado para bancos. <br/> <br/> <b> Nuestra misión </b> es ayudar a desarrollar un negocio exitoso en el campo de TI. Nos gustaría convertirnos en un socio confiable para brindar servicios de desarrollo, desarrollo de negocios en Internet y mantenimiento de sitios web. Logramos nuestro objetivo ofreciendo servicios que conducen al desarrollo y la prosperidad de la sociedad.',
+    'about_text2' => '<b> Desarrollo de sitios web </b> no es nuestro objetivo final. Esta es solo una herramienta que debería ayudar al desarrollo comercial y aumentar las ganancias de los clientes.',
 
+    'about_text3' => 'Cada especialista tiene más de 10 años de desarrollo o experiencia laboral en su campo.',
+    'about_text4' => 'Makklays adora los nuevos conocimientos, y también le encanta desarrollar y realizar grandes proyectos no estándar en el campo de TI. Nosotros, como Chip y Dale, tenemos prisa por ayudarlo a alcanzar sus objetivos. ¿Y quiénes, si no nosotros, somos los mejores versados ​​en tecnologías modernas de construcción de sitios? ¿Y quién más que nosotros sabe lo fácil que es completar un pedido de un cliente para que esté satisfecho con el resultado del trabajo? ¡Solo nosotros! ¡El desarrollo del sitio web con nosotros es fácil y divertido!',
     'about_text4.1' => 'El desarrollo de nuestro sitio es único en el sentido de que no utilizamos soluciones de caja gratuitas que se reducen en funcionalidad, diseño y, a menudo, no dan el resultado deseado. Nuestro desarrollo es flexible para usted, comenzando con sus deseos de funcionalidad, contenido, diseño y terminando con la publicación exitosa del sitio en Internet, a tiempo, y también tiene su diseño, funcionalidad y practicidad deseados. Nuestro sitio es fácil de usar, es comprensible, no tiene nada superfluo, fácil de administrar, práctico.',
 
     'about_text5' => 'El desarrollo profesional es un equipo de especialistas de varios campos:',
@@ -215,10 +216,10 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
     'review2_city' => 'Barcelona',
     'review3' => 'Mi tienda en línea ahora me brinda ganancias e implementa todas mis ideas locas, descargas, catálogos y, lo más importante, informes financieros con gráficos. Estoy muy satisfecho con el trabajo. Hay una versión móvil Ahora muchas órdenes provienen de allí. La velocidad y la optimización son geniales.',
 
-    'about_1' => 'Makklays es un equipo que se ha dedicado profesionalmente a la programación informática de sitios desde 2007. Desarrolló y programó con éxito muchos sitios corporativos, tiendas en línea para empresas medianas y portales complejos para bancos.',
-    'about_1_1' => 'El desarrollo del sitio web no es el objetivo final. Esta es solo una herramienta que debería ayudar a resolver el problema del cliente.',
-    'about_2' => 'Amamos vivir y amamos la vida.',
-    'about_3' => 'Makklays ama los nuevos conocimientos, y aún más ama los proyectos grandes e intensos.',
+    'about_1' => '<b> Makklays </b>: un equipo de personas que se han dedicado profesionalmente a la programación informática de sitios desde 2007. Desarrolló y programó con éxito más de un sitio web corporativo, una tienda en línea para empresas medianas, así como un portal web sofisticado para bancos en nuestro país. <br/> <br/> <b> Nuestra misión </b> es ayudar a desarrollar un negocio exitoso en el campo de TI. Nos gustaría convertirnos en un socio confiable para brindar servicios de desarrollo, desarrollo de negocios en Internet y mantenimiento de sitios web. Logramos nuestro objetivo ofreciendo servicios que conducen al desarrollo y la prosperidad de la sociedad.',
+    'about_1_1' => '<b> Desarrollo de sitios web </b> no es nuestro objetivo final. Esta es solo una herramienta que debería ayudar al desarrollo de negocios y aumentar sus ganancias.',
+    'about_2' => 'Amamos vivir y amamos la vida en todas sus manifestaciones.',
+    'about_3' => 'Makklays ama los nuevos conocimientos, y también ama los proyectos de TI grandes e interesantes, que desean convertirse en un socio confiable para usted y su negocio.',
 
     'how_make1' => 'Utilizamos el desarrollo de tecnologías modernas y avanzadas. Facebook, Amazon: todas estas plataformas están escritas en el lenguaje de programación PHP con los estándares de seguridad más robustos y la estabilidad del código.',
     'how_make2' => 'Elegimos este lenguaje y sus marcos Yii2, Laravel, cuando todavía no se metieron en el TOP más utilizado en el planeta. Esto nos permite desarrollar una oferta única en Makklays para usted y ser flexible en la realización de sus deseos inusuales.',
@@ -461,7 +462,7 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
     'Order_successful' => 'Nuestro gerente lo llamará en 30 minutos',
     'Close' => 'Cerrar',
     'slogan' => 'Desarrollo de sitios web',
-    'slogan_descr' => 'Nosotros Makklays. Ayudamos a que las ideas cambien los mundos.',
+    'slogan_descr' => 'Nosotros Makklays. Ayudamos a realizar la idea.',
 
     'Dashboard' => 'Tablero',
     'Articles' => 'Artículos',

@@ -8,19 +8,20 @@
         </div>
         <div class="col-md-7">
             <p class="text-justify">
-                {{ trans('site.about_text1') }} <br/>
-                {{ trans('site.about_text2') }} <br/><br/>
-                {{ trans('site.about_text3') }} <br/><br/>
-                {{ trans('site.about_text4') }} <br/><br/>
+                <?=trans('site.about_text1')?>
+                <?=trans('site.about_text1.1')?> <br/><br/>
+                <?=trans('site.about_text2')?> <br/><br/>
+                <?=trans('site.about_text3')?> <br/>
             </p>
         </div>
         <div class="col-md-5">
-            <img src="<?=config('app.url')?>/img/planshet2.png" alt="." title="About makklays" class="img-fluid kromka" />
+            <img src="<?=config('app.url')?>/img/planshet2.png" alt="About makklays" title="About makklays" class="img-fluid kromka" />
         </div>
 
         <div class="col-md-12">
             <p class="text-justify">
-                {{ trans('site.about_text4.1') }} <br/>
+                <?=trans('site.about_text4')?> <br/><br/>
+                <?=trans('site.about_text4.1')?> <br/>
             </p>
         </div>
 
