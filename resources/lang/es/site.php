@@ -457,11 +457,11 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
     'Times_working' => 'Horario de apertura',
     'mon_fri' => 'Lunes - viernes: 9:00 - 18:00',
     'sur_sun' => 'Sábado y domingo: día libre',
-    'main_whatmake_descr' => 'Sí, desarrollamos y creamos sitios web. Estamos escribiendo un código. Hacemos sitios web grandes y no muy. Sitios que nos son fáciles de mantener, porque conocemos nuestro código y sabemos lo que estamos haciendo. No utilizamos CMS gratuitos, que no están destinados a modificaciones y escalas, porque son gratuitos. ¿Necesita desarrollar un sitio web llave en mano y lanzarlo en Internet? Esto es para nosotros! Estamos listos para desarrollar un sitio web para usted y lanzarlo en Internet. Nuestro vector de dirección son sitios corporativos, tiendas en línea y sistemas de sitios. Estamos orgullosos de lo que hacemos y desarrollamos sitios. Estamos orgullosos de los resultados de nuestro trabajo y nuestros clientes. Queremos que pueda obtener el resultado deseado trabajando con nosotros.',
+    'main_whatmake_descr' => 'Sí, desarrollamos y creamos sitios web. Estamos escribiendo un código. Hacemos sitios web grandes y no muy. Sitios que nos son fáciles de mantener, porque conocemos nuestro código y sabemos lo que estamos haciendo. No utilizamos CMS gratuitos, que no están destinados a modificaciones y escalas, porque son gratuitos. ¿Necesita desarrollar un sitio web llave en mano y lanzarlo en Internet? Esto es para nosotros! Estamos listos para desarrollar un sitio web para usted y lanzarlo en Internet. Nuestro vector de dirección son sitio corporativos, tiendas en línea y sistemas de sitio. Estamos orgullosos de lo que hacemos y desarrollamos sitios. Estamos orgullosos de los resultados de nuestro trabajo y nuestros clientes. Queremos que pueda obtener el resultado deseado trabajando con nosotros.',
 
     'Order_successful' => 'Nuestro gerente lo llamará en 30 minutos',
     'Close' => 'Cerrar',
-    'slogan' => 'Desarrollo de sitios web',
+    'slogan' => 'Desarrollo de sitio web',
     'slogan_descr' => 'Nosotros Makklays. Ayudamos a realizar la idea.',
 
     'Dashboard' => 'Tablero',
