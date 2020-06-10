@@ -103,6 +103,8 @@ return [
     'mysite_request' => 'Deja una solicitud',
     'mysite_order' => 'Desarrollo de sitios web',
     'mysite_brief' => 'Descargar resumen',
+    'mysite_download_price' => 'Precio de descarga',
+    'mysite_portfolio' => 'Nuestro portafolio',
 
     'contacts1' => 'Hablemos de tu proyecto',
     'contacts2' => 'Ucrania, Kiev',
@@ -149,9 +151,9 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
     'howmake15' => 'Consulta por Skype;',
     'howmake16' => 'Consulta escrita (formato: pregunta / respuesta);',
 
-    'about_text1' => '<b> Makklays </b> es un equipo de personas que se han dedicado profesionalmente a la programación de computadoras y al desarrollo de sitios web desde 2007. Con base en nuestra experiencia y conocimiento, podemos garantizar la calidad del trabajo y a tiempo.',
-    'about_text1.1' => 'Desarrolló y programó con éxito más de un sitio web corporativo, una tienda en línea para empresas medianas y un portal web sofisticado para bancos. <br/> <br/> <b> Nuestra misión </b> es ayudar a desarrollar un negocio exitoso en el campo de TI. Nos gustaría convertirnos en un socio confiable para brindar servicios de desarrollo, desarrollo de negocios en Internet y mantenimiento de sitios web. Logramos nuestro objetivo ofreciendo servicios que conducen al desarrollo y la prosperidad de la sociedad.',
-    'about_text2' => '<b> Desarrollo de sitios web </b> no es nuestro objetivo final. Esta es solo una herramienta que debería ayudar al desarrollo comercial y aumentar las ganancias de los clientes.',
+    'about_text1' => '<b>Makklays</b> es un equipo de personas que se han dedicado profesionalmente a la programación de computadoras y al desarrollo de sitios web desde 2007. Con base en nuestra experiencia y conocimiento, podemos garantizar la calidad del trabajo y a tiempo.',
+    'about_text1.1' => 'Desarrolló y programó con éxito más de un sitio web corporativo, una tienda en línea para empresas medianas y un portal web sofisticado para bancos. <br/> <br/> <b>Nuestra misión</b> es ayudar a desarrollar un negocio exitoso en el campo de TI. Nos gustaría convertirnos en un socio confiable para brindar servicios de desarrollo, desarrollo de negocios en Internet y mantenimiento de sitios web. Logramos nuestro objetivo ofreciendo servicios que conducen al desarrollo y la prosperidad de la sociedad.',
+    'about_text2' => '<b>Desarrollo de sitios web</b> no es nuestro objetivo final. Esta es solo una herramienta que debería ayudar al desarrollo comercial y aumentar las ganancias de los clientes.',
 
     'about_text3' => 'Cada especialista tiene más de 10 años de desarrollo o experiencia laboral en su campo.',
     'about_text4' => 'Makklays adora los nuevos conocimientos, y también le encanta desarrollar y realizar grandes proyectos no estándar en el campo de TI. Nosotros, como Chip y Dale, tenemos prisa por ayudarlo a alcanzar sus objetivos. ¿Y quiénes, si no nosotros, somos los mejores versados ​​en tecnologías modernas de construcción de sitios? ¿Y quién más que nosotros sabe lo fácil que es completar un pedido de un cliente para que esté satisfecho con el resultado del trabajo? ¡Solo nosotros! ¡El desarrollo del sitio web con nosotros es fácil y divertido!',
@@ -216,8 +218,9 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
     'review2_city' => 'Barcelona',
     'review3' => 'Mi tienda en línea ahora me brinda ganancias e implementa todas mis ideas locas, descargas, catálogos y, lo más importante, informes financieros con gráficos. Estoy muy satisfecho con el trabajo. Hay una versión móvil Ahora muchas órdenes provienen de allí. La velocidad y la optimización son geniales.',
 
-    'about_1' => '<b> Makklays </b>: un equipo de personas que se han dedicado profesionalmente a la programación informática de sitios desde 2007. Desarrolló y programó con éxito más de un sitio web corporativo, una tienda en línea para empresas medianas, así como un portal web sofisticado para bancos en nuestro país. <br/> <br/> <b> Nuestra misión </b> es ayudar a desarrollar un negocio exitoso en el campo de TI. Nos gustaría convertirnos en un socio confiable para brindar servicios de desarrollo, desarrollo de negocios en Internet y mantenimiento de sitios web. Logramos nuestro objetivo ofreciendo servicios que conducen al desarrollo y la prosperidad de la sociedad.',
-    'about_1_1' => '<b> Desarrollo de sitios web </b> no es nuestro objetivo final. Esta es solo una herramienta que debería ayudar al desarrollo de negocios y aumentar sus ganancias.',
+    'about_1' => '<b>Makklays</b> es un equipo de personas que se han dedicado profesionalmente a la programación informática de sitios desde 2007. Desarrolló y programó con éxito más de un sitio web corporativo, una tienda en línea para empresas medianas, así como un portal web sofisticado para bancos en nuestro país. <br/> <br/> 
+<b>Nuestra misión</b> es ayudar a desarrollar un negocio exitoso en el campo de TI. Nos gustaría convertirnos en un socio confiable para brindar servicios de desarrollo, desarrollo de negocios en Internet y mantenimiento de sitios web. Logramos nuestro objetivo ofreciendo servicios que conducen al desarrollo y la prosperidad de la sociedad.',
+    'about_1_1' => '<b>Desarrollo de sitios web</b> no es nuestro objetivo final. Esta es solo una herramienta que debería ayudar al desarrollo de negocios y aumentar sus ganancias.',
     'about_2' => 'Amamos vivir y amamos la vida en todas sus manifestaciones.',
     'about_3' => 'Makklays ama los nuevos conocimientos, y también ama los proyectos de TI grandes e interesantes, que desean convertirse en un socio confiable para usted y su negocio.',
 

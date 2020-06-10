@@ -104,6 +104,8 @@ return [
     'mysite_request' => 'Оставить заявку',
     'mysite_order' => 'Разработка сайта',
     'mysite_brief' => 'Скачать бриф',
+    'mysite_download_price' => 'Скачать прайс',
+    'mysite_portfolio' => 'Наше портфолио',
 
     'contacts1' => 'Давайте обсудим ваш проект',
     'contacts2' => 'Украина, г. Киев',

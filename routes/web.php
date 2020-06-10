@@ -98,6 +98,10 @@ Route::group([
     Route::get('request', ['as' => 'mysite_request', 'uses' => 'MysiteController@request']);
     Route::get('contacts', ['as' => 'mysite_contacts', 'uses' => 'MysiteController@contacts']);
     Route::get('brief', ['as' => 'mysite_brief', 'uses' => 'MysiteController@brief']);
+    Route::get('download-price', ['as' => 'mysite_download_price', 'uses' => 'MysiteController@downloadPrice']);
+
+    Route::get('portfolio', ['as' => 'mysite_portfolio', 'uses' => 'MysiteController@portfolio']);
+
     Route::get('online-brief', ['as' => 'mysite_online_brief', 'uses' => 'MysiteController@onlineBrief']);
     Route::post('online-brief', ['as' => 'mysite_online_brief_post', 'uses' => 'MysiteController@onlineBriefPost']);
 
