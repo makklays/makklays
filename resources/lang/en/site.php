@@ -103,6 +103,8 @@ return [
     'mysite_request' => 'Submit your application',
     'mysite_order' => 'Website development',
     'mysite_brief' => 'Download brief',
+    'mysite_download_price' => 'Download price',
+    'mysite_portfolio' => 'Our portfolio',
 
     'contacts1' => 'Let\'s discuss your project',
     'contacts2' => 'Ukraine, Kiev',

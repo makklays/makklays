@@ -41,6 +41,10 @@
                     {{ trans('site.m_brief_online') }}
                 </a> <br/><br/>
 
+                <a href="{{ route('mysite_download_price', app()->getLocale()) }}" class="a-green link-big2">
+                    {{ trans('site.mysite_download_price') }}
+                </a> <br/><br/>
+
                 <button type="button" id="id_order_development" class="btn btn-success" data-toggle="modal">
                     {{ trans('site.order_development') }}
                 </button>

@@ -103,6 +103,8 @@ return [
     'mysite_request' => '提出要求',
     'mysite_order' => '網站開發',
     'mysite_brief' => '下載簡介',
+    'mysite_download_price' => '下載價格',
+    'mysite_portfolio' => '我們的投資組合',
 
     'contacts1' => '讓我們討論您的項目',
     'contacts2' => '烏克蘭，基輔',

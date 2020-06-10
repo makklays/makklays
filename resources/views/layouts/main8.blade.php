@@ -32,10 +32,12 @@
     <!-- запуститься в интернете -->
 
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/bootstrap4/css/bootstrap.min.css?'.time()) }}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery.fancybox.min.css?'.time()) }}" />
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/main8.css?'.time()) }}" />
 
-    <script src='<?=config('app.url')?>/js/jquery-3.4.0.min.js'></script>
-    <script src='<?=config('app.url')?>/css/bootstrap4/js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='<?=config('app.url')?>/js/jquery-3.4.0.min.js'></script>
+    <script type="text/javascript" src='<?=config('app.url')?>/css/bootstrap4/js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='<?=config('app.url')?>/js/jquery.fancybox.min.js'></script>
     <script type="text/javascript" src="<?=config('app.url')?>/js/myapp.js"></script>
 </head>
 <body>
@@ -150,6 +152,7 @@
                 <h4>{{ trans('site.Care') }}</h4>
                 <div><a href="{{ route('mysite_brief', app()->getLocale()) }}" class="a-green">{{ trans('site.m_download_brief_develop') }}</a></div>
                 <div><a href="{{ route('mysite_online_brief', app()->getLocale()) }}" class="a-green">{{ trans('site.m_brief_online') }}</a></div>
+                <div><a href="{{ route('mysite_download_price', app()->getLocale()) }}" class="a-green">{{ trans('site.mysite_download_price') }}</a></div>
                 <br/>
                 <div><a href="{{ route('test-php', app()->getLocale()) }}" class="a-green">{{ trans('site.test_php') }}</a></div>
                 <div><a href="{{ route('wait', app()->getLocale()) }}" class="a-green">{{ trans('wait.i_wait_you') }}</a></div>

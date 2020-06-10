@@ -308,6 +308,29 @@ class MysiteController extends Controller
         ]);
     }
 
+    public function portfolio()
+    {
+        $lang = app()->getLocale();
+        $seo = new \stdClass();
+        if ($lang == 'ru') {
+            $seo->title = 'Makklays - Разработка и ведение сайтов - Портфолио';
+            $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
+            $seo->keywords = 'Оставить заявку, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
+        } else if ($lang == 'es') {
+            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Portafolio';
+            $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
+            $seo->keywords = 'Deja una solicitud, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, e-commerce website, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else {
+            $seo->title = 'Makklays - Website development and maintenance - Portfolio';
+            $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
+            $seo->keywords = 'Submit your application, website development, development, website, online store, internet-shop, shop, e-commerce website, corporate website, landing page, landing, web portal, expensive, turnkey development';
+        }
+
+        return view('mysite.portfolio', [
+            'seo' => $seo,
+        ]);
+    }
+
     // Страница - Оставить заявку
     public function request()
     {
@@ -343,6 +366,18 @@ class MysiteController extends Controller
             return redirect('/briefs/Brief_for_development_site.docx');
         } else { // ch
             return redirect('/briefs/Brief_for_development_site.docx');
+        }
+    }
+
+    // Страница - Скачать ПРАЙС на разработку
+    public function downloadPrice()
+    {
+        if (app()->getLocale() == 'ru') {
+            return redirect('/price/Makklays ПРАЙС разработка сайта.doc');
+        } if (app()->getLocale() == 'es') {
+            return redirect('/price/Makklays PRECIO Desarrollo de sitio web.doc');
+        } else {
+            return redirect('/price/Makklays PRICE development site.doc');
         }
     }
 
