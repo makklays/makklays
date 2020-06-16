@@ -45,18 +45,60 @@ class OrdersController extends Controller
         ]);
     }
 
+    function getRealUserIp(){
+        switch(true){
+            case (!empty($_SERVER['HTTP_X_REAL_IP'])) : return $_SERVER['HTTP_X_REAL_IP'];
+            case (!empty($_SERVER['HTTP_CLIENT_IP'])) : return $_SERVER['HTTP_CLIENT_IP'];
+            case (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) : return $_SERVER['HTTP_X_FORWARDED_FOR'];
+            default : return $_SERVER['REMOTE_ADDR'];
+        }
+    }
+
     // страница - добавления заказа
     public function add(Request $request){
 
-        if ($request->isMethod('post')) {
-            //dd($request);
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
 
-            $insert = DB::insert('INSERT INTO orders SET lang=?, price=?, type_site=?, status=?, title=?, 
+        if ($request->isMethod('post')) {
+
+            $validator = Validator::make($request->all(), [
+                'lang' => 'required|max:2',
+                'price' => 'required|max:25',
+                'type_site' => 'required|max:191',
+                'status' => 'required|max:25',
+                'title' => 'required|max:191',
+                'short_text' => 'required|max:1000',
+                'description' => 'required|max:3000',
+                'from_date' => 'required|date',
+                'to_date' => 'required|date',
+            ]);
+
+            if ($validator->fails()) {
+                $messages = $validator->messages();
+                return redirect(route('adm-order-add', app()->getLocale()))
+                    ->with([
+                        'flash_message' => 'Ошибка! <br/>При заполнении данных произошла ошибка <br/> Проверьте и попробуйте еще раз',
+                        'flash_type' => 'danger'
+                    ])
+                    ->withErrors($validator)
+                    ->withInput();
+            }
+
+            //dd($request->all());
+
+            $insert = DB::insert('INSERT INTO orders SET lang=?, price_uah=?, type_site=?, status=?, title=?, 
             short_text=?, description=?, from_date=?, to_date=?, created_at=?',
                 [
-                    $ip, $strana, $city, $strana_rus, $city_rus, $zip_code, $time_zone,
-                    $strana_code, $region, $region_rus, $lat, $lon, date('Y-m-d H:i:s')
+                    $request->lang, $request->price, $request->type_site, $request->status, $request->title,
+                    $request->short_text, $request->description, $request->from_date, $request->to_date,
+                    date('Y-m-d H:i:s')
                 ]);
+
+            return redirect(app()->getLocale().'/adm-orders')->with([
+                'flash_message' => 'Ваш заказ, "'.$request->title.'" был успешно сохранен!',
+                'flash_type' => 'success'
+            ]);
         }
 
         return view('adminka.orders.add', [
