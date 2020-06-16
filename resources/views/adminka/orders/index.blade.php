@@ -18,28 +18,30 @@
                 <?php if (isset($orders) && !empty($orders) && $orders->total()): ?>
                 <table id="id-companies" class="table table-bordered display" style="width:100%; margin:20px 0;">
                     <thead class="">
-                    <tr>
-                        <th>ID</th>
-                        <th>{{ trans('site.Title') }}</th>
-                        <th class="text-center">{{ trans('site.Views') }}</th>
-                        <th class="text-center">{{ trans('site.Photo') }}</th>
-                        <th class="text-center">{{ trans('site.Date') }}</th>
-                        <th class="text-center">{{ trans('site.Is_visible') }}</th>
-                        <th class="text-center" colspan="2">{{ trans('site.Actions') }}</th>
-                    </tr>
+                        <tr>
+                            <th>ID</th>
+                            <th>{{ trans('site.Title') }}</th>
+                            <th class="text-center">{{ trans('site.Price') }}</th>
+                            <th class="text-center">{{ trans('site.File') }}</th>
+                            <th class="text-center">{{ trans('site.Date_From') }}</th>
+                            <th class="text-center">{{ trans('site.Date_To') }}</th>
+                            <th class="text-center">{{ trans('site.Status') }}</th>
+                            <th class="text-center" colspan="2">{{ trans('site.Actions') }}</th>
+                        </tr>
                     </thead>
                     <tbody>
                     <?php foreach($orders as $item): ?>
-                    <tr>
-                        <td><?=$item->id?></td>
-                        <td style="width:300px;"><a href="{{ url($item->lang.'/develop-article/'.$item->id) }}"><?=$item->title?></a></td>
-                        <td class="text-center"><?=(!empty($item->views) ? $item->views : 0)?></td>
-                        <td class="text-center"><?=(!empty($item->photo) ? trans('site.Yes') : trans('site.No'))?></td>
-                        <td class="text-center"><?=(!empty($item->created_at) ? date('d.m.Y H:i:s', strtotime($item->created_at)) : 0)?></td>
-                        <td class="text-center"><?=(!empty($item->is_visible) ? trans('site.Yes') : trans('site.No'))?></td>
-                        <td class="text-center"><a href="{{ route('adm-article-edit', ['lang' => app()->getLocale(), 'article_id' => $item->id]) }}">{{ trans('site.Edit') }}</a></td>
-                        <td class="text-center"><a href="{{ url('/adm-article-delete/'.$item->id) }}" onclick="return confirm('Delete this company?');">{{ trans('site.Delete') }}</a></td>
-                    </tr>
+                        <tr>
+                            <td><?=$item->id?></td>
+                            <td style="width:300px;"><a href="{{ url($item->lang.'/develop-order/'.$item->id) }}"><?=$item->title?></a></td>
+                            <td class="text-center"><?=(!empty($item->price_uah) ? $item->price_uah : 0)?></td>
+                            <td class="text-center"><?=(!empty($item->tzfile) ? trans('site.Yes') : trans('site.No'))?></td>
+                            <td class="text-center"><?=(!empty($item->from_date) ? date('d.m.Y', strtotime($item->from_date)) : 0)?></td>
+                            <td class="text-center"><?=(!empty($item->to_date) ? date('d.m.Y', strtotime($item->to_date)) : 0)?></td>
+                            <td class="text-center"><?=$item->status?></td>
+                            <td class="text-center"><a href="{{ route('/', ['lang' => app()->getLocale(), 'article_id' => $item->id]) }}">{{ trans('site.Edit') }}</a></td>
+                            <td class="text-center"><a href="{{ url('/'.app()->getLocale().'/adm-order-delete/'.$item->id) }}" onclick="return confirm('Delete this order?');">{{ trans('site.Delete') }}</a></td>
+                        </tr>
                     <?php endforeach; ?>
                     </tbody>
                 </table>
