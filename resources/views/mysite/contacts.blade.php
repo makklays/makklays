@@ -19,8 +19,9 @@
             </address>
             <address>
                 <strong>{{ trans('site.mysite_contacts') }}</strong><br/>
-                <abbr title="{{ trans('site.contacts_skype') }}">{{ trans('site.contacts_skype') }}:</abbr> makklays <br/>
-                <abbr title="{{ trans('site.contacts_mob') }}">{{ trans('site.contacts_mob') }}:</abbr> +38 (098) 870 5397 <br/>
+                <abbr title="{{ trans('site.contacts_skype') }}">{{ trans('site.contacts_skype') }}:</abbr> <a href="Skype:makklays" class="a-green">makklays</a> <br/>
+                <abbr title="{{ trans('site.contacts_mob') }}">{{ trans('site.contacts_mob') }}:</abbr> <a href="tel:+380988705397" class="a-green">+38 (098) 870 5397</a>
+                <br/><br/>
                 <a href="mailto:office@makklays.com.ua" class="a-green">office@makklays.com.ua</a> <br/>
                 <a href="mailto:hr@makklays.com.ua" class="a-green">hr@makklays.com.ua</a> <br/>
                 <a href="mailto:makl-manager@makklays.com.ua" class="a-green">makl-manager@makklays.com.ua</a> <br/>
