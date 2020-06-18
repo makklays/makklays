@@ -509,6 +509,10 @@ PHP編程具有最可靠的安全性標準和代碼穩定性。',
     'Soobshenie' => '信息',
     'Cat_or_Dog' => '貓或狗',
 
+    'File' => '文件',
+    'Date_From' => '起始日期',
+    'Date_To' => '日期至',
+
     'Add_order' => '新增訂單',
     'Description' => '描述',
     'Choose' => '選擇',

@@ -50,6 +50,11 @@
     <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css?<?=time()?>" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/admin-main8.css?<?=time()?>" />
 
+    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery-ui.theme.css?'.time()) }}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery-ui.css?'.time()) }}" />
+    <script type="text/javascript" src="<?=config('app.url')?>/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="<?=config('app.url')?>/js/ui/i18n/datepicker-ru.js"></script>
+
     <!-- datatables css -->
     <!--link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/ -->
 </head>

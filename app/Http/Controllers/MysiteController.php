@@ -50,6 +50,9 @@ class MysiteController extends Controller
 
     public function myProfile()
     {
+        // Only loggined
+        if (!Auth::check()) return redirect(app()->getLocale() . '/login');
+
         $user = User::where(['id' => auth()->id()])->first();
 
         // обновляем дату последнего входа
@@ -63,6 +66,9 @@ class MysiteController extends Controller
 
     public function myProfilePost(Request $request)
     {
+        // Only loggined
+        if (!Auth::check()) return redirect(app()->getLocale() . '/login');
+
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:255',
             'email' => 'required|max:255',
@@ -96,6 +102,9 @@ class MysiteController extends Controller
 
     public function settings()
     {
+        // Only loggined
+        if (!Auth::check()) return redirect(app()->getLocale() . '/login');
+
         return view('adminka.profile.settings');
     }
 

@@ -510,6 +510,10 @@ PHP programming with the most robust security standards and code stability.',
     'Soobshenie' => 'Message',
     'Cat_or_Dog' => 'Cat or Dog',
 
+    'File' => 'File',
+    'Date_From' => 'Date from',
+    'Date_To' => 'Date to',
+
     'Add_order' => 'Add order',
     'Description' => 'Description',
     'Choose' => 'Choose',
