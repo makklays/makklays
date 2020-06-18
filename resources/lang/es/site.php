@@ -514,6 +514,10 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
     'Soobshenie' => 'Mensaje',
     'Cat_or_Dog' => 'Gato o perro',
 
+    'File' => 'Expediente',
+    'Date_From' => 'Fecha de',
+    'Date_To' => 'Fecha para',
+
     'Add_order' => 'Añadir pedido',
     'Description' => 'Descripción',
     'Choose' => 'Escoger',

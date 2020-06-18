@@ -95,6 +95,35 @@
                         </div>
                     </div>
 
+                    <script type="text/javascript">
+                        $(function() {
+                            $.datepicker.setDefaults( $.datepicker.regional['ru'] );
+
+                            $( "#id-from-date" ).datepicker({
+                                dateFormat: "yy-mm-dd",
+                                todayHighlight: true,
+                                autoclose: true,
+                                changeMonth: true,
+                                changeYear: true,
+                                weekStart: 0,
+                                calendarWeeks: true,
+                                rtl: true,
+                                orientation: "auto"
+                            });
+                            $( "#id-to-date" ).datepicker({
+                                dateFormat: "yy-mm-dd",
+                                todayHighlight: true,
+                                autoclose: true,
+                                changeMonth: true,
+                                changeYear: true,
+                                weekStart: 0,
+                                calendarWeeks: true,
+                                rtl: true,
+                                orientation: "auto"
+                            });
+                        });
+                    </script>
+
                     <div class="row">
                         <div class="col-md-6 text-left">
                             <div class="input-group ">

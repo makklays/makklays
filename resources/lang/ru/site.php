@@ -515,6 +515,10 @@ return [
     'Soobshenie' => 'Сообщение',
     'Cat_or_Dog' => 'Кот или Собака',
 
+    'File' => 'Файл',
+    'Date_From' => 'Дата от',
+    'Date_To' => 'Дата до',
+
     'Add_order' => 'Добавить заказ',
     'Description' => 'Описание',
     'Choose' => 'Выбери',
