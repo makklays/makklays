@@ -18,13 +18,16 @@ body {
 
 a.green, a.green:visited, a.green:active, a.green:link {
     color: #267f00;
+    text-decoration: underline;
 }
 a.green:hover {
     color: #46bf00;
+    text-decoration-style: dashed;
 }
 
 a, a:visited, a:active, a:link {
     color: #267f00;
+    text-decoration: underline;
 }
 a:hover {
     color: #46bf00;

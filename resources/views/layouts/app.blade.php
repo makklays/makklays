@@ -25,7 +25,7 @@
     <meta name="author" content="Makklays" />
 
     <meta property="og:title" content="Makklays - adminka" />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:image" content="<?=config('app.url')?>/img/development.jpeg" />
 
@@ -47,8 +47,8 @@
     <!-- Styles -->
     <!--link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/package.css') }}" rel="stylesheet"-->
-    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css?<?=time()?>" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/admin-main8.css?<?=time()?>" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=config('app.url')?>/css/bootstrap4/css/bootstrap.min.css?<?=time()?>" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=config('app.url')?>/css/admin-main8.css?<?=time()?>" />
 
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery-ui.theme.css?'.time()) }}" />
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery-ui.css?'.time()) }}" />
