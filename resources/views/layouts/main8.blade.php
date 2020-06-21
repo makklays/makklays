@@ -158,6 +158,7 @@
                 <div><a href="{{ route('wait', app()->getLocale()) }}" class="a-green">{{ trans('wait.i_wait_you') }}</a></div>
                 <div><a href="{{ route('wait2', app()->getLocale()) }}" class="a-green">{{ trans('wait.wait_for_a_date') }}</a></div>
                 <div><a href="{{ route('seo_words', app()->getLocale()) }}" class="a-green">{{ trans('site.count_seo_words') }}</a></div>
+                <div><a href="https://makklays.com.ua/sitemap.xml" class="a-green">Sitemap</a></div>
                 <br/>
             </div>
             <div class="col-md-12">
