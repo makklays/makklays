@@ -19,12 +19,13 @@
 
     <meta name="description" content="{{ $seo->description }}" />
     <meta name="keywords" content="{{ $seo->keywords }}" />
+    <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="author" content="Makklays" />
 
     <meta property="og:title" content="{{ $seo->title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
-    <meta property="og:image" content="<?=config('app.url')?>/img/development.jpeg" />
+    <meta property="og:image" content="<?=config('app.url')?>/img/programmer.png" />
 
     <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" >
 

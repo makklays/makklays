@@ -7,22 +7,23 @@
     <title>Makklays</title>
     <meta name="description" content="Makklays" />
     <meta name="keywords" content="Makklays" />
+    <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="author" content="Makklays" />
 
     <meta property="og:title" content="Cats ??? or ??? Dogs" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ config('app.url', 'http://makklays.com.ua') }}" />
-    <meta property="og:image" content="{{ config('app.url', 'http://makklays.com.ua') }}/img/dog.jpg" />
+    <meta property="og:url" content="{{ config('app.url', 'https://makklays.com.ua') }}" />
+    <meta property="og:image" content="{{ config('app.url', 'https://makklays.com.ua') }}/img/dog.jpg" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" />
     <!--link rel="stylesheet" type="text/css" media="all" href="/bootstrap-4.3.1/css/bootstrap.min.css" /-->
-    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=config('app.url')?>/css/main.css?<?=time()?>" />
 
-    <script src='/js/jquery-3.4.0.min.js'></script>
-    <script src='/js/jquery.countdown.min.js'></script>
-    <script src='/js/tests.js'></script>
+    <script src='<?=config('app.url')?>/js/jquery-3.4.0.min.js'></script>
+    <script src='<?=config('app.url')?>/js/jquery.countdown.min.js'></script>
+    <script src='<?=config('app.url')?>/js/tests.js'></script>
 </head>
 <body>
 
@@ -50,19 +51,11 @@
     </div>
 
     <div style="text-align:center; margin-top:40px; margin-left:auto; margin-right:auto; ">
-        <!-- Есть вопросы? <a href="/feedback">Пишите</a> <br/> -->
-
-        <!--
-        <a href="{{ route('mysite_about', app()->getLocale()) }}">{{ trans('site.mysite_about') }}</a> |
-        <a href="{{ route('mysite_howmake', app()->getLocale()) }}">{{ trans('site.mysite_howmake') }}</a> |
-        <a href="{{ route('mysite_contacts', app()->getLocale()) }}">{{ trans('site.mysite_contacts') }}</a>
-        -->
         <div style="padding-bottom: 20px;"></div>
 
         <div>
             <a href="{{ route('test-php', app()->getLocale()) }}" target="_blank">{{ trans('site.test_php') }}</a>
         </div>
-        <!--div>{{ trans('site.in_developing') }}</div-->
         <div>
             <a href="{{ route('wait', app()->getLocale()) }}" target="_blank">{{ trans('wait.i_wait_you') }}</a>
         </div>
@@ -77,28 +70,8 @@
             <a href="{{ route('/', 'ch') }}">CH</a>
         </div>
 
-        <!-- div>
-            <a href="/cv_alexander_kuziv_es.html" target="_blank">CV ES</a> |
-            <a href="/cv_alexander_kuziv.html" target="_blank">CV EN</a> |
-            <a href="/cv_alexander_kuziv_ru.html" target="_blank">CV RU</a> |
-            <a href="/cv_alexander_kuziv_ch.html" target="_blank">CV CH</a>
-        </div-->
-
         {{ trans('site.have_questions') }} <a href="{{ route('mysite_contacts', app()->getLocale()) }}">{{ trans('site.feedback') }}</a> <br/>
         &copy; makklays.com.ua 2007-<?=date('Y')?>
     </div>
-
-    <!--
-    <div style="text-align:center; width:200px; margin-top:40px; margin-left:auto; margin-right:auto; ">
-        To level A2 <br/>
-        <span id="clock"></span>
-    </div>
-    <script>
-        $('#clock').countdown('2019/07/20', function(event) {
-            $(this).html(event.strftime('%D days %H:%M:%S'));
-        });
-    </script>
-    -->
-
 </body>
 </html>
