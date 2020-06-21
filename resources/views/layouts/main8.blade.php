@@ -124,7 +124,7 @@
     <hr/>
     <div class="container">
         <div class="row" style="padding:20px 0 0 0;">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-12">
                 <h4>{{ trans('site.Team') }}</h4>
                 <div><a href="{{ route('mysite_about', app()->getLocale()) }}" class="a-green">{{ trans('site.mysite_about') }}</a></div>
                 <div><a href="{{ route('mysite_howmake', app()->getLocale()) }}" class="a-green">{{ trans('site.mysite_howmake') }}</a></div>
@@ -140,7 +140,7 @@
                 </div>
                 <br/>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-12">
                 <h4>{{ trans('site.Development') }}</h4>
                 <div><a href="{{ route('mysite_lpage', app()->getLocale()) }}" class="a-green">{{ trans('site.m_lpage') }}</a></div>
                 <div><a href="{{ route('mysite_store', app()->getLocale()) }}" class="a-green">{{ trans('site.m_store') }}</a></div>

@@ -144,15 +144,15 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">{{ trans('site.m_corporate_price') }}<small class="text-muted"></small></h1>
                             <ul class="text-left list-unstyled mt-3 mb-4">
-                                <li>- {{ trans('site.m_corporate1') }}</li>
-                                <li>- {{ trans('site.m_corporate2') }}</li>
-                                <li>- {{ trans('site.m_corporate3') }}</li>
-                                <li>- {{ trans('site.m_corporate4') }}</li>
-                                <li>- {{ trans('site.m_corporate5') }}</li>
-                                <li>- {{ trans('site.m_corporate6') }}</li>
-                                <li>- {{ trans('site.m_corporate7') }}</li>
-                                <li>- {{ trans('site.m_corporate8') }}</li>
-                                <li>- {{ trans('site.m_corporate9') }}</li>
+                                <li>&#10004; {{ trans('site.m_corporate1') }}</li>
+                                <li>&#10004; {{ trans('site.m_corporate2') }}</li>
+                                <li>&#10004; {{ trans('site.m_corporate3') }}</li>
+                                <li>&#10004; {{ trans('site.m_corporate4') }}</li>
+                                <li>&#10004; {{ trans('site.m_corporate5') }}</li>
+                                <li>&#10004; {{ trans('site.m_corporate6') }}</li>
+                                <li>&#10004; {{ trans('site.m_corporate7') }}</li>
+                                <li>&#10004; {{ trans('site.m_corporate8') }}</li>
+                                <li>&#10004; {{ trans('site.m_corporate9') }}</li>
                             </ul>
                             <a type="button" href="{{ route('mysite_contacts', app()->getLocale()) }}" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</a>
                         </div>
@@ -168,18 +168,18 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">{{ trans('site.m_store_price') }}<small class="text-muted"></small></h1>
                             <ul class="text-left list-unstyled mt-3 mb-4">
-                                <li>- {{ trans('site.m_store1') }}</li>
-                                <li>- {{ trans('site.m_store2') }}</li>
-                                <li>- {{ trans('site.m_store3') }}</li>
-                                <li>- {{ trans('site.m_store4') }}</li>
-                                <li>- {{ trans('site.m_store5') }}</li>
-                                <li>- {{ trans('site.m_store6') }}</li>
-                                <li>- {{ trans('site.m_store7') }}</li>
-                                <li>- {{ trans('site.m_store8') }}</li>
-                                <li>- {{ trans('site.m_store9') }}</li>
-                                <li>- {{ trans('site.m_store10') }}</li>
-                                <li>- {{ trans('site.m_store11') }}</li>
-                                <li>- {{ trans('site.m_store12') }}</li>
+                                <li>&#10004; {{ trans('site.m_store1') }}</li>
+                                <li>&#10004; {{ trans('site.m_store2') }}</li>
+                                <li>&#10004; {{ trans('site.m_store3') }}</li>
+                                <li>&#10004; {{ trans('site.m_store4') }}</li>
+                                <li>&#10004; {{ trans('site.m_store5') }}</li>
+                                <li>&#10004; {{ trans('site.m_store6') }}</li>
+                                <li>&#10004; {{ trans('site.m_store7') }}</li>
+                                <li>&#10004; {{ trans('site.m_store8') }}</li>
+                                <li>&#10004; {{ trans('site.m_store9') }}</li>
+                                <li>&#10004; {{ trans('site.m_store10') }}</li>
+                                <li>&#10004; {{ trans('site.m_store11') }}</li>
+                                <li>&#10004; {{ trans('site.m_store12') }}</li>
                             </ul>
                             <a type="button" href="{{ route('mysite_contacts', app()->getLocale()) }}" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</a>
                         </div>
@@ -195,20 +195,20 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">{{ trans('site.m_sitesystem_price') }}<small class="text-muted"></small></h1>
                             <ul class="text-left list-unstyled mt-3 mb-4">
-                                <li>- {{ trans('site.m_sitesystem1') }}</li>
-                                <li>- {{ trans('site.m_sitesystem2') }}</li>
-                                <li>- {{ trans('site.m_sitesystem3') }}</li>
-                                <li>- {{ trans('site.m_sitesystem4') }}</li>
-                                <li>- {{ trans('site.m_sitesystem5') }}</li>
-                                <li>- {{ trans('site.m_sitesystem6') }}</li>
-                                <li>- {{ trans('site.m_sitesystem7') }}</li>
-                                <li>- {{ trans('site.m_sitesystem8') }}</li>
-                                <li>- {{ trans('site.m_sitesystem9') }}</li>
-                                <li>- {{ trans('site.m_sitesystem10') }}</li>
-                                <li>- {{ trans('site.m_sitesystem11') }}</li>
-                                <li>- {{ trans('site.m_sitesystem12') }}</li>
-                                <li>- {{ trans('site.m_sitesystem13') }}</li>
-                                <li>- {{ trans('site.m_sitesystem14') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem1') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem2') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem3') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem4') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem5') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem6') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem7') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem8') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem9') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem10') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem11') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem12') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem13') }}</li>
+                                <li>&#10004; {{ trans('site.m_sitesystem14') }}</li>
                             </ul>
                             <a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</a>
                         </div>

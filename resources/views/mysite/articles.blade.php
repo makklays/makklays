@@ -3,11 +3,11 @@
 @section('content')
 
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-sm-12">
             <h1 class="text-center text-design2">{{ trans('site.Articles') }}</h1> <br/>
         </div>
         <?php foreach($articles as $item): ?>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <p class="text-justify">
                     <?php if (isset($item->photo) && !empty($item->photo)): ?>
                         <img src="<?=config('app.url')?>/articles/imgs/<?=$item->photo?>" alt="Makklays - {{ trans('site.Articles') }} image" title="<?=$item->title?>" class="img-fluid kromka" />
