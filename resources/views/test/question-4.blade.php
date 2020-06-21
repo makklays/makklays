@@ -11,18 +11,18 @@
 
     <meta property="og:title" content="Test PHP | Makklays" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ config('app.url', 'http://makklays.com.ua') }}" />
-    <meta property="og:image" content="{{ config('app.url', 'http://makklays.com.ua') }}/img/PHP-logo.png" />
+    <meta property="og:url" content="{{ config('app.url', 'https://makklays.com.ua') }}" />
+    <meta property="og:image" content="{{ config('app.url', 'https://makklays.com.ua') }}/img/PHP-logo.png" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
+    <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=config('app.url')?>/css/bootstrap4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=config('app.url')?>/css/main.css?<?=time()?>" />
 
-    <script src='/js/jquery-3.4.0.min.js'></script>
-    <script src='/js/jquery.countdown.min.js'></script>
-    <script src='/js/tests.js'></script>
+    <script src='<?=config('app.url')?>/js/jquery-3.4.0.min.js'></script>
+    <script src='<?=config('app.url')?>/js/jquery.countdown.min.js'></script>
+    <script src='<?=config('app.url')?>/js/tests.js'></script>
 </head>
 <body>
 
@@ -30,7 +30,7 @@
     <div class="col-md-12">
         <div class="text-center" style="margin:20px; ">
             <a href="{{ route('/', app()->getLocale()) }}" >
-                <img src="/makklays.png" alt="Logo" title="Makklays" />
+                <img src="<?=config('app.url')?>/makklays.png" style="width: 78px;" alt="Logo" title="Makklays" />
             </a>
         </div>
 

@@ -11,18 +11,18 @@
     <meta name="author" content="Makklays" />
 
     <meta property="og:title" content="Makklays | Feedback" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://makklays.com.ua" />
-    <meta property="og:image" content="http://makklays.com.ua/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://makklays.com.ua" />
+    <meta property="og:image" content="https://makklays.com.ua/favicon.png" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="shortcut icon" href="/makklays.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
+    <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=config('app.url')?>/css/bootstrap4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=config('app.url')?>/css/main.css?qwe" />
 
-    <script src='/js/jquery-3.4.0.min.js'></script>
-    <script src='/css/bootstrap4/js/bootstrap.min.js'></script>
+    <script src='<?=config('app.url')?>/js/jquery-3.4.0.min.js'></script>
+    <script src='<?=config('app.url')?>/css/bootstrap4/js/bootstrap.min.js'></script>
 </head>
 <body>
 
@@ -38,7 +38,7 @@
     <div style="width:300px; margin-left:auto; margin-right:auto; text-align:center;">
         <div class="text-center" style="margin:20px; ">
             <a href="{{ route('/', app()->getLocale()) }}" >
-                <img src="/makklays.png" style="" alt="Logo" title="Makklays" />
+                <img src="<?=config('app.url')?>/makklays.png" style="width: 78px;" alt="Logo" title="Makklays" />
             </a>
         </div>
 
@@ -47,18 +47,6 @@
         <form action="{{ route('feedback_post', app()->getLocale()) }}" method="post" >
 
             {{ csrf_field() }}
-
-            <!--
-            @if ($errors->any())
-                <div class="alert alert-danger text-left">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-            -->
 
             <div class="form-group">
                 <input name="name" type="text" value="{{ old('name') }}" class="form-control" placeholder="{{ trans('site.Name') }}" />
@@ -93,8 +81,6 @@
             <a href="{{ route('test-php', app()->getLocale()) }}" target="_blank">{{ trans('site.test_php') }}</a>
         </div>
 
-        <!--a href="/cv_alexander_kuziv.html" target="_blank">CV</a> <br/-->
-
         <div style="margin: 20px 0 10px 0;">
             <a href="{{ route('feedback', 'es') }}">ES</a> |
             <a href="{{ route('feedback', 'en') }}">EN</a> |
@@ -104,57 +90,5 @@
 
         &copy; makklays.com.ua, 2019-<?=date('Y')?>
     </div>
-
-    <script>
-        /*
-        $(document).ready(function() {
-            $('#id-submit-feedback').on('click', function(){
-
-                //
-                var fio = true;
-                if($('input[name=fio]').val().length < 4) {
-                    $('input[name=fio]').css('border', '1px solid red');
-                    $('input[name=fio]').next().css('display', 'block');
-                    fio = false;
-                } else {
-                    $('input[name=fio]').css('border', '1px solid #ced4da');
-                    $('input[name=fio]').next().css('display', 'none');
-                }
-
-                //
-                var email = true;
-                if($('input[name=email]').val().length < 11) {
-                    $('input[name=email]').css('border', '1px solid red');
-                    $('input[name=email]').next().css('display', 'block');
-                    email = false;
-                } else {
-                    $('input[name=email]').css('border', '1px solid #ced4da');
-                    $('input[name=email]').next().css('display', 'none');
-                }
-
-                //
-                var msg = true;
-                if($('textarea[name=message]').val().length < 11 ) {
-                    $('textarea[name=message]').css('border', '1px solid red');
-                    $('textarea[name=message]').next().css('display', 'block');
-                    $('textarea[name=message]').next().next().css('display', 'none');
-                    msg = false;
-                } else if ($('textarea[name=message]').val().length >= 2000) {
-                    $('textarea[name=message]').css('border', '1px solid red');
-                    $('textarea[name=message]').next().css('display', 'none');
-                    $('textarea[name=message]').next().next().css('display', 'block');
-                    msg = false;
-                } else {
-                    $('textarea[name=message]').css('border', '1px solid #ced4da');
-                    $('textarea[name=message]').next().css('display', 'none');
-                    $('textarea[name=message]').next().next().css('display', 'none');
-                }
-
-                if (fio && email && msg) return true;
-                else return false;
-            });
-        });*/
-    </script>
-
 </body>
 </html>

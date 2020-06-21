@@ -22,14 +22,11 @@
     <meta name="author" content="Makklays" />
 
     <meta property="og:title" content="{{ $seo->title }}" />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:image" content="<?=config('app.url')?>/img/development.jpeg" />
 
     <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" >
-
-    <!-- Включить GA -->
-    <!-- запуститься в интернете -->
 
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/bootstrap4/css/bootstrap.min.css?'.time()) }}" />
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery.fancybox.min.css?'.time()) }}" />
@@ -47,7 +44,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white dev-navbar border-bottom">
         <a class="navbar-brand" href="{{ route('/', app()->getLocale()) }}">
-            <img src="<?=config('app.url')?>/makklays.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="<?=config('app.url')?>/makklays.png" height="30" class="d-inline-block align-top" alt="">
             Makklays
         </a>
         <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">

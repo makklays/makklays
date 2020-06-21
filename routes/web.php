@@ -47,6 +47,8 @@ Route::group([
     'middleware' => 'setlocale'
 ], function () {
 
+
+
     Route::get('main', ['as' => 'main', function () {
         return view('test'); // 'main'
     }]);
@@ -101,9 +103,15 @@ Route::group([
     Route::get('online-brief', ['as' => 'mysite_online_brief', 'uses' => 'MysiteController@onlineBrief']);
     Route::post('online-brief', ['as' => 'mysite_online_brief_post', 'uses' => 'MysiteController@onlineBriefPost']);
 
-    Route::get('design', ['as' => 'mysite_design', function(){
-        return view('mysite.design');
-    }]);
+    /*Route::get('design', ['as' => 'mysite_design', function(){
+        $seo = new \stdClass();
+        $seo->title = 'Design | Makklays';
+        $seo->keywords = 'design, Makklays';
+        $seo->description = 'Makklays development';
+        return view('mysite.design', [
+            'seo' => $seo,
+        ]);
+    }]);*/
     Route::get('landing-page', ['as' => 'mysite_lpage', 'uses' => 'MysiteController@lpage']);
     Route::get('corporate-site', ['as' => 'mysite_corporate', 'uses' => 'MysiteController@corporate']);
     Route::get('api-service', ['as' => 'mysite_webservice', 'uses' => 'MysiteController@webservice']);
@@ -118,7 +126,7 @@ Route::group([
     Route::get('seo-words', ['as' => 'seo_words', 'uses' => 'MysiteController@countSeoWords']);
     Route::post('seo-words', ['as' => 'seo_words_post', 'uses' => 'MysiteController@countSeoWordsPost']);
 
-    Route::get('order', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
+    //Route::get('order', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
 
     // site
     Route::get('develop-articles', ['as' => 'mysite_articles', 'uses' => 'MysiteController@listArticles']);
@@ -126,6 +134,11 @@ Route::group([
 
     // adminka
     Route::group(['prefix' => 'admin'], function () {
+
+        Auth::routes();
+
+        Route::get('home', 'HomeController@index')->name('home');
+
         Route::get('adm-articles', ['as' => 'adm-articles', 'uses' => 'ArticlesController@list']);
         Route::match(['get', 'post'],'adm-article-add', ['as' => 'adm-article-add', 'uses' => 'ArticlesController@add']);
         Route::match(['get', 'post'],'adm-article-edit/{article_id}', ['as' => 'adm-article-edit', 'uses' => 'ArticlesController@edit'])->where(['article_id' => '[0-9]+']);
@@ -239,13 +252,17 @@ Route::group([
             'as' => 'todo_del', 'uses' => 'TodoController@del'
         ])->where(['id' => '[0-9]+']);
 
+        // feedback
+        Route::get('feedbacks', ['as' => 'feedbacks', 'uses' => 'FeedbackController@index']);
+        Route::get('feedback/show/{id}', ['as' => 'feedback_show', 'uses' => 'FeedbackController@show'])->where(['id' => '[0-9]+']);
+
     });
 
     /* test */
     Route::get('test', function () {
         return view('test');
     });
-    Route::match(['post'], '/test-data/{choice}', function ($lang, $choice = '') {
+    Route::match(['post'], 'test-data/{choice}', function ($lang, $choice = '') {
 
         Session::put('choice_cat_dog', $choice);
 
@@ -310,7 +327,7 @@ Route::group([
 
     })->where(['choice' => '[cat|dog]+']);
 
-    Route::get('/test-result', ['as' => 'test_result', function () {
+    Route::get('test-result', ['as' => 'test_result', function () {
 
         // sessions
         /*$lang = Session::get('lang');
@@ -356,9 +373,7 @@ Route::group([
         echo $m;
     });*/
 
-    // feedback
-    Route::get('/feedbacks', ['as' => 'feedbacks', 'uses' => 'FeedbackController@index']);
-    Route::get('/feedback/show/{id}', ['as' => 'feedback_show', 'uses' => 'FeedbackController@show'])->where(['id' => '[0-9]+']);
+    /*
     Route::get('feedback', ['as' => 'feedback', function(){
         $lang = Session::get('lang');
         if (isset($lang) && !empty($lang)) {
@@ -373,12 +388,9 @@ Route::group([
             App::setLocale($lang);
         }
 
-        /*$insert = DB::insert('INSERT INTO feedback SET fio=?, email=?, message=?, created_at=?', [
-            strip_tags(trim($request->fio)), strip_tags(trim($request->email)), strip_tags(trim($request->message)), time()
-        ]); */
-
-        //phpinfo();
-        // exit;
+        //$insert = DB::insert('INSERT INTO feedback SET fio=?, email=?, message=?, created_at=?', [
+        //    strip_tags(trim($request->fio)), strip_tags(trim($request->email)), strip_tags(trim($request->message)), time()
+        //]);
 
         $feedback = new Feedback();
         //$feedback->load($request);
@@ -390,15 +402,14 @@ Route::group([
 
         //dd($feedback);
 
-        /*$msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
-            E-mail: '.strip_tags(trim($request->email)).'<br/>
-            Сообщение: '.strip_tags(trim($request->message)).'<br/><br/>
-            Дата: '.date('d.m.Y H:i:s').'<br/><br/><br/>';
-
-        $headers = 'MIME-Version: 1.0' . "\r\n";
-        $headers .= 'From: Makklays <info@makklays.com.ua>' . "\r\n";
-        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        mail('office@makklays.com.ua', 'Сообщение с сайта makklays.com.ua', $msg, $headers);*/
+        //$msg = 'Ф.И.О.: '.strip_tags(trim($request->fio)).'<br/>
+        //    E-mail: '.strip_tags(trim($request->email)).'<br/>
+        //    Сообщение: '.strip_tags(trim($request->message)).'<br/><br/>
+        //    Дата: '.date('d.m.Y H:i:s').'<br/><br/><br/>';
+        //$headers = 'MIME-Version: 1.0' . "\r\n";
+        //$headers .= 'From: Makklays <info@makklays.com.ua>' . "\r\n";
+        //$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        //mail('office@makklays.com.ua', 'Сообщение с сайта makklays.com.ua', $msg, $headers);
 
         Mail::to('office@makklays.com.ua')->send(new FeedbackMail($feedback));
 
@@ -406,7 +417,7 @@ Route::group([
             'flash_message' => trans('site.send_success'),
             'flash_type' => 'success'
         ]);
-    }]);
+    }]);*/
 });
 
 
@@ -436,7 +447,6 @@ Route::group([
             </li>
             <?php
         }
-
         exit;
     }]);
     Route::get('/f2', ['as' => 'f2', function () {
@@ -459,14 +469,6 @@ Route::group([
             </li>
             <?php
         }
-
         exit;
     }]);
-
-    Auth::routes();
 });
-
-
-
-
-
