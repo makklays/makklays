@@ -7,6 +7,7 @@
     <title>Makklays | Test PHP | Question 3</title>
     <meta name="description" content="Makklays Test PHP" />
     <meta name="keywords" content="Makklays Test PHP" />
+    <link rel="canonical" href="{{ url()->current() }}/" />
     <meta name="author" content="Makklays" />
 
     <meta property="og:title" content="Test PHP | Makklays" />

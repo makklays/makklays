@@ -8,18 +8,19 @@
 
     <meta name="description" content="Makklays Test Cat Dog" />
     <meta name="keywords" content="Makklays Test Cat Dog" />
+    <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="author" content="Makklays" />
 
     <meta property="og:title" content="Cats ??? or ??? Dogs" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://makklays.com.ua" />
-    <meta property="og:image" content="http://makklays.com.ua/favicon.png" />
+    <meta property="og:url" content="https://makklays.com.ua" />
+    <meta property="og:image" content="https://makklays.com.ua/favicon.png" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css?qwe" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=config('app.url')?>/css/bootstrap4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=config('app.url')?>/css/main.css?<?=time()?>" />
 </head>
 <body>
 
@@ -28,7 +29,7 @@
 
             <div class="text-center" style="margin:20px; ">
                 <a href="{{ route('/', app()->getLocale()) }}" >
-                    <img src="/favicon.png" style="" alt="Logo" title="Makklays" />
+                    <img src="<?=config('app.url')?>/favicon.png" style="width: 78px;" alt="Logo" title="Makklays" />
                 </a>
             </div>
 

@@ -19,6 +19,7 @@
 
     <meta name="description" content="Makklays" />
     <meta name="keywords" content="Makklays" />
+    <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="author" content="Makklays" />
 
     <meta property="og:title" content="<?=(isset($og['title']) && !empty($og['title']) ? $og['title'] : 'Makklays')?>" />

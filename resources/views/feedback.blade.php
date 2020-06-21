@@ -7,7 +7,8 @@
     <title>Makklays | Feedback</title>
 
     <meta name="description" content="Makklays Feedback" />
-    <meta name="keywords" content="Makklays" />
+    <meta name="keywords" content="feedback, makklays, development site" />
+    <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="author" content="Makklays" />
 
     <meta property="og:title" content="Makklays | Feedback" />
