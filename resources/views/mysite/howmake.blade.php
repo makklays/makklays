@@ -12,13 +12,13 @@
         </div>
         <div class="col-md-7 text-justify">
             <h4>{{ trans('site.howmake2') }}</h4> <br/>
-            - {{ trans('site.howmake3') }} <br/>
-            - {{ trans('site.howmake4') }} <br/>
-            - {{ trans('site.howmake5') }} <br/>
-            - {{ trans('site.howmake6') }} <br/>
-            - {{ trans('site.howmake7') }} <br/>
-            - {{ trans('site.howmake8') }} <br/>
-            - {{ trans('site.howmake9') }} <br/>
+            &#10004; {{ trans('site.howmake3') }} <br/>
+            &#10004; {{ trans('site.howmake4') }} <br/>
+            &#10004; {{ trans('site.howmake5') }} <br/>
+            &#10004; {{ trans('site.howmake6') }} <br/>
+            &#10004; {{ trans('site.howmake7') }} <br/>
+            &#10004; {{ trans('site.howmake8') }} <br/>
+            &#10004; {{ trans('site.howmake9') }} <br/>
         </div>
         <div class="col-md-12 text-justify">
             {{ trans('site.howmake1') }} <br/><br/>
@@ -89,17 +89,17 @@
         </div>
 
         <div class="col-md-7 text-justify">
-            - <b>{{ trans('site.adv1') }}</b> <br/>
+            &#10004; <b>{{ trans('site.adv1') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv1_det') }} </span><br/><br/>
-            - <b>{{ trans('site.adv2') }}</b> <br/>
+            &#10004; <b>{{ trans('site.adv2') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv2_det') }} </span><br/><br/>
-            - <b>{{ trans('site.adv3') }}</b> <br/>
+            &#10004; <b>{{ trans('site.adv3') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv3_det') }} </span><br/><br/>
-            - <b>{{ trans('site.adv4') }}</b> <br/>
+            &#10004; <b>{{ trans('site.adv4') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv4_det') }} </span><br/><br/>
-            - <b>{{ trans('site.adv5') }}</b> <br/>
+            &#10004; <b>{{ trans('site.adv5') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv5_det') }} </span><br/><br/>
-            - <b>{{ trans('site.adv6') }}</b> <br/>
+            &#10004; <b>{{ trans('site.adv6') }}</b> <br/>
             <span style="font-size:14px;">{{ trans('site.adv6_det') }} </span><br/>
             <br/><br/>
         </div>
@@ -115,11 +115,11 @@
             <img src="<?=config('app.url')?>/img/100-percent.jpg" alt="Makklays - {{ trans('site.mysite_howmake') }} image3" title="{{ trans('site.garantiya') }}!" class="img-fluid kromka" />
         </div>
         <div class="col-md-7 text-justify">
-            - <b>{{ trans('site.zapusk') }}</b> <br/>
+            &#10004; <b>{{ trans('site.zapusk') }}</b> <br/>
                 {{ trans('site.zapusk_det') }} <br/><br/>
-            - <b>{{ trans('site.podelu') }}</b> <br/>
+            &#10004; <b>{{ trans('site.podelu') }}</b> <br/>
                 {{ trans('site.podelu_det') }} <br/><br/>
-            - <b>{{ trans('site.garant') }}</b> <br/>
+            &#10004; <b>{{ trans('site.garant') }}</b> <br/>
                 {{ trans('site.garant_det') }} <br/><br/><br/>
         </div>
 
