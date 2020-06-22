@@ -70,7 +70,7 @@
             <br/><h2 class="text-center">8. <?=trans('site.policy15')?></h2><br/>
         </div>
         <div class="col-md-12 text-justify">
-            <?=trans('site.policy16')?> <a href="http://makklays.com.ua/{{ app()->getLocale() }}/policy/" class="a-green" title="Makklays - Политики конфиденциальности">http://makklays.com.ua/{{ app()->getLocale() }}/policy/</a>
+            <?=trans('site.policy16')?> <a href="https://makklays.com.ua/{{ app()->getLocale() }}/privacy-policy/" class="a-green" title="Makklays - Политики конфиденциальности">https://makklays.com.ua/{{ app()->getLocale() }}/privacy-policy/</a>
             <br/><br/><br/>
         </div>
     </div>

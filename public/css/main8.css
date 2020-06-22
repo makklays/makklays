@@ -16,6 +16,32 @@
     margin-bottom: 30px;
 }
 
+.dev-cookies {
+    border-top: 1px solid #267f00;
+    position: fixed;
+    font-size: 18px;
+    padding: 30px 0 0 0;
+    left: 0;
+    bottom: 0;
+    height: 120px;
+    /*margin: 30px 0 0 0;*/
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #46bf00;
+    z-index: 1;
+    opacity: 0.8;
+}
+.btn-outline-success-wt,
+.btn-outline-success-wt:visited, .btn-outline-success-wt:link {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+.btn-outline-success-wt:hover {
+    color: #267f00;
+    background-color: #e7e7e7;
+    border-color: #267f00;
+}
+
 blockquote:before, blockquote:after {
     font-size: 2.5em;
     color: grey;
