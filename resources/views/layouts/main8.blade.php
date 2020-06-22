@@ -168,6 +168,23 @@
     </div>
 </footer>
 
+<div class="dev-cookies">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 text-justify">
+                {{ trans('site.cookies1') }}
+                {{ trans('site.cookies2') }}
+                <a href="{{ route('privacy-policy', app()->getLocale()) }}" target="_blank" style="color:#FFF; text-decoration: underline;">
+                    {{ trans('site.brief_link') }}
+                </a>
+            </div>
+            <div class="col-md-2 text-right" style="margin-top:10px;">
+                <button type="button" class="btn btn-outline-success-wt text-center">{{ trans('site.Accept') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- modal window -->
 <div class="modal fade bd-example-modal-sm" id="myInput">
     <div class="modal-dialog modal-dialog-centered modal-sm" >
