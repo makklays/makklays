@@ -62,7 +62,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url( app()->getLocale() . '/home') }}" style="padding-top:0; padding-bottom:0;">
+                <a class="navbar-brand" href="{{ route('home', app()->getLocale()) }}" style="padding-top:0; padding-bottom:0;">
                     <img id="logo" class="d-inline-block mr-1" alt="Logo" src="/makklays.png" style="width:39px;" />
                     Makklays
                     <!-- div class="d-inline-block mr-1">Makklays<span>text</span></div -->

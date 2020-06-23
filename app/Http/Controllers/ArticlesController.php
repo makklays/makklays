@@ -27,7 +27,7 @@ class ArticlesController extends Controller
     public function list()
     {
         // Only loggined
-        if (!Auth::check()) return redirect(app()->getLocale() . '/login');
+        if (!Auth::check()) return redirect(app()->getLocale() . '/admin/login');
 
         // list of companies
         //$companies = DB::select('SELECT * FROM companies ');
@@ -48,7 +48,7 @@ class ArticlesController extends Controller
     public function add(Request $request)
     {
         // Only loggined
-        if (!Auth::check()) return redirect(app()->getLocale() . '/login');
+        if (!Auth::check()) return redirect(app()->getLocale() . '/admin/login');
 
         // add a new company
         if ($request->isMethod('post')) {
@@ -60,9 +60,19 @@ class ArticlesController extends Controller
             if ($validator->fails()) {
                 //Obtenemos los mensajes de error de la validation
                 $messages = $validator->messages();
-                return redirect(app()->getLocale() . '/adm-article-add')
+                return redirect(app()->getLocale() . '/admin/adm-article-add')
                     ->withErrors($validator)
                     ->withInput();
+            }
+
+            // if exist article - проверяем существует ли статья с таким названием
+            $slag = $this->transcription($request->title);
+            $select = DB::selectOne('SELECT * FROM articles WHERE slag=?', [$slag]);
+            if (!empty($select->id)) {
+                return redirect(app()->getLocale() . '/admin/adm-article-add')->with([
+                        'flash_message' => 'Ошибка! <br/>Статья с таким название уже существует!',
+                        'flash_type' => 'danger'
+                    ])->withInput();
             }
 
             $file = (isset($request->file()['photo']) && !empty($request->file()['photo']) ? $request->file()['photo'] : '');
@@ -101,8 +111,8 @@ class ArticlesController extends Controller
                     $message->to('phpdevops@gmail.com', 'Джон Смит')->subject('Add a new company on site!');
                 });*/
             }
-            return redirect(app()->getLocale().'/adm-articles')->with([
-                'flash_message' => 'Your article, "'.$request->title.'" has been add successfully!',
+            return redirect(app()->getLocale().'/admin/adm-articles')->with([
+                'flash_message' => 'Ваша статья, "'.$request->title.'" успешно добавлена!',
                 'flash_type' => 'success'
             ]);
         }
@@ -149,7 +159,7 @@ class ArticlesController extends Controller
         // Only loggined
         if (!Auth::check()) return redirect(app()->getLocale() . '/login');
 
-        if (!isset($id) || !empty($id)) redirect('/adm-articles');
+        if (!isset($id) || !empty($id)) redirect('/admin/adm-articles');
 
         // simple upload image
         $file = (isset($request->file()['photo']) && !empty($request->file()['photo']) ? $request->file()['photo'] : '');
@@ -172,9 +182,9 @@ class ArticlesController extends Controller
             if ($validator->fails()) {
                 //Obtenemos los mensajes de error de la validation
                 $messages = $validator->messages();
-                return redirect(app()->getLocale() . '/adm-article-edit/' . $id)
+                return redirect(app()->getLocale() . '/admin/adm-article-edit/' . $id)
                     ->with([
-                        'flash_message' => 'Your article, "'.$request->title.'" has not been add successfully!',
+                        'flash_message' => 'Ошибка! <br/>Ваша статья, "'.$request->title.'" не была добавлена!',
                         'flash_type' => 'danger'
                     ])
                     ->withErrors($validator)
@@ -210,8 +220,8 @@ class ArticlesController extends Controller
                 ]);
             }
 
-            return redirect(app()->getLocale().'/adm-articles')->with([
-                'flash_message' => 'Your article, "'.$request->title.'" has been add successfully!',
+            return redirect(app()->getLocale().'/admin/adm-articles')->with([
+                'flash_message' => 'Ваша статья, "'.$request->title.'" была успешно отредактирована!',
                 'flash_type' => 'success'
             ]);
         }
@@ -227,9 +237,9 @@ class ArticlesController extends Controller
     public function delete(Request $request, $lang, $id)
     {
         // Only loggined
-        if (!Auth::check()) return redirect(app()->getLocale() . '/login');
+        if (!Auth::check()) return redirect(app()->getLocale() . '/admin/login');
 
-        if (!isset($id) || !empty($id)) redirect('/adm-articles');
+        if (!isset($id) || !empty($id)) redirect('/admin/adm-articles');
 
         // get article
         $article = DB::selectOne('SELECT * FROM articles WHERE id=?', [$id]);
@@ -239,8 +249,8 @@ class ArticlesController extends Controller
             $request->article_id,
         ]);
 
-        return redirect(app()->getLocale().'/adm-articles')->with([
-            'flash_message' => 'Your article, "'.$article->title.'" has been delete successfully!',
+        return redirect(app()->getLocale().'/admin/adm-articles')->with([
+            'flash_message' => 'Ваша статья, "'.$article->title.'" была успешно удалена!',
             'flash_type' => 'success'
         ]);
     }

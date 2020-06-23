@@ -133,130 +133,134 @@ Route::group([
     Route::get('develop-article/{slag}', ['as' => 'mysite_article', 'uses' => 'MysiteController@showArticle']);
 
     // adminka
-    Route::group(['prefix' => 'admin'], function () {
+    //Route::group(['prefix' => 'admin'], function () {
 
         Auth::routes();
 
-        Route::get('home', 'HomeController@index')->name('home');
+        Route::get('admin/home', ['as' => 'home', 'uses' => 'HomeController@index'])->name('home');
 
-        Route::get('adm-articles', ['as' => 'adm-articles', 'uses' => 'ArticlesController@list']);
-        Route::match(['get', 'post'],'adm-article-add', ['as' => 'adm-article-add', 'uses' => 'ArticlesController@add']);
-        Route::match(['get', 'post'],'adm-article-edit/{article_id}', ['as' => 'adm-article-edit', 'uses' => 'ArticlesController@edit'])->where(['article_id' => '[0-9]+']);
-        Route::match(['get', 'post'],'adm-article-delete/{article_id}', ['as' => 'adm-article-delete', 'uses' => 'ArticlesController@delete'])->where(['article_id' => '[0-9]+']);
-        Route::get('adm-orders', ['as' => 'adm-orders', 'uses' => 'OrdersController@index']);
-        Route::match(['get', 'post'],'adm-order-add', ['as' => 'adm-order-add', 'uses' => 'OrdersController@add']);
+        Route::get('admin/adm-articles', ['as' => 'adm-articles', 'uses' => 'ArticlesController@list']);
+        Route::match(['get', 'post'],'admin/adm-article-add', ['as' => 'adm-article-add', 'uses' => 'ArticlesController@add']);
+        Route::match(['get', 'post'],'admin/adm-article-edit/{article_id}', ['as' => 'adm-article-edit', 'uses' => 'ArticlesController@edit'])->where(['article_id' => '[0-9]+']);
+        Route::match(['get', 'post'],'admin/adm-article-delete/{article_id}', ['as' => 'adm-article-delete', 'uses' => 'ArticlesController@delete'])->where(['article_id' => '[0-9]+']);
 
-        Route::get('adm-call', ['as' => 'adm-call', 'uses' => 'CallController@index']);
-        Route::get('adm-blacklist', ['as' => 'adm-blacklist', 'uses' => 'CallController@blacklist']);
+        Route::get('admin/adm-orders', ['as' => 'adm-orders', 'uses' => 'OrdersController@index']);
+        Route::match(['get', 'post'],'admin/adm-order-add', ['as' => 'adm-order-add', 'uses' => 'OrdersController@add']);
+        Route::match(['get', 'post'],'admin/adm-order-edit/{order_id}', ['as' => 'adm-order-edit', 'uses' => 'OrdersController@edit'])->where(['order_id' => '[0-9]+']);
+        Route::match(['get', 'post'],'admin/adm-order-delete/{order_id}', ['as' => 'adm-order-delete', 'uses' => 'OrdersController@delete'])->where(['order_id' => '[0-9]+']);
+        Route::get('admin/adm-order-view/{order_id}', ['as' => 'adm-order-view', 'uses' => 'OrdersController@view'])->where(['order_id' => '[0-9]+']);
 
-        Route::get('profile', ['as' => 'profile', 'uses' => 'MysiteController@myProfile']);
-        Route::post('profile-post', ['as' => 'profile-post', 'uses' => 'MysiteController@myProfilePost']);
-        Route::get('settings', ['as' => 'settings', 'uses' => 'MysiteController@settings']);
-        Route::get('statistics', ['as' => 'statistics', 'uses' => 'MysiteController@statistics']);
-        Route::get('report', ['as' => 'report', 'uses' => 'MysiteController@report']);
-        Route::get('report-cat-dog', ['as' => 'report-cat-dog', 'uses' => 'MysiteController@reportCatDog']);
+        Route::get('admin/adm-call', ['as' => 'adm-call', 'uses' => 'CallController@index']);
+        Route::get('admin/adm-blacklist', ['as' => 'adm-blacklist', 'uses' => 'CallController@blacklist']);
 
-        Route::get('documents', ['as' => 'documents', 'uses' => 'MysiteController@documents']);
+        Route::get('admin/profile', ['as' => 'profile', 'uses' => 'MysiteController@myProfile']);
+        Route::post('admin/profile-post', ['as' => 'profile-post', 'uses' => 'MysiteController@myProfilePost']);
+        Route::get('admin/settings', ['as' => 'settings', 'uses' => 'MysiteController@settings']);
+        Route::get('admin/statistics', ['as' => 'statistics', 'uses' => 'MysiteController@statistics']);
+        Route::get('admin/report', ['as' => 'report', 'uses' => 'MysiteController@report']);
+        Route::get('admin/report-cat-dog', ['as' => 'report-cat-dog', 'uses' => 'MysiteController@reportCatDog']);
+
+        Route::get('admin/documents', ['as' => 'documents', 'uses' => 'MysiteController@documents']);
 
         /* dashboard */
-        Route::get('dashboard', [
+        Route::get('admin/dashboard', [
             'as' => 'dashboard', 'uses' => 'MysiteController@dashboard'
         ]);
         /* companies */
-        Route::get('companies', [
+        Route::get('admin/companies', [
             'as' => 'companies', 'uses' => 'CompaniesController@showCompanies'
         ]);
-        Route::match(['get', 'post'], '/companies/add', [
+        Route::match(['get', 'post'], 'admin/companies/add', [
             'as' => 'company_add', 'uses' => 'CompaniesController@addCompany'
         ]);
-        Route::match(['get', 'post'], 'companies/del/{id}', [
+        Route::match(['get', 'post'], 'admin/companies/del/{id}', [
             'as' => 'company_delete', 'uses' => 'CompaniesController@delete'
         ])->where(['id' => '[0-9]+']);
-        Route::match(['get', 'post'], 'companies/edit/{id}', [
+        Route::match(['get', 'post'], 'admin/companies/edit/{id}', [
             'as' => 'company_edit', 'uses' => 'CompaniesController@edit'
         ])->where(['id' => '[0-9]+']);
-        Route::get('companies/view/{id}', [
+        Route::get('admin/companies/view/{id}', [
             'as' => 'company_view', 'uses' => 'CompaniesController@view'
         ])->where(['id' => '[0-9]+']);
 
         /* employees */
-        Route::get('employees', [
+        Route::get('admin/employees', [
             'as' => 'employees', 'uses' => 'EmployeesController@showEmployees'
         ]);
-        Route::match(['get', 'post'], '/employees/add', [
+        Route::match(['get', 'post'], 'admin/employees/add', [
             'as' => 'employee_add', 'uses' => 'EmployeesController@addEmployee'
         ]);
-        Route::match(['get', 'post'], '/employees/del/{id}', [
+        Route::match(['get', 'post'], 'admin/employees/del/{id}', [
             'as' => 'employee_delete', 'uses' => 'EmployeesController@delete'
         ])->where(['id' => '[0-9]+']);
-        Route::match(['get', 'post'], '/employees/edit/{id}', [
+        Route::match(['get', 'post'], 'admin/employees/edit/{id}', [
             'as' => 'employee_edit', 'uses' => 'EmployeesController@edit'
         ])->where(['id' => '[0-9]+']);
 
         /* about me */
-        Route::get('about2', ['as' => 'about', 'uses' => 'TodoController@about2']); // биография
+        Route::get('admin/about2', ['as' => 'about', 'uses' => 'TodoController@about2']); // биография
 
         /* cvs */
-        Route::get('cvs', ['as' => 'cvs', 'uses' => 'CvsController@lista']);
+        Route::get('admin/cvs', ['as' => 'cvs', 'uses' => 'CvsController@lista']);
 
         /* jobs - vacancies */
-        Route::get('jobs', ['as' => 'jobs', 'uses' => 'JobsController@lista']);
+        Route::get('admin/jobs', ['as' => 'jobs', 'uses' => 'JobsController@lista']);
 
         /* cvs add */
-        Route::get('/cvs/add', ['as' => 'cvs_add', 'uses' => 'CvsController@add']);
-        Route::post('/cvs/add', ['as' => 'cvs_add_post', 'uses' => 'CvsController@addPost'])->middleware('mobile.redirect');
+        Route::get('admin/cvs/add', ['as' => 'cvs_add', 'uses' => 'CvsController@add']);
+        Route::post('admin/cvs/add', ['as' => 'cvs_add_post', 'uses' => 'CvsController@addPost'])->middleware('mobile.redirect');
 
         /* cvs favorites */
-        Route::get('/cvs/favorites', ['as' => 'cvs_favorites', 'uses' => 'CvsController@favorites']);
-        Route::post('/cvs/change-favorite/{vacancia_id}', [
+        Route::get('admin/cvs/favorites', ['as' => 'cvs_favorites', 'uses' => 'CvsController@favorites']);
+        Route::post('admin/cvs/change-favorite/{vacancia_id}', [
             'as' => 'cvs_change_favorite', 'uses' => 'CvsController@changeFavorite'
         ])->where(['vacancia_id' => '[0-9]+']);
         /* cvs recommend */
-        Route::get('/cvs/recommend', ['as' => 'cvs_recommend', 'uses' => 'CvsController@recommend']);
+        Route::get('admin/cvs/recommend', ['as' => 'cvs_recommend', 'uses' => 'CvsController@recommend']);
 
-        Route::get('upl', [
+        Route::get('admin/upl', [
             'as' => 'upl', 'uses' => 'TodoController@UploadT'
         ]);
 
         /* packages */
-        Route::get('/packages', [
+        Route::get('admin/packages', [
             'as' => 'packages', 'uses' => 'PackageController@listPackages'
         ]);
-        Route::match(['get','post'], '/package/{id}', [
+        Route::match(['get','post'], 'admin/package/{id}', [
             'as' => 'package', 'uses' => 'PackageController@package'
         ])->where(['id' => '[0-9]+']);
-        Route::match(['get','post'], '/package/payment_success', [ // post method
+        Route::match(['get','post'], 'admin/package/payment_success', [ // post method
             'uses' => 'PackageController@payment_success'
         ]);
-        Route::match(['get','post'], '/package/payment_cancel', [ // post method
+        Route::match(['get','post'], 'admin/package/payment_cancel', [ // post method
             'uses' => 'PackageController@payment_cancel'
         ]);
-        Route::match(['get','post'], '/package/payment_notify', [ // post method
+        Route::match(['get','post'], 'admin/package/payment_notify', [ // post method
             'uses' => 'PackageController@payment_notify'
         ]);
 
         /* to do */
-        Route::get('/todo', [
+        Route::get('admin/todo', [
             'as' => 'todo', 'uses' => 'TodoController@listTodo'
         ]);
-        Route::match(['get'], '/todo/{id}', [
+        Route::match(['get'], 'admin/todo/{id}', [
             'as' => 'todo_item', 'uses' => 'TodoController@item'
         ])->where(['id' => '[0-9]+']);
-        Route::match(['get','post'], '/todo/add', [
+        Route::match(['get','post'], 'admin/todo/add', [
             'as' => 'todo_add', 'uses' => 'TodoController@add'
         ]);
-        Route::match(['get','post'], '/todo/edit/{id}', [
+        Route::match(['get','post'], 'admin/todo/edit/{id}', [
             'as' => 'todo_edit', 'uses' => 'TodoController@edit'
         ])->where(['id' => '[0-9]+']);
-        Route::match(['get','post'], '/todo/del/{id}', [
+        Route::match(['get','post'], 'admin/todo/del/{id}', [
             'as' => 'todo_del', 'uses' => 'TodoController@del'
         ])->where(['id' => '[0-9]+']);
 
         // feedback
-        Route::get('feedbacks', ['as' => 'feedbacks', 'uses' => 'FeedbackController@index']);
-        Route::get('feedback/show/{id}', ['as' => 'feedback_show', 'uses' => 'FeedbackController@show'])->where(['id' => '[0-9]+']);
+        Route::get('admin/feedbacks', ['as' => 'feedbacks', 'uses' => 'FeedbackController@index']);
+        Route::get('admin/feedback/show/{id}', ['as' => 'feedback_show', 'uses' => 'FeedbackController@show'])->where(['id' => '[0-9]+']);
 
-    });
+    //});
 
     /* test */
     Route::get('test', function () {
