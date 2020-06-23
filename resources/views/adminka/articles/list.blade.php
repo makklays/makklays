@@ -40,7 +40,7 @@
                         <td class="text-center"><?=(!empty($item->created_at) ? date('d.m.Y H:i:s', strtotime($item->created_at)) : 0)?></td>
                         <td class="text-center"><?=(!empty($item->is_visible) ? trans('site.Yes') : trans('site.No'))?></td>
                         <td class="text-center"><a href="{{ route('adm-article-edit', ['lang' => app()->getLocale(), 'article_id' => $item->id]) }}">{{ trans('site.Edit') }}</a></td>
-                        <td class="text-center"><a href="{{ route('adm-article-delete', ['lang' => app()->getLocale(), 'article_id' => $item->id]) }}" onclick="return confirm('Delete this article?');">{{ trans('site.Delete') }}</a></td>
+                        <td class="text-center"><a href="{{ route('adm-article-delete', ['lang' => app()->getLocale(), 'article_id' => $item->id]) }}" onclick="return confirm('Удалить эту статью?');">{{ trans('site.Delete') }}</a></td>
                     </tr>
                     <?php endforeach; ?>
                     </tbody>
