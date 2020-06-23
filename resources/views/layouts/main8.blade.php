@@ -168,18 +168,16 @@
     </div>
 </footer>
 
-<div class="dev-cookies">
+<div id="id_div_accept" class="dev-cookies">
     <div class="container">
         <div class="row">
             <div class="col-md-10 text-justify">
                 {{ trans('site.cookies1') }}
-                {{ trans('site.cookies2') }}
                 <a href="{{ route('privacy-policy', app()->getLocale()) }}" target="_blank" style="color:#FFF; text-decoration: underline;">
-                    {{ trans('site.brief_link') }}
-                </a>
+                    {{ trans('site.brief_link') }}</a>{{ trans('site.cookies2') }}
             </div>
             <div class="col-md-2 text-right" style="margin-top:10px;">
-                <button type="button" class="btn btn-outline-success-wt text-center">{{ trans('site.Accept') }}</button>
+                <button id="id_accept" type="button" class="btn btn-outline-success-wt text-center">{{ trans('site.Accept') }}</button>
             </div>
         </div>
     </div>
@@ -305,6 +303,22 @@
         });
         return false;
     });
+
+    // оставляем куку с датой принятия кук
+    $('#id_accept').on('click', function(){
+        document.cookie = "date=<?=date('d.m.Y H:i:s')?>";
+        //document.cookie = "ddate=<?=date('d.m.Y H:i:s')?>; path=/; domain=makklays.com.ua; secure";
+        console.log('The cookie "date" exists (ES5)');
+        $('#id_div_accept').css('display', 'none');
+    });
+
+    // проверяем принята ли кука
+    if (document.cookie.split(';').filter(function(item) {
+        return item.trim().indexOf('date=') == 0
+    }).length) {
+        console.log('The cookie "date" exists (ES5)');
+        $('#id_div_accept').css('display', 'none');
+    }
 </script>
 
 </body>
