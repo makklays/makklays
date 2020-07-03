@@ -4,7 +4,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <br/><h1 class="text-center text-design2">{{ trans('site.mysite_portfolio') }}</h1> <br/>
+            <br/><h1 class="text-center text-design2">{{ trans('site.mysite_last_work') }}</h1> <br/>
         </div>
 
         <div class="col-md-4 text-center">
