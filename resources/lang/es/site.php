@@ -1016,7 +1016,7 @@ La Política de privacidad actual está disponible en la página en',
     'Why_we' => 'Porque nosotros',
 
     'many_years' => 'AÑOS DE EXPERIENCIA',
-    'good_teams' => 'EQUIPO DE PIES',
+    'good_teams' => 'EQUIPO ARMONIOSO',
     'new_tech' => 'PRESENTAMOS NUEVAS TECNOLOGÍAS',
     'work_clients' => 'CLIENTES ESTABLECIDOS',
 

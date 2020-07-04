@@ -1012,7 +1012,7 @@ c）在用戶同意下披露。',
     'Why_we' => '為什麼是我們',
 
     'many_years' => '多年經驗',
-    'good_teams' => '腳步團隊',
+    'good_teams' => '和諧團隊',
     'new_tech' => '我們引進新技術',
     'work_clients' => '已建立的客戶',
 
