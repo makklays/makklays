@@ -1011,7 +1011,7 @@ The current Privacy Policy is available on the page at',
     'Why_we' => 'Why us?',
 
     'many_years' => 'YEARS OF EXPERIENCE',
-    'good_teams' => 'FOOT TEAM',
+    'good_teams' => 'HARMONIOUS TEAM',
     'new_tech' => 'INTRODUCE NEW TECHNOLOGIES',
     'work_clients' => 'ESTABLISHED CUSTOMERS',
 
