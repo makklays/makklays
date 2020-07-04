@@ -257,15 +257,7 @@
         <div style="margin-left:0px;">Facebook</div>
     </a>
 </div>
-<div id="id_twitter" target="_blank" class="text-center" style="position:fixed; top:288px; right:-250px; font-size:25px; font-weight:300; height:44px; width:300px; background-color:#1da1f2; cursor:pointer;">
-    <a href="https://www.twitter.com/makklays/" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
-        <div style="width:25px; padding:0; margin: -2px 0 0 10px; float:left;">
-            <img src="<?=config('app.url')?>/img/twitter-icon.png" style="width:25px;" alt="Twitter" />
-        </div>
-        <div style="margin-left:0px;">Twitter</div>
-    </a>
-</div>
-<div id="id_linkedin" target="_blank" class="text-center" style="position:fixed; top:332px; right:-250px; font-size:25px; font-weight:300; height:44px; width:300px; background-color:#0073b1; cursor:pointer;">
+<div id="id_linkedin" target="_blank" class="text-center" style="position:fixed; top:288px; right:-250px; font-size:25px; font-weight:300; height:44px; width:300px; background-color:#0073b1; cursor:pointer;">
     <a href="https://www.linkedin.com/makklays/" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
         <div style="width:25px; padding:0; margin: -2px 0 0 10px; float:left;">
             <img src="<?=config('app.url')?>/img/linkedin-icon.png" style="width:25px;" alt="Linkedin" />
@@ -273,6 +265,14 @@
         <div style="margin-left:0px;">Linkedin</div>
     </a>
 </div>
+<!--div id="id_twitter" target="_blank" class="text-center" style="position:fixed; top:332px; right:-250px; font-size:25px; font-weight:300; height:44px; width:300px; background-color:#1da1f2; cursor:pointer;">
+    <a href="https://www.twitter.com/makklays/" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
+        <div style="width:25px; padding:0; margin: -2px 0 0 10px; float:left;">
+            <img src="<?=config('app.url')?>/img/twitter-icon.png" style="width:25px;" alt="Twitter" />
+        </div>
+        <div style="margin-left:0px;">Twitter</div>
+    </a>
+</div-->
 
 <script>
 

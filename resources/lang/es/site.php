@@ -1011,6 +1011,20 @@ La Política de privacidad actual está disponible en la página en',
     'cookies2' => ' y tambien que podemos almacenar cookies (cookies) de su navegador.',
     'Accept' => 'Aceptar',
     'mysite_last_work' => 'Ultimos trabajos',
+
+    'And_yet' => 'Y también',
+    'Why_we' => 'Porque nosotros',
+
+    'many_years' => 'AÑOS DE EXPERIENCIA',
+    'good_teams' => 'EQUIPO DE PIES',
+    'new_tech' => 'PRESENTAMOS NUEVAS TECNOLOGÍAS',
+    'work_clients' => 'CLIENTES ESTABLECIDOS',
+
+    'years_experience' => 'AÑOS <br/>EXPERIENCIA',
+    'wagons' => 'VAGONES <br/>AGUA BEBIDA',
+    'days_prog' => 'DÍAS <br/>PROGRAMACIÓN',
+    'dovol_clients' => 'CLIENTES <br/>SATISFECHOS',
+
     '' => '',
     '' => '',
     '' => '' ,

@@ -1006,6 +1006,20 @@ The current Privacy Policy is available on the page at',
     'cookies2' => ' and that we can store cookies (cookies) of your browser.',
     'Accept' => 'Aceptar',
     'mysite_last_work' => 'Last works',
+
+    'And_yet' => 'And also',
+    'Why_we' => 'Why us?',
+
+    'many_years' => 'YEARS OF EXPERIENCE',
+    'good_teams' => 'FOOT TEAM',
+    'new_tech' => 'INTRODUCE NEW TECHNOLOGIES',
+    'work_clients' => 'ESTABLISHED CUSTOMERS',
+
+    'years_experience' => 'YEARS <br/> EXPERIENCE',
+    'wagons' => 'WAGONS <br/> WATER DRINKED',
+    'days_prog' => 'DAYS <br/> PROGRAMMING',
+    'dovol_clients' => 'SATISFIED <br/> CLIENTS',
+
     '' => '',
     '' => '',
     '' => '',
