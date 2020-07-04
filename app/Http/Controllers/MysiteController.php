@@ -147,7 +147,7 @@ class MysiteController extends Controller
         $ip = $this->getRealUserIp();
 
         // add statisctics of test
-        $json = file_get_contents('https://api.2ip.ua/geo.json?ip=' . $ip);
+        /*$json = file_get_contents('https://api.2ip.ua/geo.json?ip=' . $ip);
         $data = json_decode($json);
 
         $strana = (isset($data->country) && !empty($data->country) ? $data->country : '');
@@ -162,7 +162,7 @@ class MysiteController extends Controller
         $lat = (isset($data->latitude) && !empty($data->latitude) ? $data->latitude : '');
         $lon = (isset($data->longitude) && !empty($data->longitude) ? $data->longitude : '');
 
-        $insert = DB::insert('INSERT INTO statistics SET ip=?, lang=?, strana=?, city=?, strana_rus=?, city_rus=?, 
+        $insert = DB::insert('INSERT INTO statistics SET ip=?, lang=?, strana=?, city=?, strana_rus=?, city_rus=?,
             zip_code=?, time_zone=?, strana_code=?, region=?, region_rus=?, lat=?, lon=?, created_at=?',
             [
                 $ip, app()->getLocale(), $strana, $city, $strana_rus, $city_rus, $zip_code, $time_zone,
