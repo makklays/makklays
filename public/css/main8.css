@@ -16,21 +16,6 @@
     margin-bottom: 30px;
 }
 
-.dev-cookies {
-    border-top: 1px solid #267f00;
-    position: fixed;
-    font-size: 18px;
-    padding: 30px 0 0 0;
-    left: 0;
-    bottom: 0;
-    height: 120px;
-    /*margin: 30px 0 0 0;*/
-    width: 100%;
-    color: #FFFFFF;
-    background-color: #46bf00;
-    z-index: 1;
-    opacity: 0.89;
-}
 .btn-outline-success-wt,
 .btn-outline-success-wt:visited, .btn-outline-success-wt:link {
     color: #FFFFFF;
@@ -205,11 +190,41 @@ a.text-corporate {
         padding-left: 25%;
         max-width: 850px;
     }
+
+    .dev-cookies {
+        border-top: 1px solid #267f00;
+        position: fixed;
+        font-size: 18px;
+        padding: 30px 0 0 0;
+        left: 0;
+        bottom: 0;
+        height: 120px;
+        width: 100%;
+        color: #FFFFFF;
+        background-color: #46bf00;
+        z-index: 1;
+        opacity: 0.89;
+    }
 }
 @media screen and (max-width: 1200px) {
     .o-item {
         padding-left: 120px;
         max-width: 820px;
+    }
+
+    .dev-cookies {
+        border-top: 1px solid #267f00;
+        position: fixed;
+        font-size: 18px;
+        padding: 30px 0 0 0;
+        left: 0;
+        bottom: 0;
+        height: 120px;
+        width: 100%;
+        color: #FFFFFF;
+        background-color: #46bf00;
+        z-index: 1;
+        opacity: 0.89;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -217,11 +232,41 @@ a.text-corporate {
         padding-left: 30px;
         max-width: 760px;
     }
+
+    .dev-cookies {
+        border-top: 1px solid #267f00;
+        position: fixed;
+        font-size: 18px;
+        padding: 30px 0 0 0;
+        left: 0;
+        bottom: 0;
+        height: 120px;
+        width: 100%;
+        color: #FFFFFF;
+        background-color: #46bf00;
+        z-index: 1;
+        opacity: 0.89;
+    }
 }
 @media screen and (max-width: 768px) {
     .o-item {
         padding-left: 30px;
         max-width: 450px;
+    }
+
+    .dev-cookies {
+        border-top: 1px solid #267f00;
+        position: fixed;
+        font-size: 18px;
+        padding: 30px 0 0 0;
+        left: 0;
+        bottom: 0;
+        height: 140px;
+        width: 100%;
+        color: #FFFFFF;
+        background-color: #46bf00;
+        z-index: 1;
+        opacity: 0.89;
     }
 }
 @media screen and (max-width: 500px) {
@@ -229,11 +274,41 @@ a.text-corporate {
         padding-left: 0px;
         max-width: 380px;
     }
+
+    .dev-cookies {
+        border-top: 1px solid #267f00;
+        position: fixed;
+        font-size: 18px;
+        padding: 30px 0 0 0;
+        left: 0;
+        bottom: 0;
+        height: 180px;
+        width: 100%;
+        color: #FFFFFF;
+        background-color: #46bf00;
+        z-index: 1;
+        opacity: 0.89;
+    }
 }
 @media screen and (max-width: 420px) {
     .o-item {
         padding-left: 0px;
         max-width: 320px;
+    }
+
+    .dev-cookies {
+        border-top: 1px solid #267f00;
+        position: fixed;
+        font-size: 18px;
+        padding: 30px 0 0 0;
+        left: 0;
+        bottom: 0;
+        height: 180px;
+        width: 100%;
+        color: #FFFFFF;
+        background-color: #46bf00;
+        z-index: 1;
+        opacity: 0.89;
     }
 }
 @media screen and (max-width: 375px) {
@@ -241,11 +316,41 @@ a.text-corporate {
         padding-left: 0px;
         max-width: 300px;
     }
+
+    .dev-cookies {
+        border-top: 1px solid #267f00;
+        position: fixed;
+        font-size: 18px;
+        padding: 30px 0 0 0;
+        left: 0;
+        bottom: 0;
+        height: 180px;
+        width: 100%;
+        color: #FFFFFF;
+        background-color: #46bf00;
+        z-index: 1;
+        opacity: 0.89;
+    }
 }
 @media screen and (max-width: 330px) {
     .o-item {
         padding-left: 0px;
         max-width: 260px;
+    }
+
+    .dev-cookies {
+        border-top: 1px solid #267f00;
+        position: fixed;
+        font-size: 18px;
+        padding: 30px 0 0 0;
+        left: 0;
+        bottom: 0;
+        height: 220px;
+        width: 100%;
+        color: #FFFFFF;
+        background-color: #46bf00;
+        z-index: 1;
+        opacity: 0.89;
     }
 }
 
