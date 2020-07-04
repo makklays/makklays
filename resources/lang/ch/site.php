@@ -1007,6 +1007,20 @@ c）在用戶同意下披露。',
     'cookies2' => '，以及我們可以存儲您瀏覽器的Cookie（Cookie）的事實。',
     'Accept' => '接受',
     'mysite_last_work' => '最後作品',
+
+    'And_yet' => '並且',
+    'Why_we' => '為什麼是我們',
+
+    'many_years' => '多年經驗',
+    'good_teams' => '腳步團隊',
+    'new_tech' => '我們引進新技術',
+    'work_clients' => '已建立的客戶',
+
+    'years_experience' => '年經驗',
+    'wagons' => '運貨車喝水',
+    'days_prog' => 'DAYS編程',
+    'dovol_clients' => '滿意的客戶',
+
     '' => '',
     '' => '',
     '' => '',

@@ -20,26 +20,26 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-center text-design2">Почему мы?</h1>
+                <h1 class="text-center text-design2"><?=trans('site.Why_we')?></h1>
             </div>
             <div class="col-md-3">
-                <div class="text-center" style="color:green; font-size:20px;">
-                    МНОГО ЛЕТ ОПЫТА
+                <div class="text-center" style="color:#46bf00; font-size:20px;">
+                    <?=trans('site.many_years')?>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="text-center" style="color:green; font-size:20px;">
-                    СЛАЖЕННАЯ КОМАНДА
+                <div class="text-center" style="color:#46bf00; font-size:20px;">
+                    <?=trans('site.good_teams')?>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="text-center" style="color:green; font-size:20px;">
-                    МЫ ВНЕДРЯЕМ НОВЫЕ ТЕХНОЛОГИИ
+                <div class="text-center" style="color:#46bf00; font-size:20px;">
+                    <?=trans('site.new_tech')?>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="text-center" style="color:green; font-size:20px;">
-                    НАРАБОТАННЫЕ КЛИЕНТЫ
+                <div class="text-center" style="color:#46bf00; font-size:20px;">
+                    <?=trans('site.work_clients')?>
                 </div>
             </div>
         </div>
@@ -48,38 +48,38 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-center text-design2">А ещё</h1>
+                <h1 class="text-center text-design2"><?=trans('site.And_yet')?></h1>
             </div>
             <div class="col-md-3">
-                <div class="text-center" style="color:green; font-size:44px;">
+                <div class="text-center" style="color:#46bf00; font-size:44px;">
                     13
                 </div>
-                <div class="text-center" style="color:green; font-size:20px;">
-                    ЛЕТ <br/>ОПЫТА
+                <div class="text-center" style="color:#46bf00; font-size:20px;">
+                    <?=trans('site.years_experience')?>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="text-center" style="color:green; font-size:44px;">
+                <div class="text-center" style="color:#46bf00; font-size:44px;">
                     7
                 </div>
-                <div class="text-center" style="color:green; font-size:20px;">
-                    ВАГОНОВ <br/>ВОДЫ ВЫПИТО
+                <div class="text-center" style="color:#46bf00; font-size:20px;">
+                    <?=trans('site.wagons')?>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="text-center" style="color:green; font-size:44px;">
+                <div class="text-center" style="color:#46bf00; font-size:44px;">
                     >4680
                 </div>
-                <div class="text-center" style="color:green; font-size:20px;">
-                    ДНЕЙ <br/>ПРОГРАММИРОВАНИЯ
+                <div class="text-center" style="color:#46bf00; font-size:20px;">
+                    <?=trans('site.days_prog')?>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="text-center" style="color:green; font-size:44px;">
+                <div class="text-center" style="color:#46bf00; font-size:44px;">
                     93%
                 </div>
-                <div class="text-center" style="color:green; font-size:20px;">
-                    ДОВОЛЬНЫХ <br/>КЛИЕНТОВ
+                <div class="text-center" style="color:#46bf00; font-size:20px;">
+                    <?=trans('site.dovol_clients')?>
                 </div>
             </div>
         </div>
