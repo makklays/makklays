@@ -24,17 +24,17 @@
             </div>
             <div class="col-md-3">
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
-                    <?=trans('site.many_years')?>
+                    <?=trans('site.many_years')?> <br/><br/>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
-                    <?=trans('site.good_teams')?>
+                    <?=trans('site.good_teams')?> <br/><br/>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
-                    <?=trans('site.new_tech')?>
+                    <?=trans('site.new_tech')?> <br/><br/>
                 </div>
             </div>
             <div class="col-md-3">
@@ -55,7 +55,7 @@
                     13
                 </div>
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
-                    <?=trans('site.years_experience')?>
+                    <?=trans('site.years_experience')?> <br/><br/>
                 </div>
             </div>
             <div class="col-md-3">
@@ -63,7 +63,7 @@
                     7
                 </div>
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
-                    <?=trans('site.wagons')?>
+                    <?=trans('site.wagons')?> <br/><br/>
                 </div>
             </div>
             <div class="col-md-3">
@@ -71,7 +71,7 @@
                     >4680
                 </div>
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
-                    <?=trans('site.days_prog')?>
+                    <?=trans('site.days_prog')?> <br/><br/>
                 </div>
             </div>
             <div class="col-md-3">
