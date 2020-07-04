@@ -282,7 +282,7 @@ Route::group([
         $ip = getRealUserIp();
 
         // add result of test
-        if (!empty($choice)) {
+        /*if (!empty($choice)) {
             $json = file_get_contents('https://api.2ip.ua/geo.json?ip=' . $ip);
             $data = json_decode($json);
 
@@ -298,7 +298,7 @@ Route::group([
             $lat = (isset($data->latitude) && !empty($data->latitude) ? $data->latitude : '');
             $lon = (isset($data->longitude) && !empty($data->longitude) ? $data->longitude : '');
 
-            $insert = DB::insert('INSERT INTO tests SET choice=?, ip=?, strana=?, city=?, strana_rus=?, city_rus=?, 
+            $insert = DB::insert('INSERT INTO tests SET choice=?, ip=?, strana=?, city=?, strana_rus=?, city_rus=?,
                 zip_code=?, time_zone=?, strana_code=?, region=?, region_rus=?, lat=?, lon=?, created_at=?',
                 [
                     $choice, $ip, $strana, $city, $strana_rus, $city_rus, $zip_code, $time_zone,
@@ -322,6 +322,12 @@ Route::group([
             } else {
                 $response = ['error' => 'Error!']; // not add in db
             }
+        } else {
+            $response = ['error' => 'Error!']; // not choice
+        }*/
+
+        if (!empty($choice)) {
+            $response = ['result' => 'Ok!'];
         } else {
             $response = ['error' => 'Error!']; // not choice
         }
