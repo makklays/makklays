@@ -464,7 +464,7 @@ PHP programming with the most robust security standards and code stability.',
     'Order_successful' => 'Our manager will call you back within 30 minutes',
     'Close' => 'Close',
     'slogan' => 'Website development',
-    'slogan_descr' => 'We Makklays. We help to realize the idea.',
+    'slogan_descr' => 'We are Makklays. We help to realize the idea.',
 
     'Dashboard' => 'Dashboard',
     'Articles' => 'Articles',
