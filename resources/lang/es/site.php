@@ -1025,6 +1025,21 @@ La Política de privacidad actual está disponible en la página en',
     'days_prog' => 'DÍAS <br/>PROGRAMACIÓN',
     'dovol_clients' => 'CLIENTES <br/>SATISFECHOS',
 
+    'Who_we' => '¿Quienes somos?',
+    'text_sobre_we' => '
+<b>Nuestra geografía</b> es el mundo entero. Hablamos varios idiomas y desarrollamos sitios web, tiendas en línea y sistemas comerciales complejos utilizando tecnologías modernas. <br/> <br/>
+La edad de nuestros clientes es de 28 a 53 años. Este es un dueño de negocios, empresario, gerente de negocios, comercializador y de marca, dueño de producción, empresario del segmento B2B y B2C, una persona pública. <br/> <br/>
+Ordenamos sitios para el desarrollo de nuestro propio negocio, para promocionar la empresa a través de Internet, un sistema de sitio para automatizar procesos en una producción o fábrica usando TI, un sistema de sitio o servicio para mantener a los clientes y sus datos, un sistema de sitio para logística en la empresa, lanzamiento y retiro una nueva marca, para aumentar las ventas, buscar nuevos clientes, un portal de entretenimiento social o de noticias, popularizar una marca o capturar un nuevo segmento de mercado, un servicio web y API para aplicaciones móviles, un sistema de sitio web para mantener datos en el laboratorio, para aumentar las ganancias de Internet. <br/> <br/>
+Nuestros sitios: en Internet, en una empresa, en una fábrica, en un banco, en una explotación, en un laboratorio, en una empresa, en una corporación. <br/> <br/>
+Los sitios del sistema están disponibles en días y horarios hábiles en la empresa. Y en cualquier momento las 24 horas, los 7 días de la semana, si se trata de un sitio de venta o información corporativa en Internet. <br/>',
+
+    'text_sobre_wee' => '
+<b>Nuestra geografía</b> es el mundo entero. Hablamos varios idiomas y desarrollamos sitios web, tiendas en línea y sistemas comerciales complejos utilizando tecnologías modernas. <br/> <br/>
+La edad de nuestros clientes es de 28 a 53 años. Este es un dueño de negocios, empresario, gerente de negocios, comercializador y de marca, dueño de producción, empresario del segmento B2B y B2C, una persona pública. <br/> <br/>
+Ordenamos sitios para el desarrollo de nuestro propio negocio, para promocionar la empresa a través de Internet, un sistema de sitio web para automatizar procesos en una producción o fábrica usando TI, un sistema de sitio web o servicio para mantener a los clientes y sus datos, un sistema de sitio web para logística en una empresa, un servicio web y API para aplicaciones móviles, lanzamiento y lanzamiento de una nueva marca, para aumentar las ventas, buscar nuevos clientes, entretenimiento social o portal de noticias, popularizar una marca o capturar un nuevo segmento de mercado, un sistema de sitio web para mantener los datos en el laboratorio, para aumentar las ganancias de Internet. <br/> <br/>
+Nuestros sitios: <b>en Internet</b>, <b>en la empresa</b>, <b>en la fábrica</b>, <b>en el banco</b>, <b>en la explotación </b>, <b>en el laboratorio</b>, <b>en la empresa</b>, <b>en la corporación</b>. <br/> <br/>
+Los sitios del sistema están disponibles en días y horarios hábiles en la empresa. Y en cualquier momento las 24 horas, los 7 días de la semana, si se trata de un sitio de venta o información corporativa en Internet. <br/>',
+
     '' => '',
     '' => '',
     '' => '' ,

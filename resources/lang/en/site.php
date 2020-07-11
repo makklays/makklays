@@ -49,6 +49,7 @@ return [
     'keywords' => 'Keywords',
 
     // первая страница
+    // первая страница
     'OR' => 'OR',
     'test_php' => 'Test PHP',
     'order_site' => 'To order a site',
@@ -219,7 +220,7 @@ PHP programming with the most robust security standards and code stability.',
     'review2_city' => 'Barcelona',
     'review3' => 'My online store now brings me profit and it implements all my crazy ideas, downloads, catalogs and, most importantly, financial reports with charts. I am very pleased with the work. There is a mobile version. Now many orders come from there. Speed and optimization are great.',
 
-    'about_1' => '<b> Makklays </b> - a team of people who have been professionally engaged in computer programming of sites since 2007. Successfully developed and programmed more than one corporate website, an online store for medium-sized businesses, as well as a sophisticated web portal for banks in our country. <br/> <br/> <b> Our mission </b> is to help develop a successful business in the IT field. We would like to become for you a reliable partner in providing services of development, development of business on the Internet and website maintenance. We achieve our goal by offering services that lead to the development and prosperity of society.',
+    'about_1' => '<b> Makklays </b> — a team of people who have been professionally engaged in computer programming of sites since 2007. Successfully developed and programmed more than one corporate website, an online store for medium-sized businesses, as well as a sophisticated web portal for banks in our country. <br/> <br/> <b> Our mission </b> is to help develop a successful business in the IT field. We would like to become for you a reliable partner in providing services of development, development of business on the Internet and website maintenance. We achieve our goal by offering services that lead to the development and prosperity of society.',
     'about_1_1' => '<b> Website development </b> is not our ultimate goal. This is just a tool that should help business development and increase your profits.',
     'about_2' => 'We love living and love life.',
     'about_3' => 'Makklays loves new knowledge, and also loves large and interesting IT projects, wanting to become a confident partner for you and your business.',
@@ -1019,6 +1020,21 @@ The current Privacy Policy is available on the page at',
     'wagons' => 'WAGONS <br/> WATER DRINKED',
     'days_prog' => 'DAYS <br/> PROGRAMMING',
     'dovol_clients' => 'SATISFIED <br/> CLIENTS',
+
+    'Who_we' => 'Who are we?',
+    'text_sobre_we' => '
+<b>Our geography</b> is the all world. We speak several languages and develop websites, online stores and complex business systems using modern technologies. <br/> <br/>
+The age of our customers is from 28 to 53 years. This is a business owner, businessman, business lady, marketer and brand manager, production owner, entrepreneur from the B2B and B2C segment, a public person. <br/> <br/>
+We order sites for the development of our own business, for promoting the company through the Internet, a site system for automating processes in a production or factory using IT, a site system or service for maintaining clients and their data, a site system for logistics at the enterprise, launch and withdrawal a new brand, to increase sales, search for new customers, a social entertainment or news portal, popularize a brand or capture a new market segment, a web service and API for mobile applications, a website system for maintaining data in the laboratory, to increase profits from the Internet. <br/> <br/>
+Our sites: on the Internet, in an enterprise, in a factory, in a bank, in a holding, in a laboratory, in a company, in a corporation. <br/> <br/>
+System sites are available on business days and times at the enterprise. And at any time 24/7 if it is a sale or corporate information site on the Internet. <br/>',
+
+    'text_sobre_wee' => '
+<b>Our geography</b> is the all world. We speak several languages​and develop websites, online stores and complex business systems using modern technologies. <br/> <br/>
+The age of our customers is from 28 to 53 years. This is a business owner, businessman, business lady, marketer and brand manager, production owner, entrepreneur from the B2B and B2C segment, a public person. <br/> <br/>
+We order sites for the development of our own business, for promoting the company through the Internet, a website system for automating processes in a production or factory using IT, a website system or service for maintaining clients and their data, a website system for logistics in an enterprise, a web service and API for mobile applications, launching and launching a new brand, to increase sales, search for new customers, social entertainment or news portal, popularize a brand or capture a new market segment, a website system for maintaining data in the laboratory, to increase profits from the Internet. <br/> <br/>
+Our sites: <b> on the Internet </b>, <b> at the enterprise </b>, <b> at the factory </b>, <b> at the bank </b>, <b> at the holding </b>, <b> in the laboratory </b>, <b> in the company </b>, <b>in the corporation </b>. <br/> <br/>
+System sites are available on business days and times at the enterprise. And at any time 24/7 if it is a sale or corporate information site on the Internet. <br/>',
 
     '' => '',
     '' => '',
