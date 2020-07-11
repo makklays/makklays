@@ -26,6 +26,12 @@
             </p>
         </div>
 
+        <div class="col-md-12">
+            <p class="text-justify">
+                <?=trans('site.text_sobre_wee')?>
+            </p>
+        </div>
+
         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="o-item" style="margin-top: 40px;">
                 <div class="o-circle" style="padding-bottom: 140px;">

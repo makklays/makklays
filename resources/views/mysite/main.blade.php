@@ -20,6 +20,19 @@
 
         <div class="row">
             <div class="col-md-12">
+                <h1 class="text-center text-design2"><?=trans('site.Who_we')?></h1>
+            </div>
+            <div class="col-md-12">
+                <p class="text-justify">
+                    <?=trans('site.text_sobre_we')?>
+                </p>
+            </div>
+        </div>
+
+        <br/><br/>
+
+        <div class="row">
+            <div class="col-md-12">
                 <h1 class="text-center text-design2"><?=trans('site.Why_we')?></h1>
             </div>
             <div class="col-md-3">
