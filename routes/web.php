@@ -157,6 +157,7 @@ Route::group([
         Route::post('admin/profile-post', ['as' => 'profile-post', 'uses' => 'MysiteController@myProfilePost']);
         Route::get('admin/settings', ['as' => 'settings', 'uses' => 'MysiteController@settings']);
         Route::get('admin/statistics', ['as' => 'statistics', 'uses' => 'MysiteController@statistics']);
+        Route::get('admin/visits', ['as' => 'visits', 'uses' => 'VisitsController@listAll']);
         Route::get('admin/report', ['as' => 'report', 'uses' => 'MysiteController@report']);
         Route::get('admin/report-cat-dog', ['as' => 'report-cat-dog', 'uses' => 'MysiteController@reportCatDog']);
 
