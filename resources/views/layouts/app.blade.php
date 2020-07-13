@@ -104,6 +104,9 @@
                                 <a class="nav-link" href="{{ route('feedbacks', app()->getLocale()) }}">{{ trans('site.Soobsheniya') }}</a>
                             </li-->
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('visits', app()->getLocale()) }}">{{ trans('site.Visits') }}</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('statistics', app()->getLocale()) }}">{{ trans('site.Statistics') }}</a>
                             </li>
                             <!--li class="nav-item">
