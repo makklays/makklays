@@ -1046,6 +1046,7 @@ c）在用戶同意下披露。',
     'Prodaga_tovara' => '銷售商品',
     'Web-portal' => '網絡門戶',
     'Social_project' => '社會項目',
+    'Not_visits' => '沒有頁面訪問',
 
     '' => '',
     '' => '',

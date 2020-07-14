@@ -1046,6 +1046,7 @@ System sites are available on business days and times at the enterprise. And at 
     'Prodaga_tovara' => 'Sale of goods',
     'Web-portal' => 'Web portal',
     'Social_project' => 'Social project',
+    'Not_visits' => 'No page visits',
 
     '' => '',
     '' => '',
