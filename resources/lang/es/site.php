@@ -1040,6 +1040,17 @@ Ordenamos sitios para el desarrollo de nuestro propio negocio, para promocionar 
 Nuestros sitios: <b>en Internet</b>, <b>en la empresa</b>, <b>en la fábrica</b>, <b>en el banco</b>, <b>en la explotación </b>, <b>en el laboratorio</b>, <b>en la empresa</b>, <b>en la corporación</b>. <br/> <br/>
 Los sitios del sistema están disponibles en días y horarios hábiles en la empresa. Y en cualquier momento las 24 horas, los 7 días de la semana, si se trata de un sitio de venta o información corporativa en Internet. <br/>',
 
+    'Url_referer' => 'URL de donde',
+    'Is_mobile' => 'Con mov.',
+    'Url' => 'URL adonde',
+    'Not' => 'No',
+    'Visits' => 'Visitas',
+    'visits_descr' => 'Estadísticas de visitas al sitio, de dónde provienen, qué miran, dispositivos móviles o computadoras, etc.',
+
+    'Prodaga_tovara' => 'Venta de bienes',
+    'Web-portal' => 'Portal web',
+    'Social_project' => 'Proyecto social',
+
     '' => '',
     '' => '',
     '' => '' ,

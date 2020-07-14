@@ -12,7 +12,7 @@
                 <img src="/img/portfolio/mitsubishi-poltava1.png" class="img-fluid kromka" alt="MITSUBISHI-POLTAVA.COM.UA image" title="MITSUBISHI-POLTAVA.COM.UA" />
             </a>
             <a href="{{ route('mysite_lpage', app()->getLocale()) }}" class="a-green"><?=trans('site.m_lpage')?></a> <br/>
-            Продажа товара <br/>
+            <?=trans('site.Prodaga_tovara')?> <br/>
             MITSUBISHI-POLTAVA.COM.UA
         </div>
 
@@ -21,7 +21,7 @@
                 <img src="/img/portfolio/dog_in_ua.png" class="img-fluid kromka" alt="DOG.in.UA image" title="DOG.in.UA" />
             </a>
             <a href="{{ route('mysite_corporate', app()->getLocale()) }}" class="a-green"><?=trans('site.m_corporate')?></a> <br/>
-            Социальный проект <br/>
+            <?=trans('site.Social_project')?> <br/>
             DOG.IN.UA
         </div>
 
