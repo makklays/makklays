@@ -1050,6 +1050,7 @@ Los sitios del sistema están disponibles en días y horarios hábiles en la emp
     'Prodaga_tovara' => 'Venta de bienes',
     'Web-portal' => 'Portal web',
     'Social_project' => 'Proyecto social',
+    'Not_visits' => 'No hay visitas a la página.',
 
     '' => '',
     '' => '',
