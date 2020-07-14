@@ -1036,6 +1036,17 @@ We order sites for the development of our own business, for promoting the compan
 Our sites: <b> on the Internet </b>, <b> at the enterprise </b>, <b> at the factory </b>, <b> at the bank </b>, <b> at the holding </b>, <b> in the laboratory </b>, <b> in the company </b>, <b>in the corporation </b>. <br/> <br/>
 System sites are available on business days and times at the enterprise. And at any time 24/7 if it is a sale or corporate information site on the Internet. <br/>',
 
+    'Url_referer' => 'URL referer',
+    'Is_mobile' => 'From mob.',
+    'Url' => 'URL',
+    'Not' => 'Not',
+    'Visits' => 'Visits',
+    'visits_descr' => 'Statistics of site visits, where they come from, what they look at, mobile or computer, etc.',
+
+    'Prodaga_tovara' => 'Sale of goods',
+    'Web-portal' => 'Web portal',
+    'Social_project' => 'Social project',
+
     '' => '',
     '' => '',
     '' => '',

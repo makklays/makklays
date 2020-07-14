@@ -23,8 +23,10 @@ use Illuminate\Support\Facades\Session;
 
 Route::get('/', function (Request $request) {
 
+    //dd(  app()->getLocale()  );
+
     /*Route::get('/', function () {*/
-        return redirect(app()->getLocale());
+        return redirect( app()->getLocale() );
         exit;
     /*});*/
 
@@ -46,8 +48,6 @@ Route::group([
     'where' => ['locale' => '[a-zA-Z]{2}'],
     'middleware' => 'setlocale'
 ], function () {
-
-
 
     Route::get('main', ['as' => 'main', function () {
         return view('test'); // 'main'
@@ -89,7 +89,13 @@ Route::group([
     Route::post('test-php/report', ['as' => 'test_php_report_post', 'uses' => 'TestController@sendEmail']);
 
     /* mysite page */
+
+    //$lang = app()->getLocale();
+    /*$lang = App::getLocale();*/
+    //dd($lang);
+
     Route::get('', ['as' => '/', 'uses' => 'MysiteController@main']);
+
     Route::get('about-us', ['as' => 'mysite_about', 'uses' => 'MysiteController@about']);
     Route::get('we-making', ['as' => 'mysite_howmake', 'uses' => 'MysiteController@howmake']);
     Route::get('development-site-shop', ['as' => 'mysite_whatmake', 'uses' => 'MysiteController@whatmake']);
@@ -439,7 +445,7 @@ Route::group([
     ], function () {
 
     Route::get('/f1', ['as' => 'f1', function () {
-        echo 'F1 <a href="'.route('f2', app()->getLocale()).'">F2</a> <br/><br/>';
+        echo 'F1 <a href="'.route('f2', app()->getLocale()).'">F2 '.app()->getLocale().'</a> <br/><br/>';
         echo trans('site.header_mysite') . '<br/><br/>';
 
         //
