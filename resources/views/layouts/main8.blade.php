@@ -29,6 +29,7 @@
 
     <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" >
 
+    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/prism.css?'.time()) }}" />
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/bootstrap4/css/bootstrap.min.css?'.time()) }}" />
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery.fancybox.min.css?'.time()) }}" />
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery-ui.css?'.time()) }}" />
@@ -39,6 +40,7 @@
     <script type="text/javascript" src='<?=config('app.url')?>/js/jquery.fancybox.min.js'></script>
     <script type="text/javascript" src="<?=config('app.url')?>/js/jquery-ui.js"></script>
     <script type="text/javascript" src="<?=config('app.url')?>/js/myapp.js"></script>
+    <script type="text/javascript" src="<?=config('app.url')?>/js/prism.js" ></script>
 </head>
 <body>
 <main role="main">
