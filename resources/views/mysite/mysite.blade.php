@@ -134,27 +134,27 @@
                 <div style="margin:40px 20px 40px 0; padding:20px 0 20px 0;  border-radius:0px; background-color: #FFFFFF;">
                     <h3>{{ trans('site.keywords') }}:</h3>
                     <div class="text-justify" style="margin:0 40px 0 40px;">
-                        <div class="keyword">Apache</div> <div class="keyword">API</div>
-                        <div class="keyword">Bootstrap</div> <span class="keyword">CSS3</span>
-                        <span class="keyword">ElasticSearch</span> <span class="keyword">GitHub</span>
-                        <span class="keyword">HTML5</span> <span class="keyword">Javascript</span>
-                        <span class="keyword">Jira</span> <span class="keyword">jQuery</span>
-                        <span class="keyword">JSON</span> <span class="keyword">Laravel</span>
-                        <span class="keyword">Moodle</span> <span class="keyword">MVC</span>
-                        <span class="keyword">MySQL</span> <span class="keyword">OOP</span>
-                        <span class="keyword">PHP</span> <span class="keyword">ProZorro API</span>
-                        <span class="keyword">REST API</span> <span class="keyword">Scrum</span>
-                        <span class="keyword">S.O.L.I.D.</span> <span class="keyword">YAGNI</span>
-                        <span class="keyword">Yii2</span> <span class="keyword">Docker</span>
-                        <span class="keyword">Git</span> <span class="keyword">GitLab</span>
-                        <span class="keyword">Jenkins</span> <span class="keyword">LDAP</span>
-                        <span class="keyword">MailChimp</span> <span class="keyword">MariaDB</span>
-                        <span class="keyword">Nginx</span> <span class="keyword">ORM</span>
-                        <span class="keyword">PHPUnit</span> <span class="keyword">PostgreSQL</span>
-                        <span class="keyword">Ubuntu</span> <span class="keyword">C#</span>
-                        <span class="keyword">GoogleMap API</span> <span class="keyword">Entity Framework 6</span>
-                        <span class="keyword">LINQ</span> <span class="keyword">UWP</span>
-                        <span class="keyword">Vue.js</span> <div style="clear:both;"></div>
+                        <div class="c-keyword">Apache</div> <div class="c-keyword">API</div>
+                        <div class="c-keyword">Bootstrap</div> <span class="c-keyword">CSS3</span>
+                        <span class="c-keyword">ElasticSearch</span> <span class="c-keyword">GitHub</span>
+                        <span class="c-keyword">HTML5</span> <span class="c-keyword">Javascript</span>
+                        <span class="c-keyword">Jira</span> <span class="c-keyword">jQuery</span>
+                        <span class="c-keyword">JSON</span> <span class="c-keyword">Laravel</span>
+                        <span class="c-keyword">Moodle</span> <span class="c-keyword">MVC</span>
+                        <span class="c-keyword">MySQL</span> <span class="c-keyword">OOP</span>
+                        <span class="c-keyword">PHP</span> <span class="c-keyword">ProZorro API</span>
+                        <span class="c-keyword">REST API</span> <span class="c-keyword">Scrum</span>
+                        <span class="c-keyword">S.O.L.I.D.</span> <span class="c-keyword">YAGNI</span>
+                        <span class="c-keyword">Yii2</span> <span class="c-keyword">Docker</span>
+                        <span class="c-keyword">Git</span> <span class="c-keyword">GitLab</span>
+                        <span class="c-keyword">Jenkins</span> <span class="c-keyword">LDAP</span>
+                        <span class="c-keyword">MailChimp</span> <span class="c-keyword">MariaDB</span>
+                        <span class="c-keyword">Nginx</span> <span class="c-keyword">ORM</span>
+                        <span class="c-keyword">PHPUnit</span> <span class="c-keyword">PostgreSQL</span>
+                        <span class="c-keyword">Ubuntu</span> <span class="c-keyword">C#</span>
+                        <span class="c-keyword">GoogleMap API</span> <span class="c-keyword">Entity Framework 6</span>
+                        <span class="c-keyword">LINQ</span> <span class="c-keyword">UWP</span>
+                        <span class="c-keyword">Vue.js</span> <div style="clear:both;"></div>
                     </div>
                     <!--
                     <div class="text-left" style="margin:0 40px 0 40px;">

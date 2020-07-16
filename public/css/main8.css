@@ -45,7 +45,7 @@ blockquote p {
     font-style: italic;
 }
 
-.keyword {
+.c-keyword {
     font-size: 14px;
     background-color: #adb5bd;
     margin: 5px;
