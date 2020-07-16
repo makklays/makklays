@@ -11,8 +11,8 @@
             </div>
 
             <div class="col-md-12">
-                <a href="/documents/dogovor.docx" class="a-green">{{ trans('site.Tipical_dogovor') }}</a> <br/>
-                <a href="/documents/dogovor2.docx" class="a-green">{{ trans('site.Tipical_dogovor') }} (docx)</a> <br/><br/>
+                <a href="/documents/dogovor.doc" class="a-green">{{ trans('site.Tipical_dogovor') }} (doc)</a> <br/>
+                <a href="/documents/dogovor2.doc" class="a-green">{{ trans('site.Tipical_dogovor') }} (doc)</a> <br/><br/>
 
                 <a href="/briefs/Brief_na_razrabotku_sayta.docx" class="a-green">{{ trans('site.Brief_on_development_site') }} - ru</a> <br/>
                 <a href="/briefs/Brief_resumen_de_desarrollo.docx" class="a-green">{{ trans('site.Brief_on_development_site') }} - es</a> <br/>

@@ -388,11 +388,11 @@ class MysiteController extends Controller
     public function downloadPrice()
     {
         if (app()->getLocale() == 'ru') {
-            return redirect('/price/Makklays ПРАЙС разработка сайта.doc');
+            return redirect('/price/Makklays_PRICE_development_site_ru.doc');
         } if (app()->getLocale() == 'es') {
-            return redirect('/price/Makklays PRECIO Desarrollo de sitio web.doc');
+            return redirect('/price/Makklays_PRECIO_Desarrollo_de_sitio_web.doc');
         } else {
-            return redirect('/price/Makklays PRICE development site.doc');
+            return redirect('/price/Makklays_PRICE_development_site.doc');
         }
     }
 
