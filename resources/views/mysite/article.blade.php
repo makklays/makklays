@@ -25,7 +25,21 @@
         </div>
 
         <div class="col-md-12 text-center" style="font-size:14px;">
-            <span class=""><img src="<?=config('app.url')?>/img/eye.jpg" alt="eye" title="Makklays - {{ trans('site.views') }} image" style="width:18px;" /> {{ $article->views }} </span>
+
+            <div class="text-center" style="width:280px; margin: 0 auto;">
+
+                <div style="float:left;">
+                    <img src="<?=config('app.url')?>/img/eye.jpg" alt="eye" title="Makklays - {{ trans('site.views') }} image" style="width:18px;" /> {{ $article->views }}
+                </div>
+
+                <!-- Load Facebook SDK for JavaScript -->
+                <div id="fb-root" style="float:left;"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0&appId=126608917399212&autoLogAppEvents=1" nonce="oUPQv7L9"></script>
+
+                <!-- Your share like button code -->
+                <div class="fb-like" style="margin-left:30px;" data-href="https://makklays.com.ua/ru/develop-article/esli-by-programmisty-stroili-doma" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+
+            </div>
         </div>
 
         <div class="col-md-12">
