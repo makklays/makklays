@@ -1031,17 +1031,21 @@ class MysiteController extends Controller
         $lang = app()->getLocale();
         $seo = new \stdClass();
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Статья - '.$article->title;
+            $seo->title = 'Makklays - Разработка сайтов - Статья - '.$article->title;
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'SEO Слов число, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Artículo - '.$article->title;
+            $seo->title = 'Makklays - Desarrollo de sitios web - Artículo - '.$article->title;
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'SEO Word count, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Article - '.$article->title;
+            $seo->title = 'Makklays - Website development - Article - '.$article->title;
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, web service and API for mobile applications';
             $seo->keywords = 'SEO Word count, website development, development, website, online store, internet-shop, shop, corporate website, landing page, landing, web portal, expensive, turnkey development';
+        }
+
+        if (isset($article->photo) && !empty($article->photo)) {
+            $seo->img = config('app.url').'/articles/imgs/'.$article->photo;
         }
 
         return view('mysite.article', [
