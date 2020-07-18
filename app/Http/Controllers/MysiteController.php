@@ -60,8 +60,8 @@ class MysiteController extends Controller
         $lang = app()->getLocale();
         $seo = new \stdClass();
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов';
-            $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
+            $seo->title = 'Makklays - Разработка сайтов и запуск в интернете';
+            $seo->description = 'Разрабатываем лендинг, корпоративный сайт, интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, e-commerce website, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
             $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web';
@@ -1027,6 +1027,8 @@ class MysiteController extends Controller
 
         // get article
         $article = DB::selectOne('SELECT * FROM articles WHERE is_visible=1 AND lang=? AND slag=?', [app()->getLocale(), $slag]);
+
+        dd($article);
 
         $lang = app()->getLocale();
         $seo = new \stdClass();
