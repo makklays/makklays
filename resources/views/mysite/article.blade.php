@@ -43,7 +43,7 @@
                 <?php endif; ?>
 
                 <!-- Your share like button code -->
-                <div class="fb-like" style="margin-left:30px;" data-href="https://makklays.com.ua/ru/<?=$_SERVER['REQUEST_URI']?>" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+                <div class="fb-like" style="margin-left:30px;" data-href="https://makklays.com.ua<?=$_SERVER['REQUEST_URI']?>" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
 
             </div>
         </div>
