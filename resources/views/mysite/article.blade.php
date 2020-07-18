@@ -35,11 +35,11 @@
                 <!-- Load Facebook SDK for JavaScript -->
                 <div id="fb-root" style="float:left;"></div>
                 <?php if (app()->getLocale() == 'ru'): ?>
-                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0&appId=126608917399212&autoLogAppEvents=1" nonce="oUPQv7L9"></script>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0&appId=280039816428797&autoLogAppEvents=1" nonce="oUPQv7L9"></script>
                 <?php elseif (app()->getLocale() == 'es'): ?>
-                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v7.0&appId=126608917399212&autoLogAppEvents=1" nonce="oUPQv7L9"></script>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v7.0&appId=280039816428797&autoLogAppEvents=1" nonce="oUPQv7L9"></script>
                 <?php else: ?>
-                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v7.0&appId=126608917399212&autoLogAppEvents=1" nonce="oUPQv7L9"></script>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v7.0&appId=280039816428797&autoLogAppEvents=1" nonce="oUPQv7L9"></script>
                 <?php endif; ?>
 
                 <!-- Your share like button code -->
