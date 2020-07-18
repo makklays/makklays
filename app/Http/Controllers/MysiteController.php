@@ -1028,7 +1028,7 @@ class MysiteController extends Controller
         // get article
         $article = DB::selectOne('SELECT * FROM articles WHERE is_visible=1 AND lang=? AND slag=?', [app()->getLocale(), $slag]);
 
-        dd($article);
+        //dd($article);
 
         $lang = app()->getLocale();
         $seo = new \stdClass();
