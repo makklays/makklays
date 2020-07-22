@@ -1051,6 +1051,8 @@ System sites are available on business days and times at the enterprise. And at 
     'Count_views' => 'Number of views',
     'Visits_by_days' => 'Visits by day',
     'Visits_by_day_descr' => 'Site visits statistics (number of views) by days',
+    'Count_fb' => 'Facebook referrals',
+    'Count_go' => 'Google referrals',
     '' => '',
     '' => '',
     '' => '',
