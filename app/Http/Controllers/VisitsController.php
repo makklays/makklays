@@ -31,10 +31,32 @@ class VisitsController extends Controller
 
         // list of visits of page of site
         $visits = DB::table('visits')
+            //->where('visits.ip', '!=', '178.54.173.213')
             ->orderBy('created_at', 'DESC')
             ->paginate(20);
 
         return view('adminka.visits.list', [
+            'visits' => $visits,
+        ]);
+    }
+
+    public function listAllbyDays()
+    {
+        // Only loggined
+        if (!Auth::check()) return redirect('/');
+
+        // SELECT CAST(created_at AS DATE) AS ddate, COUNT(*) AS count_views
+        // FROM visits GROUP BY CAST(created_at AS DATE);
+
+        // list of visits of page of site
+        $visits = DB::table('visits')
+            ->select(DB::raw("CAST(visits.created_at AS DATE) AS ddate, COUNT(*) as count_views"))
+            //->where('visits.ip', '!=', '178.54.173.213')
+            ->orderBy('visits.created_at', 'DESC')
+            ->groupBy(DB::raw("CAST(visits.created_at AS DATE)"))
+            ->paginate(30);
+
+        return view('adminka.visits.bydays', [
             'visits' => $visits,
         ]);
     }
