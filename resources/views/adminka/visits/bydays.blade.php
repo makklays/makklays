@@ -19,6 +19,8 @@
                         <thead class="">
                         <tr>
                             <th class="text-center">{{ trans('site.Date') }}</th>
+                            <th class="text-center">{{ trans('site.Count_fb') }} <br/>(http://m.facebook.com/)</th>
+                            <th class="text-center">{{ trans('site.Count_go') }} <br/>(https://www.google.com/)</th>
                             <th class="text-center">{{ trans('site.Count_views') }}</th>
                         </tr>
                         </thead>
@@ -26,6 +28,8 @@
                         <?php foreach($visits as $item): ?>
                         <tr>
                             <td class="text-center"><?=(!empty($item->ddate) ? date('d.m.Y', strtotime($item->ddate)) : 0)?></td>
+                            <td class="text-center"><?=$item->count_fb?></td>
+                            <td class="text-center"><?=$item->count_go?></td>
                             <td class="text-center"><?=$item->count_views?></td>
                         </tr>
                         <?php endforeach; ?>

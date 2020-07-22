@@ -1055,6 +1055,8 @@ Los sitios del sistema están disponibles en días y horarios hábiles en la emp
     'Count_views' => 'Numero de vistas',
     'Visits_by_days' => 'Visitas por dia',
     'Visits_by_day_descr' => 'Estadísticas de visitas a las páginas del sitio (número de visitas) por días',
+    'Count_fb' => 'Referencias de Facebook',
+    'Count_go' => 'Referencias de Google',
     '' => '',
     '' => '',
     '' => '' ,

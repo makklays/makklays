@@ -56,6 +56,23 @@ class VisitsController extends Controller
             ->groupBy(DB::raw("CAST(visits.created_at AS DATE)"))
             ->paginate(30);
 
+        foreach($visits as $k => &$v) {
+            $count_fb = DB::table('visits')
+                //->where('url_referer', '=', 'http://m.facebook.com/')
+                ->where('url_referer', 'like', '%facebook.com/')
+                ->where(DB::raw("CAST(visits.created_at AS DATE)"), $v->ddate)
+                ->count();
+
+            $count_go = DB::table('visits')
+                //->where('url_referer', '=','https://www.google.com/')
+                ->where('url_referer', 'like','%google.com/')
+                ->where(DB::raw("CAST(visits.created_at AS DATE)"), $v->ddate)
+                ->count();
+
+            $v->count_fb = $count_fb;
+            $v->count_go = $count_go;
+        }
+
         return view('adminka.visits.bydays', [
             'visits' => $visits,
         ]);
