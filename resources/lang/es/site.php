@@ -1052,6 +1052,9 @@ Los sitios del sistema están disponibles en días y horarios hábiles en la emp
     'Social_project' => 'Proyecto social',
     'Not_visits' => 'No hay visitas a la página.',
 
+    'Count_views' => 'Numero de vistas',
+    'Visits_by_days' => 'Visitas por dia',
+    'Visits_by_day_descr' => 'Estadísticas de visitas a las páginas del sitio (número de visitas) por días',
     '' => '',
     '' => '',
     '' => '' ,

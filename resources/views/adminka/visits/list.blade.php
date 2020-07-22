@@ -7,7 +7,9 @@
             <div class="col-md-12">
 
                 <h2>{{ trans('site.Visits') }} (<?=$visits->total()?>)</h2>
-                <span>{{ trans('site.visits_descr') }}</span>
+                <span>{{ trans('site.visits_descr') }}</span> <br/>
+
+                <a href="{{ route('visits_days', app()->getLocale()) }}" class="a-green" >Статистика посещений по дням</a> <br/>
 
                 @include('partials.flash')
 
