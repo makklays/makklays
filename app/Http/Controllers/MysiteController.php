@@ -1028,12 +1028,10 @@ class MysiteController extends Controller
         // get article
         $article = DB::selectOne('SELECT * FROM articles WHERE is_visible=1 AND lang=? AND slag=?', [app()->getLocale(), $slag]);
 
-        //dd($article);
-
         $lang = app()->getLocale();
         $seo = new \stdClass();
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка сайтов - Статья - '.$article->title;
+            $seo->title = 'Разработка сайта - Статья - '.$article->title;
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'SEO Слов число, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
