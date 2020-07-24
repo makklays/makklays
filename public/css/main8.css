@@ -18,13 +18,18 @@
 
 .btn-outline-success-wt,
 .btn-outline-success-wt:visited, .btn-outline-success-wt:link {
-    color: #FFFFFF;
-    border-color: #FFFFFF;
+    color: #303030;
+    border-color: #303030;
+    /*color: #FFFFFF;
+    border-color: #FFFFFF;*/
 }
 .btn-outline-success-wt:hover {
-    color: #267f00;
+    /*color: #267f00;
     background-color: #e7e7e7;
-    border-color: #267f00;
+    border-color: #267f00;*/
+    color: #303030;
+    background-color: #e7e7e7;
+    border-color: #303030;
 }
 
 blockquote:before, blockquote:after {
@@ -185,6 +190,12 @@ a.text-corporate {
     margin-right: 20px;
     width: 100%;
 }
+.dev-cookies {
+    border-top: 1px solid #CACACA;
+    color: #303030;
+    /*color: #FFFFFF;*/
+    background-color: #e7e7e7; /*#46bf00;*/
+}
 @media screen and (min-width: 1200px) {
     .o-item {
         padding-left: 25%;
@@ -192,7 +203,7 @@ a.text-corporate {
     }
 
     .dev-cookies {
-        border-top: 1px solid #267f00;
+        /*border-top: 1px solid #267f00;*/
         position: fixed;
         font-size: 18px;
         padding: 30px 0 0 0;
@@ -200,10 +211,8 @@ a.text-corporate {
         bottom: 0;
         height: 120px;
         width: 100%;
-        color: #FFFFFF;
-        background-color: #46bf00;
         z-index: 1;
-        opacity: 0.89;
+        opacity: 0.98;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -213,7 +222,7 @@ a.text-corporate {
     }
 
     .dev-cookies {
-        border-top: 1px solid #267f00;
+        /*border-top: 1px solid #267f00;*/
         position: fixed;
         font-size: 18px;
         padding: 30px 0 0 0;
@@ -221,10 +230,8 @@ a.text-corporate {
         bottom: 0;
         height: 120px;
         width: 100%;
-        color: #FFFFFF;
-        background-color: #46bf00;
         z-index: 1;
-        opacity: 0.89;
+        opacity: 0.98;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -234,7 +241,7 @@ a.text-corporate {
     }
 
     .dev-cookies {
-        border-top: 1px solid #267f00;
+        /*border-top: 1px solid #267f00;*/
         position: fixed;
         font-size: 18px;
         padding: 30px 0 0 0;
@@ -242,10 +249,8 @@ a.text-corporate {
         bottom: 0;
         height: 120px;
         width: 100%;
-        color: #FFFFFF;
-        background-color: #46bf00;
         z-index: 1;
-        opacity: 0.89;
+        opacity: 0.98;
     }
 }
 @media screen and (max-width: 768px) {
@@ -255,7 +260,7 @@ a.text-corporate {
     }
 
     .dev-cookies {
-        border-top: 1px solid #267f00;
+        /*border-top: 1px solid #267f00;*/
         position: fixed;
         font-size: 18px;
         padding: 30px 0 0 0;
@@ -263,10 +268,8 @@ a.text-corporate {
         bottom: 0;
         height: 180px;
         width: 100%;
-        color: #FFFFFF;
-        background-color: #46bf00;
         z-index: 1;
-        opacity: 0.89;
+        opacity: 0.98;
     }
 }
 @media screen and (max-width: 500px) {
@@ -276,7 +279,7 @@ a.text-corporate {
     }
 
     .dev-cookies {
-        border-top: 1px solid #267f00;
+        /*border-top: 1px solid #267f00;*/
         position: fixed;
         font-size: 18px;
         padding: 30px 0 0 0;
@@ -284,10 +287,8 @@ a.text-corporate {
         bottom: 0;
         height: 220px;
         width: 100%;
-        color: #FFFFFF;
-        background-color: #46bf00;
         z-index: 1;
-        opacity: 0.89;
+        opacity: 0.98;
     }
 }
 @media screen and (max-width: 420px) {
@@ -297,7 +298,7 @@ a.text-corporate {
     }
 
     .dev-cookies {
-        border-top: 1px solid #267f00;
+        /*border-top: 1px solid #267f00;*/
         position: fixed;
         font-size: 18px;
         padding: 30px 0 0 0;
@@ -305,10 +306,8 @@ a.text-corporate {
         bottom: 0;
         height: 220px;
         width: 100%;
-        color: #FFFFFF;
-        background-color: #46bf00;
         z-index: 1;
-        opacity: 0.89;
+        opacity: 0.98;
     }
 }
 @media screen and (max-width: 375px) {
@@ -318,7 +317,7 @@ a.text-corporate {
     }
 
     .dev-cookies {
-        border-top: 1px solid #267f00;
+        /*border-top: 1px solid #267f00;*/
         position: fixed;
         font-size: 18px;
         padding: 30px 0 0 0;
@@ -326,10 +325,8 @@ a.text-corporate {
         bottom: 0;
         height: 220px;
         width: 100%;
-        color: #FFFFFF;
-        background-color: #46bf00;
         z-index: 1;
-        opacity: 0.89;
+        opacity: 0.98;
     }
 }
 @media screen and (max-width: 330px) {
@@ -339,7 +336,6 @@ a.text-corporate {
     }
 
     .dev-cookies {
-        border-top: 1px solid #267f00;
         position: fixed;
         font-size: 18px;
         padding: 30px 0 0 0;
@@ -347,10 +343,8 @@ a.text-corporate {
         bottom: 0;
         height: 250px;
         width: 100%;
-        color: #FFFFFF;
-        background-color: #46bf00;
         z-index: 1;
-        opacity: 0.89;
+        opacity: 0.98;
     }
 }
 

@@ -176,7 +176,7 @@
         <div class="row">
             <div class="col-md-10 text-justify">
                 {{ trans('site.cookies1') }}
-                <a href="{{ route('privacy-policy', app()->getLocale()) }}" target="_blank" style="color:#FFF; text-decoration: underline;">
+                <a href="{{ route('privacy-policy', app()->getLocale()) }}" target="_blank" style="color:#303030; text-decoration: underline;">
                     {{ trans('site.brief_link') }}</a>{{ trans('site.cookies2') }}
             </div>
             <div class="col-md-2 text-right" style="margin-top:10px;">
