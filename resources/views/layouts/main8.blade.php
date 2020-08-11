@@ -28,7 +28,14 @@
     <meta property="og:url"         content="{{ url()->current() }}" />
     <meta property="og:image"       content="<?= isset($seo->img) && !empty($seo->img) ? $seo->img : config('app.url').'/img/programmer.png' ?>" />
 
-    <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" >
+  <?php if (isset($seo->show_urls) && $seo->show_urls == 1): ?>
+  <link rel="alternate" hreflang="ru" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/ru/<?=$seo->short_url?>" />
+    <link rel="alternate" hreflang="es" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/es/<?=$seo->short_url?>" />
+    <link rel="alternate" hreflang="zh" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/ch/<?=$seo->short_url?>" />
+    <link rel="alternate" hreflang="en" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/en/<?=$seo->short_url?>" />
+  <?php endif; ?>
+
+    <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" />
 
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/prism.css?'.time()) }}" />
     <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/bootstrap4/css/bootstrap.min.css?'.time()) }}" />

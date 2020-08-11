@@ -30,10 +30,16 @@ class MysiteController extends Controller
         $this->addVisit($request);
     }
 
-    public function index()
+    public function index(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка сайта и ведение сайта';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
@@ -54,11 +60,17 @@ class MysiteController extends Controller
         ]);
     }
 
-    // Страница - Bit now, Иди нахуй коментатор!
-    public function main()
+    // Страница - Основная
+    public function main(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка сайтов и запуск в интернете';
             $seo->description = 'Разрабатываем лендинг, корпоративный сайт, интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
@@ -191,10 +203,16 @@ class MysiteController extends Controller
 
     // страница - статистика
     // с каких стран заходят на главную страницу сайта
-    public function statistics()
+    public function statistics(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Статистика';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -227,11 +245,34 @@ class MysiteController extends Controller
         ]);
     }
 
-    // Страница - О нас
-    public function about()
+    /**
+     * Делает новый url с указанием языка сайта
+     * @param $lang
+     * @return string
+     */
+    function new_url()
     {
+        $parts = explode('/', $_SERVER['REQUEST_URI'],5);
+
+        $new_url = (!empty($parts[2]) ? $parts[2].'/' : '').
+        (!empty($parts[3]) ? $parts[3].'/' : '').(!empty($parts[4]) ? $parts[4].'/' : '').
+        (!empty($parts[5]) ? $parts[5].'/' : '').(!empty($parts[6]) ? $parts[6].'/' : '').
+        (!empty($parts[7]) ? $parts[7].'/' : '').(!empty($parts[8]) ? $parts[8].'/' : '');
+
+        return $new_url;
+    }
+
+    // Страница - О нас
+    public function about(Request $request)
+    {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - О нас';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -240,6 +281,10 @@ class MysiteController extends Controller
             $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Sobre nosotros';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, e-commerce website, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, e-commerce website, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ch') {
+            $seo->title = 'Makklays - Website development and maintenance - About us';
+            $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
+            $seo->keywords = 'website development, development, website, online store, internet-shop, shop, corporate website, landing page, e-commerce website, landing, web portal, expensive, turnkey development';
         } else {
             $seo->title = 'Makklays - Website development and maintenance - About us';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
@@ -252,10 +297,16 @@ class MysiteController extends Controller
     }
 
     // Страница - Как мы работаем?
-    public function howmake()
+    public function howmake(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Как мы работаем?';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -276,10 +327,16 @@ class MysiteController extends Controller
     }
 
     // Страница - Что мы делаем?
-    public function whatmake()
+    public function whatmake(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Что мы делаем?';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -300,10 +357,16 @@ class MysiteController extends Controller
     }
 
     // Страница - Контакты
-    public function contacts()
+    public function contacts(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Контакты';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
@@ -323,10 +386,16 @@ class MysiteController extends Controller
         ]);
     }
 
-    public function portfolio()
+    public function portfolio(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Портфолио';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -347,10 +416,16 @@ class MysiteController extends Controller
     }
 
     // Страница - Оставить заявку
-    public function request()
+    public function request(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Оставить заявку';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -397,10 +472,16 @@ class MysiteController extends Controller
     }
 
     // Страница - Заполнить бриф ONLINE
-    public function onlineBrief()
+    public function onlineBrief(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Бриф на разработку сайта';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
@@ -421,10 +502,16 @@ class MysiteController extends Controller
     }
 
     // Страница - Лендинг
-    public function lpage()
+    public function lpage(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Лендинг';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -445,10 +532,16 @@ class MysiteController extends Controller
     }
 
     // Страница - Интернет-магазин
-    public function store()
+    public function store(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Интернет-магазин';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -469,10 +562,16 @@ class MysiteController extends Controller
     }
 
     // Страница - корпоративный сайт
-    public function corporate()
+    public function corporate(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Корпоративный сайт';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -493,10 +592,16 @@ class MysiteController extends Controller
     }
 
     // Страница - сайт система
-    public function sitesytem()
+    public function sitesytem(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Сайт-система';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -517,10 +622,16 @@ class MysiteController extends Controller
     }
 
     // Страница - веб-портал
-    public function webportal()
+    public function webportal(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Web-портал';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -541,10 +652,16 @@ class MysiteController extends Controller
     }
 
     // Страница - веб сервисы и API для мобильных приложений
-    public function webservice()
+    public function webservice(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Веб сервис и API для мобильного приложения';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -565,10 +682,16 @@ class MysiteController extends Controller
     }
 
     /* method - get */
-    public function countSeoWords()
+    public function countSeoWords(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - SEO Слов число';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -608,8 +731,14 @@ class MysiteController extends Controller
             exit;
         }
 
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - SEO Слов число';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
@@ -968,10 +1097,16 @@ class MysiteController extends Controller
     }
 
     // страница - политика конфиденциальности
-    public function privacy_policy()
+    public function privacy_policy(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Политика конфиденциальности';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
@@ -992,10 +1127,16 @@ class MysiteController extends Controller
     }
 
     // страница - список статей
-    public function listArticles()
+    public function listArticles(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Статья';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
@@ -1028,8 +1169,14 @@ class MysiteController extends Controller
         // get article
         $article = DB::selectOne('SELECT * FROM articles WHERE is_visible=1 AND lang=? AND slag=?', [app()->getLocale(), $slag]);
 
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 0;
         if ($lang == 'ru') {
             $seo->title = 'Разработка сайта - Статья - '.$article->title;
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
@@ -1055,10 +1202,16 @@ class MysiteController extends Controller
     }
 
     // страница - список документов для скачивания
-    public function documents()
+    public function documents(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 1;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Документы';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
@@ -1080,10 +1233,16 @@ class MysiteController extends Controller
     }
 
     // страница - blacklist
-    public function blacklist()
+    public function blacklist(Request $request)
     {
+        $new_url = $this->new_url();
+
         $lang = app()->getLocale();
         $seo = new \stdClass();
+        $seo->server_name = $request->server('SERVER_NAME');
+        $seo->request_scheme = $request->server('REQUEST_SCHEME');
+        $seo->short_url = $new_url;
+        $seo->show_urls = 0;
         if ($lang == 'ru') {
             $seo->title = 'Makklays - Разработка и ведение сайтов - Blacklist';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
