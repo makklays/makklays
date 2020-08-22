@@ -29,6 +29,15 @@ class BotController extends Controller
         $data = file_get_contents('php://input');
         $data = json_decode($data, true);
 
+        /*$insert = DB::insert('INSERT INTO message_bot SET message=?, created_at=?', [
+            strip_tags(trim($request->message)), time()
+        ]);*/
+
+        /*ob_start();
+        print_r($data);
+        $out = ob_get_clean();
+        file_put_contents(__DIR__ . '/message.txt', $out);*/
+
         if (empty($data['message']['chat']['id'])) {
             exit();
         }
@@ -48,6 +57,14 @@ class BotController extends Controller
 
             return $res;
         }
+
+        sendTelegram(
+            'sendMessage',
+            array(
+                'chat_id' => $data['message']['chat']['id'],
+                'text' => 'Ответтт!'
+            )
+        );
 
         // Прислали фото.
         if (!empty($data['message']['photo'])) {
@@ -122,7 +139,7 @@ class BotController extends Controller
                 exit();
             }
 
-            if (mb_stripos($text, 'stat') !== false) {
+            if (strpos($text, 'stat') !== false) {
                 sendTelegram(
                     'sendMessage',
                     array(
@@ -142,7 +159,6 @@ class BotController extends Controller
                         'photo' => curl_file_create(__DIR__ . '/photo.jpg')
                     )
                 );
-
                 exit();
             }
 
@@ -155,9 +171,17 @@ class BotController extends Controller
                         'document' => curl_file_create(__DIR__ . '/example.xls')
                     )
                 );
-
                 exit();
             }
+
+            sendTelegram(
+                'sendMessage',
+                array(
+                    'chat_id' => $data['message']['chat']['id'],
+                    'text' => 'Ответ!'
+                )
+            );
+            exit();
         }
     }
 }
