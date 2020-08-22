@@ -26,7 +26,8 @@ class BotController extends Controller
 {
     public function index(Request $request)
     {
-        $data = file_get_contents('php://input');
+        //$data = file_get_contents('php://input');
+        $data = $request->all();
         $data = json_decode($data, true);
 
         /*$insert = DB::insert('INSERT INTO message_bot SET message=?, created_at=?', [
