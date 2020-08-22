@@ -138,7 +138,7 @@ class BotController extends Controller
                     'sendMessage',
                     array(
                         'chat_id' => $data['message']['chat']['id'],
-                        'text' => 'Меня зовут MakklaysBot. <br/> Уточните запрос, еще раз'
+                        'text' => "Меня зовут MakklaysBot. \r\n <br/> Уточните запрос, еще раз"
                     )
                 );
             }
@@ -148,18 +148,18 @@ class BotController extends Controller
                     'sendMessage',
                     array(
                         'chat_id' => $data['message']['chat']['id'],
-                        'text' => 'Получаем статистику! <br/> '. __DIR__ . ' - путь к изображениям'
+                        'text' => 'Получаем статистику! В стадии разработки...'
                     )
                 );
                 exit();
             }
 
-            if (strpos($text, 'aa') !== false) {
+            if (strpos($text, '/aa') !== false) {
                 sendTelegram(
                     'sendMessage',
                     array(
                         'chat_id' => $data['message']['chat']['id'],
-                        'text' => 'Саша, не грусти! <br/> Улыбнись :-)))'
+                        'text' => 'Саша, не грусти! Улыбнись :-)))'
                     )
                 );
                 exit();
