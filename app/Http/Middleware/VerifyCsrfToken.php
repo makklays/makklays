@@ -19,6 +19,8 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        // url исключения без csrf tocken-а
+        'bott',
+        'bot'
     ];
 }
