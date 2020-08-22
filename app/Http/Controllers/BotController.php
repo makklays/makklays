@@ -34,12 +34,10 @@ class BotController extends Controller
             strip_tags(trim($request->message)), time()
         ]);*/
 
-        echo __DIR__ ;
-
-        /*ob_start();
+        ob_start();
         print_r($data);
         $out = ob_get_clean();
-        file_put_contents(__DIR__ . '/message.txt', $out);*/
+        file_put_contents(__DIR__ . '/../../public/bot/message.txt', $out);
 
         if (empty($data['message']['chat']['id'])) {
             exit();
@@ -95,7 +93,6 @@ class BotController extends Controller
 
                 }
             }
-
             exit();
         }
 
@@ -123,13 +120,15 @@ class BotController extends Controller
                     );
                 }
             }
-
             exit();
         }
 
         // Ответ на текстовые сообщения.
         if (!empty($data['message']['text'])) {
             $text = $data['message']['text'];
+
+            // обращение к базе данных
+            // $select = DB::select();
 
             if (mb_stripos($text, 'привет') !== false) {
                 sendTelegram(
