@@ -138,7 +138,7 @@ class BotController extends Controller
                     'sendMessage',
                     array(
                         'chat_id' => $data['message']['chat']['id'],
-                        'text' => "Меня зовут MakklaysBot. \r\n <br/> Уточните запрос, еще раз"
+                        'text' => "Меня зовут MakklaysBot. \r\n Уточните запрос, еще раз"
                     )
                 );
             }
@@ -159,7 +159,7 @@ class BotController extends Controller
                     'sendMessage',
                     array(
                         'chat_id' => $data['message']['chat']['id'],
-                        'text' => 'Саша, не грусти! Улыбнись :-)))'
+                        'text' => "Саша, не грусти! \r\n\r\n Улыбнись :-)))"
                     )
                 );
                 exit();
