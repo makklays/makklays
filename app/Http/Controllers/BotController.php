@@ -28,16 +28,18 @@ class BotController extends Controller
     {
         //$data = file_get_contents('php://input');
         $data = $request->all();
-        $data = json_decode($data, true);
+        //$data = json_decode($data, true);
 
         /*$insert = DB::insert('INSERT INTO message_bot SET message=?, created_at=?', [
             strip_tags(trim($request->message)), time()
         ]);*/
 
-        /*ob_start();
+        echo __DIR__ ;
+
+        ob_start();
         print_r($data);
         $out = ob_get_clean();
-        file_put_contents(__DIR__ . '/message.txt', $out);*/
+        file_put_contents(__DIR__ . '/message.txt', $out);
 
         if (empty($data['message']['chat']['id'])) {
             exit();
