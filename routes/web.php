@@ -439,7 +439,8 @@ Route::group([
     }]);*/
 });
 
-Route::match(['get','post'],'bot', ['as' => 'bot', 'uses' => 'BotController@index']);
+Route::post('bot', ['as' => 'bot', 'uses' => 'BotController@index']);
+Route::post('bot/', ['as' => 'bot/', 'uses' => 'BotController@index']);
 
 Route::group([
     'prefix' => '{locale}',
