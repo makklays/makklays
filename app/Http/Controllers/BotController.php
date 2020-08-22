@@ -26,9 +26,9 @@ class BotController extends Controller
 {
     public function index(Request $request)
     {
-        //$data = file_get_contents('php://input');
-        $data = $request->all();
-        //$data = json_decode($data, true);
+        $data = file_get_contents('php://input');
+        //$data = $request->all();
+        $data = json_decode($data, true);
 
         /*$insert = DB::insert('INSERT INTO message_bot SET message=?, created_at=?', [
             strip_tags(trim($request->message)), time()
@@ -37,7 +37,7 @@ class BotController extends Controller
         ob_start();
         print_r($data);
         $out = ob_get_clean();
-        file_put_contents(__DIR__ . '/../../public/bot/message.txt', $out);
+        file_put_contents(__DIR__ . '/../../../public/bot/message.txt', $out);
 
         if (empty($data['message']['chat']['id'])) {
             exit();
@@ -58,14 +58,6 @@ class BotController extends Controller
 
             return $res;
         }
-
-        sendTelegram(
-            'sendMessage',
-            array(
-                'chat_id' => $data['message']['chat']['id'],
-                'text' => 'Ответтт!'
-            )
-        );
 
         // Прислали фото.
         if (!empty($data['message']['photo'])) {
@@ -139,6 +131,14 @@ class BotController extends Controller
                     )
                 );
                 exit();
+            } else {
+                sendTelegram(
+                    'sendMessage',
+                    array(
+                        'chat_id' => $data['message']['chat']['id'],
+                        'text' => 'Меня зовут MakklaysBot. <br/> Уточните запрос, еще раз'
+                    )
+                );
             }
 
             if (strpos($text, 'stat') !== false) {
@@ -152,13 +152,24 @@ class BotController extends Controller
                 exit();
             }
 
+            if (strpos($text, 'aa') !== false) {
+                sendTelegram(
+                    'sendMessage',
+                    array(
+                        'chat_id' => $data['message']['chat']['id'],
+                        'text' => 'Саша, не грусти! <br/> Улыбнись :-)))'
+                    )
+                );
+                exit();
+            }
+
             // Отправка фото.
             if (mb_stripos($text, 'фото') !== false) {
                 sendTelegram(
                     'sendPhoto',
                     array(
                         'chat_id' => $data['message']['chat']['id'],
-                        'photo' => curl_file_create(__DIR__ . '/photo.jpg')
+                        'photo' => curl_file_create(__DIR__ . '/../../../public/bot/photo.png')
                     )
                 );
                 exit();
@@ -170,20 +181,12 @@ class BotController extends Controller
                     'sendDocument',
                     array(
                         'chat_id' => $data['message']['chat']['id'],
-                        'document' => curl_file_create(__DIR__ . '/example.xls')
+                        'document' => curl_file_create(__DIR__ . '/../../../public/bot/example.xls')
                     )
                 );
                 exit();
             }
 
-            sendTelegram(
-                'sendMessage',
-                array(
-                    'chat_id' => $data['message']['chat']['id'],
-                    'text' => 'Ответ!'
-                )
-            );
-            exit();
         }
     }
 }
