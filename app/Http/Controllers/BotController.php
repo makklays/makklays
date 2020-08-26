@@ -121,10 +121,7 @@ class BotController extends Controller
         if (!empty($data['message']['text'])) {
             $text = $data['message']['text'];
 
-            // обращение к базе данных
-            // $select = DB::select();
-
-            if (mb_stripos($text, 'привет') !== false) {
+            if (mb_stripos($text, 'привет') !== false || mb_stripos($text, 'Привет') !== false) {
                 sendTelegram(
                     'sendMessage',
                     array(
@@ -133,17 +130,8 @@ class BotController extends Controller
                     )
                 );
                 exit();
-            } else {
-                sendTelegram(
-                    'sendMessage',
-                    array(
-                        'chat_id' => $data['message']['chat']['id'],
-                        'text' => "Меня зовут MakklaysBot. \r\n Уточните запрос, еще раз"
-                    )
-                );
-            }
 
-            if (strpos($text, 'stat') !== false) {
+            } else if (strpos($text, '/stat') !== false) {
 
                 // число просмотров за день
                 $count_views = DB::table('visits')
@@ -160,9 +148,9 @@ class BotController extends Controller
                     )
                 );
                 exit();
-            }
 
-            if (strpos($text, '/aa') !== false) {
+            } else if (strpos($text, '/aa') !== false) {
+
                 sendTelegram(
                     'sendMessage',
                     array(
@@ -171,10 +159,9 @@ class BotController extends Controller
                     )
                 );
                 exit();
-            }
 
-            // Отправка фото.
-            if (mb_stripos($text, 'фото') !== false) {
+            } else if (mb_stripos($text, 'фото') !== false) { // Отправка фото.
+
                 sendTelegram(
                     'sendPhoto',
                     array(
@@ -183,10 +170,9 @@ class BotController extends Controller
                     )
                 );
                 exit();
-            }
 
-            // Отправка файла.
-            if (mb_stripos($text, 'файл') !== false) {
+            } else if (mb_stripos($text, 'файл') !== false) { // Отправка файла.
+
                 sendTelegram(
                     'sendDocument',
                     array(
@@ -195,6 +181,15 @@ class BotController extends Controller
                     )
                 );
                 exit();
+
+            } else {
+                sendTelegram(
+                    'sendMessage',
+                    array(
+                        'chat_id' => $data['message']['chat']['id'],
+                        'text' => "Меня зовут MakklaysBot. \r\n Уточните запрос, еще раз"
+                    )
+                );
             }
 
         }
