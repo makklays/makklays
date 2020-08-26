@@ -144,11 +144,19 @@ class BotController extends Controller
             }
 
             if (strpos($text, 'stat') !== false) {
+
+                // число просмотров за день
+                $count_views = DB::table('visits')
+                    //->where('url_referer', '=', 'http://m.facebook.com/')
+                    //->where('url_referer', 'like', '%facebook.com/')
+                    ->where(DB::raw("CAST(visits.created_at AS DATE)"), date('Y-m-d'))
+                    ->count();
+
                 sendTelegram(
                     'sendMessage',
                     array(
                         'chat_id' => $data['message']['chat']['id'],
-                        'text' => 'Получаем статистику! В стадии разработки...'
+                        'text' => $count_views . ' - число просмотров за день.'
                     )
                 );
                 exit();
