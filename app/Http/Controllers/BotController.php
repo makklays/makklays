@@ -35,7 +35,7 @@ class BotController extends Controller
         ]);*/
 
         ob_start();
-        ///print_r($data);
+        print_r($data);
         $out = ob_get_clean();
         file_put_contents(__DIR__ . '/../../../public/bot/message.txt', $out);
 
