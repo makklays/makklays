@@ -35,7 +35,7 @@ class BotController extends Controller
         ]);*/
 
         ob_start();
-        print_r($data);
+        ///print_r($data);
         $out = ob_get_clean();
         file_put_contents(__DIR__ . '/../../../public/bot/message.txt', $out);
 
@@ -44,7 +44,7 @@ class BotController extends Controller
         }
 
         // url and tocken for registration file on site
-        // https://api.telegram.org/bot1341219753:AAEZmkRU-J8CEnVVNaz77Kole0R2dqFySJA/setWebhook?url=https://makklays.com.ua/bott
+        // https://api.telegram.org/bot1341219753:AAEZmkRU-J8CEnVVNaz77Kole0R2dqFySJA/setWebhook?url=https://makklays.com.ua/bota
         define('TOKEN', '1341219753:AAEZmkRU-J8CEnVVNaz77Kole0R2dqFySJA');
 
         // Функция вызова методов API.

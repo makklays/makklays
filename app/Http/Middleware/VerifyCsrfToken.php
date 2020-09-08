@@ -21,6 +21,7 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         // url исключения без csrf tocken-а
         'bott',
+        'bota',
         'bot'
     ];
 }
