@@ -155,7 +155,7 @@ class BotController extends Controller
                 $count_views = DB::table('call')
                     //->where('url_referer', '=', 'http://m.facebook.com/')
                     //->where('url_referer', 'like', '%facebook.com/')
-                    ->where(DB::raw("CAST(visits.created_at AS DATE)"), date('Y-m-d'))
+                    ->where(DB::raw("CAST(call.created_at AS DATE)"), date('Y-m-d'))
                     ->count();
 
                 sendTelegram(
@@ -173,7 +173,7 @@ class BotController extends Controller
                 $count_views = DB::table('orders')
                     //->where('url_referer', '=', 'http://m.facebook.com/')
                     //->where('url_referer', 'like', '%facebook.com/')
-                    ->where(DB::raw("CAST(visits.created_at AS DATE)"), date('Y-m-d'))
+                    ->where(DB::raw("CAST(orders.created_at AS DATE)"), date('Y-m-d'))
                     ->count();
 
                 sendTelegram(
@@ -191,7 +191,7 @@ class BotController extends Controller
                 $count_views = DB::table('orders')
                     //->where('url_referer', '=', 'http://m.facebook.com/')
                     //->where('url_referer', 'like', '%facebook.com/')
-                    ->where(DB::raw("CAST(visits.created_at AS DATE)"), date('Y-m-d'))
+                    ->where(DB::raw("CAST(orders.created_at AS DATE)"), date('Y-m-d'))
                     ->count();
 
                 sendTelegram(
@@ -295,7 +295,7 @@ class BotController extends Controller
                     'sendMessage',
                     array(
                         'chat_id' => $data['message']['chat']['id'],
-                        'text' => "Меня зовут MakklaysBot.\r\n Уточните запрос, еще раз"
+                        'text' => "Меня зовут BotMakklays.\r\nУточните запрос, еще раз"
                     )
                 );
             }
