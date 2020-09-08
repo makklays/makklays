@@ -152,7 +152,7 @@ class BotController extends Controller
             } else if (strpos($text, '/newcall') !== false) {
 
                 // число просмотров за день
-                $count_views = DB::table('visits')
+                $count_views = DB::table('call')
                     //->where('url_referer', '=', 'http://m.facebook.com/')
                     //->where('url_referer', 'like', '%facebook.com/')
                     ->where(DB::raw("CAST(visits.created_at AS DATE)"), date('Y-m-d'))
@@ -170,7 +170,7 @@ class BotController extends Controller
             } else if (strpos($text, '/neworder') !== false) {
 
                 // число просмотров за день
-                $count_views = DB::table('visits')
+                $count_views = DB::table('orders')
                     //->where('url_referer', '=', 'http://m.facebook.com/')
                     //->where('url_referer', 'like', '%facebook.com/')
                     ->where(DB::raw("CAST(visits.created_at AS DATE)"), date('Y-m-d'))
@@ -188,7 +188,7 @@ class BotController extends Controller
             } else if (strpos($text, '/newclient') !== false) {
 
                 // число просмотров за день
-                $count_views = DB::table('visits')
+                $count_views = DB::table('orders')
                     //->where('url_referer', '=', 'http://m.facebook.com/')
                     //->where('url_referer', 'like', '%facebook.com/')
                     ->where(DB::raw("CAST(visits.created_at AS DATE)"), date('Y-m-d'))
