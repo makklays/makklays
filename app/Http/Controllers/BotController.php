@@ -155,7 +155,7 @@ class BotController extends Controller
                 $count_views = DB::table('call')
                     //->where('url_referer', '=', 'http://m.facebook.com/')
                     //->where('url_referer', 'like', '%facebook.com/')
-                    ->where(DB::raw("FROM_UNIXTIME(call.created_at, '%Y-%m-%d') AS DATE"), date('Y-m-d'))
+                    ->where(DB::raw("from_unixtime(call.created_at, '%Y-%m-%d')"), date('Y-m-d'))
                     ->count();
 
                 sendTelegram(
