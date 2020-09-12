@@ -36,21 +36,33 @@
                 <h1 class="text-center text-design2"><?=trans('site.Why_we')?></h1>
             </div>
             <div class="col-md-3">
+                <div class="text-center">
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/years2.png" alt="Makklays - {{ trans('site.many_years') }} image 1" title="{{ trans('site.many_years') }}" />
+                </div>
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
                     <?=trans('site.many_years')?> <br/><br/>
                 </div>
             </div>
             <div class="col-md-3">
+                <div class="text-center">
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/teams3.png" alt="Makklays - {{ trans('site.good_teams') }} image 2" title="{{ trans('site.good_teams') }}" />
+                </div>
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
                     <?=trans('site.good_teams')?> <br/><br/>
                 </div>
             </div>
             <div class="col-md-3">
+                <div class="text-center">
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/newtecho.png" alt="Makklays - {{ trans('site.new_tech') }} image 3" title="{{ trans('site.new_tech') }}" />
+                </div>
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
                     <?=trans('site.new_tech')?> <br/><br/>
                 </div>
             </div>
             <div class="col-md-3">
+                <div class="text-center">
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/my_clients2.png" alt="Makklays - {{ trans('site.work_clients') }} image 4" title="{{ trans('site.work_clients') }}" />
+                </div>
                 <div class="text-center" style="color:#46bf00; font-size:20px;">
                     <?=trans('site.work_clients')?>
                 </div>
@@ -64,6 +76,9 @@
                 <h1 class="text-center text-design2"><?=trans('site.And_yet')?></h1>
             </div>
             <div class="col-md-3">
+                <div class="text-center">
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/years.png" alt="Makklays - {{ trans('site.years_experience') }} image 5" title="{{ trans('site.years_experience') }}" />
+                </div>
                 <div class="text-center" style="color:#46bf00; font-size:44px;">
                     13
                 </div>
@@ -72,6 +87,9 @@
                 </div>
             </div>
             <div class="col-md-3">
+                <div class="text-center">
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/wagons_water.png" alt="Makklays - {{ trans('site.wagons') }} image 6" title="{{ trans('site.wagons') }}" />
+                </div>
                 <div class="text-center" style="color:#46bf00; font-size:44px;">
                     7
                 </div>
@@ -80,6 +98,9 @@
                 </div>
             </div>
             <div class="col-md-3">
+                <div class="text-center">
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/days2.png" alt="Makklays - {{ trans('site.days_prog') }} image 7" title="{{ trans('site.days_prog') }}" />
+                </div>
                 <div class="text-center" style="color:#46bf00; font-size:44px;">
                     >4680
                 </div>
@@ -88,6 +109,9 @@
                 </div>
             </div>
             <div class="col-md-3">
+                <div class="text-center">
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/93percent_.png" alt="Makklays - {{ trans('site.dovol_clients') }} image 8" title="{{ trans('site.dovol_clients') }}" />
+                </div>
                 <div class="text-center" style="color:#46bf00; font-size:44px;">
                     93%
                 </div>
@@ -113,7 +137,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
                 <a href="{{ route('mysite_lpage', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="<?=config('app.url')?>/img/icons/lpage.png" alt="Makklays - {{ trans('site.m_lpage') }} image1" title="{{ trans('site.m_lpage') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/lpage_.png" alt="Makklays - {{ trans('site.m_lpage') }} image 9" title="{{ trans('site.m_lpage') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_lpage') }}</h2>
                 </a>
@@ -122,7 +146,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
                 <a href="{{ route('mysite_corporate', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="<?=config('app.url')?>/img/icons/notebook.png" alt="Makklays - {{ trans('site.m_corporate') }} image2" title="{{ trans('site.m_corporate') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/corporate_.png" alt="Makklays - {{ trans('site.m_corporate') }} image 10" title="{{ trans('site.m_corporate') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_corporate') }}</h2>
                 </a>
@@ -131,7 +155,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in">
                 <a href="{{ route('mysite_webservice', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="<?=config('app.url')?>/img/icons/mob_api.png" alt="Makklays - {{ trans('site.m_webapi') }} image3" title="{{ trans('site.m_webapi') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/api_.png" alt="Makklays - {{ trans('site.m_webapi') }} image 11" title="{{ trans('site.m_webapi') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_webapi') }}</h2>
                 </a>
@@ -141,7 +165,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in" >
                 <a href="{{ route('mysite_webportal', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="<?=config('app.url')?>/img/icons/web_portal.png" alt="Makklays - {{ trans('site.m_webportal') }} image4" title="{{ trans('site.m_webportal') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/web_portal2.png" alt="Makklays - {{ trans('site.m_webportal') }} image 12" title="{{ trans('site.m_webportal') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_webportal') }}</h2>
                 </a>
@@ -150,7 +174,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm" >
                 <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="<?=config('app.url')?>/img/icons/sitesystem.png" alt="Makklays - {{ trans('site.m_sitesystem') }} image5" title="{{ trans('site.m_sitesystem') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/sysite.png" alt="Makklays - {{ trans('site.m_sitesystem') }} image 13" title="{{ trans('site.m_sitesystem') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_sitesystem') }}</h2>
                 </a>
@@ -159,7 +183,7 @@
             <div class="col-md-4 text-center card mb-4 shadow-sm effect-shadow-fade-in" >
                 <a href="{{ route('mysite_store', app()->getLocale()) }}" class="text-corporate">
                     <div>
-                        <img src="<?=config('app.url')?>/img/icons/store.png" alt="Makklays - {{ trans('site.m_store') }} image6" title="{{ trans('site.m_store') }}" class="img-development" />
+                        <img src="<?=config('app.url')?>/img/icons/store2.png" alt="Makklays - {{ trans('site.m_store') }} image 14" title="{{ trans('site.m_store') }}" class="img-development" />
                     </div>
                     <h2 class="site-sitio">{{ trans('site.m_store') }}</h2>
                 </a>
