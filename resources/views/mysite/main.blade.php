@@ -77,7 +77,7 @@
             </div>
             <div class="col-md-3">
                 <div class="text-center">
-                    <img class="img-development" src="<?=config('app.url')?>/img/icons/years.png" alt="Makklays - {{ trans('site.years_experience') }} image 5" title="{{ trans('site.years_experience') }}" />
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/years.png" alt="Makklays - {{ trans('site.years_experience') }} image 5" />
                 </div>
                 <div class="text-center" style="color:#46bf00; font-size:44px;">
                     13
@@ -88,7 +88,7 @@
             </div>
             <div class="col-md-3">
                 <div class="text-center">
-                    <img class="img-development" src="<?=config('app.url')?>/img/icons/wagons_water.png" alt="Makklays - {{ trans('site.wagons') }} image 6" title="{{ trans('site.wagons') }}" />
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/wagons_water.png" alt="Makklays - {{ trans('site.wagons') }} image 6" />
                 </div>
                 <div class="text-center" style="color:#46bf00; font-size:44px;">
                     7
@@ -99,7 +99,7 @@
             </div>
             <div class="col-md-3">
                 <div class="text-center">
-                    <img class="img-development" src="<?=config('app.url')?>/img/icons/days2.png" alt="Makklays - {{ trans('site.days_prog') }} image 7" title="{{ trans('site.days_prog') }}" />
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/days2.png" alt="Makklays - {{ trans('site.days_prog') }} image 7" />
                 </div>
                 <div class="text-center" style="color:#46bf00; font-size:44px;">
                     >4680
@@ -110,7 +110,7 @@
             </div>
             <div class="col-md-3">
                 <div class="text-center">
-                    <img class="img-development" src="<?=config('app.url')?>/img/icons/93percent_.png" alt="Makklays - {{ trans('site.dovol_clients') }} image 8" title="{{ trans('site.dovol_clients') }}" />
+                    <img class="img-development" src="<?=config('app.url')?>/img/icons/93percent_.png" alt="Makklays - {{ trans('site.dovol_clients') }} image 8" />
                 </div>
                 <div class="text-center" style="color:#46bf00; font-size:44px;">
                     93%
