@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title_test_php' => 'Test PHP',
-    'description_test_php' => 'A small test of knowledge of the PHP programming language with answers to YES or NO.',
+    'title_test_php' => 'Quiz PHP (Test PHP)',
+    'description_test_php' => 'Quiz PHP online. Testing of knowledge of the PHP programming language with answers to YES or NO.',
     'start' => 'START',
     'end' => 'END',
     'yes' => 'YES',

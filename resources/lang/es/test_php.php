@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title_test_php' => 'Prueba de conocimiento de PHP ;-)',
-    'description_test_php' => 'Una pequeña prueba para el conocimiento del lenguaje de programación PHP con respuestas SÍ o NO.',
+    'title_test_php' => 'La prueba PHP de conocimiento de lenguaje ;-)',
+    'description_test_php' => 'La prueba PHP online. Conocimiento del lenguaje de programación PHP con respuestas SÍ o NO.',
     'start' => 'START',
     'end' => 'Cerrar',
     'yes' => 'SI',
