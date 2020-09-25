@@ -88,7 +88,7 @@ class CompaniesController extends Controller
         return view('companies.add');
     }
 
-    public function delete($id)
+    public function delete($lang, $id)
     {
         // Only loggined
         if (!Auth::check()) return redirect('/');
@@ -118,7 +118,7 @@ class CompaniesController extends Controller
         }
     }
 
-    public function edit(Request $request, $id)
+    public function edit(Request $request, $lang, $id)
     {
         // Only loggined
         if (!Auth::check()) return redirect('/');
@@ -166,7 +166,7 @@ class CompaniesController extends Controller
         ]);
     }
 
-    public function view(Request $request, $id)
+    public function view(Request $request, $lang, $id)
     {
         // Only loggined
         if (!Auth::check()) return redirect('/');

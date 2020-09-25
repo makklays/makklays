@@ -115,9 +115,9 @@
                             <!--li class="nav-item">
                                 <a class="nav-link" href="{{ route('company_add', app()->getLocale()) }}">{{ trans('site.Companies add') }}</a>
                             </li-->
-                            <!--li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('employees', app()->getLocale()) }}">{{ trans('site.Employees') }}</a>
-                            </li-->
+                            </li>
                             <!--li class="nav-item">
                                 <a class="nav-link" href="{{ route('employee_add', app()->getLocale()) }}">{{ trans('site.Employee add') }}</a>
                             </li-->
