@@ -188,7 +188,13 @@ class MysiteController extends Controller
 
     public function report()
     {
-        $reports = DB::select('SELECT * FROM tests ORDER BY created_at DESC');
+        //$reports = DB::select('SELECT * FROM orders ORDER BY created_at DESC');
+        $reports = DB::table('orders')
+            //->where('visits.ip', '!=', '178.54.173.213')
+            ->orderBy('from_date', 'DESC')
+            ->orderBy('to_date', 'DESC')
+            ->paginate(20);
+        //dd($reports);
 
         // кто кликал на изображения - отчет
         return view('adminka.profile.report', [
