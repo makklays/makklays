@@ -17,6 +17,7 @@ class CreateEmployeesTable extends Migration
             $table->increments('id');
             $table->string('lastname', 255);
             $table->string('firstname', 255);
+            $table->string('post', 255)->nullable();
             $table->integer('company_id')->unsigned();
             $table->string('phone')->nullable();
             $table->string('email')->nullable();

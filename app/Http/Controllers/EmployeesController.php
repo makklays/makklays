@@ -8,13 +8,19 @@ use Illuminate\Support\Facades\Auth;
 
 class EmployeesController extends Controller
 {
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
+     */
     public function showEmployees()
     {
         // Only loggined
         if (!Auth::check()) return redirect('/');
 
         //$employees = DB::select('SELECT * FROM employees ');
-        $employees = DB::table('employees')->paginate(10);
+        $employees = DB::table('employees')
+            ->orderBy('firstname')
+            ->orderBy('lastname')
+            ->paginate(10);
 
         if (isset($employees) && !empty($employees)) {
             foreach ($employees as $k => &$emp) {
@@ -28,11 +34,15 @@ class EmployeesController extends Controller
             }
         }
 
-        return view('employees.show', [
+        return view('adminka.employees.show', [
             'employees' => $employees,
         ]);
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
+     */
     public function addEmployee(Request $request)
     {
         // Only loggined
@@ -51,23 +61,29 @@ class EmployeesController extends Controller
                 (isset($request->email) && !empty($request->email) ? $request->email : null),
             ]);
 
-            return redirect('/employees')->with([
-                'flash_message' => 'Your employee, '.$request->lastname.' '.$request->firstname.' has been add successfully!',
+            return redirect( route('employees', app()->getLocale() ))->with([
+                'flash_message' => trans('site.Data_employee_was_add', ['firstname' => $request->firstname, 'lastname' => $request->lastname]),
                 'flash_type' => 'success'
             ]);
         }
 
-        return view('employees.add', [
+        return view('adminka.employees.add', [
             'companies' => $companies
         ]);
     }
 
-    public function edit(Request $request, $id)
+    /**
+     * @param Request $request
+     * @param $lang
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
+     */
+    public function edit(Request $request, $lang, $id)
     {
         // Only loggined
         if (!Auth::check()) return redirect('/');
 
-        if (!isset($id) || !empty($id)) redirect('/employees');
+        if (!isset($id) || !empty($id)) redirect( route('employees', app()->getLocale()) );
 
         // update data of company
         if ($request->isMethod('post') && isset($request->lastname) && !empty($request->lastname)) {
@@ -80,8 +96,8 @@ class EmployeesController extends Controller
                 $id
             ]);
 
-            return redirect('employees')->with([
-                'flash_message' => 'Your employee, '.$request->lastname.' '.$request->firstname.' has been update successfully!',
+            return redirect( route('employees', [app()->getLocale(), 'id' => $id]) )->with([
+                'flash_message' => trans('site.Data_employee_was_update', ['firstname' => $request->firstname, 'lastname' => $request->lastname]),
                 'flash_type' => 'success'
             ]);
         }
@@ -91,19 +107,24 @@ class EmployeesController extends Controller
         // get employee
         $employee = DB::selectOne('SELECT * FROM employees WHERE id=?', [$id]);
 
-        return view('employees.edit', [
+        return view('adminka.employees.edit', [
             'employee' => $employee,
             'companies' => $companies
         ]);
     }
 
-    public function delete($id)
+    /**
+     * @param $lang
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function delete($lang, $id)
     {
         // Only loggined
         if (!Auth::check()) return redirect('/');
 
         if (!isset($id) || empty($id)) {
-            return redirect('employees')->with([
+            return redirect( route('employees', app()->getLocale()) )->with([
                 'flash_message' => 'Error! Don\'t have ID in url',
                 'flash_type' => 'danger'
             ]);
@@ -114,19 +135,16 @@ class EmployeesController extends Controller
 
         // delete employee
         if (isset($employee) && !empty($employee)) {
-            // fullname employee
-            $fullname = $employee->lastname.' '.$employee->firstname;
-
             // delete empoyee
             DB::delete('DELETE FROM employees WHERE id = ?', [$id]);
 
-            return redirect('employees')->with([
-                'flash_message' => 'Your employee, '.$fullname.' has been delete successfully!',
+            return redirect( route('employees', app()->getLocale()) )->with([
+                'flash_message' => trans('site.Data_employee_was_delete', ['firstname' => $employee->firstname, 'lastname' => $employee->lastname]),
                 'flash_type' => 'success'
             ]);
 
         } else {
-            return redirect('employees')->with([
+            return redirect( route('employees', app()->getLocale()) )->with([
                 'flash_message' => 'Error! Employee don\'t exists!',
                 'flash_type' => 'danger'
             ]);
