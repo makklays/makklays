@@ -252,7 +252,7 @@
 </div>
 
 <div id="id_youtube" class="text-center" style="position:fixed; top:250px; right:-250px; font-size:25px; font-weight:300; height:44px; width:300px; background-color: #E62117; cursor:pointer;">
-    <a href="https://www.youtube.com/channel/makklays/" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
+    <a href="https://www.youtube.com/channel/UCTnzcnfJ9LWjibVcq2wigtw" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
         <div style="width:25px; padding:0; margin: -2px 0 0 10px; float:left;">
             <img src="<?=config('app.url')?>/img/youtube-icon.png" style="width:25px;" alt="Youtube" />
         </div>
