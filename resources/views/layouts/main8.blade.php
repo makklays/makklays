@@ -111,6 +111,11 @@
                             <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_sitesystem') }}</a>
                         </div>
                     </li>
+                    <li class="nav-item {{ \Route::current()->getName() == 'mysite_portfolio' ? 'active' : '' }}">
+                        <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_portfolio', app()->getLocale()) }}">
+                            {{ trans('site.mysite_portfolio') }}
+                        </a>
+                    </li>
                     <li class="nav-item {{ \Route::current()->getName() == 'mysite_articles' ? 'active' : '' }}">
                         <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_articles', app()->getLocale()) }}">
                             {{ trans('site.Articles') }}
