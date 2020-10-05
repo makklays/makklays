@@ -201,13 +201,13 @@
             <div class="col-md-7">
                 <h4>{{ trans('site.development_steps') }}:</h4><br/>
                 <p class="text-justify">
-                - {{ trans('site.dev1') }}; <br/>
-                - {{ trans('site.dev2') }}; <br/>
-                - {{ trans('site.dev3') }}; <br/>
-                - {{ trans('site.dev4') }}; <br/>
-                - {{ trans('site.dev5') }}; <br/>
-                - {{ trans('site.dev6') }}; <br/>
-                - {{ trans('site.dev7') }};
+                1. {{ trans('site.dev1') }}; <br/>
+                2. {{ trans('site.dev2') }}; <br/>
+                3. {{ trans('site.dev3') }}; <br/>
+                4. {{ trans('site.dev4') }}; <br/>
+                5. {{ trans('site.dev5') }}; <br/>
+                6. {{ trans('site.dev6') }}; <br/>
+                7. {{ trans('site.dev7') }};
                 </p>
             </div>
             <div class="col-md-12">

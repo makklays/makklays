@@ -12,13 +12,13 @@
         </div>
         <div class="col-md-7 text-justify">
             <h4>{{ trans('site.howmake2') }}</h4> <br/>
-            &#10004; {{ trans('site.howmake3') }} <br/>
-            &#10004; {{ trans('site.howmake4') }} <br/>
-            &#10004; {{ trans('site.howmake5') }} <br/>
-            &#10004; {{ trans('site.howmake6') }} <br/>
-            &#10004; {{ trans('site.howmake7') }} <br/>
-            &#10004; {{ trans('site.howmake8') }} <br/>
-            &#10004; {{ trans('site.howmake9') }} <br/>
+            1. {{ trans('site.howmake3') }} <br/>
+            2. {{ trans('site.howmake4') }} <br/>
+            3. {{ trans('site.howmake5') }} <br/>
+            4. {{ trans('site.howmake6') }} <br/>
+            5. {{ trans('site.howmake7') }} <br/>
+            6. {{ trans('site.howmake8') }} <br/>
+            7. {{ trans('site.howmake9') }} <br/>
         </div>
         <div class="col-md-12 text-justify">
             {{ trans('site.howmake1') }} <br/><br/>
