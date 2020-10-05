@@ -53,62 +53,82 @@
 <body>
 <main role="main">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white dev-navbar border-bottom">
-        <a class="navbar-brand" href="{{ route('/', app()->getLocale()) }}">
-            <img src="<?=config('app.url')?>/makklays.png" height="30" class="d-inline-block align-top" alt="">
-            Makklays
-        </a>
-        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item {{ \Route::current()->getName() == 'mysite_about' ? 'active' : '' }}">
-                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_about', app()->getLocale()) }}">
-                        {{ trans('site.mysite_about') }}
-                    </a>
-                </li>
-                <li class="nav-item {{ \Route::current()->getName() == 'mysite_howmake' ? 'active' : '' }}">
-                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_howmake', app()->getLocale()) }}">
-                        {{ trans('site.mysite_howmake') }}
-                    </a>
-                </li>
-                <li class="nav-item {{ \Route::current()->getName() == 'mysite_whatmake' ? 'active' : '' }}">
-                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_whatmake', app()->getLocale()) }}">
-                        {{ trans('site.mysite_whatmake') }}
-                    </a>
-                </li>
-                <li class="nav-item {{ in_array(\Route::current()->getName(), ['mysite_lpage', 'mysite_corporate', 'mysite_webservice', 'mysite_webportal', 'mysite_sitesytem', 'mysite_store']) ? 'active' : '' }} dropdown">
-                    <a class="nav-link dev-navbar-link px-3 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                        {{ trans('site.Development') }}
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="{{ route('mysite_lpage', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_lpage') }}</a>
-                        <a href="{{ route('mysite_store', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_store') }}</a>
-                        <a href="{{ route('mysite_corporate', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_corporate') }}</a>
-                        <a href="{{ route('mysite_webservice', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_webapi') }}</a>
-                        <a href="{{ route('mysite_webportal', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_webportal') }}</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_sitesystem') }}</a>
-                    </div>
-                </li>
-                <li class="nav-item {{ \Route::current()->getName() == 'mysite_articles' ? 'active' : '' }}">
-                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_articles', app()->getLocale()) }}">
-                        {{ trans('site.Articles') }}
-                    </a>
-                </li>
-                <li class="nav-item {{ \Route::current()->getName() == 'mysite_contacts' ? 'active' : '' }}">
-                    <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_contacts', app()->getLocale()) }}">
-                        {{ trans('site.contacts') }}
-                    </a>
-                </li>
-            </ul>
-            <!--ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="https://ru.hexlet.io/session/new"><div class="my-2">Вход</div></a></li>
-                <li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="/u/new"><div class="my-2">Регистрация</div></a></li>
-            </ul-->
+    <div style="position:fixed; background-color:#080e04; z-index:1302; width:100%; margin:0; margin-top:-20px; padding:0;">
+        <div class="container">
+            <div class="row">
+                <!--div class="col-md-7 col-sm-7 col-3 text-right" style="color:#49a22d;">
+                    <a href="/" class="a-green" style="font-size:14px;">Цены</a>
+                </div-->
+                <!--div class="col-md-2 col-sm-2 col-3 text-right" style="font-size:14px; color:#FFF;">+38(098)8705397</div-->
+                <!--div class="col-md-12 text-right" style="font-size:14px; color:#212529;">
+                    <a href="tel:+380988705397" style="color:#212529; padding-right:20px;">+38 (098) 8705397</a>
+                    <a href="mailto:office@makklays.com.ua" style="color:#212529;">office@makklays.com.ua</a>
+                </div-->
+                <div class="col-md-12 text-right" style="font-size:14px; color:#FFF;">
+                    <a href="tel:+380988705397" style="color:#64E247; padding-right:20px;">+38 (098) 8705397</a>
+                    <a href="mailto:office@makklays.com.ua" style="color:#64e247;">office@makklays.com.ua</a>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
+
+        <nav style="margin-top:20px;" class="navbar navbar-expand-lg navbar-light bg-white dev-navbar border-bottom">
+            <a class="navbar-brand" href="{{ route('/', app()->getLocale()) }}">
+                <img src="<?=config('app.url')?>/makklays.png" height="30" class="d-inline-block align-top" alt="">
+                Makklays
+            </a>
+            <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item {{ \Route::current()->getName() == 'mysite_about' ? 'active' : '' }}">
+                        <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_about', app()->getLocale()) }}">
+                            {{ trans('site.mysite_about') }}
+                        </a>
+                    </li>
+                    <li class="nav-item {{ \Route::current()->getName() == 'mysite_howmake' ? 'active' : '' }}">
+                        <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_howmake', app()->getLocale()) }}">
+                            {{ trans('site.mysite_howmake') }}
+                        </a>
+                    </li>
+                    <li class="nav-item {{ \Route::current()->getName() == 'mysite_whatmake' ? 'active' : '' }}">
+                        <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_whatmake', app()->getLocale()) }}">
+                            {{ trans('site.mysite_whatmake') }}
+                        </a>
+                    </li>
+                    <li class="nav-item {{ in_array(\Route::current()->getName(), ['mysite_lpage', 'mysite_corporate', 'mysite_webservice', 'mysite_webportal', 'mysite_sitesytem', 'mysite_store']) ? 'active' : '' }} dropdown">
+                        <a class="nav-link dev-navbar-link px-3 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            {{ trans('site.Development') }}
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="{{ route('mysite_lpage', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_lpage') }}</a>
+                            <a href="{{ route('mysite_store', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_store') }}</a>
+                            <a href="{{ route('mysite_corporate', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_corporate') }}</a>
+                            <a href="{{ route('mysite_webservice', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_webapi') }}</a>
+                            <a href="{{ route('mysite_webportal', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_webportal') }}</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_sitesystem') }}</a>
+                        </div>
+                    </li>
+                    <li class="nav-item {{ \Route::current()->getName() == 'mysite_articles' ? 'active' : '' }}">
+                        <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_articles', app()->getLocale()) }}">
+                            {{ trans('site.Articles') }}
+                        </a>
+                    </li>
+                    <li class="nav-item {{ \Route::current()->getName() == 'mysite_contacts' ? 'active' : '' }}">
+                        <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_contacts', app()->getLocale()) }}">
+                            {{ trans('site.contacts') }}
+                        </a>
+                    </li>
+                </ul>
+                <!--ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="https://ru.hexlet.io/session/new"><div class="my-2">Вход</div></a></li>
+                    <li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="/u/new"><div class="my-2">Регистрация</div></a></li>
+                </ul-->
+            </div>
+        </nav>
+
 
     <div class="jumbotron jumbotron-fluid img-container">
         <div class="container">
