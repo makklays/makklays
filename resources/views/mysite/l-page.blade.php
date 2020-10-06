@@ -12,7 +12,8 @@
         <div class="col-md-12 text-left">
             <!--h4 class="text-center">Цены на разработку лендинг пейдж</h4-->
             <p class="text-justify">
-                Цены Landing Page (Лендинг пейдж) и разработка в Makklays
+                {{ trans('price.text_landing') }} <br/>
+                {{ trans('price.descr_packet') }}
             </p> <br/><br/>
         </div>
     </div>
@@ -22,18 +23,18 @@
             <div class="card-deck mb-3 text-center">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Простой</h4>
+                        <h4 class="my-0 font-weight-normal">{{ trans('price.simple') }}</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">7000 грн<small class="text-muted"></small></h1>
+                        <h1 class="card-title pricing-card-title">{{ trans('price.pland_simple_price') }}<small class="text-muted"></small></h1>
                         <ul class="text-left list-unstyled mt-3 mb-4">
-                            <li>&#10004; Cрок разработки 5-7 дней</li>
-                            <li>&#10004; {{ trans('site.m_corporate3') }}</li>
-                            <li>&#10004; {{ trans('site.m_corporate5') }}</li>
-                            <li>&#10004; {{ trans('site.m_corporate6') }}</li>
-                            <li>&#10004; PHP7, HTML5, CSS3, jQuery</li>
-                            <li>&#10004; Отправка и сбор лидов на email</li>
-                            <li>&#10004; {{ trans('site.m_corporate9') }}</li>
+                            <li>&#10004; {{ trans('price.pland_si1') }}</li>
+                            <li>&#10004; {{ trans('price.pland_si2') }}</li>
+                            <li>&#10004; {{ trans('price.pland_si3') }}</li>
+                            <li>&#10004; {{ trans('price.pland_si4') }}</li>
+                            <li>&#10004; {{ trans('price.pland_si5') }}</li>
+                            <li>&#10004; {{ trans('price.pland_si6') }}</li>
+                            <li>&#10004; {{ trans('price.pland_si7') }}</li>
                         </ul>
                         <a type="button" href="{{ route('mysite_contacts', app()->getLocale()) }}" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</a>
                     </div>
@@ -44,23 +45,23 @@
             <div class="card-deck mb-3 text-center">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Стандартный</h4>
+                        <h4 class="my-0 font-weight-normal">{{ trans('price.standart') }}</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">8000 грн<small class="text-muted"></small></h1>
+                        <h1 class="card-title pricing-card-title">{{ trans('price.pland_standart_price') }}<small class="text-muted"></small></h1>
                         <ul class="text-left list-unstyled mt-3 mb-4">
-                            <li>&#10004; Cрок разработки 5-7 дней</li>
-                            <li>&#10004; Дизайн в корпоративных цветах</li>
-                            <li>&#10004; Перевод страницы на несколько языков (2-3 шт.)</li>
-                            <li>&#10004; Адаптивность под все устройства</li>
-                            <li>&#10004; Базовая SEO-оптимизация</li>
-                            <li>&#10004; PHP7, Laravel, HTML5, CSS3, jQuery</li>
-                            <li>&#10004; Отправка и сбор лидов на email</li>
-                            <li>&#10004; Интеграция с внешними сервисами (Bitrix и т.д.)</li>
-                            <li>&#10004; Административная панель со списком лидов (из базы данных)</li>
-                            <li>&#10004; {{ trans('site.m_store9') }}</li>
-                            <li>&#10004; {{ trans('site.m_store11') }}</li>
-                            <li>&#10004; Доменное имя в подарок (.com.ua)</li>
+                            <li>&#10004; {{ trans('price.pland_st1') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st2') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st3') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st4') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st5') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st6') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st7') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st8') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st9') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st10') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st11') }}</li>
+                            <li>&#10004; {{ trans('price.pland_st12') }}</li>
                         </ul>
                         <a type="button" href="{{ route('mysite_contacts', app()->getLocale()) }}" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</a>
                     </div>
@@ -71,25 +72,25 @@
             <div class="card-deck mb-3 text-center">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Индивидуальный</h4>
+                        <h4 class="my-0 font-weight-normal">{{ trans('price.individual') }}</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">от 10000 грн<small class="text-muted"></small></h1>
+                        <h1 class="card-title pricing-card-title">{{ trans('price.pland_individual_price') }}<small class="text-muted"></small></h1>
                         <ul class="text-left list-unstyled mt-3 mb-4">
-                            <li>&#10004; Cрок разработки 5-7 дней</li>
-                            <li>&#10004; Уникальный дизайн</li>
-                            <li>&#10004; Перевод страницы на несколько языков (3-5 шт.)</li>
-                            <li>&#10004; {{ trans('site.m_sitesystem6') }}</li>
-                            <li>&#10004; {{ trans('site.m_sitesystem7') }}</li>
-                            <li>&#10004; PHP7, Laravel, HTML5, CSS3, jQuery, Vue.js</li>
-                            <li>&#10004; Отправка и сбор лидов на email</li>
-                            <li>&#10004; Интеграция с внешними сервисами (Bitrix и т.д.)</li>
-                            <li>&#10004; Административная панель со списком лидов (из базы данных)</li>
-                            <li>&#10004; Статистика по источникам переходов (из FB, Google)</li>
-                            <li>&#10004; Бот для Telegram с выводом данных (3-5 комманд)</li>
-                            <li>&#10004; {{ trans('site.m_sitesystem12') }}</li>
-                            <li>&#10004; {{ trans('site.m_sitesystem13') }}</li>
-                            <li>&#10004; Доменное имя в подарок (.com.ua)</li>
+                            <li>&#10004; {{ trans('price.pland_in1') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in2') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in3') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in4') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in5') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in6') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in7') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in8') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in9') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in10') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in11') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in12') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in13') }}</li>
+                            <li>&#10004; {{ trans('price.pland_in14') }}</li>
                         </ul>
                         <a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="btn btn-lg btn-block btn-success">{{ trans('site.order_development') }}</a>
                     </div>
