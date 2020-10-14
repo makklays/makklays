@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Repositories\Interfaces\TestRepositoryInterface;
+
 use Illuminate\Mail\Transport\MailgunTransport;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
@@ -14,6 +16,15 @@ use Illuminate\Support\Facades\Validator;
 
 class TestController extends Controller
 {
+    private $test;
+
+    // или подключение в __construct()
+    // или в app/Providers/RepositoryServiceProvider.php и в файле app/config.php
+    public function __construct(TestRepositoryInterface $testRepository)
+    {
+        $this->test = $testRepository;
+    }
+
     public function intro()
     {
         // add visit
@@ -27,6 +38,9 @@ class TestController extends Controller
                 'ip' => $this->getRealUserIp(),
                 'created_at' => date('Y-m-d H:i:s')
             ]);
+
+        // получаем данные из репозитория
+        $all_tests = $this->test->all();
 
         //$title = 'Tест на знание PHP ;-)';
         //$description = 'Небольшой тест на знание языка программирования PHP с ответами на ДА или НЕТ.';
@@ -42,6 +56,7 @@ class TestController extends Controller
             //'title' => $title,
             //'description' => $description,
             //'title_button' => $title_button,
+            $all_tests
         ]);
     }
 
