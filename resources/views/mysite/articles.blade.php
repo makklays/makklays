@@ -22,4 +22,7 @@
         <?php endforeach; ?>
     </div>
 
+    <br/>
+    <?php echo $articles->render(); ?>
+
 @endsection
