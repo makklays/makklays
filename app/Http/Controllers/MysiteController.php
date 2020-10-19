@@ -1158,7 +1158,11 @@ class MysiteController extends Controller
         }
 
         // get article
-        $articles = DB::select('SELECT * FROM articles WHERE is_visible=1 AND lang=? LIMIT 12 ', [app()->getLocale()]);
+        $articles = DB::table('articles')
+            ->where('is_visible', 1)
+            ->where('lang', app()->getLocale())
+            ->paginate(3);
+        //$articles = DB::select('SELECT * FROM articles WHERE is_visible=1 AND lang=? LIMIT 12 ', [app()->getLocale()]);
 
         return view('mysite.articles', [
             'articles' => $articles,
