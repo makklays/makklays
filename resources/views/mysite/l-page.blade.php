@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-12 text-left">
             <!--h4 class="text-center">Цены на разработку лендинг пейдж</h4-->
-            <p class="text-justify">
+            <p class="text-left">
                 {{ trans('price.text_landing') }} <br/>
                 {{ trans('price.descr_packet') }}
             </p> <br/><br/>
@@ -101,7 +101,7 @@
 
     <div class="row">
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 <b>{{ trans('site.lpage1') }}</b> <?=trans('site.lpage2')?>
             </p>
         </div>
@@ -113,7 +113,7 @@
             <h2 class="text-center text-design2">{{ trans('site.lpage3') }}</h2> <br/>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 {{ trans('site.lpage4') }} <br/><br/>
                 <b>1. {{ trans('site.lpage5') }}</b> <?=trans('site.lpage6')?> <br/><br/>
 
@@ -130,7 +130,7 @@
             <img src="<?=config('app.url')?>/img/lpage3.png" alt="Makklays - Landing page - image2" title="Landing page" class="img-fluid" />
         </div>
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.lpage12')?>
             </p>
         </div>
@@ -139,7 +139,7 @@
             <h2 class="text-center text-design2">{{ trans('site.lpage13') }}</h2> <br/>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.lpage14')?>
             </p>
         </div>
@@ -148,7 +148,7 @@
             <h2 class="text-center text-design2">{{ trans('site.lpage15') }}</h2> <br/>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.lpage16')?>
                 <a href="{{ route('mysite_store', app()->getLocale()) }}" class="a-green">{{ trans('site.lpage17') }}</a>
                 <?=trans('site.lpage18')?>

@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-12 text-left">
             <!--h4 class="text-center">Цены на разработку корпоративного сайта</h4-->
-            <p class="text-justify">
+            <p class="text-left">
                 {{ trans('price.text_corp') }} <br/>
                 {{ trans('price.descr_packet') }}
             </p> <br/><br/>
@@ -107,7 +107,7 @@
 
     <div class="row">
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.corp1', ['url_shop' => route('mysite_store', app()->getLocale())])?>
                 <br/><br/>
             </p>
@@ -116,7 +116,7 @@
             <img src="<?=config('app.url')?>/img/corp.jpg" alt="Makklays - Corporate site image1" title="Corporate site" class="img-fluid" />
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.corp2')?>
                 <br/>
             </p>
@@ -126,7 +126,7 @@
             <h2 class="text-center text-design2"><?=trans('site.corp3')?></h2> <br/>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.corp4')?>
                 <br/>
             </p>
@@ -137,15 +137,15 @@
         </div>
         <div class="col-md-12">
             <h4><?=trans('site.corp6')?></h4> <br/>
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.corp7')?> <br/><br/>
             </p>
             <h4><?=trans('site.corp8')?></h4> <br/>
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.corp9')?> <br/><br/>
             </p>
             <h4><?=trans('site.corp10')?></h4> <br/>
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.corp11')?>
                 <br/><br/>
             </p>
@@ -158,7 +158,7 @@
             <img src="<?=config('app.url')?>/img/corp2.jpg" alt="Makklays - Corporate site image2" title="Corporate site" class="img-fluid" />
         </div>
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.corp13')?>
             </p>
         </div>
@@ -167,10 +167,10 @@
             <h2 class="text-center text-design2"><?=trans('site.corp14')?></h2> <br/>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.corp15')?>
             </p>
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.corp16')?>
             </p>
         </div>

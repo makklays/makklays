@@ -5,6 +5,11 @@ p {
 .text-justify {
     font-size: 18px;
 }
+.lead.text-justify {
+    font-size: 21px;
+    padding-left:20px;
+    padding-right:10px;
+}
 
 .text-design2 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -115,9 +120,12 @@ blockquote p {
 }
 
 .img-container {
-    background-image: url("/img/777.jpg");
+    /*background-image: url("/img/777.jpg");*/
+    background-color: grey;
     color: #FFF;
     font-weight: bold;
+    padding: 30px 2rem;
+
 }
 .font-development {
     color: #FFF;
@@ -179,6 +187,7 @@ a::-moz-selection, li::-moz-selection, div::-moz-selection, b::-moz-selection, i
     color: #46bf00;
     font-size: 20px;
     text-decoration: none;
+    margin-bottom: 25px;
 }
 a.text-corporate {
     text-decoration: none !important;
@@ -483,11 +492,13 @@ div.bg-green > h1 {
 
 .a-green, .a-green:visited, .a-green:link {
     color: #267f00;
-    text-decoration-style: dashed;
+    /*text-decoration-style: dashed;*/
+    text-decoration: none;
 }
 .a-green, .a-green:hover {
     color: #46bf00;
-    text-decoration-style: dashed;
+    /*text-decoration-style: dashed;*/
+    text-decoration: none;
 }
 
 .link-big2 {
@@ -508,8 +519,8 @@ div.bg-green > h1 {
 }
 
 img.kromka {
-    border: 1px solid #cfcfcf;
-    padding: 3px;
+    /*border: 1px solid #cfcfcf;
+    padding: 3px;*/
 }
 .nav-link.active {
     color: #FFF;

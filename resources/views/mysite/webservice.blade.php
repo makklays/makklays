@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-12 text-left">
             <!--h4 class="text-center">Цены на разработку корпоративного сайта</h4-->
-            <p class="text-justify">
+            <p class="text-left">
                 {{ trans('price.text_service') }} <br/>
                 {{ trans('price.descr_packet') }}
             </p> <br/><br/>
@@ -92,7 +92,7 @@
 
     <div class="row">
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.wepapi1')?> <br/><br/>
             </p>
         </div>
@@ -104,12 +104,12 @@
             <img src="<?=config('app.url')?>/img/api2.png" alt="Makklays - Web service - image2" title="Web service" class="img-fluid" />
         </div>
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.wepapi2')?> <br/><br/>
             </p>
         </div>
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.webapi3')?> <br/><br/>
             </p>
         </div>
@@ -118,7 +118,7 @@
         </div>
 
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.webapi4')?> <br/><br/>
             </p>
         </div>
@@ -127,7 +127,7 @@
             <h2 class="text-center text-design2"><?=trans('site.wepapi5')?></h2> <br/>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.wepapi6')?>
             </p>
         </div>

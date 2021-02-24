@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-12 text-left">
             <!--h4 class="text-center">Цены на разработку корпоративного сайта</h4-->
-            <p class="text-justify">
+            <p class="text-left">
                 {{ trans('price.text_system') }} <br/>
                 {{ trans('price.descr_packet') }}
             </p> <br/><br/>
@@ -117,7 +117,7 @@
 
     <div class="row">
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 {{ trans('site.system_site1') }}
                 <br/><br/>
             </p>
@@ -130,7 +130,7 @@
             <h2 class="text-center text-design2">{{ trans('site.system_site2') }}</h2>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.system_site3')?>
             </p>
         </div>
@@ -140,7 +140,7 @@
             <h2 class="text-center text-design2">8 преимуществ использования CRM для бизнеса</h2>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 В условиях современного высококонкурентного рынка компании, которые управляют отношениями с клиентами,
                 имеют гораздо более высокие шансы на успех, чем те, которые этого не делают. <br/><br/>
 
@@ -236,7 +236,7 @@
             <h2 class="text-center text-design2">{{ trans('site.system_site4') }}</h2>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.system_site5')?>
                 <br/><br/>
             </p>
@@ -246,7 +246,7 @@
             <h2 class="text-center text-design2">{{ trans('site.system_site6') }}</h2>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.system_site7')?> <br/><br/>
             </p>
         </div>

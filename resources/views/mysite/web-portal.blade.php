@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-md-12 text-left">
             <!--h4 class="text-center">Цены на разработку корпоративного сайта</h4-->
-            <p class="text-justify">
+            <p class="text-left">
                 {{ trans('price.text_webportal') }} <br/>
                 {{ trans('price.descr_packet') }}
             </p> <br/><br/>
@@ -118,7 +118,7 @@
 
     <div class="row">
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.portal2')?> <br/><br/>
             </p>
         </div>
@@ -130,7 +130,7 @@
             <h2 class="text-center text-design2">{{ trans('site.portal3') }}</h2>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.portal4')?>
             </p>
         </div>
@@ -139,7 +139,7 @@
             <h2 class="text-center text-design2">{{ trans('site.portal5') }}</h2>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.portal6')?>
             </p>
         </div>
@@ -148,7 +148,7 @@
             <h2 class="text-center text-design2">{{ trans('site.portal7') }}</h2>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.portal8')?> <br/>
             </p>
         </div>
@@ -160,12 +160,12 @@
             <img src="<?=config('app.url')?>/img/webportal4.jpg" class="img-fluid" alt="Makklays - Web-portal image2" title="Web-portal" />
         </div>
         <div class="col-md-7">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.portal10')?> <br/><br/>
             </p>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.portal11')?> <br/>
             </p>
         </div>
@@ -174,7 +174,7 @@
             <h2 class="text-center text-design2">{{ trans('site.portal12') }}</h2>
         </div>
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.portal13')?>
             </p>
         </div>

@@ -11,7 +11,7 @@
             </div>
 
             <div class="col-md-12">
-                <p class="text-justify">
+                <p class="text-left">
                     {{ trans('site.whatmake1') }} <br/>
                     <!--{{ trans('site.whatmake2') }} <br/>--><br/>
                 </p>
