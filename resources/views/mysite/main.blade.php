@@ -4,7 +4,7 @@
 
         <div class="row">
             <div class="col-md-7">
-                <p class="text-justify">
+                <p class="text-left">
                     <?=trans('site.about_1')?> <br/><br/>
                     <?=trans('site.about_1_1')?> <br/><br/>
                     <?=trans('site.about_2')?>
@@ -23,7 +23,7 @@
                 <h1 class="text-center text-design2"><?=trans('site.Who_we')?></h1>
             </div>
             <div class="col-md-12">
-                <p class="text-justify">
+                <p class="text-left">
                     <?=trans('site.text_sobre_we')?>
                 </p>
             </div>
@@ -126,7 +126,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center text-design2">{{ trans('site.Development') }}</h1> <br/>
-                <p class="text-justify">
+                <p class="text-left">
                     {{ trans('site.main_whatmake_descr') }}
                 </p>
                 <br/><br/>
@@ -200,7 +200,7 @@
             </div>
             <div class="col-md-7">
                 <h4>{{ trans('site.development_steps') }}:</h4><br/>
-                <p class="text-justify">
+                <p class="text-left">
                 1. {{ trans('site.dev1') }}; <br/>
                 2. {{ trans('site.dev2') }}; <br/>
                 3. {{ trans('site.dev3') }}; <br/>
@@ -211,7 +211,7 @@
                 </p>
             </div>
             <div class="col-md-12">
-                <p class="text-justify">
+                <p class="text-left">
                     {{ trans('site.how_make1') }} <br/><br/>
                     {{ trans('site.how_make2') }} <br/><br/>
                 </p>
@@ -223,7 +223,7 @@
                 <h1 class="text-center text-design2">{{ trans('site.Our_price') }}</h1> <br/>
             </div>
             <div class="col-md-12 text-left">
-                <p class="text-justify">
+                <p class="text-left">
                     - {{ trans('site.price_text1') }} <br/>
                     - {{ trans('site.price_text2') }} <br/>
                     - {{ trans('site.price_text3') }} <br/>
@@ -233,7 +233,7 @@
                 <p class="text-center">
                     <h4 class="text-center">{{ trans('site.Make_dorogo') }}</h4>
                 </p>
-                <p class="text-justify">
+                <p class="text-left">
                     {{ trans('site.make_dorogo') }} <a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="a-green">{{ trans('site.go_link') }}</a>.
                 </p> <br/><br/>
             </div>
@@ -399,7 +399,7 @@
                 </div>
                 <?php foreach($articles as $item): ?>
                     <div class="col-md-4">
-                        <p class="text-justify">
+                        <p class="text-left">
                             <?php if (isset($item->photo) && !empty($item->photo)): ?>
                                 <img src="<?=config('app.url')?>/articles/imgs/<?=$item->photo?>" alt="." title="<?=$item->title?>" class="img-fluid kromka" />
                             <?php else: ?>
@@ -407,7 +407,7 @@
                             <?php endif; ?>
                         </p>
                         <h4><?=$item->title?></h4>
-                        <p class="text-justify"><?=$item->short_text?></p>
+                        <p class="text-left"><?=$item->short_text?></p>
                         <p><a class="btn btn-secondary" href="{{ route('mysite_article', [app()->getLocale(), $item->slag]) }}" role="button"><?=trans('site.Read')?> &raquo;</a></p>
                     </div>
                 <?php endforeach; ?>

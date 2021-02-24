@@ -53,7 +53,7 @@
 <body>
 <main role="main">
 
-    <div style="position:fixed; background-color:#080e04; z-index:1302; width:100%; margin:0; margin-top:-20px; padding:0;">
+    <div style="position:fixed; background-color:grey; z-index:1302; width:100%; margin:0; margin-top:-20px; padding:0;">
         <div class="container">
             <div class="row">
                 <!--div class="col-md-7 col-sm-7 col-3 text-right" style="color:#49a22d;">
@@ -65,8 +65,8 @@
                     <a href="mailto:office@makklays.com.ua" style="color:#212529;">office@makklays.com.ua</a>
                 </div-->
                 <div class="col-md-12 text-right" style="font-size:14px; color:#FFF;">
-                    <a href="tel:+380988705397" style="color:#64E247; padding-right:20px;">+38 (098) 8705397</a>
-                    <a href="mailto:office@makklays.com.ua" style="color:#64e247;">office@makklays.com.ua</a>
+                    <a href="tel:+380988705397" style="color:#FFF; padding-right:20px;">+38 (098) 8705397</a>
+                    <a href="mailto:office@makklays.com.ua" style="color:#FFF;">office@makklays.com.ua</a>
                 </div>
             </div>
         </div>

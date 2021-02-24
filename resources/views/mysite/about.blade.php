@@ -8,7 +8,7 @@
         </div>
 
         <div class="col-lg-7 col-md-7 col-sm-12 col-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.about_text1')?>
                 <?=trans('site.about_text1.1')?> <br/><br/>
                 <?=trans('site.about_text2')?> <br/><br/>
@@ -20,14 +20,14 @@
         </div>
 
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.about_text4')?> <br/><br/>
                 <?=trans('site.about_text4.1')?> <br/>
             </p>
         </div>
 
         <div class="col-md-12">
-            <p class="text-justify">
+            <p class="text-left">
                 <?=trans('site.text_sobre_wee')?>
             </p>
         </div>
