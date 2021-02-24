@@ -90,17 +90,17 @@
 
         <div class="col-md-7 text-justify">
             &#10004; <b>{{ trans('site.adv1') }}</b> <br/>
-            <span style="font-size:14px;">{{ trans('site.adv1_det') }} </span><br/><br/>
+            <span>{{ trans('site.adv1_det') }} </span><br/><br/>
             &#10004; <b>{{ trans('site.adv2') }}</b> <br/>
-            <span style="font-size:14px;">{{ trans('site.adv2_det') }} </span><br/><br/>
+            <span>{{ trans('site.adv2_det') }} </span><br/><br/>
             &#10004; <b>{{ trans('site.adv3') }}</b> <br/>
-            <span style="font-size:14px;">{{ trans('site.adv3_det') }} </span><br/><br/>
+            <span>{{ trans('site.adv3_det') }} </span><br/><br/>
             &#10004; <b>{{ trans('site.adv4') }}</b> <br/>
-            <span style="font-size:14px;">{{ trans('site.adv4_det') }} </span><br/><br/>
+            <span>{{ trans('site.adv4_det') }} </span><br/><br/>
             &#10004; <b>{{ trans('site.adv5') }}</b> <br/>
-            <span style="font-size:14px;">{{ trans('site.adv5_det') }} </span><br/><br/>
+            <span>{{ trans('site.adv5_det') }} </span><br/><br/>
             &#10004; <b>{{ trans('site.adv6') }}</b> <br/>
-            <span style="font-size:14px;">{{ trans('site.adv6_det') }} </span><br/>
+            <span>{{ trans('site.adv6_det') }} </span><br/>
             <br/><br/>
         </div>
         <div class="col-md-5 text-justify">

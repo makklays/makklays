@@ -24,5 +24,6 @@
 
     <br/>
     <?php echo $articles->render(); ?>
+    <br/>
 
 @endsection
