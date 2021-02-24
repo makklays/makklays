@@ -65,8 +65,8 @@
                     <a href="mailto:office@makklays.com.ua" style="color:#212529;">office@makklays.com.ua</a>
                 </div-->
                 <div class="col-md-12 text-right" style="font-size:14px; color:#FFF;">
-                    <a href="tel:+380988705397" style="color:#FFF; padding-right:20px;">+38 (098) 8705397</a>
-                    <a href="mailto:office@makklays.com.ua" style="color:#FFF;">office@makklays.com.ua</a>
+                    <a href="tel:+380988705397" style="color:#FFF; padding-right:20px; text-decoration:none;">+38 (098) 8705397</a>
+                    <a href="mailto:office@makklays.com.ua" style="color:#FFF; text-decoration:none;">office@makklays.com.ua</a>
                 </div>
             </div>
         </div>
