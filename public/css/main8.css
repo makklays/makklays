@@ -597,3 +597,13 @@ img.kromka {
     font-weight: 300;
 }
 
+/* paging grey-style */
+.page-item.active .page-link {
+    background-color: grey;
+    border-color: grey;
+}
+.page-link, .page-link:hover {
+    color: grey;
+}
+
+
