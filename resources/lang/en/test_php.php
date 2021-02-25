@@ -37,4 +37,6 @@ You gave <b>:per_right%</b> right answer (:count_right/:count_q) from :count_q q
 
     'list_of_questions' => 'List of questions',
     'your_answer' => 'Your answer',
+    'Duration_time' => 'Duration time',
+    'minutes' => 'minutes',
 ];
