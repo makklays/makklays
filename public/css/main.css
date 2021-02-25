@@ -21,20 +21,22 @@ p {
 
 a.green, a.green:visited, a.green:active, a.green:link {
     color: #267f00;
-    text-decoration: underline;
+    text-decoration: none;
 }
 a.green:hover {
     color: #46bf00;
-    text-decoration-style: dashed;
+    /*text-decoration-style: dashed;*/
+    text-decoration: none;
 }
 
 a, a:visited, a:active, a:link {
     color: #267f00;
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:hover {
     color: #46bf00;
-    text-decoration-style: dashed;
+    /*text-decoration-style: dashed;*/
+    text-decoration: none;
 }
 
 .btn-success {
