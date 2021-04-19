@@ -830,14 +830,14 @@ class MysiteController extends Controller
             exit;
         }
 
-        // валидация
+        // validación
         $validator = Validator::make($request->all(), [
             'phone' => 'required|max:25',
             'soglasen' => 'required',
         ]);
 
         if ($validator->fails()) {
-            //Obtenemos los mensajes de error de la validation
+            // devolvemos los mensajes de error de la validación
             $messages = $validator->messages();
             return response()->json(['errors' => $messages]);
         }

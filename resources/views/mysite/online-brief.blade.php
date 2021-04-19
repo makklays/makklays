@@ -8,7 +8,7 @@
             <p class="text-justify">
                 {{ trans('site.brief1') }} <br/><br/>
                 {{ trans('site.brief2') }} <br/><br/>
-                {{ trans('site.brief3') }} <br/><br/>
+                <?=trans('site.brief3')?> <br/><br/>
             </p>
         </div>
         <div class="col-md-12">

@@ -121,6 +121,18 @@
                             {{ trans('site.contacts') }}
                         </a>
                     </li>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dev-navbar-link px-3 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            lang
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="{{ route('/', 'ua') }}" class="dropdown-item a-green green-bk">UA</a>
+                            <a href="{{ route('/', 'es') }}" class="dropdown-item a-green green-bk">ES</a>
+                            <a href="{{ route('/', 'en') }}" class="dropdown-item a-green green-bk">EN</a>
+                            <a href="{{ route('/', 'ru') }}" class="dropdown-item a-green green-bk">RU</a>
+                            <a href="{{ route('/', 'ch') }}" class="dropdown-item a-green green-bk">CH</a>
+                        </div>
+                    </li>
                 </ul>
                 <!--ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="https://ru.hexlet.io/session/new"><div class="my-2">Вход</div></a></li>
@@ -161,6 +173,7 @@
                 <div><a href="{{ route('mysite_contacts', app()->getLocale()) }}" class="a-green">{{ trans('site.contacts') }}</a></div>
                 <div style="padding:20px 0 0 0;">
                     <h4>{{ trans('site.Lang') }}</h4>
+                    <a href="{{ route('/', 'ua') }}"><img src="<?=config('app.url')?>/img/flags/ukraine-flag.png" style="width:28px;" alt="UA" title="UA" /></a>  &nbsp;
                     <a href="{{ route('/', 'es') }}"><img src="<?=config('app.url')?>/img/flags/Spain-flag-48.png" style="width:28px;" alt="ES" title="ES" /></a> &nbsp;
                     <a href="{{ route('/', 'en') }}"><img src="<?=config('app.url')?>/img/flags/United-kingdom-flag-48.png" style="width:28px;" alt="EN" title="EN" /></a> &nbsp;
                     <a href="{{ route('/', 'ru') }}"><img src="<?=config('app.url')?>/img/flags/Russia-flag-48.png" style="width:28px;" alt="RU" title="RU" /></a> &nbsp;
@@ -176,6 +189,17 @@
                 <div><a href="{{ route('mysite_webservice', app()->getLocale()) }}" class="a-green">{{ trans('site.m_webapi') }}</a></div>
                 <div><a href="{{ route('mysite_webportal', app()->getLocale()) }}" class="a-green">{{ trans('site.m_webportal') }}</a></div>
                 <div><a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="a-green">{{ trans('site.m_sitesystem') }}</a></div>
+                <div style="padding:20px 0 0 0;">
+                    <a href="https://www.youtube.com/channel/UCTnzcnfJ9LWjibVcq2wigtw" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
+                        <img src="<?=config('app.url')?>/img/youtube-icon.png" style="width:25px;" alt="Youtube" />
+                    </a> &nbsp;
+                    <a href="https://www.facebook.com/makklays/" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
+                        <img src="<?=config('app.url')?>/img/fb-icon.png" style="width:25px;" alt="Facebook" />
+                    </a> &nbsp;
+                    <a href="https://www.linkedin.com/company/makklays/" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
+                        <img src="<?=config('app.url')?>/img/linkedin-icon.png" style="width:25px;" alt="Linkedin" />
+                    </a>
+                </div>
                 <br/>
             </div>
             <div class="col-md-4">
@@ -271,7 +295,7 @@
     </div>
 </div>
 
-<div id="id_youtube" class="text-center" style="position:fixed; top:250px; right:-250px; font-size:25px; font-weight:300; height:44px; width:300px; background-color: #E62117; cursor:pointer;">
+<!--div id="id_youtube" class="text-center" style="position:fixed; top:250px; right:-250px; font-size:25px; font-weight:300; height:44px; width:300px; background-color: #E62117; cursor:pointer;">
     <a href="https://www.youtube.com/channel/UCTnzcnfJ9LWjibVcq2wigtw" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
         <div style="width:25px; padding:0; margin: -2px 0 0 10px; float:left;">
             <img src="<?=config('app.url')?>/img/youtube-icon.png" style="width:25px;" alt="Youtube" />
@@ -294,7 +318,7 @@
         </div>
         <div style="margin-left:0px;">Linkedin</div>
     </a>
-</div>
+</div-->
 <!--div id="id_twitter" target="_blank" class="text-center" style="position:fixed; top:382px; right:-250px; font-size:25px; font-weight:300; height:44px; width:300px; background-color:#1da1f2; cursor:pointer;">
     <a href="https://www.twitter.com/makklays/" style="color:#FFFFFF; text-decoration:none;" target="_blank" >
         <div style="width:25px; padding:0; margin: -2px 0 0 10px; float:left;">
@@ -374,6 +398,12 @@
             url: 'call-development-post',
             dataType:'json',
             data: form.serialize(),
+            /*data: {
+                "_token": "{{ csrf_token() }}",
+                "id": id,
+                "phone": phone,
+                "want_development": want_development
+            },*/
             type: "POST",
             success: function(response) {
                 if(response.success) {

@@ -110,7 +110,7 @@
         </div>
         <div class="col-md-7">
             <p class="text-left">
-                <?=trans('site.webapi3')?> <br/><br/>
+                <?=trans('site.wepapi3')?> <br/><br/>
             </p>
         </div>
         <div class="col-md-5">

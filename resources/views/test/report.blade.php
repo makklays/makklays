@@ -94,6 +94,7 @@
 
 <div style="text-align:center; width:322px; margin-top:40px; margin-left:auto; margin-right:auto; ">
     <div style="margin: 40px 0 10px 0;">
+        <a class="green" href="{{ route('test_php_report_get', 'ua') }}">UA</a> |
         <a class="green" href="{{ route('test_php_report_get', 'es') }}">ES</a> |
         <a class="green" href="{{ route('test_php_report_get', 'en') }}">EN</a> |
         <a class="green" href="{{ route('test_php_report_get', 'ru') }}">RU</a> |

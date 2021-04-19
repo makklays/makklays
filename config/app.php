@@ -80,14 +80,15 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ua',
 
     // доступные языки
     'available_locales' => [
         'en',
         'ru',
         'es',
-        'ch'
+        'ch',
+        'ua'
     ],
 
     /*
