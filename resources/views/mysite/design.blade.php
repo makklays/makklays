@@ -1,5 +1,5 @@
 
-@extends('layouts.main8')
+@extends('layouts.main10')
 
 @section('content')
 

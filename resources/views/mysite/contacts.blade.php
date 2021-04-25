@@ -1,6 +1,13 @@
-@extends('layouts.main8')
+@extends('layouts.main10')
 
 @section('content')
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('/', app()->getLocale()) }}" class="a-green"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li class="breadcrumb-item" aria-current="page">{{ trans('site.mysite_contacts') }}</li>
+        </ol>
+    </nav>
 
     <div class="row">
         <div class="col-md-12">
@@ -22,16 +29,15 @@
                 <abbr title="{{ trans('site.contacts_skype') }}">{{ trans('site.contacts_skype') }}:</abbr> <a href="Skype:makklays" class="a-green">makklays</a> <br/>
                 <abbr title="{{ trans('site.contacts_mob') }}">{{ trans('site.contacts_mob') }}:</abbr> <a href="tel:+380988705397" class="a-green">+38 (098) 870 5397</a>
                 <br/><br/>
-                <a href="mailto:office@makklays.com.ua" class="a-green">office@makklays.com.ua</a> <br/>
-                <a href="mailto:hr@makklays.com.ua" class="a-green">hr@makklays.com.ua</a> <br/>
-                <a href="mailto:makl-manager@makklays.com.ua" class="a-green">makl-manager@makklays.com.ua</a> <br/>
+                <a href="mailto:office@makklays.com" class="a-green">office@makklays.com</a> <br/>
+                <a href="mailto:hhrr@makklays.com" class="a-green">hhrr@makklays.com</a> <br/>
+                <a href="mailto:alexander.kuziv@makklays.com" class="a-green">alexander.kuziv@makklays.com</a> <br/>
             </address>
             <address>
                 <strong>{{ trans('site.Times_working') }}</strong> <br/>
                 <span>{{ trans('site.mon_fri') }}</span> <br/>
                 <span>{{ trans('site.sur_sun') }}</span>
             </address>
-
         </div>
 
         <div class="col-md-12" style="margin:30px 0 30px 0;">
@@ -69,7 +75,7 @@
                 zoom: 5
             });
             var image = {
-                url: 'http://makklays.com.ua/makklays.png',
+                url: 'http://makklays.com/makklays.png',
                 //size: new google.maps.Size(40, 42),
                 //origin: new google.maps.Point(0, 0),
                 //anchor: new google.maps.Point(13, 44),
@@ -93,11 +99,11 @@
                 '<b><?=trans('site.mysite_contacts')?></b><br/>'+
                 '<abbr title="<?=trans('site.contacts_skype')?>"><?=trans('site.contacts_skype')?>:</abbr> makklays <br/>'+
                 '<abbr title="<?=trans('site.contacts_mob')?>"><?=trans('site.contacts_mob')?>:</abbr> +38 (098) 870 5397 <br/>'+
-                '<a href="mailto:office@makklays.com.ua" class="a-green">office@makklays.com.ua</a> <br/>'+
+                '<a href="mailto:office@makklays.com" class="a-green">office@makklays.com</a> <br/>'+
                 '</address>'+
                 '<address>'+
                 '<b><?=trans('site.Times_working')?></b> <br/>'+
-                '<span><?=trans('site.mon_fri')?></span> <br/>'+
+                "<span><?=trans('site.mon_fri')?></span> <br/>"+
                 '<span><?=trans('site.sur_sun')?></span>'+
                 '</address></p>'+
                 '</div>';
@@ -118,6 +124,16 @@
             }*/
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARJ6syX24A-hsZMsKFIufHeQYCgevlv4Q&callback=initMap&language=<?=(app()->getLocale() != 'ch' ? app()->getLocale() : 'zh-TW')?>" async defer></script>
+    <?php
+        $local = app()->getLocale();
+        if ($local != 'ch' && $local != 'ua') {
+            $lang = app()->getLocale();
+        } else if ($local == 'ua') {
+            $lang = 'uk';
+        } else {
+            $lang = 'zh-TW';
+        }
+    ?>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARJ6syX24A-hsZMsKFIufHeQYCgevlv4Q&callback=initMap&language=<?=$lang?>" async defer></script>
 
 @endsection

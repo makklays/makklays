@@ -17,7 +17,7 @@ class CreateTableVisits extends Migration
             $table->bigIncrements('id');
             $table->string('url')->nullable();
             $table->string('url_referer')->nullable();
-            $table->string('lang', 10)->nullable();
+            $table->string('lang', 11)->nullable();
             $table->integer('is_mobile')->default(0);
             $table->string('ip')->nullable();
             $table->datetime('created_at')->default('1970-01-01 00:00:00');

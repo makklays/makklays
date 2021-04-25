@@ -31,9 +31,9 @@ class CallMail extends Mailable
      */
     public function build()
     {
-        return $this->from('info@makklays.com.ua')
-            ->to('office@makklays.com.ua')
-            ->subject('Заказ разработки - перезвонить | Makklays.com.ua')
+        return $this->from('info@makklays.com')
+            ->to('office@makklays.com')
+            ->subject('Заказ разработки - перезвонить | makklays.com')
             ->view('emails.call')
             ->with([
                 'fio' => $this->call->fio,

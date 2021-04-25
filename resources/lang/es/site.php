@@ -5,6 +5,7 @@ return [
     'free_consultation' => 'Obtenga una consulta gratis',
     'uslugi' => 'Proporciono servicios',
     'what_am_i_do' => '¿Qué estoy haciendo?',
+    'Portfolio1' => 'Portafolio',
 
     '1_service' => 'Programación del sitio web',
     '2_service' => 'Desarrollo de API para aplicaciones móviles.',
@@ -24,7 +25,7 @@ return [
 
     'zapusk' => 'Activación de iteración',
     'zapusk_det' => 'Las iteraciones le permiten resaltar parte del trabajo para una implementación exitosa',
-    'podelu' => 'Sin "agua"',
+    'podelu' => 'Sin más preámbulos',
     'podelu_det' => 'Solo hechos y acciones que conducen al resultado',
     'garant' => 'Resultado garantizado',
     'garant_det' => 'Para todos nuestros desarrollos, doy una garantía de un año y elimino los errores detectados de forma gratuita.',
@@ -96,7 +97,7 @@ return [
     'send_success' => 'Su mensaje ha sido enviado con exito!',
 
     'home' => 'Inicio',
-    'mysite_about' => 'Acerca de nosotros',
+    'mysite_about' => 'Nosotros', // Acerca de nosotros
     'mysite_howmake' => '¿Como trabajamos?',
     'mysite_whatmake' => '¿Que estamos haciendo?',
     'mysite_contacts' => 'Сontactos',
@@ -120,7 +121,7 @@ return [
     'we_call_you' => 'Le devolveremos la llamada',
 
     'our_advantages' => 'Nuestras ventajas?',
-    'adv1' => 'CMS conveniente y claro',
+    'adv1' => 'CMS conveniente y claro en Laravel',
     'adv1_det' => 'Sistema de gestión del sitio con diferentes derechos de acceso. Interfaz mejorada para el trabajo conveniente del administrador.',
     'adv2' => 'Hosting y HTTPS',
     'adv2_det' => 'Configuramos el protocolo https seguro para su sitio web cuando ordena nuestros servicios de alojamiento.',
@@ -135,19 +136,19 @@ return [
 
     'howmake1' => 'El desarrollo de sitios web en Makklays no es el objetivo final. Esta es solo una herramienta que debería ayudar a resolver el problema del cliente.',
     'howmake2' => 'El desarrollo consta de varias etapas:',
-    'howmake3' => 'declaración del problema;',
-    'howmake4' => 'preparación de especificaciones técnicas y conclusión de un acuerdo con un cliente;',
-    'howmake5' => 'desarrollo de maquetación, coordinación con el cliente;',
-    'howmake6' => 'diseño de la plantilla, instalación de un sistema de gestión de contenido, configuración de alojamiento;',
-    'howmake7' => 'desarrollo de la funcionalidad necesaria, pruebas;',
-    'howmake8' => 'relleno de contenido;',
-    'howmake9' => 'cerrar el pedido después de la aceptación por parte del cliente;',
+    'howmake3' => 'Declaración del problema;',
+    'howmake4' => 'Preparación de especificaciones técnicas y conclusión de un acuerdo con un cliente;',
+    'howmake5' => 'Desarrollo de maquetación, coordinación con el cliente;',
+    'howmake6' => 'Diseño de la plantilla, instalación de un sistema de gestión de contenido, configuración de alojamiento;',
+    'howmake7' => 'Desarrollo de la funcionalidad necesaria, pruebas;',
+    'howmake8' => 'Relleno de contenido;',
+    'howmake9' => 'Cerrar el pedido después de la aceptación por parte del cliente;',
     'howmake10' => 'Usamos tecnología avanzada. Facebook, Amazon: todas estas plataformas están escritas en el idioma
 Programación PHP con los estándares de seguridad más robustos y estabilidad de código.',
-    'howmake11' => 'Elegimos este lenguaje y sus marcos Yii2, Laravel, cuando todavía no se metieron en el TOP más utilizado en el planeta.',
+    'howmake11' => 'Elegimos este lenguaje y su marco Laravel, cuando todavía no se metieron en el TOP más utilizado en el planeta.',
     'howmake12' => 'Esto nos permite desarrollar una oferta única en Makklays para usted y ser flexible para cumplir sus deseos.',
     'howmake13' => 'Formas de consulta:',
-    'howmake14' => 'Reunión en Kiev (por acuerdo);',
+    'howmake14' => 'Reunión en ciudad (por acuerdo);',
     'howmake15' => 'Consulta por Skype;',
     'howmake16' => 'Consulta escrita (formato: pregunta / respuesta);',
 
@@ -218,26 +219,26 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
     'review2_city' => 'Barcelona',
     'review3' => 'Mi tienda en línea ahora me brinda ganancias e implementa todas mis ideas locas, descargas, catálogos y, lo más importante, informes financieros con gráficos. Estoy muy satisfecho con el trabajo. Hay una versión móvil Ahora muchas órdenes provienen de allí. La velocidad y la optimización son geniales.',
 
-    'about_1' => '<b>Makklays</b> es un equipo de personas que se han dedicado profesionalmente a la programación informática de sitios desde 2007. Desarrolló y programó con éxito más de un sitio web corporativo, una tienda en línea para empresas medianas, así como un portal web sofisticado para bancos en nuestro país. <br/> <br/> 
+    'about_1' => '<b>Makklays</b> es un equipo de personas que se han dedicado profesionalmente a la programación informática de sitios desde 2007. Desarrolló y programó con éxito más de un sitio web corporativo, una tienda en línea para empresas medianas, así como un portal web sofisticado para bancos en nuestro país. <br/> <br/>
 <b>Nuestra misión</b> es ayudar a desarrollar un negocio exitoso en el campo de TI. Nos gustaría convertirnos en un socio confiable para brindar servicios de desarrollo, desarrollo de negocios en Internet y mantenimiento de sitios web. Logramos nuestro objetivo ofreciendo servicios que conducen al desarrollo y la prosperidad de la sociedad.',
     'about_1_1' => '<b>Desarrollo de sitios web</b> no es nuestro objetivo final. Esta es solo una herramienta que debería ayudar al desarrollo de negocios y aumentar sus ganancias.',
     'about_2' => 'Amamos vivir y amamos la vida en todas sus manifestaciones.',
     'about_3' => 'Makklays ama los nuevos conocimientos, y también ama los proyectos de TI grandes e interesantes, que desean convertirse en un socio confiable para usted y su negocio.',
 
     'how_make1' => 'Utilizamos el desarrollo de tecnologías modernas y avanzadas. Facebook, Amazon: todas estas plataformas están escritas en el lenguaje de programación PHP con los estándares de seguridad más robustos y la estabilidad del código.',
-    'how_make2' => 'Elegimos este lenguaje y sus marcos Yii2, Laravel, cuando todavía no se metieron en el TOP más utilizado en el planeta. Esto nos permite desarrollar una oferta única en Makklays para usted y ser flexible en la realización de sus deseos inusuales.',
+    'how_make2' => 'Elegimos este lenguaje y sus marcos Laravel, cuando todavía no se metieron en el TOP más utilizado en el planeta. Esto nos permite desarrollar una oferta única en Makklays para usted y ser flexible en la realización de sus deseos inusuales.',
     'development_steps' => 'El desarrollo consta de varias etapas',
     'make_dorogo' => 'Aunque todo esto es pago por nuestro trabajo, y si cree que la mano de obra debería pagarse, trabajaremos juntos. También sabemos cómo hablar el idioma, así que si todavía quieres saber los precios,',
     'go_link' => 'sigue el enlace',
     'Make_dorogo' => '¿Lo estamos haciendo caro? Lo hacemos!',
 
-    'dev1' => 'declaración del problema',
-    'dev2' => 'preparación de especificaciones técnicas y conclusión de un acuerdo con un cliente',
-    'dev3' => 'desarrollo de maquetación, coordinación con el cliente',
-    'dev4' => 'diseño de la plantilla, instalación de un sistema de gestión de contenido, configuración de un sitio de alojamiento y demostración',
-    'dev5' => 'desarrollo de la funcionalidad necesaria, pruebas',
-    'dev6' => 'relleno de contenido',
-    'dev7' => 'cerrar el pedido después de la aceptación por parte del cliente',
+    'dev1' => 'Declaración del problema',
+    'dev2' => 'Preparación de especificaciones técnicas y conclusión de un acuerdo con un cliente',
+    'dev3' => 'Desarrollo de maquetación, coordinación con el cliente',
+    'dev4' => 'Diseño de la plantilla, instalación de un sistema de gestión de contenido, configuración de un sitio de alojamiento y demostración',
+    'dev5' => 'Desarrollo de la funcionalidad necesaria, pruebas',
+    'dev6' => 'Relleno de contenido',
+    'dev7' => 'Cerrar el pedido después de la aceptación por parte del cliente',
 
     'Our_price' => 'Nuestros precios',
     'price_text1' => 'No tomamos decisiones de plantilla (a menos que usted lo solicite)',
@@ -472,7 +473,7 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
     'logged_in' => '¡Estás conectado!',
 
     'mysite_policy' => 'Política de privacidad',
-    'policy1' => 'This Privacy Policy (hereinafter referred to as the "Privacy Policy") applies to all information that the Makklays website located on the domain name <a href="http://makklays.com.ua/:lang" class="a-green">http://makklays.com.ua/:lang</a> and related domain names, can get about the User during use of the site.',
+    'policy1' => 'This Privacy Policy (hereinafter referred to as the "Privacy Policy") applies to all information that the Makklays website located on the domain name <a href="http://makklays.com/:lang" class="a-green">http://makklays.com/:lang</a> and related domain names, can get about the User during use of the site.',
     'policy_termins' => 'Definición de términos',
     'Add_article' => 'Añadir articulo',
     'Fulltext' => 'Texto completo',
@@ -551,7 +552,7 @@ Programación PHP con los estándares de seguridad más robustos y estabilidad d
 - publicación de contenido; <br/>
 - presentación de información en una forma conveniente para la navegación, búsqueda. <br/><br/>
 El sistema de control puede contener una amplia variedad de datos: documentos, películas, fotos, números de teléfono, datos científicos, etc. Tal sistema se usa a menudo para almacenar, administrar, revisar y publicar documentación. El control de versiones es una de las características importantes cuando un grupo de personas cambia el contenido. <br/><br/>
-En general, los sistemas de administración de contenido se dividen en sistemas corporativos de administración de contenido (Ing. Enterprise Content Management System) para trabajar con contenido dentro de cualquier organización y un sistema de administración de contenido web (Ing. Web Content Management System) para respaldar el funcionamiento del sitio web. <br/><br/> 
+En general, los sistemas de administración de contenido se dividen en sistemas corporativos de administración de contenido (Ing. Enterprise Content Management System) para trabajar con contenido dentro de cualquier organización y un sistema de administración de contenido web (Ing. Web Content Management System) para respaldar el funcionamiento del sitio web. <br/><br/>
 En otras palabras, un sistema de sitio puede tener componentes internos y externos. La parte interna del sistema del sitio está disponible para los empleados dentro de la empresa, y la parte externa está disponible para todos los usuarios del sitio. <br/><br/>
 Hace unos 3 años, el principal problema para implementar sistemas de sitio en la mayoría de las empresas era el alto costo de las soluciones en caja con funcionalidad reducida y la necesidad de implementarlas en función de nuestra propia infraestructura. Con el advenimiento de las soluciones basadas en la nube (SaaS), tal problema, incluso para una pequeña empresa, ha dejado de ser relevante. <br/><br/>
 El uso de tales soluciones tecnológicas en el trabajo es beneficioso tanto para pequeñas como para grandes empresas. Y si está interesado en los beneficios que esto puede proporcionar al propietario del negocio, siga leyendo. <br/><br/>
@@ -707,7 +708,7 @@ No se olvide también del rendimiento: es obvio que una solución paga compleja 
                 y un catálogo de productos con la capacidad de realizar pedidos. Después de que el comprador se haya registrado y emitido
                 orden, el gerente de la tienda recibe una carta del sitio de él con una solicitud. Gerente de contactos potenciales
                 El comprador acepta el tipo de entrega y envía los productos.
-                
+
                 En otras palabras, la esencia del proceso de compra en una tienda de este tipo es enviar una solicitud de productos por correo electrónico,
                 y la tienda en sí es una lista de precios interactiva. La principal ventaja de la "tienda en línea" es la conveniencia de colocar una aplicación para el usuario.
                 La desventaja es la necesidad de recurrir a los servicios de especialistas para apoyar la tienda en línea (por ejemplo, para
@@ -716,7 +717,7 @@ No se olvide también del rendimiento: es obvio que una solución paga compleja 
                 por lo que la necesidad de recurrir a la ayuda de especialistas desaparece por completo, es decir tu
                 Puede ahorrar en el soporte de la tienda y actualizar el contenido de la tienda usted mismo sin habilidades especiales
                 y conocimiento de lenguajes de programación. <br/> <br/>
-                
+
                 La secuencia de acciones o lógica se puede modificar y configurar para cada tienda en línea por separado.
                 Nuestro desarrollo de tiendas en línea es mucho más flexible que el desarrollo de una "solución en caja", que no tiene la capacidad de modificarse para satisfacer las necesidades de hacer negocios y sus características.
                 Además, nuestras tiendas en línea son fácilmente modificables para cualquier necesidad y sus deseos.
@@ -731,7 +732,7 @@ No se olvide también del rendimiento: es obvio que una solución paga compleja 
                 comienza en 1700 euros, y al ordenar una tienda similar en nuestro estudio obtienes lo mismo
                 más barato gracias al mecanismo desarrollado por la compañía para actualizar los contenidos de la tienda, que se pueden administrar
                 Incluso un novato. <br/><br/>
-                
+
                 Los ahorros del soporte interno ayudarán al propietario a obtener una "Tienda en línea Premium".
                 Para actualizarlo, a menudo no es necesario involucrar a especialistas (excepto en casos de emergencia), con esto
                 Cualquier empleado sensato de la empresa hará frente al problema. Por ejemplo, para actualizar el catálogo de bienes requerido
@@ -904,7 +905,7 @@ La optimización de motores de búsqueda para portales corporativos es opcional.
                 usuarios porque se devuelven en formato XML o JSON.',
     'wepapi2' => 'Un servicio web RESTful es un servicio web que se escribe en base a la estructura REST (REpresentational State Transfer). REST ya se usa ampliamente y reemplaza el servicio web basado en SOAP y WSDL. El servicio web RESTful es liviano y es fácil de expandir y mantener.
 Los primeros conceptos sobre REST se introdujeron en 2000 en la tesis doctoral de Roy Thomas Fielding (cofundador de HTTP). En la disertación, introduce en detalle las restricciones y reglas, así como los métodos de ejecución en el sistema para obtener el sistema REST.',
-    'webapi3' => 'REST define las reglas de la arquitectura para el diseño de sus servicios web, se centra en la sistemática
+    'wepapi3' => 'REST define las reglas de la arquitectura para el diseño de sus servicios web, se centra en la sistemática
                 Los recursos, incluido el formato de datos que se transmite a través de HTTP, se escriben en diferentes idiomas.
                 Debido a la gran cantidad de usuarios de servicios web, REST se ha vuelto muy popular. Y en los últimos años, se ha vuelto muy popular como
                 El servicio es mucho más simple y fácil de usar. De hecho, REST casi reemplazó a SOAP
@@ -924,7 +925,7 @@ Los primeros conceptos sobre REST se introdujeron en 2000 en la tesis doctoral d
                 - Para recuperar datos, use <b>GET</b>. <br/>
                 - Para cambiar el estado de los datos o actualizarlos, use <b>PUT</b>. <br/>
                 - Para cancelar o eliminar datos, use <b>DELETE</b>.',
-    'webapi4' => 'Tenga en cuenta que las reglas anteriores son opcionales, de hecho, solo puede usar el método GET para obtener los datos,
+    'wepapi4' => 'Tenga en cuenta que las reglas anteriores son opcionales, de hecho, solo puede usar el método GET para obtener los datos,
                 Insertar, cambiar o eliminar datos en el servidor. Pero REST proporciona las reglas anteriores que describen su nombre
                 y explica la acción. <br/> <br/>
 
@@ -1070,7 +1071,8 @@ Los sitios del sistema están disponibles en días y horarios hábiles en la emp
     'Edit_employee' => 'Editar empleado',
     'Add_employee' => 'Añadir empleado',
     'Add_new_employee' => 'Añadir nuevo empleado',
-    '' => '',
+
+    'Pricee' => 'Precio',
     '' => '',
     '' => '' ,
     '' => '' ,

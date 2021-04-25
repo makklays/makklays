@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use App\Call;
 use App\Mail\CallMail;
 use App\Mail\FeedbackMail;
@@ -41,15 +42,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка сайта и ведение сайта';
+            $seo->title = 'Разработка сайта и ведение сайта';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo sitio web y mantenimiento de sitio web';
+            $seo->title = 'Desarrollo sitio web y mantenimiento de sitio web';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, e-commerce website, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, e-commerce website, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and Website maintenance';
+            $seo->title = 'Website development and Website maintenance';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'website development, development, website, online store, internet-shop, shop, corporate website, landing page, e-commerce website, landing, web portal, expensive, turnkey development';
         }
@@ -72,15 +77,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка сайтов и запуск в интернете';
+            $seo->title = 'Разработка сайтов и запуск в интернете';
             $seo->description = 'Разрабатываем лендинг, корпоративный сайт, интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, e-commerce website, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, e-commerce website, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, e-commerce website, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та запуск сайту в інтернеті';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance';
+            $seo->title = 'Website development and maintenance';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'website development, development, website, online store, internet-shop, shop, corporate website, landing page, e-commerce website, landing, web portal, expensive, turnkey development';
         }
@@ -220,15 +229,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Статистика';
+            $seo->title = 'Разработка и ведение сайтов - Статистика';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, landing, e-commerce website, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Staistics';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Staistics';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, e-commerce website, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, e-commerce website, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Статистика';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Statistics';
+            $seo->title = 'Website development and maintenance - Statistics';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'website development, development, website, online store, internet-shop, shop, corporate website, landing page, e-commerce website, landing, web portal, expensive, turnkey development';
         }
@@ -280,19 +293,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - О нас';
+            $seo->title = 'Разработка сайта и ведение сайтов - О нас';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, landing, e-commerce website, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Sobre nosotros';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Sobre nosotros';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, e-commerce website, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, e-commerce website, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
-        } else if ($lang == 'ch') {
-            $seo->title = 'Makklays - Website development and maintenance - About us';
-            $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
-            $seo->keywords = 'website development, development, website, online store, internet-shop, shop, corporate website, landing page, e-commerce website, landing, web portal, expensive, turnkey development';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Про нас';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - About us';
+            $seo->title = 'Website development and maintenance - About us';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'website development, development, website, online store, internet-shop, shop, corporate website, landing page, e-commerce website, landing, web portal, expensive, turnkey development';
         }
@@ -314,15 +327,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Как мы работаем?';
+            $seo->title = 'Разработка и ведение сайтов - Как мы работаем?';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Как мы работаем?, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - ¿Como trabajamos?';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - ¿Como trabajamos?';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, e-commerce website, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = '¿Como trabajamos?, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, e-commerce website, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Як ми працюємо?';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - How we are working?';
+            $seo->title = 'Website development and maintenance - How we are working?';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'How we are working?, website development, development, website, online store, internet-shop, shop, corporate website, e-commerce website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -344,15 +361,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Что мы делаем?';
+            $seo->title = 'Разработка и ведение сайтов - Что мы делаем?';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Что мы делаем?, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - ¿Que estamos haciendo?';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - ¿Que estamos haciendo?';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, e-commerce website, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = '¿Que estamos haciendo?, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, e-commerce website, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Що ми робимо?';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - What are we doing?';
+            $seo->title = 'Website development and maintenance - What are we doing?';
             $seo->description = 'Makklays - Landing page development, corporate website development, online shop, web portal, e-commerce website, website system, web service and API for mobile applications';
             $seo->keywords = 'What are we doing?, website development, development, website, online store, internet-shop, shop, e-commerce website, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -374,15 +395,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Контакты';
+            $seo->title = 'Разработка и ведение сайтов - Контакты';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Контакты, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Сontactos';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Сontactos';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, e-commerce website, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'Сontactos, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, e-commerce website, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Контакти';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Contacts';
+            $seo->title = 'Website development and maintenance - Contacts';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'Contacts, website development, development, website, online store, internet-shop, shop, corporate website, e-commerce website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -403,15 +428,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Портфолио';
+            $seo->title = 'Разработка и ведение сайтов - Портфолио';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Оставить заявку, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Portafolio';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Portafolio';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'Deja una solicitud, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, e-commerce website, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Портфолiо';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Portfolio';
+            $seo->title = 'Website development and maintenance - Portfolio';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'Submit your application, website development, development, website, online store, internet-shop, shop, e-commerce website, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -433,15 +462,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Оставить заявку';
+            $seo->title = 'Разработка и ведение сайтов - Оставить заявку';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Оставить заявку, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Deja una solicitud';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Deja una solicitud';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'Deja una solicitud, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, e-commerce website, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Залишити заявку';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Submit your application';
+            $seo->title = 'Website development and maintenance - Submit your application';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'Submit your application, website development, development, website, online store, internet-shop, shop, e-commerce website, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -454,7 +487,7 @@ class MysiteController extends Controller
     // Страница - Скачать бриф
     public function brief()
     {
-        if (app()->getLocale() == 'ru') {
+        if (app()->getLocale() == 'ru' || app()->getLocale() == 'ua') {
             return redirect('/briefs/Brief_na_razrabotku_sayta.docx');
         } else if (app()->getLocale() == 'es') {
             return redirect('/briefs/Brief_resumen_de_desarrollo.docx');
@@ -468,7 +501,7 @@ class MysiteController extends Controller
     // Страница - Скачать ПРАЙС на разработку
     public function downloadPrice()
     {
-        if (app()->getLocale() == 'ru') {
+        if (app()->getLocale() == 'ru' || app()->getLocale() == 'ua') {
             return redirect('/price/Makklays_PRICE_development_site_ru.doc');
         } if (app()->getLocale() == 'es') {
             return redirect('/price/Makklays_PRECIO_Desarrollo_de_sitio_web.doc');
@@ -489,15 +522,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Бриф на разработку сайта';
+            $seo->title = 'Разработка и ведение сайтов - Бриф на разработку сайта';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, e-commerce website, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, e-commerce website, landing, веб-портал, дорого, разработка под ключ, бриф';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Resumen de desarrollo del sitio web';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Resumen de desarrollo del sitio web';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, e-commerce website, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano, resumen';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Бриф на розробку сайту';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Website development brief';
+            $seo->title = 'Website development and maintenance - Website development brief';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'website development, development, website, online store, internet-shop, shop, corporate website, landing page, e-commerce website, landing, web portal, expensive, turnkey development, brief';
         }
@@ -519,15 +556,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Лендинг';
+            $seo->title = 'Разработка и ведение сайтов - Разработка - Лендинг';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Лендинг, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, e-commerce website, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Desarrollo - Landing page';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Desarrollo - Landing page';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'Landing page, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, e-commerce website, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Розробка - Лендинг';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Development - Página de aterrizaje';
+            $seo->title = 'Website development and maintenance - Development - Página de aterrizaje';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, web service and API for mobile applications';
             $seo->keywords = 'Página de aterrizaje, website development, development, website, online store, internet-shop, shop, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -549,15 +590,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Интернет-магазин';
+            $seo->title = 'Разработка и ведение сайтов - Разработка - Интернет-магазин';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Интернет-магазин, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Desarrollo - Tienda en línea';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Desarrollo - Tienda en línea';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, e-commerce website, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'Tienda en línea, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, e-commerce website, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Розробка - Iнтернет-магазин';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Development - Online store - e-commerce website';
+            $seo->title = 'Website development and maintenance - Development - Online store - e-commerce website';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'Online shop, website development, development, website, online store, internet-shop, shop, corporate website, e-commerce website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -579,15 +624,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Корпоративный сайт';
+            $seo->title = 'Разработка и ведение сайтов - Разработка - Корпоративный сайт';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Корпоративный сайт, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Desarrollo - Web corporativa';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Desarrollo - Web corporativa';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'Web corporativa, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, e-commerce website, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Розробка - Корпоративний сайт';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Development - Corporate website';
+            $seo->title = 'Website development and maintenance - Development - Corporate website';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'Corporate website, website development, development, website, online store, internet-shop, shop, corporate website, e-commerce website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -609,15 +658,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Сайт-система';
+            $seo->title = 'Разработка и ведение сайтов - Разработка - Сайт-система';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Сайт-система, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Desarrollo - Sistema de sitio web';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Desarrollo - Sistema de sitio web';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'Sistema de sitio web, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Розробка - Сайт-система';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Development - Website system';
+            $seo->title = 'Website development and maintenance - Development - Website system';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'Website system, website development, development, website, online store, internet-shop, shop, corporate website, e-commerce website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -639,15 +692,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Web-портал';
+            $seo->title = 'Разработка и ведение сайтов - Разработка - Web-портал';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Web-портал, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, e-commerce website, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Desarrollo - Portal web';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Desarrollo - Portal web';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'Portal web, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Розробка - Web-портал';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Development - Web portal';
+            $seo->title = 'Website development and maintenance - Development - Web portal';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'Web portal, website development, development, website, online store, internet-shop, shop, corporate website, e-commerce website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -669,15 +726,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Разработка - Веб сервис и API для мобильного приложения';
+            $seo->title = 'Разработка и ведение сайтов - Разработка - Веб сервис и API для мобильного приложения';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'Веб сервис и API для мобильного приложния, JSON, XML, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, e-commerce website, shop, корпоративный сайт, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Desarrollo - Servicio web y API para aplicación móvil';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Desarrollo - Servicio web y API para aplicación móvil';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'Servicio web y API para movil application, JSON, XML, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Розробка - Веб сервіс и API для мобільного додатку';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Development - Web service and API for mobile application';
+            $seo->title = 'Website development and maintenance - Development - Web service and API for mobile application';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'Web service and API for mobile application, JSON, XML, website development, development, website, online store, e-commerce website, internet-shop, shop, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -699,15 +760,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - SEO Слов число';
+            $seo->title = 'Разработка и ведение сайтов - SEO Слов число';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'SEO Слов число, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - SEO Word count';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - SEO Word count';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'SEO Word count, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - SEO Слів кількість';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - SEO Word count';
+            $seo->title = 'Website development and maintenance - SEO Word count';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'SEO Word count, website development, development, website, online store, internet-shop, shop, corporate website, e-commerce website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -746,15 +811,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - SEO Слов число';
+            $seo->title = 'Разработка и ведение сайтов - SEO Слов число';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, e-commerce website, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'SEO Слов число, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, e-commerce website, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - SEO Word count';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - SEO Word count';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'SEO Word count, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - SEO Слів кількість';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - SEO Word count';
+            $seo->title = 'Website development and maintenance - SEO Word count';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, e-commerce website, web service and API for mobile applications';
             $seo->keywords = 'SEO Word count, website development, development, website, online store, internet-shop, shop, corporate website, e-commerce website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -816,7 +885,7 @@ class MysiteController extends Controller
     public function callDevelopmentPost(Request $request)
     {
         // проверяем есть ли в backlist-e
-        $black = DB::selectOne('SELECT * FROM blacklist WHERE ip=?', [$this->getRealUserIp()]);
+        /*$black = DB::selectOne('SELECT * FROM blacklist WHERE ip=?', [$this->getRealUserIp()]);
         if (isset($black) && !empty($black)) {
             return response()->json(['error' => 'blacklist', 'lang' => app()->getLocale()]);
             exit;
@@ -828,7 +897,7 @@ class MysiteController extends Controller
             DB::insert('INSERT INTO blacklist SET ip=?', [$this->getRealUserIp()]);
             return response()->json(['error' => 'blacklist', 'lang' => app()->getLocale()]);
             exit;
-        }
+        }*/
 
         // validación
         $validator = Validator::make($request->all(), [
@@ -854,11 +923,12 @@ class MysiteController extends Controller
         $call->save();
 
         // отправляем на email - заказ разработки
-        Mail::to('office@makklays.com.ua')->send(new CallMail($call));
+        Mail::to('office@makklays.com')->send(new CallMail($call));
 
         return response()->json(['success' => 'success']);
     }
 
+    //
     function getRealUserIp(){
         switch(true){
             case (!empty($_SERVER['HTTP_X_REAL_IP'])) : return $_SERVER['HTTP_X_REAL_IP'];
@@ -868,6 +938,7 @@ class MysiteController extends Controller
         }
     }
 
+    //
     public function onlineBriefPost(Request $request)
     {
         // проверяем есть ли в backlist-e
@@ -1114,15 +1185,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Политика конфиденциальности';
+            $seo->title = 'Разработка и ведение сайтов - Политика конфиденциальности';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'SEO Слов число, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Política de privacidad';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Política de privacidad';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'SEO Word count, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - SEO Слів кількість';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Privacy policy';
+            $seo->title = 'Website development and maintenance - Privacy policy';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, web service and API for mobile applications';
             $seo->keywords = 'SEO Word count, website development, development, website, online store, internet-shop, shop, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -1144,15 +1219,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Статья';
+            $seo->title = 'Разработка и ведение сайтов - Статья';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'SEO Слов число, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Artículo';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Artículo';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'SEO Word count, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Статтi';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Article';
+            $seo->title = 'Website development and maintenance - Article';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, web service and API for mobile applications';
             $seo->keywords = 'SEO Word count, website development, development, website, online store, internet-shop, shop, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -1173,13 +1252,19 @@ class MysiteController extends Controller
     }
 
     // страница - статья
-    public function showArticle(Request $request, $lang, $slag)
+    public function showArticle(Request $request, $lang, $slug)
     {
         // добавляем число просмотров
-        $update = DB::update('UPDATE articles SET views=views+1 WHERE slag=?', [$slag]);
+        $update = DB::update('UPDATE articles SET views=views+1 WHERE slag=?', [$slug]);
 
+        $lang = app()->getLocale();
+
+        // dd($slug);
+        // dd($lang);
         // get article
-        $article = DB::selectOne('SELECT * FROM articles WHERE is_visible=1 AND lang=? AND slag=?', [app()->getLocale(), $slag]);
+        $article = DB::selectOne('SELECT * FROM articles WHERE is_visible=1 AND lang=? AND slag=?', [$lang, $slug]);
+
+        // dd($article);
 
         $new_url = $this->new_url();
 
@@ -1194,11 +1279,15 @@ class MysiteController extends Controller
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'SEO Слов число, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo de sitios web - Artículo - '.$article->title;
+            $seo->title = 'Desarrollo de sitios web - Artículo - '.$article->title;
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'SEO Word count, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Стаття - '.$article->title;
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development - Article - '.$article->title;
+            $seo->title = 'Website development - Article - '.$article->title;
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, web service and API for mobile applications';
             $seo->keywords = 'SEO Word count, website development, development, website, online store, internet-shop, shop, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -1206,6 +1295,8 @@ class MysiteController extends Controller
         if (isset($article->photo) && !empty($article->photo)) {
             $seo->img = config('app.url').'/articles/imgs/'.$article->photo;
         }
+
+        //dd($seo);
 
         return view('mysite.article', [
             'article' => $article,
@@ -1225,15 +1316,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 1;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Документы';
+            $seo->title = 'Разработка и ведение сайтов - Документы';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'SEO Слов число, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Documentos';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Documentos';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'SEO Word count, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Документи';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Documents';
+            $seo->title = 'Website development and maintenance - Documents';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, web service and API for mobile applications';
             $seo->keywords = 'SEO Word count, website development, development, website, online store, internet-shop, shop, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -1256,15 +1351,19 @@ class MysiteController extends Controller
         $seo->short_url = $new_url;
         $seo->show_urls = 0;
         if ($lang == 'ru') {
-            $seo->title = 'Makklays - Разработка и ведение сайтов - Blacklist';
+            $seo->title = 'Разработка и ведение сайтов - Blacklist';
             $seo->description = 'Makklays - Разработка лендинг, разработка корпоративный сайт, делаем интернет-магазин, веб-портал, сайт-система, веб-сервис и API для мобильных приложений';
             $seo->keywords = 'SEO Слов число, разработка сайта, разработка, сайт, интернет-магазин, internet-shop, shop, корпоративный сайт, лендинг, landing, веб-портал, дорого, разработка под ключ';
         } else if ($lang == 'es') {
-            $seo->title = 'Makklays - Desarrollo y mantenimiento de sitios web - Blacklist';
+            $seo->title = 'Desarrollo y mantenimiento de sitios web - Blacklist';
             $seo->description = 'Makklays - Desarrollo de página de aterrizaje, sitio web corporativo, tienda en línea, portal web, sistema de sitio web, servicio web y API para aplicaciones móviles';
             $seo->keywords = 'SEO Word count, desarrollo de sitios web, desarrollo, sitio web, tienda en línea, tienda de internet, tienda, sitio web corporativo, página de inicio, aterrizaje, portal web, desarrollo costoso y llave en mano';
+        } else if ($lang == 'ua') {
+            $seo->title = 'Розробка сайту та ведення сайту - Blacklist';
+            $seo->description = 'Makklays - Розробка стрічки, розробка корпоративного сайту, створення інтернет-магазину, веб-порталу, веб-сайту електронної комерції, веб-системи, веб-сервісу та API для мобільних додатків';
+            $seo->keywords = 'розробка сайту, розробка, сайт, інтернет-магазин, інтернет-магазин, магазин, корпоративний сайт, веб-сайт електронної комерції, стрічка, посадка, веб-портал, дорого, розробка під ключ';
         } else {
-            $seo->title = 'Makklays - Website development and maintenance - Blacklist';
+            $seo->title = 'Website development and maintenance - Blacklist';
             $seo->description = 'Makklays - Landing page development, corporate website development, online store, web portal, website system, web service and API for mobile applications';
             $seo->keywords = 'SEO Word count, website development, development, website, online store, internet-shop, shop, corporate website, landing page, landing, web portal, expensive, turnkey development';
         }
@@ -1310,5 +1409,15 @@ class MysiteController extends Controller
                 'ip' => $this->getRealUserIp(),
                 'created_at' => date('Y-m-d H:i:s')
             ]);
+    }
+
+    // Para desarrollo sitemap en sitio web
+    public function sitemap()
+    {
+        $articles = Article::query()->where(['is_visible' => 1])->get();
+
+        return response()->view('sitemap.sitemap', [
+            'articles' => $articles,
+        ])->header('Content-Type', 'text/xml');
     }
 }

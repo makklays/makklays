@@ -276,25 +276,25 @@ return [
     'pland_standart_price' => '300 €',
     'pland_individual_price' => '350 €',
 
-    'store_simple_price' => '1700 €',
-    'store_standart_price' => '1900 €',
-    'store_individual_price' => '2100 €',
+    'store_simple_price' => '1 700 €',
+    'store_standart_price' => '1 900 €',
+    'store_individual_price' => '2 100 €',
 
     'corp_simple_price' => '850 €',
     'corp_standart_price' => '950 €',
-    'corp_individual_price' => '1100 €',
+    'corp_individual_price' => '1 100 €',
 
     'service_simple_price' => '400 €',
     'service_standart_price' => '460 €',
     'service_individual_price' => '520 €',
 
-    'portal_simple_price' => '3000 €',
-    'portal_standart_price' => '3500 €',
-    'portal_individual_price' => '4000 €',
+    'portal_simple_price' => '3 000 €',
+    'portal_standart_price' => '3 500 €',
+    'portal_individual_price' => '4 000 €',
 
-    'system_simple_price' => '2800 €',
-    'system_standart_price' => '3000 €',
-    'system_individual_price' => '3300 €',
+    'system_simple_price' => '2 800 €',
+    'system_standart_price' => '3 000 €',
+    'system_individual_price' => '3 300 €',
 
     '' => '',
     '' => '',

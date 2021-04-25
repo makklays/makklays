@@ -5,6 +5,7 @@ return [
     'free_consultation' => 'Get a free consultation',
     'uslugi' => 'I provide services',
     'what_am_i_do' => 'What am I doing?',
+    'Portfolio1' => 'Portfolio',
 
     '1_service' => 'Website programming',
     '2_service' => 'API development for mobile applications',
@@ -704,7 +705,7 @@ Do not forget about performance as well: it is obvious that a complex and cumber
                 and a catalog of goods with the ability to place orders. After the buyer has registered and issued
                 order, the store manager receives a letter from the site from him with an application. Manager contacts potential
                 the buyer agrees on the type of delivery and sends the goods.
-                
+
                 In other words, the essence of the buying process in such a store is sending an application for goods by e-mail,
                 and the store itself is an interactive price list. The main advantage of the "online store" is the convenience of placing an application for the user.
                 The disadvantage is the need to resort to the services of specialists to support the online store (for example, for
@@ -713,7 +714,7 @@ Do not forget about performance as well: it is obvious that a complex and cumber
                 due to which the need to resort to the help of specialists completely disappears, i.e. you
                 You can save on store support and update the content of the store yourself without special skills
                 and knowledge of programming languages. <br/> <br/>
-                
+
                 The sequence of actions or logic can be modified and configured for each online store separately.
                 Our development of online stores is much more flexible than the development of a "boxed solution", which does not have the ability to modify to meet the needs of doing business and its features.
                 Also, our online stores are easily modifiable for any needs and your wishes.
@@ -728,7 +729,7 @@ Do not forget about performance as well: it is obvious that a complex and cumber
                 start at 1700 euros, and when ordering a similar store in our studio you get the same much
                 cheaper thanks to the company’s developed mechanism for updating the contents of the store, which can be managed by
                 even a novice. <br/> <br/>
-                
+
                 Savings from in-house support will help the owner to get a “Premium Online Store”.
                 To update it, it is often not at all necessary to involve specialists (except in emergency cases) - with this
                 any sensible employee of the company will cope with the problem. For example, to update the catalog of goods required
@@ -1066,6 +1067,8 @@ System sites are available on business days and times at the enterprise. And at 
     'Edit_employee' => 'Edit employee',
     'Add_employee' => 'Add employee',
     'Add_new_employee' => 'Add a new employee',
+
+    'Pricee' => 'Price',
     '' => '',
     '' => '',
     '' => '',

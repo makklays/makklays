@@ -1,50 +1,19 @@
-@extends('layouts.main8')
+@extends('layouts.main10')
 
 @section('content')
 
-    </div>
 
-    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('/', app()->getLocale()) }}" class="a-green"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li class="breadcrumb-item" aria-current="page">{{ trans('site.mysite_whatmake') }}</li>
+            </ol>
+        </nav>
+
         <div class="row">
             <div class="col-md-12">
                 <br/><h1 class="text-center text-design2">{{ trans('site.mysite_whatmake') }}</h1> <br/>
-            </div>
-
-            <div class="col-md-12">
-                <p class="text-left">
-                    {{ trans('site.whatmake1') }} <br/>
-                    <!--{{ trans('site.whatmake2') }} <br/>--><br/>
-                </p>
-            </div>
-
-            <!--div class="col-md-3">
-                <img src="<?=config('app.url')?>/img/makklays.png" alt="." title="" class="img-fluid kromka" /> <br/><br/>
-            </div-->
-
-            <!--div class="rounded my-2 py-3 py-md-4 px-3 pr-xl-4 shadow-sm x-shadow-fade-in position-relative overflow-hidden">
-                <div class="row align-items-lg-center">
-                    <div class="col-6 col-sm-2 mb-3 mb-sm-0">
-                        <div class="display-3 font-weight-bold text-sm-center text-black-50">1</div>
-                    </div>
-                    <div class="col-sm-7 col-lg-8 col-xl-7 pt-md-2 pt-lg-0 order-1 order-sm-0">
-                        <div class="mb-3">
-                            <h3 class="d-inline align-middle mr-2">PHP: Основы</h3>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-3 lead">12 уроков</div>
-                            <div class="col-lg-3 lead">25 вопросов</div>
-                            <div class="col-lg-4 lead">14 упражнений</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-3 col-lg-2 col-xl-3"></div>
-                </div>
-            </div-->
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <br/><h1 class="text-center text-design2">{{ trans('site.Development') }}</h1> <br/>
             </div>
         </div>
 
@@ -107,6 +76,45 @@
 
         <div class="row">
             <div class="col-md-12">
+                <br/><h1 class="text-center text-design2">{{ trans('site.Development') }}</h1> <br/>
+            </div>
+
+            <div class="col-md-12">
+                <p class="text-left">
+                    {{ trans('site.whatmake1') }} <br/>
+                    <!--{{ trans('site.whatmake2') }} <br/>--><br/>
+                </p>
+            </div>
+
+            <!--div class="col-md-3">
+                <img src="<?=config('app.url')?>/img/makklays.png" alt="." title="" class="img-fluid kromka" /> <br/><br/>
+            </div-->
+
+            <!--div class="rounded my-2 py-3 py-md-4 px-3 pr-xl-4 shadow-sm x-shadow-fade-in position-relative overflow-hidden">
+                <div class="row align-items-lg-center">
+                    <div class="col-6 col-sm-2 mb-3 mb-sm-0">
+                        <div class="display-3 font-weight-bold text-sm-center text-black-50">1</div>
+                    </div>
+                    <div class="col-sm-7 col-lg-8 col-xl-7 pt-md-2 pt-lg-0 order-1 order-sm-0">
+                        <div class="mb-3">
+                            <h3 class="d-inline align-middle mr-2">PHP: Основы</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 lead">12 уроков</div>
+                            <div class="col-lg-3 lead">25 вопросов</div>
+                            <div class="col-lg-4 lead">14 упражнений</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 col-xl-3"></div>
+                </div>
+            </div-->
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-12">
                 <h1 class="text-center text-design2">{{ trans('site.technologies') }}</h1>
                 <p class="text-center">{{ trans('site.use_technologies') }}</p>
             </div>
@@ -137,8 +145,8 @@
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="PostgreSQL" src="<?=config('app.url')?>/img/postgre_sql.png">
-                                    <p class="text-muted mt-3">PostgreSQL</p>
+                                    <img height="65" alt="Laravel" src="<?=config('app.url')?>/img/laravel_.png">
+                                    <p class="text-muted mt-3">Laravel</p>
                                 </div>
                             </div>
                         </div>
@@ -181,16 +189,16 @@
                             </div>
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
-                                    <img height="65" alt="Laravel" src="<?=config('app.url')?>/img/laravel_.png">
-                                    <p class="text-muted mt-3">Laravel</p>
+                                    <img height="65" alt="PostgreSQL" src="<?=config('app.url')?>/img/postgre_sql.png">
+                                    <p class="text-muted mt-3">PostgreSQL</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <!--div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
                                     <img height="65" alt="Yii2" src="<?=config('app.url')?>/img/site/Yii2.png">
                                     <p class="text-muted mt-3">Yii2</p>
                                 </div>
-                            </div>
+                            </div-->
                             <div class="col-6 col-md-3">
                                 <div class="my-3 text-center">
                                     <img height="65" alt="Lumen" src="<?=config('app.url')?>/img/lumen.png">

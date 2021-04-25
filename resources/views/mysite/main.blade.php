@@ -1,4 +1,4 @@
-@extends('layouts.main8')
+@extends('layouts.main10')
 
 @section('content')
 
@@ -408,7 +408,7 @@
                         </p>
                         <h4><?=$item->title?></h4>
                         <p class="text-left"><?=$item->short_text?></p>
-                        <p><a class="btn btn-secondary" href="{{ route('mysite_article', [app()->getLocale(), $item->slag]) }}" role="button"><?=trans('site.Read')?> &raquo;</a></p>
+                        <p><a class="btn btn-secondary" href="{{ route('article', [app()->getLocale(), $item->slag]) }}" role="button"><?=trans('site.Read')?> &raquo;</a></p>
                     </div>
                 <?php endforeach; ?>
             </div>

@@ -1,6 +1,14 @@
-@extends('layouts.main8')
+@extends('layouts.main10')
 
 @section('content')
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('/', app()->getLocale()) }}" class="a-green"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li class="breadcrumb-item"><a href="{{ route('mysite_whatmake', app()->getLocale()) }}" class="a-green">{{ trans('site.Development') }}</a></li>
+            <li class="breadcrumb-item" aria-current="page">{{ trans('site.portal1') }}</li>
+        </ol>
+    </nav>
 
     <div class="row">
         <div class="col-md-12">

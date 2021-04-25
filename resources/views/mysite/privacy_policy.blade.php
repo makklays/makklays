@@ -1,4 +1,4 @@
-@extends('layouts.main8')
+@extends('layouts.main10')
 
 @section('content')
 
@@ -71,7 +71,6 @@
         </div>
         <div class="col-md-12 text-justify">
             <?=trans('site.policy16')?> <a href="https://makklays.com/{{ app()->getLocale() }}/privacy-policy/" class="a-green" title="Makklays - Политики конфиденциальности">https://makklays.com/{{ app()->getLocale() }}/privacy-policy/</a>
-            <br/><br/><br/>
         </div>
     </div>
 

@@ -23,8 +23,6 @@ use Illuminate\Support\Facades\Session;
 
 Route::get('/', function (Request $request) {
 
-    //dd(  app()->getLocale()  );
-
     /*Route::get('/', function () {*/
         return redirect( app()->getLocale() );
         exit;
@@ -43,11 +41,18 @@ Route::get('/', function (Request $request) {
     return view('test'); // 'main'
 });
 
+// sitemap
+Route::get('sitemap.xml', 'MysiteController@sitemap')->name('sitemap');
+
 Route::group([
     'prefix' => '{locale}',
     'where' => ['locale' => '[a-zA-Z]{2}'],
     'middleware' => 'setlocale'
 ], function () {
+
+    // site
+    Route::get('article/{slug}', 'MysiteController@showArticle')->name('article');
+    Route::get('articles', 'MysiteController@listArticles')->name('articles');
 
     Route::get('main', ['as' => 'main', function () {
         return view('test'); // 'main'
@@ -98,13 +103,13 @@ Route::group([
 
     Route::get('about-us', ['as' => 'mysite_about', 'uses' => 'MysiteController@about']);
     Route::get('we-making', ['as' => 'mysite_howmake', 'uses' => 'MysiteController@howmake']);
-    Route::get('development-site-shop', ['as' => 'mysite_whatmake', 'uses' => 'MysiteController@whatmake']);
+    Route::get('development-site-store', ['as' => 'mysite_whatmake', 'uses' => 'MysiteController@whatmake']);
     Route::get('request', ['as' => 'mysite_request', 'uses' => 'MysiteController@request']);
     Route::get('contacts', ['as' => 'mysite_contacts', 'uses' => 'MysiteController@contacts']);
     Route::get('brief', ['as' => 'mysite_brief', 'uses' => 'MysiteController@brief']);
     Route::get('download-price', ['as' => 'mysite_download_price', 'uses' => 'MysiteController@downloadPrice']);
 
-    Route::get('portfolio', ['as' => 'mysite_portfolio', 'uses' => 'MysiteController@portfolio']);
+    //Route::get('portfolio', ['as' => 'mysite_portfolio', 'uses' => 'MysiteController@portfolio']);
 
     Route::get('online-brief', ['as' => 'mysite_online_brief', 'uses' => 'MysiteController@onlineBrief']);
     Route::post('online-brief', ['as' => 'mysite_online_brief_post', 'uses' => 'MysiteController@onlineBriefPost']);
@@ -123,7 +128,7 @@ Route::group([
     Route::get('api-service', ['as' => 'mysite_webservice', 'uses' => 'MysiteController@webservice']);
     Route::get('web-portal', ['as' => 'mysite_webportal', 'uses' => 'MysiteController@webportal']);
     Route::get('site-system', ['as' => 'mysite_sitesytem', 'uses' => 'MysiteController@sitesytem']);
-    Route::get('online-shop', ['as' => 'mysite_store', 'uses' => 'MysiteController@store']);
+    Route::get('online-store', ['as' => 'mysite_store', 'uses' => 'MysiteController@store']);
     Route::get('privacy-policy', ['as' => 'privacy-policy', 'uses' => 'MysiteController@privacy_policy']);
 
     Route::get('black-list', ['as' => 'mysite_blacklist', 'uses' => 'MysiteController@blacklist']);
@@ -132,11 +137,6 @@ Route::group([
     Route::get('seo-words', ['as' => 'seo_words', 'uses' => 'MysiteController@countSeoWords']);
     Route::post('seo-words', ['as' => 'seo_words_post', 'uses' => 'MysiteController@countSeoWordsPost']);
 
-    //Route::get('order', ['as' => 'mysite', 'uses' => 'MysiteController@index']);
-
-    // site
-    Route::get('develop-articles', ['as' => 'mysite_articles', 'uses' => 'MysiteController@listArticles']);
-    Route::get('develop-article/{slag}', ['as' => 'mysite_article', 'uses' => 'MysiteController@showArticle']);
 
     // adminka
     //Route::group(['prefix' => 'admin'], function () {

@@ -28,12 +28,13 @@
     <meta property="og:url"         content="{{ url()->current() }}" />
     <meta property="og:image"       content="<?= isset($seo->img) && !empty($seo->img) ? $seo->img : config('app.url').'/img/programmer.png' ?>" />
 
-  <?php if (isset($seo->show_urls) && $seo->show_urls == 1): ?>
-  <link rel="alternate" hreflang="ru" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/ru/<?=$seo->short_url?>" />
-    <link rel="alternate" hreflang="es" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/es/<?=$seo->short_url?>" />
-    <link rel="alternate" hreflang="zh" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/ch/<?=$seo->short_url?>" />
-    <link rel="alternate" hreflang="en" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/en/<?=$seo->short_url?>" />
-  <?php endif; ?>
+    <?php if (isset($seo->show_urls) && $seo->show_urls == 1): ?>
+        <link rel="alternate" hreflang="ua" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/ua/<?=$seo->short_url?>" />
+        <link rel="alternate" hreflang="ru" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/ru/<?=$seo->short_url?>" />
+        <link rel="alternate" hreflang="es" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/es/<?=$seo->short_url?>" />
+        <link rel="alternate" hreflang="zh" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/ch/<?=$seo->short_url?>" />
+        <link rel="alternate" hreflang="en" href="<?=$seo->request_scheme?>://<?=$seo->server_name?>/en/<?=$seo->short_url?>" />
+    <?php endif; ?>
 
     <link rel="shortcut icon" href="<?=config('app.url')?>/makklays.png" type="image/x-icon" />
 
@@ -72,7 +73,7 @@
         </div>
     </div>
 
-        <nav style="margin-top:20px;" class="navbar navbar-expand-lg navbar-light bg-white dev-navbar border-bottom">
+        <nav style="margin-top:20px;" class="navbar navbar-expand-lg navbar-light bg-white dev-navbar">
             <a class="navbar-brand" href="{{ route('/', app()->getLocale()) }}">
                 <img src="<?=config('app.url')?>/makklays.png" height="30" class="d-inline-block align-top" alt="">
                 Makklays
@@ -111,6 +112,11 @@
                             <a href="{{ route('mysite_sitesytem', app()->getLocale()) }}" class="dropdown-item a-green green-bk">{{ trans('site.m_sitesystem') }}</a>
                         </div>
                     </li>
+                    <li class="nav-item {{ \Route::current()->getName() == 'mysite_portfolio' ? 'active' : '' }}">
+                        <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_portfolio', app()->getLocale()) }}">
+                            {{ trans('site.Portfolio1') }}
+                        </a>
+                    </li>
                     <li class="nav-item {{ \Route::current()->getName() == 'mysite_articles' ? 'active' : '' }}">
                         <a class="nav-link dev-navbar-link px-3" href="{{ route('mysite_articles', app()->getLocale()) }}">
                             {{ trans('site.Articles') }}
@@ -121,16 +127,18 @@
                             {{ trans('site.contacts') }}
                         </a>
                     </li>
+                </ul>
+                <ul class="navbar-nav">
                     <li class="nav-item dropdown" >
                         <a class="nav-link dev-navbar-link px-3 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            lang
+                            <?=strtoupper(app()->getLocale())?>
                         </a>
-                        <div class="dropdown-menu">
-                            <a href="{{ route('/', 'ua') }}" class="dropdown-item a-green green-bk">UA</a>
-                            <a href="{{ route('/', 'es') }}" class="dropdown-item a-green green-bk">ES</a>
-                            <a href="{{ route('/', 'en') }}" class="dropdown-item a-green green-bk">EN</a>
-                            <a href="{{ route('/', 'ru') }}" class="dropdown-item a-green green-bk">RU</a>
-                            <a href="{{ route('/', 'ch') }}" class="dropdown-item a-green green-bk">CH</a>
+                        <div class="dropdown-menu" style="width:75px !important; min-width:10px;">
+                            <a href="{{ route(Route::current()->getName(), 'ua') }}" class="dropdown-item a-green green-bk">UA</a>
+                            <a href="{{ route(Route::current()->getName(), 'es') }}" class="dropdown-item a-green green-bk">ES</a>
+                            <a href="{{ route(Route::current()->getName(), 'en') }}" class="dropdown-item a-green green-bk">EN</a>
+                            <a href="{{ route(Route::current()->getName(), 'ru') }}" class="dropdown-item a-green green-bk">RU</a>
+                            <a href="{{ route(Route::current()->getName(), 'ch') }}" class="dropdown-item a-green green-bk">CH</a>
                         </div>
                     </li>
                 </ul>

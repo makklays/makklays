@@ -1,4 +1,4 @@
-@extends('layouts.main8')
+@extends('layouts.main10')
 
 @section('content')
 
@@ -669,20 +669,7 @@
                         </p>
                     </div>
                 </div>
-                <br/><br/>
             </form>
-
-            <div class="row">
-                <div class="text-center col-md-12">
-                    <h4>{{ trans('site.brief_196') }}</h4>
-                    <p class="text-center">
-                        <span class="a-green">{{ trans('site.brief_197') }}</span>
-                        <br/><br/>
-                        {{ trans('site.brief_city1') }} <br/>
-                        {{ trans('site.brief_email1') }}
-                    </p>
-                </div>
-            </div>
 
         </div>
     </div>

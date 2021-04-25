@@ -1,12 +1,41 @@
 
 body {
-    font-size: 18px;
+    margin: 0;
+    font-size: 21px;
 }
+
+/*************************************/
+.navbar {
+    /*overflow: hidden;*/
+    background-color: #FFF;
+    color: #808080;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+    color: #808080;
+}
+.nav-item.active {
+    background-color: #FFF;
+}
+.dropdown-menu {
+    background-color: #FFF;
+    color: #808080;
+    font-size: 19px;
+    border: 0;
+    border-radius: unset;
+    margin: 0;
+    padding: 0;
+}
+.mlimg {
+    height: 21px;
+}
+/*************************************/
+
 p {
-    font-size: 18px;
+    font-size: 21px;
 }
 .text-justify {
-    font-size: 18px;
+    font-size: 21px;
 }
 .lead.text-justify {
     font-size: 21px;
@@ -49,7 +78,7 @@ p {
 
 blockquote:before, blockquote:after {
     font-size: 2.5em;
-    color: grey;
+    color: #808080;
 }
 blockquote:before {
     /*content: '«';
@@ -124,7 +153,7 @@ blockquote p {
 
 .img-container {
     /*background-image: url("/img/777.jpg");*/
-    background-color: grey;
+    background-color: #808080;
     color: #FFF;
     font-weight: bold;
     padding: 30px 2rem;

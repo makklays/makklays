@@ -65,10 +65,15 @@ class ArticlesController extends Controller
                     ->withInput();
             }
 
+            //dd($request->all());
+
             // if exist article - проверяем существует ли статья с таким названием
-            $slag = $this->transcription($request->title);
-            $select = DB::selectOne('SELECT * FROM articles WHERE slag=?', [$slag]);
-            if (!empty($select->id)) {
+            $slug = $this->transcription($request->title);
+
+            $select = DB::selectOne('SELECT * FROM articles WHERE slag=?', [$slug]);
+            //dd($select);
+
+            if (!empty($select) && !empty($select->id)) {
                 return redirect(app()->getLocale() . '/admin/adm-article-add')->with([
                         'flash_message' => 'Ошибка! <br/>Статья с таким название уже существует!',
                         'flash_type' => 'danger'
@@ -88,7 +93,7 @@ class ArticlesController extends Controller
             }
 
             $insert = DB::insert('INSERT INTO articles SET user_id=?, `title`=?, slag=?,
-                            short_text=?, full_text=?, 
+                            short_text=?, full_text=?,
                             photo=?, lang=?, created_at=?, updated_at=?', [
                 auth()->user()->id,
                 $request->title,
@@ -101,8 +106,9 @@ class ArticlesController extends Controller
                 date('Y-m-d H:i:s'),
             ]);
 
-            if ($insert) {
-                $article = DB::selectOne('SELECT * FROM articles WHERE id=?', [$insert['id']]);
+            //dd($insert);
+            //if ($insert) {
+                //$article = DB::selectOne('SELECT * FROM articles WHERE id=?', [$insert['id']]);
 
                 // send email
                 // тяжело протестировать локально
@@ -110,7 +116,7 @@ class ArticlesController extends Controller
                 {
                     $message->to('phpdevops@gmail.com', 'Джон Смит')->subject('Add a new company on site!');
                 });*/
-            }
+            //}
             return redirect(app()->getLocale().'/admin/adm-articles')->with([
                 'flash_message' => 'Ваша статья, "'.$request->title.'" успешно добавлена!',
                 'flash_type' => 'success'

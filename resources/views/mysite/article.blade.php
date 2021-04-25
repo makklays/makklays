@@ -1,11 +1,12 @@
-@extends('layouts.main8')
+@extends('layouts.main10')
 
 @section('content')
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ route('mysite_articles', app()->getLocale()) }}" class="a-green">{{ trans('site.Articles') }}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ $article->title }}</li>
+            <li class="breadcrumb-item"><a href="{{ route('/', app()->getLocale()) }}" class="a-green"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li class="breadcrumb-item"><a href="{{ route('articles', app()->getLocale()) }}" class="a-green">{{ trans('site.Articles') }}</a></li>
+            <li class="breadcrumb-item" aria-current="page">{{ $article->title }}</li>
         </ol>
     </nav>
 
@@ -25,7 +26,6 @@
         </div>
 
         <div class="col-md-12 text-center" style="font-size:14px;">
-
             <div class="text-center" style="width:280px; margin: 0 auto;">
 
                 <div style="float:left;">
@@ -43,16 +43,12 @@
                 <?php endif; ?>
 
                 <!-- Your share like button code -->
-                <div class="fb-like" style="margin-left:30px;" data-href="https://makklays.com.ua<?=$_SERVER['REQUEST_URI']?>" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+                <div class="fb-like" style="margin-left:30px;" data-href="https://makklays.com<?=$_SERVER['REQUEST_URI']?>" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
 
             </div>
         </div>
 
-        <div class="col-md-12">
-            <br/>
-        </div>
-
-        <div class="col-md-12">
+        <div class="col-md-12" style="margin-top: 40px;">
             <p class="text-justify">
                 <?=nl2br($article->full_text)?>
             </p>

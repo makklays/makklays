@@ -1,6 +1,13 @@
-@extends('layouts.main8')
+@extends('layouts.main10')
 
 @section('content')
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('/', app()->getLocale()) }}" class="a-green"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li class="breadcrumb-item" aria-current="page">{{ trans('site.mysite_howmake') }}</li>
+        </ol>
+    </nav>
 
     <div class="row">
         <div class="col-md-12">
@@ -10,7 +17,7 @@
         <div class="col-md-5">
             <img src="<?=config('app.url')?>/img/333.jpg" alt="Makklays - {{ trans('site.mysite_howmake') }} image1" title="{{ trans('site.mysite_howmake') }}" class="img-fluid kromka" /> <br/><br/>
         </div>
-        <div class="col-md-7 text-justify">
+        <div class="col-md-7">
             <h4>{{ trans('site.howmake2') }}</h4> <br/>
             1. {{ trans('site.howmake3') }} <br/>
             2. {{ trans('site.howmake4') }} <br/>
@@ -18,13 +25,13 @@
             4. {{ trans('site.howmake6') }} <br/>
             5. {{ trans('site.howmake7') }} <br/>
             6. {{ trans('site.howmake8') }} <br/>
-            7. {{ trans('site.howmake9') }} <br/>
+            7. {{ trans('site.howmake9') }} <br/><br/>
         </div>
-        <div class="col-md-12 text-justify">
+        <div class="col-md-12 ">
             {{ trans('site.howmake1') }} <br/><br/>
 
             {{ trans('site.howmake10') }} <br/>
-            {{ trans('site.howmake11') }} <br/>
+            <?=trans('site.howmake11')?> <br/>
             {{ trans('site.howmake12') }} <br/><br/>
 
             <h4>{{ trans('site.howmake13') }}</h4> <br/>
@@ -88,7 +95,7 @@
             <h1 class="text-center text-design2">{{ trans('site.our_advantages') }}</h1> <br/>
         </div>
 
-        <div class="col-md-7 text-justify">
+        <div class="col-md-7">
             &#10004; <b>{{ trans('site.adv1') }}</b> <br/>
             <span>{{ trans('site.adv1_det') }} </span><br/><br/>
             &#10004; <b>{{ trans('site.adv2') }}</b> <br/>
@@ -103,29 +110,26 @@
             <span>{{ trans('site.adv6_det') }} </span><br/>
             <br/><br/>
         </div>
-        <div class="col-md-5 text-justify">
+        <div class="col-md-5">
             <img src="<?=config('app.url')?>/img/advantages.jpg" alt="Makklays - {{ trans('site.mysite_howmake') }} image2" title="{{ trans('site.circle_project') }}" class="img-fluid kromka" />
         </div>
 
-        <div class="col-md-12 text-justify">
+        <div class="col-md-12">
             <h1 class="text-center text-design2">{{ trans('site.garantiya') }}!</h1> <br/>
         </div>
 
-        <div class="col-md-5 text-justify">
+        <div class="col-md-5">
             <img src="<?=config('app.url')?>/img/100-percent.jpg" alt="Makklays - {{ trans('site.mysite_howmake') }} image3" title="{{ trans('site.garantiya') }}!" class="img-fluid kromka" />
         </div>
-        <div class="col-md-7 text-justify">
+        <div class="col-md-7">
             &#10004; <b>{{ trans('site.zapusk') }}</b> <br/>
                 {{ trans('site.zapusk_det') }} <br/><br/>
             &#10004; <b>{{ trans('site.podelu') }}</b> <br/>
                 {{ trans('site.podelu_det') }} <br/><br/>
             &#10004; <b>{{ trans('site.garant') }}</b> <br/>
-                {{ trans('site.garant_det') }} <br/><br/><br/>
+                {{ trans('site.garant_det') }}
         </div>
 
-        <div class="col-md-12 text-justify">
-            <br/><br/><br/>
-        </div>
     </div>
 
 @endsection

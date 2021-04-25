@@ -1,14 +1,14 @@
 
 <body>
 
-<a href="http://makklays.com.ua" target="_blank" >
-    <img src="{{ $message->embed($pathToFile) }}" alt="Makklays logo" />
+<a href="http://makklays.com" target="_blank" >
+    <img src="{{ $message->embed($pathToFile) }}" alt="Makklays logo" style="width:90px;" />
 </a>
 <br/>
 <br/>
 <br/>
 
-<?php if(isset($fio) && !empty($fio)): ?>
+<?php if (isset($fio) && !empty($fio)): ?>
     <b>Ф.И.О.:</b> <br/>
     {{ $fio }}  <br/><br/>
 <?php endif; ?>
@@ -33,7 +33,7 @@
 
 Дата: {{ date('d.m.Y H:i:s', time()) }}  <br/><br/><br/>
 
-<span style="color: grey;">Письмо с сайта <a href="http://makklays.com.ua" target="_blank" style="color:#267f00;" >makklays.com.ua</a> </span>
+<span style="color: grey;">Письмо с сайта <a href="http://makklays.com" target="_blank" style="color:#267f00;" >makklays.com</a> </span>
 <br/>
 <br/>
 <br/>
