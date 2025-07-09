@@ -49,7 +49,9 @@ He trabajado con equipos corporativos y startups en Europa y Ucrania
 
 ## 🌍 Localización
 
-Estoy en 🇺🇦 **Ucrania**, pero quiero vivir y trabajar en Europa, abierto para trasladarme o trabajo remoto en todo el mundo (prefiero EEUU).
+Estoy en 🇺🇦 **Ucrania**, pero quiero vivir y trabajar en Europa. 
+
+Abierto para trasladarme o trabajo remoto en todo el mundo (prefiero EEUU).
 
 ## 🧠 Un poco sobre mí
 
