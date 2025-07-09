@@ -1,8 +1,12 @@
 # 👨‍💻 Alexander Kuziv — Java Developer
 
-🎯 Programador Java con más de 3.5 años de experiencia en el desarrollo de sistemas de alta carga, escalables y seguros. Tengo más 16 años experiencia de trabajo con web como Desarrollador FullStack. Experto en desarrollo backend, diversos API, integración con sistemas externos, microservicios y CI/CD. He trabajado con equipos corporativos y startups en Europa y Ucrania
+🎯 Programador Java con más de 3.5 años de experiencia en el desarrollo de sistemas de alta carga, escalables y seguros. 
 
----
+Tengo más 16 años experiencia de trabajo con web como Desarrollador FullStack. 
+
+Experto en desarrollo backend, diversos API, integración con sistemas externos, microservicios y CI/CD. 
+
+He trabajado con equipos corporativos y startups en Europa y Ucrania
 
 ## 🛠️ Stack tecnológico:
 
@@ -29,8 +33,6 @@
 - JWT, OAuth2
 - Prometheus, Grafana
 
----
-
 ## 📌 Lo que sé hacer:
 
 - Diseño de arquitecturas de sitios y sistemas desde cero
@@ -40,33 +42,15 @@
 - Trabajo con seguridad y autorización (Spring Security, OAuth2, JWT)
 - Optimización de código, consultas SQL y gestión de memoria en JVM
 
----
-
-## 🧩 Proyectos:
-
-- **CryptoPay Service** — servicio de recepción de pagos en USDT mediante Web3j + Spring Boot
-- **AutoBattler Platform** — lógica de juego basada en REST + WebSocket
-- **Monitoring Hub** — sistema de recopilación y análisis de logs y métricas utilizando Prometheus y Grafana
-- **Internal CRM System** — sistema monolítico transformado en microservicios con Kafka
-
----
-
 ## 📫 Contactos:
 
 - Email: `makklays@gmail.com`
-- LinkedIn: [https://www.linkedin.com/in/alexander-kuziv-7676bbaa](https://www.linkedin.com/in/alexander-kuziv-7676bbaa/)
-//- Telegram: [@makklays](https://t.me/makklays)
-
----
+- Telegram: [@makklays](https://t.me/makklays)
 
 ## 🌍 Localización
 
 Estoy en 🇺🇦 **Ucrania**, pero quiero vivir y trabajar en Europa, abierto para trasladarme o trabajo remoto en todo el mundo (prefiero EEUU).
 
----
-
 ## 🧠 Un poco sobre mí
 
 Me gusta escribir el código limpio. Siempre aprendo nuevas tecnologías y enfoques, trabajo en open-source proyectos. Me apasionan los videojuegos, DeepLearning4J y los sistemas distribuidos.
-
----
