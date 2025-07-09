@@ -1,12 +1,72 @@
-# makklays
+# 👨‍💻 Alexander Kuziv — Java Developer
 
-Hello everybody!
-I like going and walking with child and programming with music on Java. <br/>
-I love live! <br/><br/>
+🎯 Programador Java con más de 3.5 años de experiencia en el desarrollo de sistemas de alta carga, escalables y seguros. Tengo más 16 años experiencia de trabajo con web como Desarrollador FullStack. Experto en desarrollo backend, diversos API, integración con sistemas externos, microservicios y CI/CD. He trabajado con equipos corporativos y startups en Europa y Ucrania
 
-I ask it me: <br/>
-- What yet I can do for people on Java? <br/><br/>
+---
 
-Year: 2019 <br/>
-Author: Makklays <br/><br/>
+## 🛠️ Stack tecnológico:
 
+**Idiomas y plataformas:**
+- Java (8–21), PHP, JavaFX
+- Spring Boot, Spring Web, Spring Security, Spring Data
+- JPA (Hibernate), JDBC, SQL (PostgreSQL, MySQL), H2, LDAP
+- RESTful API, WebSocket, gRPC Protobuf, SOAP
+- Flyway, Thymeleaf, DL4J, Logback, slf4j
+- Solidity (un poco), Web3j
+
+**Herramientas:**
+- Git, Maven, Gradle, Docker, Kubernetes
+- GitHub Actions, Jenkins, CI/CD
+- JUnit, Mockito, Testcontainers
+- SonarQube, OpenAPI (Swagger)
+- Git, SVN, Bitbucket
+- Jira, Mantis, Redmine, Trello, Slack
+- IntelliJ IDEA, VS Code
+
+**Integraciones y protocolos:**
+- RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3
+- RabbitMQ, Kafka
+- JWT, OAuth2
+- Prometheus, Grafana
+
+---
+
+## 📌 Lo que sé hacer:
+
+- Diseño de arquitecturas de sitios y sistemas desde cero
+- Desarrollo y mantenimiento de sitios, sistemas y diversos microservicios
+- Integración con sistemas externos
+- Configuración y soporte de pipelines CI/CD
+- Trabajo con seguridad y autorización (Spring Security, OAuth2, JWT)
+- Optimización de código, consultas SQL y gestión de memoria en JVM
+
+---
+
+## 🧩 Proyectos:
+
+- **CryptoPay Service** — servicio de recepción de pagos en USDT mediante Web3j + Spring Boot
+- **AutoBattler Platform** — lógica de juego basada en REST + WebSocket
+- **Monitoring Hub** — sistema de recopilación y análisis de logs y métricas utilizando Prometheus y Grafana
+- **Internal CRM System** — sistema monolítico transformado en microservicios con Kafka
+
+---
+
+## 📫 Contactos:
+
+- Email: `makklays@gmail.com`
+- LinkedIn: [https://www.linkedin.com/in/alexander-kuziv-7676bbaa](https://www.linkedin.com/in/alexander-kuziv-7676bbaa/)
+//- Telegram: [@makklays](https://t.me/makklays)
+
+---
+
+## 🌍 Localización
+
+Estoy en 🇺🇦 **Ucrania**, pero quiero vivir y trabajar en Europa, abierto para trasladarme o trabajo remoto en todo el mundo (prefiero EEUU).
+
+---
+
+## 🧠 Un poco sobre mí
+
+Me gusta escribir el código limpio. Siempre aprendo nuevas tecnologías y enfoques, trabajo en open-source proyectos. Me apasionan los videojuegos, DeepLearning4J y los sistemas distribuidos.
+
+---
