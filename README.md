@@ -39,7 +39,7 @@ He trabajado con equipos corporativos y startups en Europa y Ucrania
 - Trabajo con seguridad y autorización (Spring Security, OAuth2, JWT)
 - Optimización de código, consultas SQL y gestión de memoria en JVM
 
-## 🌍 Localización
+## 🌍 Localización y trabajo
 
 Abierto para trasladarme o trabajo remoto en todo el mundo (prefiero EEUU).
 
