@@ -12,7 +12,7 @@ He trabajado con equipos corporativos y startups en Europa y Ucrania
 - Spring Boot, Spring Web, Spring Security, Spring Data
 - JPA (Hibernate), JDBC, SQL (PostgreSQL, MySQL), H2, LDAP
 - RESTful API, WebSocket, gRPC Protobuf, SOAP
-- Flyway, Thymeleaf, DL4J, Logback, slf4j
+- Flyway, Thymeleaf, JavaScript, jQuery, Vue.js, DL4J, Logback, slf4j
 - Solidity (un poco), Web3j
 
 **Herramientas:**
