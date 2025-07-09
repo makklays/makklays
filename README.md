@@ -39,14 +39,8 @@ He trabajado con equipos corporativos y startups en Europa y Ucrania
 - Trabajo con seguridad y autorización (Spring Security, OAuth2, JWT)
 - Optimización de código, consultas SQL y gestión de memoria en JVM
 
-## 📫 Contactos:
-
-- Email: `makklays@gmail.com`
-- Telegram: [@makklays](https://t.me/makklays)
-
 ## 🌍 Localización
 
-Estoy en 🇺🇦 **Ucrania**, pero quiero vivir y trabajar en Europa. 
 Abierto para trasladarme o trabajo remoto en todo el mundo (prefiero EEUU).
 
 ## 🧠 Un poco sobre mí
