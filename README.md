@@ -1,11 +1,8 @@
 # 👨‍💻 Alexander Kuziv — Java Developer
 
 🎯 Programador Java con más de 3.5 años de experiencia en el desarrollo de sistemas de alta carga, escalables y seguros. 
-
 Tengo más 16 años experiencia de trabajo con web como Desarrollador FullStack. 
-
 Experto en desarrollo backend, diversos API, integración con sistemas externos, microservicios y CI/CD. 
-
 He trabajado con equipos corporativos y startups en Europa y Ucrania
 
 ## 🛠️ Stack tecnológico:
@@ -50,7 +47,6 @@ He trabajado con equipos corporativos y startups en Europa y Ucrania
 ## 🌍 Localización
 
 Estoy en 🇺🇦 **Ucrania**, pero quiero vivir y trabajar en Europa. 
-
 Abierto para trasladarme o trabajo remoto en todo el mundo (prefiero EEUU).
 
 ## 🧠 Un poco sobre mí
