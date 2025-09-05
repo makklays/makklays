@@ -9,7 +9,7 @@ He trabajado con equipos corporativos y startups en Europa y Ucrania
 
 **Idiomas y plataformas:**
 - Java (8–21), PHP, JavaFX
-- Spring, Spring Boot, Spring Web, Spring Security, Spring Data
+- Spring, Spring Boot, Spring Web, Spring Security, Spring Data, Micronaut, Flowable
 - JPA (Hibernate), JDBC, SQL (PostgreSQL, MySQL), H2, LDAP
 - RESTful API, WebSocket, gRPC Protobuf, SOAP
 - Flyway, Thymeleaf, JavaScript, jQuery, Vue.js, Logback, slf4j
