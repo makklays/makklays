@@ -42,9 +42,9 @@ I have worked with corporate teams and startups in Europe and Ukraine.
 - Work with security and authorization (Spring Security, OAuth2, JWT)
 - Optimization of code, SQL queries, and JVM memory management
 
-## 🌍 Location & Work Preferences
+## 🌍 Location & Work Preferences:
 
-Open to relocation or remote work worldwide (preferably in the USA).
+Open to relocation or remote work worldwide (preferably in Spain and the USA).
 
 ## 🧠 About Me:
 
