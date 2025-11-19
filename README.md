@@ -17,6 +17,7 @@ I have worked with corporate teams and startups in Europe and Ukraine.
 - RESTful API, WebSocket, gRPC Protobuf, SOAP
 - Flyway, Thymeleaf, JavaScript, jQuery, Vue.js, Logback, Slf4j
 - Solidity (a little), Web3j, DL4J
+- Mobile application
 
 **Tools:**
 - Git, Maven, Gradle, Docker, Kubernetes
@@ -25,7 +26,7 @@ I have worked with corporate teams and startups in Europe and Ukraine.
 - SonarQube, OpenAPI (Swagger)
 - Git, SVN, Bitbucket
 - Jira, Mantis, Redmine, Trello, Slack
-- IntelliJ IDEA, VS Code
+- IntelliJ IDEA, VS Code, Android Studio
 
 **Integrations and Protocols:**
 - RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3, Integration
