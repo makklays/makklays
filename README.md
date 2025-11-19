@@ -1,6 +1,6 @@
 # 👨‍💻 Alexander Kuziv — Java Software Engineer
 
-🎯 Java Software Engineer with over 5 years of experience in developing high-load, scalable, and secure systems.
+🎯 Java Software Engineer with >5 years of experience in developing high-load, scalable, and secure systems.
 
 I have more than 17 years of experience working with web technologies as a Full Stack Developer.
 
