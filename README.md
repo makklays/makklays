@@ -12,11 +12,11 @@ I have worked with corporate teams and startups in Europe and Ukraine.
 
 **Languages and Platforms:**
 - Java (8–17–21), PHP, JavaFX
-- Spring, Spring Boot, Spring Web, Spring Security, Spring Data, Micronaut, Flowable
+- Spring, Spring Boot, Spring Web, Spring Security, Spring Data, Spring Integration, Micronaut, Flowable
 - JPA (Hibernate), JDBC, SQL (PostgreSQL, MySQL), H2, LDAP
 - RESTful API, WebSocket, gRPC Protobuf, SOAP
-- Flyway, Thymeleaf, JavaScript, jQuery, Vue.js, Logback, slf4j
-- Solidity (un poco), Web3j, DL4J
+- Flyway, Thymeleaf, JavaScript, jQuery, Vue.js, Logback, Slf4j
+- Solidity (a little), Web3j, DL4J
 
 **Tools:**
 - Git, Maven, Gradle, Docker, Kubernetes
@@ -28,10 +28,10 @@ I have worked with corporate teams and startups in Europe and Ukraine.
 - IntelliJ IDEA, VS Code
 
 **Integrations and Protocols:**
-- RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3
+- RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3, Integration
 - RabbitMQ, Kafka
 - JWT, OAuth2
-- Prometheus, Grafana
+- Actuator, Prometheus, Grafana
 
 ## 📌 Skills:
 
