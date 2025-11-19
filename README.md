@@ -2,7 +2,7 @@
 
 🎯 Java Software Engineer with >5 years of experience in developing high-load, scalable, and secure systems.
 
-I have more than 17 years of experience working with web technologies as a Full Stack Developer.
+I have more than 17 years of experience working with web technologies as a Full Stack Developer and REST API.
 
 Expert in backend development, various APIs, integration with external systems, microservices, and CI/CD.
 
