@@ -1,4 +1,5 @@
-# 👨‍💻 Alexander Kuziv — Java Software Engineer / Software Architect
+# 👨‍💻 Alexander Kuziv 
+# Java Software Engineer / Software Architect
 
 🎯 Java Software Engineer / Software Architect with >5 years (total 17 years) of experience in developing high-load, scalable, and secure systems.
 
