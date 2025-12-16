@@ -1,12 +1,12 @@
 # 👨‍💻 Alexander Kuziv — Java Software Engineer / Software Architect
 
-🎯 Java Software Engineer with >5 years of experience in developing high-load, scalable, and secure systems.
+🎯 Java Software Engineer / Software Architect with >5 years (total 17 years) of experience in developing high-load, scalable, and secure systems.
 
-I have more than 17 years of experience working with web technologies as a Full Stack Developer and REST API.
+I have more than 17 years of experience working with web technologies, REST API as a Full Stack Developer and Architect.
 
 Expert in backend development, various APIs, integration with external systems, microservices, and CI/CD.
 
-I have worked with corporate teams and startups in Europe and Ukraine.
+I have worked with corporate and international teams and startups in Europe and Ukraine.
 
 ## 🛠️ Technology Stack:
 
@@ -29,23 +29,25 @@ I have worked with corporate teams and startups in Europe and Ukraine.
 - IntelliJ IDEA, VS Code, Android Studio
 
 **Integrations and Protocols:**
-- RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3, Integration
+- RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3, Spring Integration
 - RabbitMQ, Kafka
 - JWT, OAuth2
 - Actuator, Prometheus, Grafana
 
 ## 📌 Skills:
 
-- Design of website and system architectures from scratch
+- Design of website and system architectures from scratch as Software Architect
 - Development and maintenance of websites, systems, and various microservices
 - Integration with external systems
 - Configuration and support of CI/CD pipelines
 - Work with security and authorization (Spring Security, OAuth2, JWT)
 - Optimization of code, SQL queries, and JVM memory management
+- Development with Spring WebFlux using Reactive Programming for handling asynchronous requests.
+- Using Java Concurrency API and Executors to manage multithreaded tasks.
 
 ## 🌍 Location & Work Preferences:
 
-Open to relocation or remote work worldwide (preferably in Spain and the USA).
+Open to relocation or remote work worldwide (preferably in Spain and the USA, salary ~$5k).
 
 ## 🧠 About Me:
 
