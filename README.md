@@ -4,7 +4,7 @@
 
 I have more than 17 years of experience working with web technologies, REST API as a Full Stack Developer and Architect.
 
-Expert in backend development, various APIs, integration with external systems, microservices, and CI/CD.
+Expert and architect in backend development, various APIs, integration with external systems, microservices, and CI/CD.
 
 I have worked with corporate and international teams and startups in Europe and Ukraine.
 
