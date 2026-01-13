@@ -22,7 +22,7 @@ I have worked with corporate and international teams and startups in Europe and 
 **Microservices:**
 - DDD (Domain-Driven Design), Aggregate
 - Pattern Saga (Choreography, Orchestration), Pattern CQRS
-- Transactionals, ACID or ACD
+- Transactionals, ACID or ACD, Сompensating transaction
 - Isolation levels of database
 
 **Integrations and Protocols:**
