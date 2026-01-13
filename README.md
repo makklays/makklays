@@ -19,6 +19,18 @@ I have worked with corporate and international teams and startups in Europe and 
 - Solidity (a little), Web3j, DL4J
 - Mobile application
 
+**Microservices:**
+- DDD (Domain-Driven Design), Aggregate
+- Pattern Saga (Choreography, Orchestration), Pattern CQRS
+- Transactionals, ACID or ACD
+- Isolation levels of database
+
+**Integrations and Protocols:**
+- RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3, Spring Integration
+- RabbitMQ, Kafka
+- JWT, OAuth2
+- Actuator, Prometheus, Grafana
+
 **Tools:**
 - Git, Maven, Gradle, Docker, Kubernetes
 - GitHub Actions, Jenkins, CI/CD
@@ -27,12 +39,6 @@ I have worked with corporate and international teams and startups in Europe and 
 - Git, SVN, Bitbucket
 - Jira, Mantis, Redmine, Trello, Slack
 - IntelliJ IDEA, VS Code, Android Studio
-
-**Integrations and Protocols:**
-- RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3, Spring Integration
-- RabbitMQ, Kafka
-- JWT, OAuth2
-- Actuator, Prometheus, Grafana
 
 ## 📌 Skills:
 
@@ -51,5 +57,5 @@ Open to relocation or remote work worldwide (preferably in Spain and the USA, sa
 
 ## 🧠 About Me:
 
-I enjoy writing clean code. I am always learning new technologies and approaches, and I contribute to open-source projects. I am passionate about video games, DeepLearning4J, and distributed systems.
+I enjoy writing clean code. I am always learning new technologies and approaches, and I contribute to open-source projects. I am passionate about Java programming and software architecture, DeepLearning4J, and distributed systems.
 
