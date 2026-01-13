@@ -29,7 +29,7 @@ I have worked with corporate and international teams and startups in Europe and 
 - RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3, Spring Integration
 - RabbitMQ, Kafka
 - JWT, OAuth2
-- Actuator, Prometheus, Grafana
+- Actuator, Micrometer, Prometheus, Grafana
 
 **Tools:**
 - Git, Maven, Gradle, Docker, Kubernetes
