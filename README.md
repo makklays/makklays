@@ -24,7 +24,8 @@ I have worked with corporate and international teams and startups in Europe and 
 - Pattern Saga (Choreography, Orchestration), Pattern CQRS
 - API Gateway, Load Balancer, Cache (Redis)
 - Transactionals, ACID or ACD, Сompensating transaction
-- Isolation levels of database
+- Transaction isolation levels of a database (Read uncommitted, Read committed, Repeatable read, Serializable)
+- Transaction anomalies (Lost Update, Dirty Read, Non-Repeatable Read, Phantom Read, Write Skew, Deadlock, Starvation)
 
 **Integrations and Protocols:**
 - RESTful API, WebSocket, gRPC Protobuf, SOAP, Web3, Spring Integration
