@@ -15,9 +15,9 @@ I have worked with corporate and international teams and startups in Europe and 
 - Spring, Spring Boot, Spring Web, Spring Security, Spring Data, Spring Actuator, Spring Integration, Micronaut, Flowable
 - JPA (Hibernate), JDBC, SQL (PostgreSQL, MySQL), H2, LDAP
 - RESTful API, WebSocket, gRPC Protobuf, SOAP
-- Flyway, Thymeleaf, JavaScript, jQuery, Vue.js, Logback, Slf4j
+- Flyway, Thymeleaf, JavaScript, jQuery, React, Vue.js, Logback, Slf4j
 - Solidity (a little), Web3j, DL4J
-- Mobile application
+- Mobile application, Android Studio
 
 **Microservices:**
 - DDD (Domain-Driven Design), Aggregate
