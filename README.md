@@ -22,7 +22,7 @@ I have worked with corporate and international teams and startups in Europe and 
 **Microservices:**
 - DDD (Domain-Driven Design), Aggregate
 - Pattern Saga (Choreography, Orchestration), Pattern CQRS
-- API Gateway, Load Balancer, Cache (Redis)
+- API Gateway, Load Balancer (Kubernetes Service, Spring Cloud LoadBalancer), Circuit Breaker (Resilience4j, Istio, Spring Cloud CircuitBreaker), Cache (Redis)
 - Transactionals, ACID or ACD, Сompensating transaction
 - Transaction isolation levels of a database (Read uncommitted, Read committed, Repeatable read, Serializable)
 - Transaction anomalies (Lost Update, Dirty Read, Non-Repeatable Read, Phantom Read, Write Skew, Deadlock, Starvation)
