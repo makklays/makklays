@@ -20,6 +20,9 @@ I have worked with corporate and international teams and startups in Europe and 
 - Solidity (a little), Web3j, DL4J
 - Mobile application, Android Studio
 
+**Architecture**
+MVC, Hexagonal, Clean, Microservices, Event-Driven.
+
 **Microservices:**
 - DDD (Domain-Driven Design), Aggregate
 - Pattern Saga (Choreography, Orchestration), Pattern CQRS
