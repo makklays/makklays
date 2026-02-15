@@ -13,7 +13,7 @@ I have worked with corporate and international teams and startups in Europe and 
 **Languages and Platforms:**
 - JAVA, PHP, Kotlin, Scala
 
-- Java (8–17–21), PHP, JavaFX
+- Java (8–17–21), JavaFX
 - Spring, Spring Boot, Spring Web, Spring WebFlux, Spring Security, Spring Data, Spring Reactive, Spring Actuator, Spring Integration, Micronaut, Flowable
 - JPA (Hibernate), JDBC, SQL (PostgreSQL, MySQL), H2, LDAP
 - RESTful API, WebSocket, gRPC Protobuf, SOAP
