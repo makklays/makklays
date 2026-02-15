@@ -21,7 +21,7 @@ I have worked with corporate and international teams and startups in Europe and 
 - Mobile application, Android Studio
 
 **Architecture**
-MVC, Hexagonal, Clean, Microservices, Event-Driven.
+- MVC, Hexagonal, Clean, Microservices, Event-Driven.
 
 **Microservices:**
 - DDD (Domain-Driven Design), Aggregate
