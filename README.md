@@ -14,6 +14,7 @@ I have worked with corporate and international teams and startups in Europe and 
 - JAVA, PHP, Kotlin, Scala 3
 - Java (8–17–21), JavaFX
 - Spring, Spring Boot, Spring Web, Spring WebFlux, Spring Security, Spring Data, Spring Reactive, Spring Actuator, Spring Integration, Micronaut, Flowable
+- Scala 3, Play Framework, Pekko, http4s, Slick, Actor
 - JPA (Hibernate), JDBC, SQL (PostgreSQL, MySQL), H2, LDAP
 - RESTful API, WebSocket, gRPC Protobuf, SOAP
 - Flyway, Thymeleaf, JavaScript, jQuery, React, Vue.js, Logback, Slf4j
