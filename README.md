@@ -1,8 +1,8 @@
-# 👨‍💻 Java Software Engineer | Software Architect
+# 👨‍💻 Senior Java Software Engineer
 
-🎯 Java Software Engineer & Software Architect with 6 years (total 18 years) of experience in developing high-load, scalable, and secure systems.
+🎯 Senior Java Software Engineer with 6 years (total 18 years) of experience in developing high-load, scalable, and secure systems.
 
-I have more than 18 years of experience working with web technologies, REST API as a Full Stack Developer and Architect.
+I have more than 18 years of experience working with web technologies, REST API as a Senior Full Stack Developer and Architect.
 
 Expert and architect in backend development, various APIs, integration with external systems, microservices, and CI/CD.
 
