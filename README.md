@@ -11,7 +11,7 @@ I have worked with corporate and international teams and startups in Europe and 
 ## 🛠️ Technology Stack:
 
 **Languages and Platforms:**
-- JAVA, PHP, Kotlin, Scala 3
+- JAVA, PHP, Scala 3, Kotlin
 - Java (8–17–21), JavaFX
 - Spring, Spring Boot, Spring Web, Spring WebFlux, Spring Security, Spring Data, Spring Reactive, Spring Actuator, Spring Integration, Micronaut, Flowable
 - Scala 3, Play Framework, Pekko, http4s, Slick, Actor
