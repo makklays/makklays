@@ -63,7 +63,7 @@ I have worked with corporate and international teams and startups in Europe and 
 
 <p align="left">
   <img src="https://github.com/makklays/trading/blob/main/images/java-algorithms-13.jpeg" width="400" alt="Trading 3" />
-  <img src="https://github.com/makklays/java-project-moto-trip-dates/blob/master/doc/images/java-moto-trip-dates6.jpeg" width="400" alt="Trading 4" />
+  <img src="https://github.com/makklays/trading/blob/main/images/java-algorithms-15.jpeg" width="400" alt="Trading 4" />
 </p>
 
 ---
