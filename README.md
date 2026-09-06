@@ -6,7 +6,7 @@ I have more than 18 years of experience working with web technologies, REST API 
 
 Expert and architect in backend development, various APIs, integration with external systems, microservices, and CI/CD.
 
-I have worked with corporate and international teams and startups in Europe and Ukraine.
+I have worked with corporate and international FinTech teams, Banks and startups in Europe and Ukraine.
 
 ## 🛠️ Technology Stack:
 
