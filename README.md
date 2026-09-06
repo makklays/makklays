@@ -59,6 +59,15 @@ I have worked with corporate and international teams and startups in Europe and 
 - Development with Spring WebFlux using Reactive Programming for handling asynchronous requests.
 - Using Java Concurrency API and Executors to manage multithreaded tasks.
 
+---
+
+<p align="left">
+  <img src="images/java-algorithms-8.jpeg" width="400" alt="Trading 3" />
+  <img src="images/java-algorithms-9.jpeg" width="400" alt="Trading 4" />
+</p>
+
+---
+
 ## 🌍 Location & Work Preferences:
 
 Open to relocation or remote work worldwide (preferably in Spain and the USA, salary ~$5k).
